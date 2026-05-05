@@ -14,7 +14,7 @@ The working document class is:
 \documentclass[pdflatex,sn-basic,iicol]{sn-jnl}
 ```
 
-This uses the Springer Basic author-year reference style shown in Artificial Intelligence Review's author guidelines and the `iicol` option for a double-column layout similar to published Springer articles.
+This uses the Springer Basic author-year reference style required by Artificial Intelligence Review's author guidelines and the `iicol` option for a double-column Springer layout.
 
 ## Main Files
 
@@ -43,6 +43,7 @@ latexmk -pdf -pdflatex="pdflatex %O %S" main.tex
 - Use `pdflatex`, matching Springer Nature submission guidance.
 - Keep `sn-basic` for AIR-style author-year citations unless the journal office requests a different reference style.
 - Keep `iicol` when you want the manuscript to preview the double-column published layout. Remove `iicol` if the submission system or editor asks for a simpler single-column review copy.
+- For the actual upload, AIR says not to use subfolders for LaTeX submission files. Keep all `.tex`, `.cls`, `.bst`, `.bib`, and figure files in one flat submission folder or zip.
 - Keep the manuscript as one `.tex` file for submission. Avoid `\input{}` in the final submission source.
 - Keep generated PDFs and build artifacts out of Git.
 - Update `references.bib` from `03_references/references.bib` before serious citation work.
