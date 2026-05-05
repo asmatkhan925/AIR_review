@@ -26,8 +26,9 @@ Artificial Intelligence Review or a similar high-quality review journal.
 
 - Working LaTeX source: `12_manuscript/latex/main.tex`.
 - Template: Springer Nature journal article LaTeX package, December 2024 version.
-- Current document class: `\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}`.
-- Rationale: AIR guidelines recommend Springer Nature's LaTeX template and require author-year citations; `iicol` uses the Springer template's double-column option.
+- Current conservative document class: `\documentclass[pdflatex,sn-basic]{sn-jnl}`.
+- Optional preview document: `12_manuscript/latex/main_double_column_preview.tex` uses `\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}`.
+- Rationale: AIR guidelines recommend Springer Nature's LaTeX template and require author-year citations; they do not explicitly require double-column formatting for submission.
 - Build command: run `make` from `12_manuscript/latex/`.
 - Submission note: Springer Nature guidance says Snapp submissions should compile with `pdflatex` and be compressed into a zip file.
 - AIR upload note: do not use subfolders for the actual LaTeX submission files.

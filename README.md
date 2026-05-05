@@ -57,9 +57,9 @@ The main BibTeX file is `03_references/references.bib`. Every citation used in d
 
 ## LaTeX Workflow
 
-The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex`. It uses the official Springer Nature journal article template package, December 2024 version, with `sn-jnl.cls` and Springer BibTeX styles stored beside the manuscript for reliable compilation. The current AIR-facing configuration is `\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}`, which gives Springer Basic author-year references and the Springer double-column option.
+The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex`. It uses the official Springer Nature journal article template package, December 2024 version, with `sn-jnl.cls` and Springer BibTeX styles stored beside the manuscript for reliable compilation. The conservative AIR-facing submission configuration is `\documentclass[pdflatex,sn-basic]{sn-jnl}`, which gives Springer Basic author-year references.
 
-AIR does not provide a separate AIR-only LaTeX class on its guideline page. Its instructions point authors to Springer Nature's LaTeX template, require original source plus compiled PDF, require author-year citations, and warn not to use subfolders for the actual LaTeX submission upload.
+AIR does not provide a separate AIR-only LaTeX class on its guideline page. Its instructions point authors to Springer Nature's LaTeX template, require original source plus compiled PDF, require author-year citations, and warn not to use subfolders for the actual LaTeX submission upload. A separate `12_manuscript/latex/main_double_column_preview.tex` file is available only to preview the double-column style seen in published AIR articles.
 
 Build from `12_manuscript/latex/`:
 

@@ -34,17 +34,24 @@ Springer Nature journal article template package, December 2024 version.
 
 There is no separate AIR-only LaTeX class linked from the AIR guideline page. The correct base template is Springer Nature's `sn-jnl` journal article template.
 
-The working manuscript uses:
+The conservative working manuscript uses:
 
 ```tex
-\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}
+\documentclass[pdflatex,sn-basic]{sn-jnl}
 ```
 
 Reasons:
 
 - `pdflatex`: Springer Nature submission support requires pdflatex-compatible files for Snapp and recommends the pdflatex option for template compilation.
 - `sn-basic`: AIR requires author-year citations.
-- `iicol`: Springer template option for double-column layout. Published AIR articles are double-column, but if the editor asks for a single-column review copy, remove `iicol`.
+
+The repository also keeps an optional preview file:
+
+```tex
+\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}
+```
+
+This is `main_double_column_preview.tex`. It is useful because published AIR articles are double-column, but AIR's guideline page does not explicitly require double-column formatting for submission.
 
 ## Submission Packaging Note
 

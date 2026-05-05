@@ -1,13 +1,13 @@
 % Version: Springer Nature LaTeX template package, December 2024.
-% Target journal: Artificial Intelligence Review.
+% Double-column preview for Artificial Intelligence Review.
 % AIR author guidelines request the Springer Nature template and specify
-% author-year references. They do not explicitly require a double-column
-% submission file. Published papers are production-typeset in double columns,
-% so double-column preview is kept separately in main_double_column_preview.tex.
+% author-year references. This file adds iicol only to preview the
+% double-column layout used in published Springer articles. Use main.tex
+% as the conservative submission source unless AIR asks otherwise.
 % Compile with pdflatex/latexmk from this folder:
-% latexmk -pdf -pdflatex="pdflatex %O %S" main.tex
+% latexmk -pdf -pdflatex="pdflatex %O %S" main_double_column_preview.tex
 
-\documentclass[pdflatex,sn-basic]{sn-jnl}
+\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}
 
 \usepackage{graphicx}
 \usepackage{multirow}
