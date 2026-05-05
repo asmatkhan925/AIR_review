@@ -1,0 +1,32 @@
+Repository Structure
+====================
+
+Top-level files
+---------------
+README.md: project overview and workflow.
+AGENTS.md: instructions for Codex and future research agents.
+project_instructions.txt: operational instructions for the review project.
+review_blueprint.txt: intellectual blueprint of the paper.
+writing_guidelines.txt: style and drafting rules.
+literature_search_strategy.txt: planned search logic.
+citation_policy.txt: rules for citation selection and BibTeX hygiene.
+terminology_glossary.txt: abbreviations and working definitions.
+repo_structure.txt: this structure guide.
+
+Major folders
+-------------
+00_project_management: timeline, tasks, revisions, decisions, and reviewer response preparation.
+01_scope_and_planning: scope, questions, criteria, contribution, reader profile, and journal requirements.
+02_literature_search: keywords, queries, database sources, and search/screening logs.
+03_references: BibTeX database and curated reference categories.
+04_paper_notes: structured notes by theme.
+05_synthesis_matrices: comparison and gap-analysis matrices.
+06_review_outline: outline, dependency map, argument flow, and storyline.
+07_draft_sections: section-level drafting workspace.
+08_tables: planned tables for the review.
+09_figures: planned figures and figure workspaces.
+10_case_study_pashto: Pashto-specific case-study materials.
+11_quality_control: checklists for review quality and submission readiness.
+12_manuscript: integrated manuscript and submission materials.
+13_appendices: supplementary materials.
+14_archive: old drafts, rejected structures, and outdated notes.

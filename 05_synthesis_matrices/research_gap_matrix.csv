@@ -1,0 +1,8 @@
+Gap,Evidence from literature,Why current methods are insufficient,Possible future direction
+Data quality gap,TBD,TBD,Quality-aware data curation
+Dialect fairness gap,TBD,TBD,Dialect-aware benchmarks and adaptation
+Evaluation gap,TBD,TBD,Robust normalization and reporting protocols
+Multimodal dataset gap,TBD,TBD,Low-resource AVSR benchmark creation
+Adaptation gap,TBD,TBD,Efficient and language-aware adaptation
+Interpretability gap,TBD,TBD,Transparent error analysis and model diagnostics
+Sustainability gap,TBD,TBD,Compute-efficient training and deployment

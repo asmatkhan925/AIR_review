@@ -1,0 +1,8 @@
+Direction,Motivation,Required resources,Expected impact,Risks or limitations
+Quality-aware data curation,Noisy labels and inconsistent transcripts limit progress,TBD,More reliable training and evaluation,TBD
+Dialect-aware ASR,Dialect variation harms fairness and robustness,TBD,Improved inclusion and deployment validity,TBD
+Multimodal low-resource benchmarks,Audio-only data may be insufficient in noisy settings,TBD,Better robustness analysis,TBD
+Efficient adaptation,Large models are costly for low-resource communities,TBD,Accessible deployment,TBD
+Speech LLMs for low-resource languages,LLMs may improve decoding and interaction,TBD,Improved language modeling and usability,TBD
+Community-driven data development,Local data ownership and relevance matter,TBD,Sustainable resource growth,TBD
+Robust evaluation protocols,WER alone may hide normalization and fairness issues,TBD,More trustworthy comparisons,TBD

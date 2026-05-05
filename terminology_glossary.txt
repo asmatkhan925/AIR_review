@@ -1,0 +1,46 @@
+Terminology Glossary
+====================
+
+ASR
+---
+Automatic speech recognition; conversion of speech audio into text.
+
+Low-resource ASR
+----------------
+ASR for languages, domains, dialects, or speaking conditions with limited labeled speech, limited benchmarks, limited tools, or weak data infrastructure.
+
+End-to-end ASR
+--------------
+Models trained to map acoustic input directly to output tokens using objectives such as CTC, attention-based sequence-to-sequence, or RNN-T.
+
+Self-supervised learning
+------------------------
+Learning speech representations from unlabeled audio using predictive, contrastive, masked, or reconstruction-style objectives.
+
+Multilingual transfer
+---------------------
+Using knowledge from one or more source languages to improve ASR in a target language.
+
+Knowledge distillation
+----------------------
+Training a smaller or target model using outputs from teacher models, often through pseudo-labels or softened predictions.
+
+Foundation speech model
+-----------------------
+A large pretrained model trained on broad speech data and adapted to multiple tasks or languages.
+
+Speech LLM
+----------
+A system that connects speech representation or generation with large language model capabilities.
+
+AVSR
+----
+Audio-visual speech recognition; ASR that uses audio and visual speech cues.
+
+Orthographic normalization
+--------------------------
+Text preprocessing that reduces spelling, script, punctuation, and symbol variation to improve training and evaluation consistency.
+
+Pashto ASR
+----------
+Automatic speech recognition for Pashto, used in this review as a focused case study of low-resource ASR challenges.

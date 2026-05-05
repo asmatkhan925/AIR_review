@@ -1,0 +1,36 @@
+Literature Search Strategy
+==========================
+
+Objective
+---------
+Identify seminal, recent, and case-study-relevant literature for a review on AI methods for low-resource ASR.
+
+Search categories
+-----------------
+1. Classical and end-to-end ASR.
+2. Self-supervised speech representation learning.
+3. Multilingual and cross-lingual ASR.
+4. Low-resource ASR adaptation.
+5. Knowledge distillation and pseudo-labeling.
+6. Foundation speech models.
+7. Speech large language models.
+8. Multimodal and audio-visual ASR.
+9. Datasets and benchmarks.
+10. Pashto and related low-resource language studies.
+11. Evaluation, normalization, and fairness.
+
+Databases
+---------
+Use Google Scholar, Semantic Scholar, IEEE Xplore, ACM Digital Library, ACL Anthology, ISCA Archive, SpringerLink, ScienceDirect, arXiv, and Papers With Code.
+
+Screening procedure
+-------------------
+1. Record the search in `02_literature_search/search_log.csv`.
+2. Export candidate titles and metadata where possible.
+3. Apply inclusion and exclusion criteria.
+4. Record decisions in `02_literature_search/screening_log.csv`.
+5. Track rejected but potentially useful papers in `02_literature_search/rejected_papers_log.csv`.
+
+Search quality notes
+--------------------
+Use broad searches first, then targeted searches by method family, model name, dataset, language, and evaluation issue. Repeat searches near submission to include recent 2025-2026 work.

@@ -1,0 +1,7 @@
+Method family,Representative papers,Core idea,Data requirement,Strengths,Weaknesses,Best use case,Low-resource limitation,Relevance to Pashto
+End-to-end ASR,TBD,Direct speech-to-token modeling,TBD,TBD,TBD,TBD,TBD,TBD
+Self-supervised learning,TBD,Pretrain on unlabeled speech then adapt,TBD,TBD,TBD,TBD,TBD,TBD
+Multilingual transfer,TBD,Transfer from source languages or multilingual models,TBD,TBD,TBD,TBD,TBD,TBD
+Knowledge distillation,TBD,Use teacher outputs to supervise target/student models,TBD,TBD,TBD,TBD,TBD,TBD
+Foundation speech models,TBD,Adapt large pretrained speech systems,TBD,TBD,TBD,TBD,TBD,TBD
+Multimodal ASR,TBD,Combine audio with visual speech cues,TBD,TBD,TBD,TBD,TBD,TBD

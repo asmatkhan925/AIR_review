@@ -1,0 +1,28 @@
+Citation Policy
+===============
+
+Purpose
+-------
+Citations should support the review argument, not inflate the bibliography.
+
+Rules
+-----
+1. Cite seminal papers for foundational concepts.
+2. Cite recent papers for current trends.
+3. Prefer top-tier venues and high-quality journals when multiple sources support the same claim.
+4. Include influential preprints only when they are highly relevant, and identify their status carefully.
+5. Every included paper should serve a clear role in the review.
+6. Every factual or evaluative claim in the manuscript should be supported.
+7. Keep `03_references/references.bib` clean, deduplicated, and consistently formatted.
+
+Reference workflow
+------------------
+1. Add candidate papers to the relevant reference list in `03_references/`.
+2. Add BibTeX entries to `references.bib`.
+3. Create a paper note if the paper will be discussed in detail.
+4. Add evidence from the paper to the relevant synthesis matrix.
+5. Cite the paper in draft prose only after its role is clear.
+
+Missing references
+------------------
+Use `03_references/missing_references.md` for papers mentioned in notes or drafts but not yet added to BibTeX.

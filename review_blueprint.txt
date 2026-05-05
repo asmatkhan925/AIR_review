@@ -1,0 +1,46 @@
+Review Blueprint
+================
+
+Working title
+-------------
+Artificial Intelligence for Low-Resource Speech Recognition: Methods, Challenges, Trends, and Future Directions, with Pashto ASR as a Focused Case Study
+
+Central argument
+----------------
+AI has transformed ASR through end-to-end modeling, self-supervised learning, multilingual transfer, foundation models, distillation, and multimodal learning. Yet low-resource languages remain difficult because the problem is not only data quantity. It also involves data quality, dialect variation, orthography, domain mismatch, evaluation instability, benchmark scarcity, and deployment constraints. Pashto ASR provides a concrete case study for these interacting challenges.
+
+Main research questions
+-----------------------
+1. How has ASR evolved from classical pipelines to foundation models?
+2. Why does low-resource ASR remain difficult despite large pretrained models?
+3. Which AI method families address which parts of the low-resource problem?
+4. What trade-offs exist between model scale, data quality, adaptation, and robustness?
+5. What does Pashto ASR reveal about broader low-resource ASR problems?
+6. What should future research prioritize?
+
+Expected contributions
+----------------------
+1. A structured taxonomy of AI methods for low-resource ASR.
+2. A critical synthesis of persistent low-resource ASR challenges.
+3. A comparison of end-to-end, self-supervised, multilingual, distillation-based, foundation-model, and multimodal approaches.
+4. A focused Pashto ASR case study.
+5. A research-gap analysis.
+6. A future research agenda for robust, inclusive, and multimodal low-resource ASR.
+
+Paper structure
+---------------
+1. Abstract
+2. Introduction
+3. Evolution of ASR
+4. Core challenges in low-resource ASR
+5. End-to-end ASR
+6. Self-supervised learning
+7. Multilingual and cross-lingual transfer
+8. Knowledge distillation and pseudo-labeling
+9. Foundation models and speech LLMs
+10. Multimodal ASR and AVSR
+11. Pashto as a case study
+12. Comparative analysis
+13. Research gaps
+14. Future directions
+15. Conclusion

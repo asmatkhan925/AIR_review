@@ -1,0 +1,7 @@
+Challenge,Why it matters,Methods addressing it,Remaining limitation,Example papers
+Limited labeled data,Supervised ASR training becomes unstable,SSL; transfer learning; pseudo-labeling,TBD,TBD
+Dialect variation,Models may overfit dominant dialects,Multilingual training; dialect-aware adaptation,TBD,TBD
+Orthographic inconsistency,Evaluation and training targets become noisy,Normalization; character-level modeling,TBD,TBD
+Noisy speech,Recognition fails under real conditions,Robust training; multimodal ASR,TBD,TBD
+Domain mismatch,Training and deployment distributions differ,Domain adaptation; fine-tuning,TBD,TBD
+Compute constraints,Large models are hard to train or deploy,Distillation; adapters; LoRA,TBD,TBD

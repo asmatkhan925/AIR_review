@@ -1,0 +1,39 @@
+Writing Guidelines
+==================
+
+Style
+-----
+Use formal, analytical, critical, concise, and coherent prose suitable for a high-impact review journal.
+
+Prefer
+------
+- Thematic grouping.
+- Comparative analysis.
+- Clear topic sentences.
+- Strong transitions.
+- Explicit limitations.
+- Research gaps grounded in evidence.
+- Tables and figures that support synthesis.
+
+Avoid
+-----
+- Paper-by-paper listing.
+- Unsupported claims.
+- Overgeneralization.
+- Repetition across sections.
+- Informal language.
+- Excessive bullet points in final prose.
+
+Section drafting rule
+---------------------
+Each draft section should begin with scaffolding:
+1. Purpose of this section.
+2. Key arguments to develop.
+3. Literature to include.
+4. Expected tables or figures.
+5. Drafting notes.
+6. Open questions.
+
+Final prose rule
+----------------
+Once evidence is collected, convert bullet scaffolds into connected academic paragraphs. A good section should explain relationships between methods, contradictions in the literature, limitations of existing work, and the relevance of the section to the full review argument.

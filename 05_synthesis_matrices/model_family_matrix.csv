@@ -1,0 +1,6 @@
+Model family,Examples,Training objective,Adaptation strategy,Computational cost,Generalization,Low-resource suitability
+CTC models,TBD,Frame-level alignment,TBD,TBD,TBD,TBD
+Encoder-decoder models,TBD,Sequence generation,TBD,TBD,TBD,TBD
+SSL encoders,TBD,Contrastive or masked prediction,TBD,TBD,TBD,TBD
+Foundation ASR models,TBD,Large-scale supervised or weakly supervised training,TBD,TBD,TBD,TBD
+Speech LLM systems,TBD,Speech-language instruction or generation,TBD,TBD,TBD,TBD

@@ -1,0 +1,35 @@
+AI Review Paper Project Instructions
+====================================
+
+Purpose
+-------
+Develop a high-quality review paper on Artificial Intelligence for low-resource automatic speech recognition, with Pashto ASR as a focused case study.
+
+Core expectations
+-----------------
+1. Maintain a traceable workflow from literature search to final manuscript.
+2. Use structured paper notes rather than informal summaries.
+3. Build synthesis matrices before drafting major comparative claims.
+4. Treat Pashto as a case study that clarifies broader low-resource ASR issues.
+5. Keep the writing formal, analytical, concise, and evidence-grounded.
+
+Working sequence
+----------------
+1. Confirm scope and research questions.
+2. Run literature searches and record them in search logs.
+3. Screen papers using explicit criteria.
+4. Add references to references.bib.
+5. Write paper notes using the template.
+6. Populate synthesis matrices.
+7. Draft sections.
+8. Build tables and figures.
+9. Integrate into the manuscript.
+10. Run quality-control checklists before submission.
+
+Do not
+------
+- Turn the review into a paper-by-paper annotated bibliography.
+- Add citations that are not actually used.
+- Make unsupported claims about performance, trends, or model superiority.
+- Let the Pashto case study dominate the whole review.
+- Delete older ideas without archiving them.
