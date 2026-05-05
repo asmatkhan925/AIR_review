@@ -26,6 +26,8 @@ Artificial Intelligence Review or a similar high-quality review journal.
 
 - Working LaTeX source: `12_manuscript/latex/main.tex`.
 - Template: Springer Nature journal article LaTeX package, December 2024 version.
+- Current document class: `\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}`.
+- Rationale: AIR guidelines recommend Springer Nature's LaTeX template and show author-year citations; `iicol` previews the double-column layout used in published Springer articles.
 - Build command: run `make` from `12_manuscript/latex/`.
 - Submission note: Springer Nature guidance says Snapp submissions should compile with `pdflatex` and be compressed into a zip file.
 

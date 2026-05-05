@@ -57,7 +57,7 @@ The main BibTeX file is `03_references/references.bib`. Every citation used in d
 
 ## LaTeX Workflow
 
-The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex`. It uses the official Springer Nature journal article template package, December 2024 version, with `sn-jnl.cls` and Springer BibTeX styles stored beside the manuscript for reliable compilation.
+The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex`. It uses the official Springer Nature journal article template package, December 2024 version, with `sn-jnl.cls` and Springer BibTeX styles stored beside the manuscript for reliable compilation. The current AIR-facing configuration is `\documentclass[pdflatex,sn-basic,iicol]{sn-jnl}`, which gives Springer Basic author-year references and a double-column preview.
 
 Build from `12_manuscript/latex/`:
 
