@@ -1,0 +1,4 @@
+Claim,Section,Supporting Papers,Evidence Type,Confidence,Notes
+"Self-supervised learning improves low-resource ASR but does not remove the need for target-language normalization","Self-Supervised Learning","wav2vec 2.0; HuBERT; XLS-R; low-resource ASR studies","literature synthesis","high","Use this claim in SSL and Challenges sections"
+"Foundation ASR models offer broad multilingual coverage but performance can remain uneven for low-resource languages","Foundation Models and Speech LLMs","Whisper; MMS; multilingual ASR evaluations","benchmark synthesis","medium","Verify language-specific evidence before final wording"
+"Pashto ASR illustrates that low-resource recognition is shaped by data scarcity, dialect variation, noise, orthography, and evaluation design","Pashto ASR as a Focused Case Study","Babel Pashto; Pashto ASR studies; thesis case summaries","case-study synthesis","medium","Strengthen after Pashto-specific literature notes are filled"

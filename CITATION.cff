@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository structure, notes, or review workflow, please cite it."
+title: "AI Review Low-Resource ASR Workspace"
+type: software
+authors:
+  - family-names: Khan
+    given-names: Asmat
+    email: asmatkhan924@buaa.edu.cn
+repository-code: "https://github.com/asmatkhan925/AIR_review"
+url: "https://github.com/asmatkhan925/AIR_review"
+version: "0.1.0"
+date-released: "2026-05-06"
+abstract: "Structured research-workflow repository for an Artificial Intelligence Review-style survey on AI methods for low-resource automatic speech recognition, with Pashto ASR as a focused case study."
+preferred-citation:
+  type: generic
+  title: "AI Review Low-Resource ASR Workspace"
+  authors:
+    - family-names: Khan
+      given-names: Asmat
+  year: 2026
+  url: "https://github.com/asmatkhan925/AIR_review"

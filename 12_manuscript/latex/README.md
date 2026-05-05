@@ -39,6 +39,18 @@ Double-column preview:
 make preview
 ```
 
+Placeholder scan:
+
+```bash
+make check
+```
+
+Basic submission source check:
+
+```bash
+make submission-check
+```
+
 Or directly:
 
 ```bash

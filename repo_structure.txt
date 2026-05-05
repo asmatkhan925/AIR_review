@@ -30,3 +30,11 @@ Major folders
 12_manuscript: integrated manuscript and submission materials.
 13_appendices: supplementary materials.
 14_archive: old drafts, rejected structures, and outdated notes.
+15_scripts: lightweight repository maintenance scripts.
+.github: issue templates, pull request template, and suggested GitHub metadata.
+
+Special files
+-------------
+LICENSE: repository license for documentation, notes, and scripts.
+CITATION.cff: citation metadata for the repository.
+research_data_and_pdf_policy.md: policy for copyrighted PDFs, datasets, generated files, and traceability.

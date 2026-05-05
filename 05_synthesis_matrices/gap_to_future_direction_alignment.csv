@@ -1,0 +1,4 @@
+Research gap,Evidence,Affected method family,Why current work is insufficient,Proposed future direction,Feasibility,Expected impact,Related section
+Data quality gap,TBD,SSL; transfer; distillation,TBD,Quality-aware data curation,TBD,TBD,Future Directions
+Dialect fairness gap,TBD,Multilingual ASR; foundation models,TBD,Dialect-aware benchmarks and adaptation,TBD,TBD,Future Directions
+Multimodal dataset gap,TBD,AVSR; multimodal foundation models,TBD,Low-resource AVSR benchmarks,TBD,TBD,Future Directions

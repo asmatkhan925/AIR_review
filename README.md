@@ -27,6 +27,8 @@ Automatic speech recognition has advanced rapidly through end-to-end modeling, s
 - `12_manuscript/`: integrated manuscript, Springer Nature LaTeX setup, abstract, highlights, cover letter, and graphical abstract notes.
 - `13_appendices/`: supplementary search protocol, paper list, tables, and abbreviation list.
 - `14_archive/`: old drafts, rejected structures, and outdated notes.
+- `15_scripts/`: lightweight maintenance scripts for BibTeX, search logs, references, and table export.
+- `.github/`: issue and pull request templates for literature, writing, and citation tasks.
 
 ## Workflow
 
@@ -61,6 +63,8 @@ The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex
 
 AIR does not provide a separate AIR-only LaTeX class on its guideline page. Its instructions point authors to Springer Nature's LaTeX template, require original source plus compiled PDF, require author-year citations, and warn not to use subfolders for the actual LaTeX submission upload. A separate `12_manuscript/latex/main_double_column_preview.tex` file is available only to preview the double-column style seen in published AIR articles.
 
+Final upload files should be assembled in `12_manuscript/submission_package/` as a flat folder or ZIP only when preparing the actual journal submission.
+
 Build from `12_manuscript/latex/`:
 
 ```bash
@@ -72,6 +76,10 @@ Generated PDFs and LaTeX build artifacts are ignored by Git. Keep the final subm
 ## Quality Control
 
 Before moving a section into the manuscript, check that it synthesizes evidence, supports claims, discusses limitations, avoids repetition, and connects to the main review argument. Use `11_quality_control/` before major revisions and before submission.
+
+## Research Data And PDFs
+
+Do not commit copyrighted PDFs, dataset files without redistribution rights, generated PDFs, or LaTeX build artifacts. Use ignored local folders for PDFs and record DOI, arXiv, ACL Anthology, ISCA, publisher, or dataset URLs for traceability. See `research_data_and_pdf_policy.md`.
 
 ## Planned Output
 
