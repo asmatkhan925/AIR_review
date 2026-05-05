@@ -1,16 +1,8 @@
-% LaTeX manuscript placeholder.
-% Convert the Markdown manuscript to LaTeX when the journal format is confirmed.
-\documentclass{article}
-\begin{document}
-\title{Artificial Intelligence for Low-Resource Speech Recognition}
-\author{TBD}
-\maketitle
-
-\begin{abstract}
-TODO: Add final abstract.
-\end{abstract}
-
-\section{Introduction}
-TODO: Add final manuscript content.
-
-\end{document}
+% Canonical LaTeX manuscript:
+% 12_manuscript/latex/main.tex
+%
+% Keep the working Springer Nature LaTeX source in the latex/ folder so that
+% sn-jnl.cls, the bst/ bibliography styles, and the manuscript live together.
+% Compile from 12_manuscript/latex with:
+%
+%   latexmk -pdf -pdflatex="pdflatex %O %S" main.tex

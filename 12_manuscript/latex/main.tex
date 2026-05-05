@@ -1,0 +1,120 @@
+% Version: Springer Nature LaTeX template package, December 2024.
+% Target journal: Artificial Intelligence Review.
+% Compile with pdflatex/latexmk from this folder:
+% latexmk -pdf -pdflatex="pdflatex %O %S" main.tex
+
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[title]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{manyfoot}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{listings}
+
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{thmstyletwo}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+
+\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definition}
+
+\raggedbottom
+
+\begin{document}
+
+\title[AI for Low-Resource ASR]{Artificial Intelligence for Low-Resource Speech Recognition: Methods, Challenges, Trends, and Future Directions with Pashto ASR as a Focused Case Study}
+
+\author*[1]{\fnm{Asmat} \sur{Khan}}\email{asmatkhan924@buaa.edu.cn}
+
+\affil*[1]{\orgdiv{School/Department TBD}, \orgname{Beihang University}, \orgaddress{\city{Beijing}, \country{China}}}
+
+\abstract{Automatic speech recognition has advanced rapidly through end-to-end modeling, self-supervised speech representation learning, multilingual transfer, foundation models, knowledge distillation, and multimodal learning. However, low-resource languages remain difficult because the problem is not only limited labeled data; it also involves data quality, dialect variation, noisy speech, orthographic normalization, evaluation instability, and computational constraints. This review will synthesize Artificial Intelligence methods for low-resource speech recognition and use Pashto ASR as a focused case study. The final abstract should summarize the review scope, major method families, comparative findings, research gaps, and future directions.}
+
+\keywords{automatic speech recognition, low-resource languages, self-supervised learning, multilingual transfer, knowledge distillation, audio-visual speech recognition, Pashto ASR}
+
+\maketitle
+
+\section{Introduction}\label{sec:introduction}
+
+This section will motivate low-resource automatic speech recognition, define the review scope, state the contribution, and preview the structure of the article. The final prose should synthesize the research problem rather than list papers individually.
+
+\section{Evolution of ASR}\label{sec:evolution}
+
+This section will trace the movement from classical and hybrid ASR pipelines to end-to-end systems, self-supervised representation learning, multilingual foundation models, and speech large language models.
+
+\section{Core Challenges in Low-Resource ASR}\label{sec:challenges}
+
+This section will define the challenge space: limited labeled data, domain mismatch, dialect variation, orthographic inconsistency, evaluation instability, compute constraints, and benchmark scarcity.
+
+\section{End-to-End ASR}\label{sec:e2e}
+
+This section will discuss CTC, attention-based encoder-decoder systems, RNN-T, and related end-to-end approaches in low-resource conditions.
+
+\section{Self-Supervised Learning}\label{sec:ssl}
+
+This section will review CPC, wav2vec 2.0, HuBERT, WavLM, XLS-R, and related self-supervised approaches for speech representation learning.
+
+\section{Multilingual and Cross-Lingual Transfer}\label{sec:transfer}
+
+This section will examine multilingual pretraining, cross-lingual adaptation, language similarity, parameter-efficient tuning, and negative transfer.
+
+\section{Knowledge Distillation and Pseudo-Labeling}\label{sec:distillation}
+
+This section will synthesize teacher-student learning, sequence-level knowledge distillation, pseudo-labeling, confidence filtering, and multi-teacher strategies.
+
+\section{Foundation Models and Speech LLMs}\label{sec:foundation}
+
+This section will discuss large pretrained speech models and speech-to-LLM systems, with attention to low-resource language coverage, adaptation, and evaluation limitations.
+
+\section{Multimodal ASR and AVSR}\label{sec:avsr}
+
+This section will analyze audio-visual speech recognition, visual speech cues, multimodal fusion, synchronization, quality-aware fusion, and low-resource AVSR dataset constraints.
+
+\section{Pashto ASR as a Focused Case Study}\label{sec:pashto}
+
+This section will use Pashto ASR to connect the broader review themes to a concrete low-resource language context involving limited data, dialect variation, telephony noise, Arabic-derived orthography, and normalization challenges.
+
+\section{Comparative Analysis}\label{sec:comparison}
+
+This section will compare method families by data requirement, robustness, compute cost, adaptation behavior, and relevance to Pashto and other low-resource languages.
+
+\section{Research Gaps}\label{sec:gaps}
+
+This section will identify evidence-grounded gaps in data quality, dialect fairness, evaluation, multimodal resources, adaptation, interpretability, and sustainability.
+
+\section{Future Directions}\label{sec:future}
+
+This section will propose future work on quality-aware data curation, dialect-aware ASR, efficient adaptation, multimodal low-resource benchmarks, speech LLMs, community-driven resource development, and robust evaluation protocols.
+
+\section{Conclusion}\label{sec:conclusion}
+
+This section will summarize the review's main insights and reinforce the contribution without introducing new literature.
+
+\section*{Declarations}
+
+\subsection*{Funding}
+TODO: Add funding information or state that no funding was received.
+
+\subsection*{Conflict of interest}
+TODO: Add conflict-of-interest statement.
+
+\subsection*{Data availability}
+TODO: Add data-availability statement if required.
+
+% Uncomment when references have been added to references.bib and cited in the text.
+% \bibliography{references}
+
+\end{document}

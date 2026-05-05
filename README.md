@@ -24,7 +24,7 @@ Automatic speech recognition has advanced rapidly through end-to-end modeling, s
 - `09_figures/`: figure plans and per-figure workspaces.
 - `10_case_study_pashto/`: focused Pashto ASR case-study materials.
 - `11_quality_control/`: checklists for synthesis, citations, redundancy, journal style, and final submission.
-- `12_manuscript/`: integrated manuscript, abstract, highlights, cover letter, and graphical abstract notes.
+- `12_manuscript/`: integrated manuscript, Springer Nature LaTeX setup, abstract, highlights, cover letter, and graphical abstract notes.
 - `13_appendices/`: supplementary search protocol, paper list, tables, and abbreviation list.
 - `14_archive/`: old drafts, rejected structures, and outdated notes.
 
@@ -54,6 +54,18 @@ Each draft section should begin with its purpose, key arguments, literature to i
 ## Citation Management
 
 The main BibTeX file is `03_references/references.bib`. Every citation used in draft or manuscript prose should exist there, and every reference should have a clear purpose in the review. Use `03_references/missing_references.md` to track papers mentioned in notes but not yet added to BibTeX.
+
+## LaTeX Workflow
+
+The working Springer Nature LaTeX manuscript is in `12_manuscript/latex/main.tex`. It uses the official Springer Nature journal article template package, December 2024 version, with `sn-jnl.cls` and Springer BibTeX styles stored beside the manuscript for reliable compilation.
+
+Build from `12_manuscript/latex/`:
+
+```bash
+make
+```
+
+Generated PDFs and LaTeX build artifacts are ignored by Git. Keep the final submission source self-contained and avoid `\input{}` in the submitted `.tex` file.
 
 ## Quality Control
 

@@ -17,3 +17,5 @@ __pycache__/
 temp/
 archive_large_files/
 .env
+12_manuscript/latex_template/*.zip
+12_manuscript/latex_template/sn-article-template/
