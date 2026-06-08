@@ -1,0 +1,5 @@
+CitationKey,PaperTitle,Year,Venue,DOI_or_URL,Verified,MainUseInReview,Notes
+wav2vec2_todo,"wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",2020,"NeurIPS","Needs verification","No","Self-supervised learning foundation","Verify final citation key, DOI or proceedings URL, and BibTeX entry."
+hubert_todo,"HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units",2021,"IEEE/ACM TASLP","Needs verification","No","Self-supervised learning foundation","Verify citation key, DOI, and venue details before manuscript use."
+whisper_todo,"Robust Speech Recognition via Large-Scale Weak Supervision",2023,"ICML","Needs verification","No","Foundation ASR model comparison","Verify proceedings URL and exact citation key."
+

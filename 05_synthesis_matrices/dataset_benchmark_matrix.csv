@@ -1,0 +1,7 @@
+Dataset,Languages,Hours,SpeechType,Domain,TranscriptionQuality,DialectMetadata,PublicAccess,EvaluationUse,Limitations
+Common Voice,"Multiple","Varies by language","Read speech","Crowdsourced","Variable","Limited and inconsistent","Public","Cross-lingual and low-resource ASR benchmarking","Quality, accent coverage, and hours vary strongly by language"
+FLEURS,"Multiple","Needs verification","Read speech","Benchmark","Needs verification","Limited","Public","Multilingual ASR evaluation","Limited spontaneous or noisy speech coverage"
+Babel,"Multiple low-resource languages","Varies by language","Conversational and scripted speech","Telephone speech","Curated","Language-dependent","Restricted/licensed","Low-resource ASR and keyword search benchmarking","Access constraints and older recording conditions"
+MLS,"Multiple","Needs verification","Read speech","Audiobook","Curated","Limited","Public","Multilingual ASR training and evaluation","Domain mismatch for conversational and noisy speech"
+VoxPopuli,"Multiple European languages","Needs verification","Parliamentary speech","Formal speech","Generated/curated","Limited","Public","Multilingual ASR and SSL evaluation","Language and domain coverage skew"
+

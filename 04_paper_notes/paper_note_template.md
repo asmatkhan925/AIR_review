@@ -1,49 +1,52 @@
-# Paper Note Template
+# Paper Title
 
-## Bibliographic Information
+## Bibliographic information
 
-Title:
+- Authors:
+- Year:
+- Venue:
+- DOI/URL:
+- Citation key:
 
-Authors:
+## Problem addressed
 
-Year:
+What low-resource ASR problem does this paper address?
 
-Venue:
+## Method family
 
-BibTeX key:
+Hybrid ASR / E2E ASR / SSL / multilingual transfer / Whisper-style weak supervision / adaptation / pseudo-labeling / KD / AVSR / LLM-assisted ASR.
 
-Category:
+## Model and data
 
-## Review-Relevant Summary
+- Model:
+- Dataset:
+- Languages:
+- Hours:
+- Domain:
+- Label condition:
 
-Main problem:
+## Evaluation
 
-Method:
+- Metrics:
+- Baselines:
+- Dialect/domain/noise analysis:
+- Reproducibility details:
 
-Dataset/languages:
+## Main findings
 
-Key contribution:
+What is actually shown?
 
-Main result:
+## Limitations
 
-## Critical Assessment
+What is missing, weak, or overclaimed?
 
-Strengths:
+## Relevance to this review
 
-Limitations:
+How does this paper support the taxonomy, gap analysis, or future agenda?
 
-Relevance to review:
+## Synthesis hooks
 
-Possible section:
-
-Important citation sentence:
-
-Critical comment:
-
-## Synthesis Hooks
-
-Which matrix should this inform?
-
-Which other papers should it be compared with?
-
-What claim can this paper support?
+- Which matrix should this inform?
+- Which other papers should it be compared with?
+- What claim can this paper support?
+- Does the claim need verification before manuscript use?

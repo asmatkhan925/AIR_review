@@ -1,0 +1,5 @@
+ClaimID,ManuscriptClaim,SupportingPapers,EvidenceType,Strength,Limitations,WhereUsed,NeedsMoreEvidence
+C1,"Foundation models improve the starting point but do not solve low-resource ASR","Whisper; XLS-R; MMS; low-resource evaluation papers","Empirical + review","Strong","Performance varies by language, domain, dialect, orthography, and evaluation setting","Introduction; Conclusion","No"
+C2,"Pseudo-labeling improves supervision but can transfer teacher errors","SeqKD; self-training; multi-teacher KD papers","Empirical","Strong","Confidence filtering, agreement methods, and teacher reliability vary across studies","Section 8","No"
+C3,"Dialect-aware evaluation remains underdeveloped","Dialect ASR papers; inclusive benchmarks","Empirical + methodological","Moderate","Many papers report only pooled WER and omit dialect-level metadata","Evaluation section","Yes"
+

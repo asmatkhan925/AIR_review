@@ -8,6 +8,9 @@ Working title:
 Main goal:
 Help me develop a field-level, critical, taxonomy-based review suitable for Artificial Intelligence Review. The paper should synthesize state-of-the-art work, identify gaps, organize methods into a clear taxonomy, and propose a strong future research agenda.
 
+Strongest stay-on-track rule:
+The review is not about proving that my thesis is important. The review is about explaining why low-resource ASR remains unsolved in the foundation-model era, using my thesis expertise to organize the field critically.
+
 Core argument:
 Foundation models have changed the starting point of low-resource ASR, but they have not solved low-resource ASR. Remaining bottlenecks include data quality, language and dialect mismatch, orthographic normalization, adaptation strategy, pseudo-label reliability, fair evaluation, reproducibility, compute cost, and robustness under noisy or multimodal conditions.
 
