@@ -25,3 +25,11 @@ Use this file if labels or issues need to be recreated manually or through GitHu
 | Verify all references used in introduction | `citation-check`, `needs-verification`, `high-priority` |
 | Build taxonomy figure for foundation-model-era low-resource ASR | `figure`, `quality-control` |
 
+## Automated Setup
+
+After installing and authenticating GitHub CLI, run:
+
+```powershell
+.\15_scripts\setup_github_issues.ps1
+```
+
