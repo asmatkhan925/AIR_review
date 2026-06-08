@@ -1,33 +1,85 @@
-# Introduction
+# 1. Introduction
 
-## Purpose Of This Section
+## Purpose of This Section
 
-Motivate low-resource ASR, explain why AI methods matter, define the review scope, state the contributions, and preview the structure.
+The introduction should establish the importance of low-resource ASR in the foundation-model era, motivate why the problem remains unsolved, define the review scope, and state the paper’s contributions.
 
-## Key Arguments To Develop
+## Key Argument
 
-- ASR has become central to human-computer interaction and language access.
-- Low-resource languages are still underserved despite progress in large-scale AI.
-- The low-resource problem includes data quality, dialect, orthography, noise, evaluation, and compute constraints.
-- The review contributes taxonomy, synthesis, comparison, Pashto case study, gaps, and future directions.
+Foundation models shift low-resource ASR from building recognition systems from scratch to adapting large pretrained systems under data, language, domain, and evaluation mismatch. However, this shift introduces or exposes new problems: pseudo-label reliability, benchmark comparability, dialect fairness, orthographic normalization, compute cost, hallucination risk, and multimodal robustness.
 
-## Literature To Include
+## Points to Cover
 
-- Broad ASR surveys.
-- Low-resource ASR and NLP surveys.
-- Recent foundation-model and multilingual ASR papers.
-- Pashto ASR sources for motivation.
+### 1. Uneven progress in ASR
 
-## Expected Tables Or Figures
+ASR performance has improved substantially in high-resource languages, but progress remains uneven across underrepresented languages, dialects, domains, and scripts.
 
-- Figure 1: ASR evolution timeline.
-- Figure 3: taxonomy of methods.
+### 2. Foundation models changed the starting point
 
-## Drafting Notes
+Self-supervised, multilingual, weakly supervised, and foundation-scale models now provide stronger initial systems for low-resource languages than earlier supervised-only approaches.
 
-Avoid overclaiming novelty. Position the review as an integrative synthesis that connects method families with persistent low-resource constraints.
+Examples to discuss:
+- wav2vec 2.0
+- HuBERT
+- WavLM
+- XLS-R
+- Whisper
+- MMS
+- SeamlessM4T
+- OMNIASR
+- speech-language models
 
-## Open Questions
+### 3. Foundation models did not solve low-resource ASR
 
-- What exact title will be used?
-- Should the review be framed as systematic, narrative, or structured critical review?
+Persistent bottlenecks include:
+- limited validated speech;
+- noisy and spontaneous recordings;
+- dialect imbalance;
+- language and domain mismatch;
+- orthographic inconsistency;
+- script complexity;
+- code-switching;
+- pseudo-label noise;
+- weak evaluation design;
+- limited reproducibility;
+- compute and deployment constraints.
+
+### 4. Need for a new review
+
+Existing reviews often focus on:
+- classical ASR;
+- language-specific ASR;
+- Indian or Chinese dialect ASR;
+- general speech recognition;
+- general foundation models;
+- knowledge distillation or multimodal learning outside ASR.
+
+A gap remains for a modern review that unifies low-resource ASR under the foundation-model era and critically analyzes resources, adaptation, evaluation, and multimodal robustness.
+
+### 5. Review contribution
+
+This review provides:
+1. a modern taxonomy of low-resource ASR in the foundation-model era;
+2. a synthesis of data-centric and model-centric solutions;
+3. a critical analysis of adaptation, pseudo-labeling, and knowledge distillation;
+4. an evaluation-focused discussion of dialect, domain, robustness, fairness, reproducibility, and compute cost;
+5. a future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR.
+
+## Draft Opening Paragraph
+
+Automatic speech recognition (ASR) has advanced rapidly during the past decade, driven by end-to-end modeling, self-supervised speech representation learning, multilingual pretraining, and more recently, foundation-scale speech and speech-language models. These advances have changed the technical starting point for low-resource ASR: many languages that previously required systems to be trained almost from scratch can now benefit from pretrained multilingual representations or weakly supervised recognition models. However, the availability of larger pretrained models does not eliminate the low-resource problem. In many underrepresented languages, recognition quality remains constrained by scarce validated speech, noisy or spontaneous recordings, dialect and domain mismatch, inconsistent orthography, limited metadata, weak evaluation practice, and deployment constraints.
+
+## Draft Scope Paragraph
+
+This review examines low-resource ASR in the foundation-model era. Rather than treating low-resource ASR as a single problem of limited labeled hours, it frames low-resource recognition as a multidimensional challenge involving data quality, language coverage, dialect variation, script and normalization, adaptation strategy, pseudo-label reliability, evaluation design, and multimodal robustness. The review synthesizes recent work on self-supervised and multilingual speech models, weakly supervised foundation ASR, parameter-efficient adaptation, pseudo-labeling, knowledge distillation, evaluation practice, and emerging multimodal and LLM-assisted directions. Individual languages, including Pashto and other underrepresented languages, are used as illustrative examples when they clarify broader methodological issues.
+
+## Draft Contribution Paragraph
+
+The review makes five contributions. First, it develops a taxonomy of low-resource ASR methods in the foundation-model era. Second, it synthesizes data-centric and model-centric solutions, showing that corpus quality, normalization, filtering, augmentation, and evaluation design remain as important as model architecture. Third, it critically analyzes adaptation, pseudo-labeling, and knowledge distillation, with particular attention to teacher reliability and pseudo-label noise. Fourth, it discusses evaluation gaps, including dialect-wise, domain-wise, robustness-oriented, fairness-aware, reproducible, and compute-aware evaluation. Fifth, it proposes a future research agenda for reliable low-resource ASR, including multimodal ASR, LLM-assisted correction and rescoring, and community-centered data development.
+
+## Notes for Later Revision
+
+- Add verified citations after the literature matrix is populated.
+- Avoid overclaiming that foundation models fail; use balanced language.
+- Do not make Pashto central in the introduction.
+- Use Pashto only as an illustrative example later in the paper.

@@ -1,13 +1,45 @@
 # Contribution Statement
 
-This review aims to contribute:
+## Draft Contribution Statement
 
-1. A structured taxonomy of AI methods for low-resource ASR.
-2. A synthesis of persistent low-resource ASR challenges.
-3. A comparative analysis of end-to-end, self-supervised, multilingual, distillation-based, foundation-model, and multimodal approaches.
-4. A Pashto-focused case study that grounds the review in a realistic low-resource language context.
-5. A research agenda for future work on robust, inclusive, and efficient low-resource ASR.
+This review contributes a field-level synthesis of low-resource automatic speech recognition in the foundation-model era. Rather than treating low-resource ASR as a problem solved by scaling pretrained models, the review argues that resource quality, language mismatch, dialect variation, orthographic normalization, adaptation strategy, pseudo-label reliability, evaluation design, and multimodal robustness remain central bottlenecks.
 
-## Draft Contribution Paragraph
+## Main Contributions
 
-Unlike surveys that treat low-resource ASR primarily as a data scarcity problem, this review frames low-resource ASR as a multi-dimensional challenge involving data quantity, data quality, dialect variation, orthography, domain mismatch, model adaptation, evaluation reliability, and deployment constraints. Pashto ASR is used as a focused case study to show how these factors interact in practice.
+### Contribution 1: Modern taxonomy of low-resource ASR in the foundation-model era
+
+The review organizes low-resource ASR methods across classical hybrid systems, end-to-end ASR, self-supervised learning, multilingual transfer, weakly supervised foundation models, parameter-efficient adaptation, pseudo-labeling, knowledge distillation, speech-language models, and multimodal ASR.
+
+### Contribution 2: Synthesis of data-centric and model-centric solutions
+
+The review compares model-centric approaches such as foundation models, cross-lingual adaptation, and parameter-efficient tuning with data-centric approaches such as normalization, corpus filtering, augmentation, validation, pseudo-labeling, and benchmark construction.
+
+### Contribution 3: Critical analysis of adaptation, pseudo-labeling, and knowledge distillation
+
+The review provides a detailed analysis of how low-resource ASR systems are adapted using fine-tuning, continued pretraining, adapters, LoRA/QLoRA, pseudo-labeling, self-training, and knowledge distillation. Particular attention is given to teacher reliability, teacher disagreement, confidence filtering, and multi-teacher selection.
+
+### Contribution 4: Evaluation-focused analysis of dialect, domain, robustness, and reproducibility gaps
+
+The review evaluates the limitations of current evaluation practice, especially the overreliance on global WER/CER. It highlights the need for dialect-wise, domain-wise, noise-wise, code-switching, fairness-aware, compute-aware, and reproducible evaluation.
+
+### Contribution 5: Future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR
+
+The review proposes a research agenda covering multimodal ASR, audio-visual robustness, visual speech recognition, LLM-assisted correction, LLM rescoring, speech-language models, reliable pseudo-labeling, fair evaluation, and deployment-aware ASR for underrepresented languages.
+
+## What This Review Is Not
+
+This review is not:
+- a thesis summary;
+- a Pashto-only review;
+- a simple list of papers;
+- a general ASR tutorial detached from low-resource issues;
+- a review focused only on model architectures.
+
+## What This Review Should Be
+
+This review should be:
+- broad enough for low-resource languages generally;
+- current enough to reflect the foundation-model era;
+- critical enough for Artificial Intelligence Review;
+- structured around taxonomy, comparison, evidence, gaps, and future directions;
+- connected to the author’s expertise without being limited by the author’s thesis.
