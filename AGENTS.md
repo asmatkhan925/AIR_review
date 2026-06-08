@@ -2,7 +2,7 @@
 
 ## Project Role
 
-This repository is a research-workflow environment for a review article on AI methods for low-resource ASR, with Pashto ASR as a focused case study. Agents working here should support systematic literature collection, structured synthesis, rigorous drafting, revision, and manuscript preparation.
+This repository is a research-workflow environment for a review article on low-resource ASR in the foundation-model era. Agents working here should support systematic literature collection, structured synthesis, rigorous drafting, revision, and manuscript preparation. Pashto may be used only as an illustrative example, not as a focused case-study contribution.
 
 ## Working Principles
 
@@ -10,7 +10,7 @@ This repository is a research-workflow environment for a review article on AI me
 - Prefer synthesis over paper-by-paper listing.
 - Preserve traceability from search query, to screened paper, to note, to matrix, to draft claim, to final citation.
 - Use formal academic prose suitable for a high-quality review journal.
-- Treat Pashto ASR as a focused case study that illustrates the broader low-resource ASR problem.
+- Treat Pashto ASR only as an illustrative example when it helps explain broader low-resource ASR issues such as transcript normalization, dialect imbalance, pseudo-label reliability, noisy speech, or multimodal robustness.
 - Keep claims evidence-grounded; mark uncertain statements as TODOs rather than presenting them as facts.
 - Do not add fabricated citations, invented results, or unsupported performance claims.
 

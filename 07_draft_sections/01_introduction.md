@@ -62,8 +62,7 @@ This review provides:
 1. a modern taxonomy of low-resource ASR in the foundation-model era;
 2. a synthesis of data-centric and model-centric solutions;
 3. a critical analysis of adaptation, pseudo-labeling, and knowledge distillation;
-4. an evaluation-focused discussion of dialect, domain, robustness, fairness, reproducibility, and compute cost;
-5. a future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR.
+4. a future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
 
 ## Draft Opening Paragraph
 
@@ -75,7 +74,7 @@ This review examines low-resource ASR in the foundation-model era. Rather than t
 
 ## Draft Contribution Paragraph
 
-The review makes five contributions. First, it develops a taxonomy of low-resource ASR methods in the foundation-model era. Second, it synthesizes data-centric and model-centric solutions, showing that corpus quality, normalization, filtering, augmentation, and evaluation design remain as important as model architecture. Third, it critically analyzes adaptation, pseudo-labeling, and knowledge distillation, with particular attention to teacher reliability and pseudo-label noise. Fourth, it discusses evaluation gaps, including dialect-wise, domain-wise, robustness-oriented, fairness-aware, reproducible, and compute-aware evaluation. Fifth, it proposes a future research agenda for reliable low-resource ASR, including multimodal ASR, LLM-assisted correction and rescoring, and community-centered data development.
+The review makes four contributions. First, it develops a foundation-model-era taxonomy of low-resource ASR, organized by resource condition, language condition, model family, adaptation method, supervision strategy, and evaluation setting. Second, it synthesizes data-centric and model-centric solutions, showing how corpus quality, normalization, filtering, augmentation, self-supervised learning, multilingual transfer, and foundation models interact. Third, it critically analyzes adaptation, pseudo-labeling, and knowledge distillation, with particular attention to parameter-efficient tuning, continued pretraining, teacher reliability, confidence filtering, and multi-teacher disagreement. Fourth, it proposes a future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
 
 ## Notes for Later Revision
 

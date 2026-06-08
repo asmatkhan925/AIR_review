@@ -1,4 +1,4 @@
 Dataset,Languages,Hours,Domain,Transcription quality,Metadata,Strengths,Limitations,Relevance to low-resource ASR
-Babel Pashto,Pashto,TBD,Conversational/telephony,TBD,TBD,Important focused case-study dataset,TBD,High
+Babel Pashto,Pashto,TBD,Conversational/telephony,TBD,TBD,Illustrative dataset for broader low-resource ASR issues,TBD,High
 Common Voice,Many,TBD,Crowdsourced read speech,TBD,TBD,Broad language coverage,TBD,High
 FLEURS,Many,TBD,Read speech,TBD,TBD,Multilingual benchmark,TBD,High

@@ -1,69 +1,70 @@
-# Artificial Intelligence For Low-Resource Speech Recognition
+# Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era
 
 ## Working Title
 
-Artificial Intelligence for Low-Resource Speech Recognition: Methods, Challenges, Trends, and Future Directions, with Pashto ASR as a Focused Case Study
+Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era: Resources, Adaptation, Evaluation, and Multimodal Robustness
 
 ## Manuscript Assembly Notes
 
-Draft section content should first mature in `07_draft_sections/`. Move polished prose here when a section has passed the quality-control checklists.
+Draft section content should first mature in `07_draft_sections/`. Older method-by-method drafts are source material, not the final structure. Move polished prose here only when it follows the locked RQs, four contributions, and manuscript quality gates.
 
 ## Abstract
 
-TODO: Integrate from `07_draft_sections/00_abstract.md`.
+TODO: Integrate from `07_draft_sections/00_abstract.md` after the evidence base is stronger.
 
 ## 1. Introduction
 
 TODO: Integrate from `07_draft_sections/01_introduction.md`.
 
-## 2. Evolution Of ASR
+## 2. Review Methodology and Search Protocol
 
-TODO: Integrate from `07_draft_sections/02_evolution_of_asr.md`.
+TODO: Draft from search logs, inclusion/exclusion criteria, and citation verification records.
 
-## 3. Core Challenges In Low-Resource ASR
+## 3. What Makes ASR Low-Resource?
 
-TODO: Integrate from `07_draft_sections/03_low_resource_challenges.md`.
+TODO: Reorganize relevant material from `07_draft_sections/03_low_resource_challenges.md`.
 
-## 4. End-To-End ASR
+## 4. From Hybrid ASR to Foundation Speech Models
 
-TODO: Integrate from `07_draft_sections/04_end_to_end_asr.md`.
+TODO: Reorganize relevant material from `07_draft_sections/02_evolution_of_asr.md`, `04_end_to_end_asr.md`, `05_self_supervised_learning.md`, `06_multilingual_transfer.md`, and `08_foundation_models_and_speech_llms.md`.
 
-## 5. Self-Supervised Learning
+## 5. Resources and Benchmarks
 
-TODO: Integrate from `07_draft_sections/05_self_supervised_learning.md`.
+TODO: Draft from dataset and benchmark matrices.
 
-## 6. Multilingual And Cross-Lingual Transfer
+## 6. Model-Centric Approaches
 
-TODO: Integrate from `07_draft_sections/06_multilingual_transfer.md`.
+TODO: Synthesize model-family material without reverting to a method-by-method list.
 
-## 7. Knowledge Distillation And Pseudo-Labeling
+## 7. Data-Centric Strategies
 
-TODO: Integrate from `07_draft_sections/07_knowledge_distillation.md`.
+TODO: Draft from normalization, filtering, augmentation, validation, and benchmark-design evidence.
 
-## 8. Foundation Models And Speech LLMs
+## 8. Adaptation Strategies
 
-TODO: Integrate from `07_draft_sections/08_foundation_models_and_speech_llms.md`.
+TODO: Draft from adaptation matrix and low-resource adaptation studies.
 
-## 9. Multimodal ASR And AVSR
+## 9. Pseudo-Labeling and Knowledge Distillation
 
-TODO: Integrate from `07_draft_sections/09_multimodal_and_avsr.md`.
+TODO: Reorganize relevant material from `07_draft_sections/07_knowledge_distillation.md`.
 
-## 10. Pashto As A Case Study
+## 10. Evaluation, Reproducibility, and Robustness
 
-TODO: Integrate from `07_draft_sections/10_pashto_case_study.md`.
+TODO: Draft from evaluation evidence, reproducibility records, and gap matrices.
 
-## 11. Comparative Analysis
+## 11. Multimodal and LLM-Assisted Low-Resource ASR
 
-TODO: Integrate from `07_draft_sections/11_comparative_analysis.md`.
+TODO: Reorganize relevant material from `07_draft_sections/09_multimodal_and_avsr.md` and speech-language model notes.
 
-## 12. Research Gaps
+## 12. Taxonomy, Comparative Synthesis, and Gap Analysis
 
-TODO: Integrate from `07_draft_sections/12_research_gaps.md`.
+TODO: Integrate synthesis matrices and the locked six-layer taxonomy.
 
-## 13. Future Directions
+## 13. Future Research Agenda
 
-TODO: Integrate from `07_draft_sections/13_future_directions.md`.
+TODO: Integrate future-direction matrix and evidence-grounded gaps.
 
 ## 14. Conclusion
 
-TODO: Integrate from `07_draft_sections/14_conclusion.md`.
+TODO: Answer the locked main review question without introducing new claims.
+

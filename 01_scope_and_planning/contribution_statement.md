@@ -18,13 +18,9 @@ The review compares model-centric approaches such as foundation models, cross-li
 
 The review provides a detailed analysis of how low-resource ASR systems are adapted using fine-tuning, continued pretraining, adapters, LoRA/QLoRA, pseudo-labeling, self-training, and knowledge distillation. Particular attention is given to teacher reliability, teacher disagreement, confidence filtering, and multi-teacher selection.
 
-### Contribution 4: Evaluation-focused analysis of dialect, domain, robustness, and reproducibility gaps
+### Contribution 4: Future research agenda for reliable low-resource ASR
 
-The review evaluates the limitations of current evaluation practice, especially the overreliance on global WER/CER. It highlights the need for dialect-wise, domain-wise, noise-wise, code-switching, fairness-aware, compute-aware, and reproducible evaluation.
-
-### Contribution 5: Future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR
-
-The review proposes a research agenda covering multimodal ASR, audio-visual robustness, visual speech recognition, LLM-assisted correction, LLM rescoring, speech-language models, reliable pseudo-labeling, fair evaluation, and deployment-aware ASR for underrepresented languages.
+The review proposes a future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
 
 ## What This Review Is Not
 

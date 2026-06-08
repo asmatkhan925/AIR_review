@@ -10,7 +10,7 @@ repository-code: "https://github.com/asmatkhan925/AIR_review"
 url: "https://github.com/asmatkhan925/AIR_review"
 version: "0.1.0"
 date-released: "2026-05-06"
-abstract: "Structured research-workflow repository for an Artificial Intelligence Review-style survey on AI methods for low-resource automatic speech recognition, with Pashto ASR as a focused case study."
+abstract: "Structured research-workflow repository for an Artificial Intelligence Review-style survey on low-resource automatic speech recognition in the foundation-model era. Pashto ASR is treated only as an illustrative example for broader low-resource ASR challenges."
 preferred-citation:
   type: generic
   title: "AI Review Low-Resource ASR Workspace"

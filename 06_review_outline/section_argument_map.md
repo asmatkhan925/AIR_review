@@ -1,84 +1,109 @@
 # Section Argument Map
 
-Use this file to keep every section argumentative rather than descriptive.
+Use this file with `06_review_outline/master_outline.md`. The section numbering and names intentionally match the 14-section master outline and follow the locked RQs in `01_scope_and_planning/research_questions.md`.
 
 ## Section 1: Introduction
 
 ### Purpose
-Establish why low-resource ASR remains unresolved despite major progress in foundation speech models.
+Establish the central tension: foundation speech models have changed low-resource ASR, but reliable recognition for underrepresented languages remains unresolved.
 
 ### Main Argument
-Foundation models shift the starting point for low-resource ASR, but they do not remove data, dialect, domain, orthographic, evaluation, and compute constraints.
+Foundation models shift the starting point from training from scratch to adaptation and validation, but resource quality, language mismatch, pseudo-label reliability, evaluation, reproducibility, and robustness remain bottlenecks.
 
 ### Evidence Needed
-- Recent low-resource ASR surveys.
+- Recent low-resource ASR reviews.
 - Foundation-model evaluation papers.
 - Multilingual benchmark studies.
-- Examples of persistent data and evaluation limitations.
+- Evidence on persistent resource, dialect, and evaluation gaps.
 
 ### Tables/Figures Used
 - Review taxonomy figure.
 - Evidence-to-claim matrix.
 
 ### Risk
-The introduction may overclaim that foundation models have failed or may over-focus on Pashto.
+The introduction may overclaim that foundation models fail or drift toward Pashto-specific motivation.
 
 ### Quality Check
-Does the section frame a broad low-resource ASR problem and use Pashto only as an optional example?
+Does the section answer the main RQ at a high level and keep Pashto only as an optional illustrative example?
 
-## Section 2: Scope, Method, and Review Protocol
+## Section 2: Review Methodology and Search Protocol
 
 ### Purpose
-Explain the review type, search process, inclusion criteria, and synthesis method.
+Explain the review type, search process, inclusion criteria, extraction fields, synthesis method, and citation verification workflow.
 
 ### Main Argument
-A systematic mapping review with critical taxonomy is appropriate because the field spans data, models, adaptation, evaluation, and deployment constraints.
+A systematic mapping review plus critical taxonomy is appropriate because the field spans resources, model families, adaptation, supervision, evaluation, and deployment.
 
 ### Evidence Needed
 - Search logs.
 - Inclusion and exclusion criteria.
 - Citation verification log.
+- Evidence-to-claim matrix.
 
 ### Tables/Figures Used
 - Search protocol table.
 - Screening flow diagram if used.
 
 ### Risk
-The method may look informal if search and screening decisions are not logged.
+The method may appear informal if search and screening decisions are not logged.
 
 ### Quality Check
-Are search decisions reproducible enough for a review journal?
+Are the search and screening decisions traceable enough for a review journal?
 
-## Section 3: Low-Resource ASR Problem Space
+## Section 3: What Makes ASR Low-Resource?
 
 ### Purpose
-Define low-resource ASR challenges beyond label scarcity.
+Define low-resource ASR beyond limited labeled hours.
 
 ### Main Argument
-Low-resource ASR is shaped by interacting constraints: data quantity, data quality, dialect variation, orthography, domain mismatch, noise, and evaluation design.
+Low-resource ASR is a multidimensional condition shaped by labeled-data scarcity, weak validation, dialect and domain mismatch, orthography, noise, code-switching, licensing, and compute constraints.
 
 ### Evidence Needed
 - Low-resource ASR challenge papers.
-- Dataset and benchmark papers.
-- Orthography and transcript normalization studies.
+- Dataset and benchmark studies.
+- Orthography and transcript-normalization studies.
 
 ### Tables/Figures Used
 - Challenge-solution matrix.
 - Dataset benchmark matrix.
 
 ### Risk
-The section may become a generic background section.
+The section may become generic background instead of explaining why low-resource conditions change method choice and evaluation reliability.
 
 ### Quality Check
-Does the section explain why each challenge changes method choice or evaluation reliability?
+Does the section directly answer RQ1?
 
-## Section 4: Resources and Benchmarks
+## Section 4: From Hybrid ASR to Foundation Speech Models
 
 ### Purpose
-Compare datasets, benchmarks, and evaluation resources used for low-resource ASR.
+Explain how ASR model families evolved and why foundation models changed the low-resource starting point.
 
 ### Main Argument
-Dataset availability alone is insufficient; transcription quality, metadata, dialect coverage, domain, and access conditions shape whether benchmarks support fair evaluation.
+Hybrid, end-to-end, SSL, multilingual, weakly supervised, and foundation models represent changing assumptions about labeled data, transfer, language coverage, and adaptation.
+
+### Evidence Needed
+- Hybrid and E2E ASR background sources.
+- SSL foundation papers.
+- Multilingual and weakly supervised ASR papers.
+- Foundation-model benchmark papers.
+
+### Tables/Figures Used
+- Foundation model matrix.
+- Taxonomy figure.
+
+### Risk
+The section may become a historical model list.
+
+### Quality Check
+Does the section compare model families by assumptions, evidence, and low-resource limitations?
+
+## Section 5: Resources and Benchmarks
+
+### Purpose
+Compare datasets, benchmarks, and resource infrastructures used for low-resource ASR.
+
+### Main Argument
+Dataset availability alone is insufficient; transcription quality, metadata, dialect coverage, domain coverage, access conditions, and normalization rules shape what benchmarks can prove.
 
 ### Evidence Needed
 - Dataset papers.
@@ -87,164 +112,196 @@ Dataset availability alone is insufficient; transcription quality, metadata, dia
 
 ### Tables/Figures Used
 - Dataset benchmark matrix.
+- Search protocol table if relevant.
 
 ### Risk
-The section may list datasets without analyzing their limitations.
+The section may list datasets without critiquing their evaluation implications.
 
 ### Quality Check
-Does the section compare resources by evaluation use, access, dialect metadata, and limitations?
+Does the section connect resources and benchmarks to RQ1, RQ3, and RQ6?
 
-## Section 5: Model-Centric Approaches
+## Section 6: Model-Centric Approaches
 
 ### Purpose
-Explain how hybrid ASR, E2E ASR, SSL, multilingual transfer, and foundation models changed low-resource ASR.
+Critically compare supervised, self-supervised, multilingual, weakly supervised, and foundation-model approaches.
 
 ### Main Argument
-Foundation models reduce the need to train from scratch, but adaptation remains necessary because of language, domain, dialect, and orthographic mismatch.
+Model-centric progress reduces the need to train from scratch, but performance remains conditioned by language coverage, domain match, adaptation data, decoding choices, and evaluation practice.
 
 ### Evidence Needed
-- SSL foundation papers.
-- Multilingual ASR benchmark papers.
-- Whisper, MMS, OMNIASR, and related evaluations.
-- Low-resource adaptation studies.
+- E2E ASR papers.
+- SSL and multilingual transfer papers.
+- Whisper, MMS, XLS-R, SeamlessM4T, OMNIASR, and newer speech-language model evaluations.
 
 ### Tables/Figures Used
 - Foundation model matrix.
-- Adaptation strategy matrix.
+- Method comparison matrix.
 
 ### Risk
-This section may become a model list instead of a critical synthesis.
+The section may overstate model scaling and understate data and evaluation limits.
 
 ### Quality Check
-Does the section compare methods by assumptions, data needs, limitations, and evaluation practice?
+Does the section compare methods by assumptions, data needs, adaptation requirements, and low-resource failure modes?
 
-## Section 6: Data-Centric Methods
+## Section 7: Data-Centric Strategies
 
 ### Purpose
-Analyze transcript normalization, filtering, augmentation, corpus construction, and data quality control.
+Analyze corpus creation, normalization, filtering, augmentation, validation, metadata, and benchmark design.
 
 ### Main Argument
-Data-centric decisions often determine whether model-centric gains transfer to real low-resource languages.
+Data-centric strategies remain necessary because foundation models inherit and expose problems in transcript quality, language coverage, domain mismatch, and evaluation design.
 
 ### Evidence Needed
 - Corpus construction papers.
 - Transcript normalization studies.
-- Augmentation and filtering studies.
+- Filtering, augmentation, and validation papers.
+- Benchmark-design papers.
 
 ### Tables/Figures Used
-- Challenge-solution matrix.
 - Dataset benchmark matrix.
+- Challenge-solution matrix.
 
 ### Risk
-The section may understate data quality and overstate architecture effects.
+The section may treat data preparation as secondary engineering rather than a central low-resource ASR problem.
 
 ### Quality Check
-Does the section connect data decisions to measurable ASR reliability?
+Does the section directly answer RQ3?
 
-## Section 7: Adaptation Strategies
+## Section 8: Adaptation Strategies
 
 ### Purpose
-Compare fine-tuning, continued pretraining, adapters, LoRA, QLoRA, and prompt-based approaches.
+Compare full fine-tuning, continued pretraining, adapters, LoRA, QLoRA, prompting, transfer learning, and adaptation under compute constraints.
 
 ### Main Argument
-Adaptation choices are tradeoffs among evidence strength, compute cost, data availability, and robustness.
+No adaptation strategy is universally best; effectiveness depends on labeled data, unlabeled audio, language relatedness, domain match, model architecture, compute budget, and evaluation target.
 
 ### Evidence Needed
-- Fine-tuning and parameter-efficient adaptation papers.
+- Fine-tuning and continued-pretraining studies.
+- Parameter-efficient tuning papers.
 - Low-resource adaptation evaluations.
 - Compute and reproducibility reports.
 
 ### Tables/Figures Used
 - Adaptation strategy matrix.
+- Foundation model matrix.
 
 ### Risk
-The section may recommend methods without enough evidence.
+The section may recommend methods without specifying conditions.
 
 ### Quality Check
-Are recommendations conditioned on data, compute, and evaluation setting?
+Does the section directly answer RQ4 and state when each adaptation method is appropriate?
 
-## Section 8: Pseudo-Labeling and Knowledge Distillation
+## Section 9: Pseudo-Labeling and Knowledge Distillation
 
 ### Purpose
-Explain self-training, pseudo-label selection, teacher reliability, and KD for low-resource ASR.
+Assess the reliability of pseudo-labeling and KD for low-resource ASR.
 
 ### Main Argument
-Pseudo-labeling and KD can expand supervision, but their value depends on teacher quality, confidence filtering, disagreement handling, and validation under dialect and domain shift.
+Pseudo-labeling and KD can expand supervision, but their value depends on teacher quality, confidence filtering, disagreement handling, label normalization, and validation under dialect and domain shift.
 
 ### Evidence Needed
 - Self-training papers.
 - Sequence-level KD papers.
 - Multi-teacher KD papers.
-- Pseudo-label confidence and filtering studies.
+- Pseudo-label confidence, filtering, and disagreement studies.
 
 ### Tables/Figures Used
 - Evidence-to-claim matrix.
 - Adaptation strategy matrix.
 
 ### Risk
-The section may treat pseudo-labels as clean labels.
+The section may treat pseudo-labels as clean labels or present KD as automatically beneficial.
 
 ### Quality Check
-Does the section state how pseudo-label noise is detected, filtered, or propagated?
+Does the section directly answer RQ5 and distinguish supervision gains from error propagation?
 
-## Section 9: Evaluation and Reproducibility
+## Section 10: Evaluation, Reproducibility, and Robustness
 
 ### Purpose
-Evaluate WER, CER, dialect-wise evaluation, domain robustness, fairness, compute cost, and reproducibility.
+Critique how low-resource ASR is evaluated and reported.
 
 ### Main Argument
-Low-resource ASR progress cannot be judged reliably without evaluation protocols that expose dialect, domain, orthographic, and robustness variation.
+Low-resource ASR progress cannot be judged reliably without protocols that expose dialect, domain, orthographic, speaker, noise, compute, and reproducibility variation.
 
 ### Evidence Needed
 - Evaluation methodology papers.
 - Dialect and domain benchmark papers.
-- Reproducibility and compute reporting studies.
+- Reproducibility and compute-reporting studies.
+- Robustness testing studies.
 
 ### Tables/Figures Used
 - Research gap matrix.
 - Evidence-to-claim matrix.
 
 ### Risk
-The section may describe metrics without critiquing what they hide.
+The section may describe WER/CER without showing what those metrics hide.
 
 ### Quality Check
-Does the section explain what common metrics miss in low-resource settings?
+Does the section directly support RQ6?
 
-## Section 10: Case Examples from Underrepresented Languages
+## Section 11: Multimodal and LLM-Assisted Low-Resource ASR
 
 ### Purpose
-Use selected languages, including Pashto where useful, to illustrate cross-cutting problems.
+Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, and LLM-assisted correction or rescoring.
 
 ### Main Argument
-Case examples are valuable only when they reveal generalizable low-resource ASR constraints.
+Multimodal and LLM-assisted methods are promising for noisy and underrepresented settings, but they introduce new data, privacy, hallucination, over-correction, and evaluation risks.
 
 ### Evidence Needed
-- Case studies from multiple underrepresented languages.
-- Pashto ASR evidence where verified.
-- Dialect, script, and domain examples.
+- AVSR and visual speech recognition papers.
+- Speech-language model studies.
+- LLM correction and rescoring studies.
+- Multimodal robustness evaluations.
 
 ### Tables/Figures Used
-- Case examples file.
-- Dataset benchmark matrix.
+- Future direction matrix.
+- Research gap matrix.
 
 ### Risk
-The section may drift into thesis summary.
+The section may become speculative or borrow claims from non-low-resource settings.
 
 ### Quality Check
-Does each example support a general argument rather than merely describing one language?
+Does the section separate demonstrated ASR evidence from future-facing interpretation?
 
-## Section 11: Future Directions
+## Section 12: Taxonomy, Comparative Synthesis, and Gap Analysis
+
+### Purpose
+Integrate the review into the locked six-layer taxonomy and evidence-based gap analysis.
+
+### Main Argument
+Low-resource ASR should be understood through interacting resource, language, model, adaptation, supervision, and evaluation layers rather than through model families alone.
+
+### Evidence Needed
+- Completed synthesis matrices.
+- Evidence-to-claim matrix.
+- Verified references for major claims.
+
+### Tables/Figures Used
+- Six-layer taxonomy figure.
+- Method comparison matrix.
+- Dataset benchmark matrix.
+- Foundation model matrix.
+- Adaptation strategy matrix.
+- Research gap matrix.
+
+### Risk
+The section may repeat earlier sections instead of synthesizing them.
+
+### Quality Check
+Does the section show interactions across all locked RQs?
+
+## Section 13: Future Research Agenda
 
 ### Purpose
 Propose a research agenda for reliable low-resource ASR.
 
 ### Main Argument
-The next stage of low-resource ASR should combine better data governance, adaptation, evaluation, multimodal robustness, and cautious LLM-assisted methods.
+Future work should combine data governance, language-aware adaptation, reliable pseudo-labeling, dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, and cautious LLM-assisted methods.
 
 ### Evidence Needed
-- Gap matrix.
-- Recent speech-language model studies.
-- AVSR and multimodal robustness papers.
+- Research gap matrix.
+- Future direction matrix.
+- Recent speech-language model and AVSR studies.
 - Evidence-to-claim matrix.
 
 ### Tables/Figures Used
@@ -252,8 +309,29 @@ The next stage of low-resource ASR should combine better data governance, adapta
 - Future direction matrix.
 
 ### Risk
-The section may become speculative.
+The section may become speculative or too closely aligned with thesis interests.
 
 ### Quality Check
-Are future directions linked to demonstrated gaps and not only personal research interests?
+Is every future direction linked to a demonstrated gap?
+
+## Section 14: Conclusion
+
+### Purpose
+Answer the main review question and restate the field-level contribution.
+
+### Main Argument
+Foundation speech models have reshaped low-resource ASR, but reliable recognition for underrepresented languages still depends on resource quality, language-aware adaptation, pseudo-label reliability, fair evaluation, reproducibility, and robustness under noisy or multimodal conditions.
+
+### Evidence Needed
+- Final evidence-to-claim matrix.
+- Completed synthesis and gap matrices.
+
+### Tables/Figures Used
+- None required unless final summary figure is added.
+
+### Risk
+The conclusion may overstate certainty.
+
+### Quality Check
+Does the conclusion synthesize rather than introduce new claims?
 

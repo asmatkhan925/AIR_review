@@ -7,9 +7,10 @@ This roadmap tracks progress from literature search to an Artificial Intelligenc
 | Milestone | Output | Status |
 |---|---|---|
 | Confirm working title | `README.md`, `review_blueprint.txt` | In progress |
-| Confirm review questions | `01_scope_and_planning/research_questions.md` | In progress |
+| Confirm review questions | `01_scope_and_planning/research_questions.md` | Locked v1.0 |
 | Confirm inclusion and exclusion criteria | `01_scope_and_planning/inclusion_exclusion_criteria.md` | In progress |
 | Set anti-thesis-drift rule | `11_quality_control/anti_thesis_drift_checklist.md` | Added |
+| Align scope files with locked RQs and four contributions | `AGENTS.md`, `terminology_glossary.txt`, `contribution_statement.md`, `section_argument_map.md` | Added |
 
 ## Phase 2: Literature Search
 
@@ -41,6 +42,10 @@ This roadmap tracks progress from literature search to an Artificial Intelligenc
 | Draft adaptation and pseudo-labeling sections | `07_draft_sections/` | Not started |
 | Draft evaluation and future directions | `07_draft_sections/` | Not started |
 
+### Draft-Section Alignment Note
+
+Older draft files in `07_draft_sections/` remain useful source material, but they are not the final AIR paper structure. Method-by-method files such as end-to-end ASR, self-supervised learning, multilingual transfer, foundation models, knowledge distillation, multimodal ASR, and Pashto case-study notes should be mined and reorganized under the locked 14-section outline in `06_review_outline/master_outline.md`. Pashto material should remain illustrative, not a focused case-study contribution.
+
 ## Phase 5: Quality Gates
 
 | Milestone | Output | Status |
@@ -58,4 +63,3 @@ This roadmap tracks progress from literature search to an Artificial Intelligenc
 | Final references checked | `03_references/citation_verification_log.csv` | Not started |
 | Tables and figures finalized | `08_tables/`, `09_figures/` | Not started |
 | AIR submission checklist complete | `11_quality_control/air_submission_checklist.md` | Not started |
-

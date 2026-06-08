@@ -43,4 +43,4 @@ Text preprocessing that reduces spelling, script, punctuation, and symbol variat
 
 Pashto ASR
 ----------
-Automatic speech recognition for Pashto, used in this review as a focused case study of low-resource ASR challenges.
+Automatic speech recognition for Pashto; an illustrative example used selectively to explain broader low-resource ASR challenges such as dialect variation, transcript normalization, pseudo-label reliability, and multimodal robustness.
