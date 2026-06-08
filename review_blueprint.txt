@@ -1,5 +1,11 @@
 Review Blueprint
 
+Canonical Source
+The locked review questions are defined in:
+01_scope_and_planning/research_questions.md
+
+Other files must follow that file and should not redefine the intellectual spine of the review.
+
 Working Title
 Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era: Resources, Adaptation, Evaluation, and Multimodal Robustness
 
@@ -9,59 +15,55 @@ Artificial Intelligence Review
 Review Type
 Systematic mapping review + critical taxonomy
 
-Main Objective
-To provide a field-level synthesis of low-resource automatic speech recognition in the foundation-model era, with emphasis on resources, model adaptation, data-centric methods, pseudo-label reliability, evaluation practice, and multimodal robustness.
+Main Review Question
+How have foundation speech models changed low-resource ASR, and what resource, adaptation, evaluation, and robustness challenges still prevent reliable recognition for underrepresented languages?
 
-Core Argument
-Foundation models have changed the starting point of low-resource ASR, but they have not solved low-resource ASR. Persistent bottlenecks include data quality, language and dialect mismatch, orthographic normalization, adaptation strategy, pseudo-label reliability, fair evaluation, reproducibility, compute cost, and robustness under noisy or multimodal conditions.
+Main Objective
+To provide a field-level synthesis of low-resource automatic speech recognition in the foundation-model era, organized around the six locked review questions in 01_scope_and_planning/research_questions.md.
+
+Backbone Statement
+This review examines how foundation speech models have reshaped low-resource ASR, while arguing that reliable recognition for underrepresented languages still depends on resource quality, language-aware adaptation, pseudo-label reliability, fair evaluation, reproducibility, and robustness under noisy or multimodal conditions.
 
 Positioning
-This paper should not be framed as a Pashto review or as a thesis summary. Pashto may be used as a selective illustrative example of broader low-resource ASR problems such as script normalization, dialect variation, telephony noise, pseudo-label reliability, and multimodal data construction.
+This paper is not a Pashto review and is not a thesis summary. Pashto may be used selectively as an illustrative example of broader low-resource ASR issues such as normalization, dialect imbalance, pseudo-label quality, noisy speech, and evaluation.
 
-Primary Audience
-Researchers working on speech recognition, speech foundation models, low-resource NLP/speech, multilingual transfer, speech technology for underrepresented languages, multimodal learning, and trustworthy AI evaluation.
+Locked Review Questions
+RQ1. What does "low-resource" mean in ASR beyond limited labeled hours?
+RQ2. How have self-supervised, weakly supervised, multilingual, and foundation speech models changed low-resource ASR?
+RQ3. Which data-centric strategies remain necessary in the foundation-model era?
+RQ4. Which adaptation strategies are most effective for low-resource ASR, and under what conditions?
+RQ5. How reliable are pseudo-labeling and knowledge distillation for low-resource ASR?
+RQ6. How should low-resource ASR be evaluated and extended toward robust, multimodal, and LLM-assisted systems?
 
-Review Scope
-The review covers:
-1. Evolution from hybrid ASR to end-to-end ASR and foundation speech models.
-2. Definitions and dimensions of low-resource ASR beyond labeled hours.
-3. Datasets and benchmarks for low-resource and multilingual ASR.
-4. Self-supervised and multilingual representation learning.
-5. Weakly supervised and foundation ASR models.
-6. Adaptation methods, including fine-tuning, continued pretraining, adapters, LoRA/QLoRA, prompt-based adaptation, and transfer learning.
-7. Data-centric methods, including transcript normalization, filtering, augmentation, pseudo-labeling, and knowledge distillation.
-8. Evaluation practice, including WER, CER, dialect-wise evaluation, domain-wise evaluation, noise robustness, fairness, reproducibility, and deployment constraints.
-9. Multimodal and future directions, including AVSR, lip-reading, visual speech recognition, speech-language models, LLM-assisted correction, and LLM rescoring.
+Contribution Structure
+1. A foundation-model-era taxonomy of low-resource ASR, organizing the field by resource condition, language condition, model family, adaptation method, supervision strategy, and evaluation setting.
+2. A synthesis of data-centric and model-centric solutions, showing how corpus quality, normalization, filtering, augmentation, SSL, multilingual transfer, and foundation models interact.
+3. A critical review of adaptation, pseudo-labeling, and knowledge distillation, focusing on parameter-efficient tuning, continued pretraining, teacher reliability, confidence filtering, and multi-teacher disagreement.
+4. A future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
 
-Expected Contributions
-1. A modern taxonomy of low-resource ASR in the foundation-model era.
-2. A synthesis of data-centric and model-centric solutions.
-3. A critical analysis of adaptation, pseudo-labeling, and knowledge distillation.
-4. A discussion of evaluation gaps, including dialect, domain, robustness, fairness, reproducibility, and compute cost.
-5. A future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR.
-
-Review Questions
-RQ1. What does “low-resource” mean in ASR beyond limited labeled speech?
-RQ2. How have foundation speech models changed the starting point for low-resource ASR?
-RQ3. Which data-centric and model-centric strategies are used to adapt ASR systems to low-resource languages?
-RQ4. How are pseudo-labeling and knowledge distillation used in low-resource ASR, and what reliability problems remain?
-RQ5. How should low-resource ASR systems be evaluated beyond global WER/CER?
-RQ6. What future role will multimodal and LLM-assisted approaches play in robust low-resource ASR?
+Six-Layer Taxonomy
+1. Resource layer: labeled, unlabeled, weakly labeled, pseudo-labeled, multilingual, multimodal.
+2. Language layer: dialect variation, orthographic inconsistency, code-switching, morphology, script complexity.
+3. Model layer: hybrid ASR, E2E ASR, SSL models, multilingual ASR, weakly supervised ASR, speech foundation models.
+4. Adaptation layer: fine-tuning, continued pretraining, adapters, LoRA/QLoRA, prompting, transfer learning.
+5. Supervision layer: supervised learning, SSL, self-training, pseudo-labeling, single-teacher KD, multi-teacher KD.
+6. Evaluation layer: WER/CER, dialect-wise, domain-wise, noise robustness, reproducibility, compute/deployment cost.
 
 Proposed Manuscript Structure
 1. Introduction
 2. Review methodology and search protocol
-3. From hybrid ASR to foundation speech models
-4. What makes ASR low-resource?
+3. What makes ASR low-resource?
+4. From hybrid ASR to foundation speech models
 5. Resources and benchmarks
 6. Model-centric approaches
-7. Adaptation strategies
-8. Data-centric approaches
-9. Evaluation and reproducibility
-10. Multimodal and LLM-assisted low-resource ASR
-11. Taxonomy, comparative synthesis, and gap analysis
-12. Future research agenda
-13. Conclusion
+7. Data-centric strategies
+8. Adaptation strategies
+9. Pseudo-labeling and knowledge distillation
+10. Evaluation, reproducibility, and robustness
+11. Multimodal and LLM-assisted low-resource ASR
+12. Taxonomy, comparative synthesis, and gap analysis
+13. Future research agenda
+14. Conclusion
 
 Style Requirements
-The review should be analytical, critical, and constructive. It should avoid exaggerated claims, avoid unsupported performance comparisons, and distinguish evidence from interpretation. It should use polished academic English suitable for a Q1 review journal.
+The review should be analytical, critical, and constructive. It should avoid exaggerated claims, avoid unsupported performance comparisons, distinguish evidence from interpretation, and use polished academic English suitable for a Q1 review journal.

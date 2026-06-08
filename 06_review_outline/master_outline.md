@@ -1,359 +1,278 @@
 # Master Outline
 
+This outline follows the locked review questions in `01_scope_and_planning/research_questions.md`.
+
 ## Working Title
 
 **Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era: Resources, Adaptation, Evaluation, and Multimodal Robustness**
 
+## RQ Map
+
+| Section | Title | Primary RQs |
+|---|---|---|
+| 1 | Introduction | Main RQ; RQ1-RQ6 |
+| 2 | Review methodology and search protocol | Main RQ; RQ1-RQ6 |
+| 3 | What makes ASR low-resource? | RQ1 |
+| 4 | From hybrid ASR to foundation speech models | RQ2 |
+| 5 | Resources and benchmarks | RQ1; RQ3; RQ6 |
+| 6 | Model-centric approaches | RQ2; RQ4 |
+| 7 | Data-centric strategies | RQ3 |
+| 8 | Adaptation strategies | RQ4 |
+| 9 | Pseudo-labeling and knowledge distillation | RQ5 |
+| 10 | Evaluation, reproducibility, and robustness | RQ6 |
+| 11 | Multimodal and LLM-assisted low-resource ASR | RQ6 |
+| 12 | Taxonomy, comparative synthesis, and gap analysis | Main RQ; RQ1-RQ6 |
+| 13 | Future research agenda | Main RQ; RQ3-RQ6 |
+| 14 | Conclusion | Main RQ; RQ1-RQ6 |
+
 ## 1. Introduction
 
-### 1.1 Motivation
-- ASR progress has been uneven across languages.
-- Foundation models have improved starting points but have not solved low-resource ASR.
-- Low-resource ASR remains constrained by data quality, language mismatch, dialect variation, normalization, pseudo-label reliability, evaluation, and robustness.
+**Maps to:** Main RQ; RQ1-RQ6
 
-### 1.2 Scope and review identity
-- Field-level review of low-resource ASR in the foundation-model era.
-- Not limited to one language.
-- Pashto and similar languages may appear as illustrative cases only.
+### Purpose
+Frame the review around the central tension: foundation speech models have changed low-resource ASR, but reliable recognition for underrepresented languages remains unsolved.
 
-### 1.3 Contributions
-- Taxonomy.
-- Data-centric/model-centric synthesis.
-- Adaptation and distillation analysis.
-- Evaluation critique.
-- Future agenda.
+### Key Points
+- ASR progress remains uneven across languages.
+- Foundation models improve starting points but do not remove resource, language, adaptation, evaluation, and robustness bottlenecks.
+- The review is field-level, not Pashto-centered.
+- Pashto and similar languages may appear only as illustrative cases.
+
+### Contribution Link
+- Introduce the four contribution claims.
+- Introduce the six-layer taxonomy.
 
 ## 2. Review Methodology and Search Protocol
 
-### 2.1 Review type
-- Systematic mapping review + critical taxonomy.
+**Maps to:** Main RQ; RQ1-RQ6
 
-### 2.2 Search sources
-- Google Scholar
-- Semantic Scholar
-- IEEE Xplore
-- ACM Digital Library
-- ISCA Archive
-- ACL Anthology
-- arXiv
-- SpringerLink
-- ScienceDirect
-- Elsevier
-- major ASR conference proceedings
+### Purpose
+Define the review as a systematic mapping review plus critical taxonomy.
 
-### 2.3 Search queries
-- Low-resource ASR
-- Multilingual ASR
-- Speech foundation models
-- Pseudo-labeling ASR
-- Knowledge distillation ASR
-- Dialect ASR
-- AVSR low-resource
-- LLM ASR correction/rescoring
+### Key Points
+- Search sources: Google Scholar, Semantic Scholar, IEEE Xplore, ACM Digital Library, ISCA Archive, ACL Anthology, arXiv, SpringerLink, ScienceDirect, and major ASR proceedings.
+- Search topics: low-resource ASR, multilingual ASR, speech foundation models, pseudo-labeling, knowledge distillation, dialect ASR, AVSR, and LLM-assisted ASR.
+- Data extraction: paper metadata, language coverage, datasets, methods, evaluation setup, limitations, and relevance to the locked RQs.
+- Citation reliability: every citation used in the manuscript must be verified.
 
-### 2.4 Inclusion/exclusion criteria
-- Summarize criteria from the criteria file.
+### Outputs
+- Search log.
+- Citation verification log.
+- Inclusion/exclusion record.
+- Evidence-to-claim matrix.
 
-### 2.5 Data extraction
-- Paper metadata.
-- Language coverage.
-- Datasets.
-- Methods.
-- Evaluation setup.
-- Limitations.
-- Relevance to low-resource ASR.
+## 3. What Makes ASR Low-Resource?
 
-## 3. From Hybrid ASR to Foundation Speech Models
+**Maps to:** RQ1
 
-### 3.1 Hybrid ASR systems
-- GMM-HMM
-- DNN-HMM
-- lexicons and pronunciation modeling
+### Purpose
+Define low-resource ASR beyond limited labeled hours.
 
-### 3.2 End-to-end ASR
-- CTC
-- attention encoder-decoder
-- RNN-T
-- hybrid CTC-attention
+### Key Points
+- Labeled-data scarcity.
+- Weak validation and small test sets.
+- Dialect, accent, and speaker imbalance.
+- Orthographic inconsistency, script complexity, and normalization.
+- Code-switching and morphology.
+- Noisy, spontaneous, telephony, broadcast, and web speech.
+- Compute, licensing, and deployment constraints.
 
-### 3.3 Self-supervised speech representation learning
-- CPC
-- wav2vec 2.0
-- HuBERT
-- WavLM
+### Synthesis Target
+Show that "low-resource" is a multidimensional condition, not only a dataset-size label.
 
-### 3.4 Multilingual and foundation-scale ASR
-- XLS-R
-- Whisper
-- MMS
-- SeamlessM4T
-- OMNIASR
-- speech-language models
+## 4. From Hybrid ASR to Foundation Speech Models
 
-### 3.5 Implications for low-resource languages
-- Better initialization.
-- Less dependence on labeled data.
-- Persistent mismatch and evaluation problems.
+**Maps to:** RQ2
 
-## 4. What Makes ASR Low-Resource?
+### Purpose
+Explain how model families changed the low-resource ASR starting point.
 
-### 4.1 Labeled-data scarcity
-- Limited hours.
-- Weak validation.
-- small speaker coverage.
+### Key Points
+- Hybrid ASR: GMM-HMM, DNN-HMM, lexicons, pronunciation modeling.
+- End-to-end ASR: CTC, attention encoder-decoder, RNN-T, hybrid CTC-attention.
+- SSL models: CPC, wav2vec 2.0, HuBERT, WavLM.
+- Multilingual and foundation models: XLS-R, Whisper, MMS, SeamlessM4T, OMNIASR, and speech-language models.
+- Changed assumptions: less training from scratch, more transfer, more reliance on model coverage and adaptation.
 
-### 4.2 Language and dialect mismatch
-- Dialects.
-- accents.
-- unseen varieties.
-- domain mismatch.
+### Synthesis Target
+Compare model families by data assumptions, transfer mechanisms, language coverage, and remaining mismatch.
 
-### 4.3 Script and orthographic inconsistency
-- Arabic-derived scripts.
-- Indic scripts.
-- non-standard spelling.
-- normalization and label fragmentation.
+## 5. Resources and Benchmarks
 
-### 4.4 Noisy and spontaneous speech
-- telephony.
-- broadcast.
-- web audio.
-- conversational speech.
+**Maps to:** RQ1; RQ3; RQ6
 
-### 4.5 Code-switching and multilinguality
-- mixed language utterances.
-- borrowed words.
-- evaluation complications.
+### Purpose
+Evaluate the datasets and benchmarks that structure low-resource ASR research.
 
-### 4.6 Resource inequity and deployment constraints
-- compute limitations.
-- data access.
-- licensing.
-- community participation.
+### Key Points
+- Multilingual benchmarks: Babel, Common Voice, FLEURS, MLS, VoxPopuli, ML-SUPERB, and others.
+- Language-specific and regional datasets.
+- Metadata, dialect labels, speaker diversity, domain coverage, transcription quality, and licensing.
+- Benchmark limitations: comparability, normalization, small test sets, domain mismatch, and lack of robustness testing.
 
-## 5. Resources and Benchmarks for Low-Resource ASR
-
-### 5.1 Multilingual benchmark datasets
-- Babel
-- Common Voice
-- FLEURS
-- MLS
-- VoxPopuli
-- ML-SUPERB
-- other multilingual benchmarks
-
-### 5.2 Language-specific and regional datasets
-- African languages.
-- South Asian languages.
-- Indigenous languages.
-- Arabic dialects.
-- Central Asian languages.
-- other underrepresented languages.
-
-### 5.3 Dataset quality issues
-- validation.
-- demographic skew.
-- dialect imbalance.
-- transcript inconsistency.
-- licensing.
-- metadata limitations.
-
-### 5.4 Benchmark limitations
-- comparability.
-- domain mismatch.
-- small test sets.
-- normalization differences.
-- lack of robustness testing.
+### Synthesis Target
+Show that benchmark design affects what progress can be claimed.
 
 ## 6. Model-Centric Approaches
 
-### 6.1 Supervised end-to-end ASR
-- CTC and attention-based systems in low-resource contexts.
+**Maps to:** RQ2; RQ4
 
-### 6.2 Self-supervised pretraining
-- target-language pretraining.
-- multilingual pretraining.
-- representation transfer.
+### Purpose
+Compare supervised, self-supervised, multilingual, weakly supervised, and foundation-model approaches.
 
-### 6.3 Multilingual transfer
-- language relatedness.
-- phonetic sharing.
-- multilingual encoders.
-- language-family effects.
+### Key Points
+- Supervised E2E ASR in low-resource conditions.
+- Target-language and multilingual SSL pretraining.
+- Language relatedness and multilingual transfer.
+- Weakly supervised and foundation ASR.
+- Speech-language models and ASR correction/generation risks.
 
-### 6.4 Weakly supervised and foundation ASR
-- large-scale weak supervision.
-- model scaling.
-- multilingual coverage.
-- hallucination and mismatch.
+### Synthesis Target
+Avoid model listing. Compare assumptions, data needs, adaptation requirements, and known low-resource failure modes.
 
-### 6.5 Speech-language models
-- speech encoders with LLM decoders.
-- speech instruction tuning.
-- ASR correction and generation.
+## 7. Data-Centric Strategies
 
-## 7. Adaptation Strategies
+**Maps to:** RQ3
 
-### 7.1 Full fine-tuning
-- benefits and risks.
+### Purpose
+Analyze which data-centric strategies remain necessary even with foundation models.
 
-### 7.2 Continued pretraining
-- in-domain audio.
-- target-language audio.
-- catastrophic forgetting.
+### Key Points
+- Corpus creation and validation.
+- Transcript normalization.
+- Corpus filtering and quality control.
+- Speaker, dialect, and domain balance.
+- Data augmentation and robustness-oriented data design.
+- Benchmark construction.
 
-### 7.3 Parameter-efficient adaptation
-- adapters.
-- LoRA.
-- QLoRA.
-- prefix/prompt tuning.
+### Synthesis Target
+Show how data quality and data design interact with model performance.
 
-### 7.4 Transfer learning design
-- source language choice.
-- relatedness.
-- domain similarity.
-- multilingual balancing.
+## 8. Adaptation Strategies
 
-### 7.5 Adaptation under compute constraints
-- model size.
-- training cost.
-- deployment.
+**Maps to:** RQ4
 
-## 8. Data-Centric Approaches
+### Purpose
+Compare adaptation strategies and specify when each is appropriate.
 
-### 8.1 Transcript normalization
-- label inventory.
-- punctuation.
-- diacritics.
-- script variants.
-- evaluation comparability.
+### Key Points
+- Full fine-tuning.
+- Continued pretraining.
+- Adapters.
+- LoRA and QLoRA.
+- Prompt-based methods.
+- Transfer learning and language-family selection.
+- Adaptation under compute constraints.
 
-### 8.2 Corpus filtering and validation
-- quality control.
-- speaker/dialect balance.
-- automatic filtering.
-- human validation.
+### Synthesis Target
+Condition recommendations on labeled data, unlabeled data, compute cost, model type, language relatedness, domain match, and evaluation setting.
 
-### 8.3 Data augmentation
-- noise.
-- speed perturbation.
-- SpecAugment.
-- codec and channel augmentation.
+## 9. Pseudo-Labeling and Knowledge Distillation
 
-### 8.4 Pseudo-labeling and self-training
-- teacher-generated transcripts.
-- confidence filtering.
-- iterative relabeling.
-- pseudo-label noise.
+**Maps to:** RQ5
 
-### 8.5 Knowledge distillation
-- frame-level KD.
-- sequence-level KD.
-- single-teacher KD.
-- multi-teacher KD.
-- teacher disagreement.
-- agreement-based selection.
+### Purpose
+Assess the reliability of pseudo-labeling and KD for low-resource ASR.
 
-## 9. Evaluation and Reproducibility
+### Key Points
+- Self-training and teacher-generated transcripts.
+- Confidence filtering.
+- Agreement-based selection.
+- Iterative relabeling.
+- Single-teacher and multi-teacher KD.
+- Teacher disagreement and pseudo-label noise.
+- Student-model training and evaluation.
 
-### 9.1 Standard metrics
-- WER.
-- CER.
-- limitations of pooled averages.
+### Synthesis Target
+Explain when pseudo-labeling expands supervision and when it transfers teacher bias or errors.
 
-### 9.2 Dialect-aware evaluation
-- dialect splits.
-- imbalance.
-- minoritized dialects.
+## 10. Evaluation, Reproducibility, and Robustness
 
-### 9.3 Domain-wise and robustness evaluation
-- noise.
-- telephony.
-- broadcast.
-- spontaneous speech.
-- out-of-domain testing.
+**Maps to:** RQ6
 
-### 9.4 Fairness and inclusiveness
-- gender.
-- age.
-- region.
-- accent.
-- community representation.
+### Purpose
+Critique how low-resource ASR is evaluated and reported.
 
-### 9.5 Reproducibility
-- preprocessing disclosure.
-- normalization rules.
-- decoding setup.
-- language model use.
-- compute cost.
-- seed and checkpoint reporting.
+### Key Points
+- WER and CER limitations.
+- Dialect-wise, domain-wise, speaker-wise, and noise-wise evaluation.
+- Code-switching and orthographic normalization effects.
+- Fairness and inclusiveness.
+- Reproducibility: preprocessing, decoding, language model use, compute cost, seeds, checkpoints, and test-set disclosure.
 
-## 10. Multimodal and LLM-Assisted Low-Resource ASR
+### Synthesis Target
+Show that global WER/CER can hide the exact failures that matter for underrepresented languages.
 
-### 10.1 Audio-visual speech recognition
-- audio-visual fusion.
-- visual speech recognition.
-- lip-reading.
-- robustness under noise.
+## 11. Multimodal and LLM-Assisted Low-Resource ASR
 
-### 10.2 Low-resource AVSR challenges
-- scarce video data.
-- face/mouth extraction.
-- synchronization.
-- language coverage.
-- privacy and ethics.
+**Maps to:** RQ6
 
-### 10.3 LLM-assisted ASR
-- correction.
-- rescoring.
-- contextual biasing.
-- hallucination risks.
-- evaluation.
+### Purpose
+Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, and LLM-assisted correction or rescoring.
 
-### 10.4 Multimodal foundation models
-- speech-language models.
-- audio-visual-language models.
-- Q-Former-style compression.
-- modality reliability.
+### Key Points
+- Audio-visual speech recognition.
+- Visual speech recognition and lip-reading.
+- Audio-visual fusion under noise.
+- Low-resource AVSR data challenges.
+- LLM correction, rescoring, and contextual biasing.
+- Hallucination, over-correction, and evaluation risks.
 
-## 11. Taxonomy, Comparative Synthesis, and Gap Analysis
+### Synthesis Target
+Separate demonstrated ASR improvements from speculative multimodal or LLM-assisted claims.
 
-### 11.1 Proposed taxonomy
-- resources.
-- models.
-- adaptation.
-- data-centric methods.
-- evaluation.
-- multimodality.
+## 12. Taxonomy, Comparative Synthesis, and Gap Analysis
 
-### 11.2 Comparative matrices
-- method families.
-- strengths.
-- weaknesses.
-- resource needs.
-- evaluation practices.
+**Maps to:** Main RQ; RQ1-RQ6
 
-### 11.3 Main gaps
-- data quality.
-- normalization.
-- adaptation strategy.
-- pseudo-label reliability.
-- dialect evaluation.
-- reproducibility.
-- multimodal resources.
-- LLM reliability.
+### Purpose
+Integrate the paper into a coherent taxonomy and evidence-based gap analysis.
 
-## 12. Future Research Agenda
+### Six-Layer Taxonomy
+- Resource layer.
+- Language layer.
+- Model layer.
+- Adaptation layer.
+- Supervision layer.
+- Evaluation layer.
 
-### 12.1 Reliable pseudo-labeling
-### 12.2 Dialect- and domain-aware adaptation
-### 12.3 Better benchmark design
-### 12.4 Low-resource AVSR
-### 12.5 LLM-assisted ASR with safeguards
-### 12.6 Compute-aware and deployable ASR
-### 12.7 Community-centered data development
+### Comparative Matrices
+- Method comparison matrix.
+- Dataset benchmark matrix.
+- Foundation model matrix.
+- Adaptation strategy matrix.
+- Evidence-to-claim matrix.
+- Research gap matrix.
 
-## 13. Conclusion
+### Synthesis Target
+Show how resource conditions, language conditions, model choice, adaptation strategy, supervision method, and evaluation practice interact.
 
-- Foundation models have improved low-resource ASR but not solved it.
-- The next generation of work must combine model adaptation with data quality, evaluation rigor, and multimodal robustness.
+## 13. Future Research Agenda
+
+**Maps to:** Main RQ; RQ3-RQ6
+
+### Purpose
+Propose a research agenda for reliable low-resource ASR.
+
+### Directions
+- Reliable pseudo-labeling and teacher validation.
+- Dialect- and domain-aware adaptation.
+- Better benchmark design and metadata.
+- Reproducible and compute-aware evaluation.
+- Low-resource AVSR and multimodal robustness.
+- LLM-assisted ASR with safeguards.
+- Community-centered data development.
+
+### Synthesis Target
+Tie every future direction to an observed evidence gap.
+
+## 14. Conclusion
+
+**Maps to:** Main RQ; RQ1-RQ6
+
+### Purpose
+Answer the main review question concisely.
+
+### Closing Argument
+Foundation speech models have reshaped low-resource ASR, but reliable recognition for underrepresented languages still depends on resource quality, language-aware adaptation, pseudo-label reliability, fair evaluation, reproducibility, and robustness under noisy or multimodal conditions.
+

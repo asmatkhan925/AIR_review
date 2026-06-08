@@ -1,64 +1,40 @@
 # Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era
 
-This repository contains the working materials for a review paper targeted at **Artificial Intelligence Review**.
+This repository contains working materials for a field-level review paper targeted at **Artificial Intelligence Review**.
 
-## Working Title
+## Locked Scope
 
-**Automatic Speech Recognition for Low-Resource Languages in the Foundation-Model Era: Resources, Adaptation, Evaluation, and Multimodal Robustness**
+The canonical review questions are locked in `01_scope_and_planning/research_questions.md`. Other planning, outline, matrix, and manuscript files should follow that file.
 
-## Review Identity
+Main review question:
 
-This project develops a field-level, critical, taxonomy-based review of low-resource automatic speech recognition (ASR) in the foundation-model era. The review is not a thesis summary and is not limited to Pashto. Pashto ASR may be used selectively as an illustrative low-resource case, especially for issues such as dialect variation, Arabic-derived script normalization, noisy speech, pseudo-label reliability, and multimodal extension.
+**How have foundation speech models changed low-resource ASR, and what resource, adaptation, evaluation, and robustness challenges still prevent reliable recognition for underrepresented languages?**
 
-## Core Argument
+## Locked Review Questions
 
-Foundation models have changed the starting point of low-resource ASR, but they have not solved low-resource ASR. Remaining bottlenecks include data quality, language and dialect mismatch, orthographic normalization, adaptation strategy, pseudo-label reliability, fair evaluation, reproducibility, compute cost, and robustness under noisy or multimodal conditions.
+- **RQ1:** What does "low-resource" mean in ASR beyond limited labeled hours?
+- **RQ2:** How have self-supervised, weakly supervised, multilingual, and foundation speech models changed low-resource ASR?
+- **RQ3:** Which data-centric strategies remain necessary in the foundation-model era?
+- **RQ4:** Which adaptation strategies are most effective for low-resource ASR, and under what conditions?
+- **RQ5:** How reliable are pseudo-labeling and knowledge distillation for low-resource ASR?
+- **RQ6:** How should low-resource ASR be evaluated and extended toward robust, multimodal, and LLM-assisted systems?
 
-## Review Type
+## Positioning
 
-**Systematic mapping review + critical taxonomy**
-
-The review aims to synthesize recent work, classify methods, compare data-centric and model-centric solutions, identify research gaps, and propose a future research agenda for reliable low-resource ASR.
-
-## Main Contribution Claims
-
-1. A modern taxonomy of low-resource ASR in the foundation-model era.
-2. A synthesis of data-centric and model-centric solutions.
-3. A critical analysis of adaptation, pseudo-labeling, and knowledge distillation.
-4. A discussion of evaluation gaps, including dialect, domain, robustness, fairness, and reproducibility.
-5. A future research agenda for multimodal, LLM-assisted, and reliable low-resource ASR.
-
-## Repository Workflow
-
-1. Define scope, research questions, inclusion/exclusion criteria, and search strategy.
-2. Search and screen papers from major databases and venues.
-3. Extract paper-level metadata into structured matrices.
-4. Build taxonomy and comparative synthesis tables.
-5. Draft section-by-section in `07_draft_sections/`.
-6. Integrate mature sections into `12_manuscript/`.
-7. Run quality-control checks before submission.
+The review is not a Pashto-centered thesis summary. Pashto may be used only as an illustrative case for broader low-resource ASR problems such as normalization, dialect imbalance, pseudo-label quality, noisy speech, and evaluation.
 
 ## Main Folders
 
-- `01_scope_and_planning/`: scope, research questions, contribution statement, inclusion/exclusion criteria.
-- `02_literature_search/`: search queries, search logs, screening documentation.
-- `03_references/`: BibTeX and citation files.
-- `04_paper_notes/`: individual paper notes.
-- `05_synthesis_matrices/`: comparative matrices and gap tables.
-- `06_review_outline/`: master outline and section plans.
+- `00_project_management/`: locked decisions, decision logs, weekly plans, and roadmap.
+- `01_scope_and_planning/`: canonical scope, research questions, contribution statement, and inclusion/exclusion criteria.
+- `02_literature_search/`: search queries, search logs, and screening documentation.
+- `03_references/`: BibTeX files and citation verification.
+- `04_paper_notes/`: structured notes for individual papers.
+- `05_synthesis_matrices/`: evidence, method, dataset, model, adaptation, and gap matrices.
+- `06_review_outline/`: master outline, argument map, and storyline.
 - `07_draft_sections/`: working draft sections.
 - `08_tables/`: final manuscript tables.
 - `09_figures/`: taxonomy figures, timelines, and conceptual diagrams.
-- `10_case_study_pashto/`: optional background material; Pashto should remain illustrative, not central.
-- `11_quality_control/`: checklist, reviewer-positioning notes, reproducibility checks.
+- `10_case_study_pashto/`: optional illustrative case material.
+- `11_quality_control/`: anti-drift checks, claim checks, reviewer objections, and manuscript gates.
 - `12_manuscript/`: integrated manuscript files and submission package.
-
-## Writing Principles
-
-- Keep the review broad and field-level.
-- Prioritize work from 2019 onward, especially 2022–2026.
-- Include older foundational studies only when necessary.
-- Prefer taxonomy, comparative synthesis, critical analysis, and future directions over paper-by-paper summaries.
-- Separate established evidence from interpretation.
-- Use Pashto only as an illustrative example, not as the main scope.
-- Avoid inflated claims and unsupported statements.
