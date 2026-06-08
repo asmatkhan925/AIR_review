@@ -52,9 +52,9 @@ TODO: Reorganize relevant material from `07_draft_sections/07_knowledge_distilla
 
 TODO: Draft from evaluation evidence, reproducibility records, and gap matrices.
 
-## 11. Multimodal and LLM-Assisted Low-Resource ASR
+## 11. Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
 
-TODO: Reorganize relevant material from `07_draft_sections/09_multimodal_and_avsr.md` and speech-language model notes.
+TODO: Reorganize relevant material from `07_draft_sections/09_multimodal_and_avsr.md`, `07_draft_sections/08_foundation_models_and_speech_llms.md`, and LLM-assisted ASR notes. Separate speech-LLM architectures from post-ASR LLM correction, rescoring, contextual biasing, and normalization. Explicitly evaluate hallucination, over-correction, benchmark leakage, cost, and language bias.
 
 ## 12. Taxonomy, Comparative Synthesis, and Gap Analysis
 
@@ -67,4 +67,3 @@ TODO: Integrate future-direction matrix and evidence-grounded gaps.
 ## 14. Conclusion
 
 TODO: Answer the locked main review question without introducing new claims.
-

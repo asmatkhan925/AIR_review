@@ -38,6 +38,7 @@ This question covers teacher errors, confidence filtering, multi-teacher disagre
 ### RQ6. How should low-resource ASR be evaluated and extended toward robust, multimodal, and LLM-assisted systems?
 
 This question covers WER/CER limitations, dialect-wise evaluation, domain-wise evaluation, noise robustness, reproducibility, compute/deployment constraints, AVSR, LLM correction, LLM rescoring, and multimodal robustness.
+This includes both post-ASR LLM use, such as correction, rescoring, contextual biasing, and post-ASR normalization, and emerging speech-LLM systems that integrate speech encoders with large language models.
 
 ## Contribution Logic
 
@@ -46,7 +47,7 @@ The locked questions support four contribution claims:
 1. A foundation-model-era taxonomy of low-resource ASR, organized by resource condition, language condition, model family, adaptation method, supervision strategy, and evaluation setting.
 2. A synthesis of data-centric and model-centric solutions, showing how corpus quality, normalization, filtering, augmentation, SSL, multilingual transfer, and foundation models interact.
 3. A critical review of adaptation, pseudo-labeling, and knowledge distillation, focusing on parameter-efficient tuning, continued pretraining, teacher reliability, confidence filtering, and multi-teacher disagreement.
-4. A future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
+4. A future research agenda for reliable, multimodal, and LLM-assisted low-resource ASR, covering dialect-aware evaluation, reproducible benchmarking, compute-efficient adaptation, multimodal and audio-visual robustness, and cautious LLM-assisted correction, rescoring, contextual biasing, and post-ASR normalization.
 
 ## Six-Layer Taxonomy
 
@@ -54,12 +55,11 @@ The locked questions support four contribution claims:
 |---|---|
 | Resource layer | Labeled, unlabeled, weakly labeled, pseudo-labeled, multilingual, multimodal |
 | Language layer | Dialect variation, orthographic inconsistency, code-switching, morphology, script complexity |
-| Model layer | Hybrid ASR, E2E ASR, SSL models, multilingual ASR, weakly supervised ASR, speech foundation models |
+| Model layer | Hybrid ASR, E2E ASR, SSL models, multilingual ASR, weakly supervised ASR, speech foundation models, speech-LLM systems |
 | Adaptation layer | Fine-tuning, continued pretraining, adapters, LoRA/QLoRA, prompting, transfer learning |
 | Supervision layer | Supervised learning, SSL, self-training, pseudo-labeling, single-teacher KD, multi-teacher KD |
-| Evaluation layer | WER/CER, dialect-wise, domain-wise, noise robustness, reproducibility, compute/deployment cost |
+| Evaluation layer | WER/CER, dialect-wise, domain-wise, noise robustness, reproducibility, compute/deployment cost, hallucination and over-correction checks for LLM-assisted ASR |
 
 ## Backbone Statement
 
 This review examines how foundation speech models have reshaped low-resource ASR, while arguing that reliable recognition for underrepresented languages still depends on resource quality, language-aware adaptation, pseudo-label reliability, fair evaluation, reproducibility, and robustness under noisy or multimodal conditions.
-

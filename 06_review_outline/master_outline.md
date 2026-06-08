@@ -20,7 +20,7 @@ This outline follows the locked review questions in `01_scope_and_planning/resea
 | 8 | Adaptation strategies | RQ4 |
 | 9 | Pseudo-labeling and knowledge distillation | RQ5 |
 | 10 | Evaluation, reproducibility, and robustness | RQ6 |
-| 11 | Multimodal and LLM-assisted low-resource ASR | RQ6 |
+| 11 | Multimodal, Speech-LLM, and LLM-assisted low-resource ASR | RQ6 |
 | 12 | Taxonomy, comparative synthesis, and gap analysis | Main RQ; RQ1-RQ6 |
 | 13 | Future research agenda | Main RQ; RQ3-RQ6 |
 | 14 | Conclusion | Main RQ; RQ1-RQ6 |
@@ -203,20 +203,44 @@ Critique how low-resource ASR is evaluated and reported.
 ### Synthesis Target
 Show that global WER/CER can hide the exact failures that matter for underrepresented languages.
 
-## 11. Multimodal and LLM-Assisted Low-Resource ASR
+## 11. Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
 
 **Maps to:** RQ6
 
 ### Purpose
-Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, and LLM-assisted correction or rescoring.
+Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, speech-LLM architectures, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
 
 ### Key Points
+### 11.1 Why audio-only ASR remains fragile in low-resource settings
+- Noise, channel mismatch, dialect variation, weak language modeling, and limited metadata.
+
+### 11.2 Audio-visual ASR and multimodal robustness
 - Audio-visual speech recognition.
 - Visual speech recognition and lip-reading.
 - Audio-visual fusion under noise.
 - Low-resource AVSR data challenges.
-- LLM correction, rescoring, and contextual biasing.
-- Hallucination, over-correction, and evaluation risks.
+
+### 11.3 Speech-language models and speech-to-LLM architectures
+- Speech encoders connected to LLMs.
+- Speech instruction tuning.
+- Multitask speech recognition and understanding.
+- Low-resource language coverage and adaptation constraints.
+
+### 11.4 LLM-assisted ASR correction, rescoring, and contextual biasing
+- Post-ASR correction.
+- N-best or lattice rescoring.
+- Contextual biasing.
+- Post-ASR normalization.
+
+### 11.5 Risks: hallucination, over-correction, benchmark leakage, cost, and language bias
+- Hallucinated or over-normalized outputs.
+- Benchmark leakage and data contamination.
+- Compute and deployment cost.
+- Bias toward high-resource language norms.
+
+### 11.6 What is established and what remains speculative
+- Separate demonstrated ASR improvements from future-facing claims.
+- Require evaluation beyond global WER/CER.
 
 ### Synthesis Target
 Separate demonstrated ASR improvements from speculative multimodal or LLM-assisted claims.
@@ -275,4 +299,3 @@ Answer the main review question concisely.
 
 ### Closing Argument
 Foundation speech models have reshaped low-resource ASR, but reliable recognition for underrepresented languages still depends on resource quality, language-aware adaptation, pseudo-label reliability, fair evaluation, reproducibility, and robustness under noisy or multimodal conditions.
-

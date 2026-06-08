@@ -46,7 +46,7 @@ The review is not limited to one language. Individual languages, including Pasht
 
 3. **A critical review of adaptation, pseudo-labeling, and knowledge distillation**, focusing on parameter-efficient tuning, continued pretraining, teacher reliability, confidence filtering, and multi-teacher disagreement.
 
-4. **A future research agenda for reliable low-resource ASR**, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
+4. **A future research agenda for reliable, multimodal, and LLM-assisted low-resource ASR**, covering dialect-aware evaluation, reproducible benchmarking, compute-efficient adaptation, multimodal and audio-visual robustness, and cautious LLM-assisted correction, rescoring, contextual biasing, and post-ASR normalization.
 
 ## Organizing Taxonomy
 
@@ -54,12 +54,11 @@ The review will organize low-resource ASR along six layers:
 
 1. **Resource layer:** labeled, unlabeled, weakly labeled, pseudo-labeled, multilingual, and multimodal data.
 2. **Language layer:** dialect variation, orthographic inconsistency, code-switching, morphology, and script complexity.
-3. **Model layer:** hybrid ASR, end-to-end ASR, self-supervised models, multilingual ASR, weakly supervised ASR, and speech foundation models.
+3. **Model layer:** hybrid ASR, end-to-end ASR, self-supervised models, multilingual ASR, weakly supervised ASR, speech foundation models, and speech-LLM systems.
 4. **Adaptation layer:** fine-tuning, continued pretraining, adapters, LoRA/QLoRA, prompting, and transfer learning.
 5. **Supervision layer:** supervised learning, self-supervised learning, self-training, pseudo-labeling, single-teacher knowledge distillation, and multi-teacher knowledge distillation.
-6. **Evaluation layer:** WER/CER, dialect-wise evaluation, domain-wise evaluation, noise robustness, reproducibility, and compute/deployment cost.
+6. **Evaluation layer:** WER/CER, dialect-wise evaluation, domain-wise evaluation, noise robustness, reproducibility, compute/deployment cost, and hallucination or over-correction checks for LLM-assisted ASR.
 
 ## Target Contribution to the Field
 
 The review aims to clarify why low-resource ASR remains a difficult and important research problem despite recent progress in foundation speech models. Its main value is not to summarize papers one by one, but to provide a critical taxonomy, compare methodological assumptions, identify evaluation weaknesses, and define a future research agenda for reliable, inclusive, and robust ASR for underrepresented languages.
-

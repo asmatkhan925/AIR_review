@@ -57,7 +57,7 @@ Case examples can appear as boxed inserts in:
 - Section 4: What makes ASR low-resource?
 - Section 8: Data-centric approaches
 - Section 9: Evaluation and reproducibility
-- Section 10: Multimodal and LLM-assisted low-resource ASR
+- Section 11: Multimodal, Speech-LLM, and LLM-assisted low-resource ASR
 
 ## Template for Each Case Box
 

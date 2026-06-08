@@ -23,6 +23,8 @@ Main review question:
 
 The review is not a Pashto-centered thesis summary. Pashto may be used only as an illustrative case for broader low-resource ASR problems such as normalization, dialect imbalance, pseudo-label quality, noisy speech, and evaluation.
 
+LLMs are treated as a visible future-facing strand within the low-resource ASR review, not as the central topic. Relevant LLM roles include ASR error correction, N-best or lattice rescoring, contextual biasing, post-ASR normalization, and emerging speech-LLM systems, with explicit attention to hallucination, over-correction, benchmark leakage, language bias, and compute cost.
+
 ## Main Folders
 
 - `00_project_management/`: locked decisions, decision logs, weekly plans, and roadmap.

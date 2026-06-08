@@ -3,6 +3,7 @@ Quality-aware data curation,Noisy labels and inconsistent transcripts limit prog
 Dialect-aware ASR,Dialect variation harms fairness and robustness,TBD,Improved inclusion and deployment validity,TBD
 Multimodal low-resource benchmarks,Audio-only data may be insufficient in noisy settings,TBD,Better robustness analysis,TBD
 Efficient adaptation,Large models are costly for low-resource communities,TBD,Accessible deployment,TBD
-Speech LLMs for low-resource languages,LLMs may improve decoding and interaction,TBD,Improved language modeling and usability,TBD
+Speech LLMs for low-resource languages,Speech-LLM systems may improve decoding interaction and multitask speech-text modeling,TBD,Improved language modeling contextual use and usability,TBD
+LLM-assisted ASR safeguards,LLM correction rescoring contextual biasing and post-ASR normalization may introduce hallucination over-correction benchmark leakage cost and language bias,TBD,More reliable LLM-assisted low-resource ASR with evaluation beyond WER,TBD
 Community-driven data development,Local data ownership and relevance matter,TBD,Sustainable resource growth,TBD
 Robust evaluation protocols,WER alone may hide normalization and fairness issues,TBD,More trustworthy comparisons,TBD

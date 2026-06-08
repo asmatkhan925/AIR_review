@@ -239,19 +239,20 @@ The section may describe WER/CER without showing what those metrics hide.
 ### Quality Check
 Does the section directly support RQ6?
 
-## Section 11: Multimodal and LLM-Assisted Low-Resource ASR
+## Section 11: Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
 
 ### Purpose
-Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, and LLM-assisted correction or rescoring.
+Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, speech-LLM architectures, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
 
 ### Main Argument
-Multimodal and LLM-assisted methods are promising for noisy and underrepresented settings, but they introduce new data, privacy, hallucination, over-correction, and evaluation risks.
+Multimodal, speech-LLM, and LLM-assisted methods are promising for noisy and underrepresented settings, but they introduce new data, privacy, hallucination, over-correction, benchmark leakage, language bias, cost, and evaluation risks.
 
 ### Evidence Needed
 - AVSR and visual speech recognition papers.
 - Speech-language model studies.
 - LLM correction and rescoring studies.
 - Multimodal robustness evaluations.
+- Studies on hallucination, over-correction, data contamination, and language bias in LLM-assisted ASR.
 
 ### Tables/Figures Used
 - Future direction matrix.
@@ -261,7 +262,7 @@ Multimodal and LLM-assisted methods are promising for noisy and underrepresented
 The section may become speculative or borrow claims from non-low-resource settings.
 
 ### Quality Check
-Does the section separate demonstrated ASR evidence from future-facing interpretation?
+Does the section separate speech-LLM architectures from post-ASR LLM correction/rescoring, and distinguish demonstrated ASR evidence from future-facing interpretation?
 
 ## Section 12: Taxonomy, Comparative Synthesis, and Gap Analysis
 
@@ -334,4 +335,3 @@ The conclusion may overstate certainty.
 
 ### Quality Check
 Does the conclusion synthesize rather than introduce new claims?
-

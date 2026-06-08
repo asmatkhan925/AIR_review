@@ -12,8 +12,8 @@ This file maps Markdown draft sources to LaTeX manuscript sections.
 | `07_draft_sections/05_self_supervised_learning.md` | `\section{Self-Supervised Learning}` |
 | `07_draft_sections/06_multilingual_transfer.md` | `\section{Multilingual and Cross-Lingual Transfer}` |
 | `07_draft_sections/07_knowledge_distillation.md` | `\section{Knowledge Distillation and Pseudo-Labeling}` |
-| `07_draft_sections/08_foundation_models_and_speech_llms.md` | `\section{Foundation Models and Speech LLMs}` |
-| `07_draft_sections/09_multimodal_and_avsr.md` | `\section{Multimodal ASR and AVSR}` |
+| `07_draft_sections/08_foundation_models_and_speech_llms.md` | Source material for `\section{Model-Centric Approaches}` and `\section{Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR}` |
+| `07_draft_sections/09_multimodal_and_avsr.md` | Source material for `\section{Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR}` |
 | `07_draft_sections/10_pashto_case_study.md` | `\section{Pashto ASR as a Focused Case Study}` |
 | `07_draft_sections/11_comparative_analysis.md` | `\section{Comparative Analysis}` |
 | `07_draft_sections/12_research_gaps.md` | `\section{Research Gaps}` |

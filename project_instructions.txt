@@ -37,15 +37,15 @@ Contribution structure:
 1. A foundation-model-era taxonomy of low-resource ASR, organizing the field by resource condition, language condition, model family, adaptation method, supervision strategy, and evaluation setting.
 2. A synthesis of data-centric and model-centric solutions, showing how corpus quality, normalization, filtering, augmentation, SSL, multilingual transfer, and foundation models interact.
 3. A critical review of adaptation, pseudo-labeling, and knowledge distillation, focusing on parameter-efficient tuning, continued pretraining, teacher reliability, confidence filtering, and multi-teacher disagreement.
-4. A future research agenda for reliable low-resource ASR, covering dialect-aware evaluation, reproducibility, compute efficiency, multimodal robustness, AVSR, and LLM-assisted correction or rescoring.
+4. A future research agenda for reliable, multimodal, and LLM-assisted low-resource ASR, covering dialect-aware evaluation, reproducible benchmarking, compute-efficient adaptation, multimodal and audio-visual robustness, and cautious LLM-assisted correction, rescoring, contextual biasing, and post-ASR normalization.
 
 Six-layer taxonomy:
 1. Resource layer: labeled, unlabeled, weakly labeled, pseudo-labeled, multilingual, multimodal.
 2. Language layer: dialect variation, orthographic inconsistency, code-switching, morphology, script complexity.
-3. Model layer: hybrid ASR, E2E ASR, SSL models, multilingual ASR, weakly supervised ASR, speech foundation models.
+3. Model layer: hybrid ASR, E2E ASR, SSL models, multilingual ASR, weakly supervised ASR, speech foundation models, speech-LLM systems.
 4. Adaptation layer: fine-tuning, continued pretraining, adapters, LoRA/QLoRA, prompting, transfer learning.
 5. Supervision layer: supervised learning, SSL, self-training, pseudo-labeling, single-teacher KD, multi-teacher KD.
-6. Evaluation layer: WER/CER, dialect-wise, domain-wise, noise robustness, reproducibility, compute/deployment cost.
+6. Evaluation layer: WER/CER, dialect-wise, domain-wise, noise robustness, reproducibility, compute/deployment cost, hallucination and over-correction checks for LLM-assisted ASR.
 
 Writing principles:
 1. Prioritize recent work from 2019 onward, especially 2022-2026, while including older foundational work when necessary.
