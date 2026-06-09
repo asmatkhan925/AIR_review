@@ -32,8 +32,8 @@ This seed set supports the locked questions on:
 
 | ID | Paper | Reason |
 |---|---|---|
-| BA11 | FormosanBench | Reserve case box for endangered-language benchmarking and large-model-era evaluation. |
-| BA12 | LoASR-Bench | Preprint watchlist for low-resource SpeechLM ASR evaluation across language families. |
+| BA23 | FormosanBench | Reserve case box for endangered-language benchmarking and large-model-era evaluation. |
+| BA24 | LoASR-Bench | Preprint watchlist for low-resource SpeechLM ASR evaluation across language families. |
 
 ## Limits
 
@@ -44,4 +44,3 @@ Block A does not yet provide deep evidence for pseudo-labeling, knowledge distil
 - Seed map: `05_synthesis_matrices/seed_paper_map.csv`
 - Citation verification: `03_references/citation_verification_log.csv`
 - Dataset and benchmark matrix: `05_synthesis_matrices/dataset_benchmark_matrix.csv`
-
