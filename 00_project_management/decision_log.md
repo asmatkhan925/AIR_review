@@ -2,6 +2,7 @@
 
 | Date | Decision | Rationale | Implication |
 |---|---|---|---|
+| 2026-06-10 | Start Block E evidence map | Pseudo-labeling, self-training, and knowledge distillation directly answer RQ5 and support the paper's third contribution | Core evidence must distinguish verified ASR pseudo-labeling/KD papers from watchlist LLM/SpeechLLM pseudo-label refinement papers |
 | 2026-06-10 | Confirm Blocks A-D frozen and move to Block E | Final sanity checks confirmed BD16-BD20 remain watchlist-only, BD21-BD23 are verified primary ASR adaptation anchors, BC12 is upgraded to verified primary, and the required BibTeX and claim links are present | Stop expanding Blocks A-D unless a reviewer-level gap appears; next evidence block is pseudo-labeling, self-training, and knowledge distillation |
 | 2026-06-10 | Post-freeze Block D refinement | Add three verified Interspeech 2024 adaptation anchors before final manuscript use | BD21 continued pretraining, BD22 adapter pre-training, and BD23 forgetting-aware new-language adaptation strengthen Block D with primary ASR-specific evidence |
 | 2026-06-10 | Freeze Block D adaptation strategy seed map | Block D now separates PEFT method anchors, ASR-specific support, SpeechLM/future-facing adaptation, Block E bridge evidence, and watchlist-current preprints | Do not add more Block D papers unless a reviewer-level adaptation gap appears; next evidence block should be Block E pseudo-labeling, self-training, and knowledge distillation |
