@@ -1,1 +1,2 @@
 Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
+2026-06-09,"Block A seed set PDF","Curated seed set: surveys, multilingual corpora, multilingual benchmarks, inclusive ASR evaluation, dataset quality audits, SpeechLM watchlist","Block A; core anchors and watchlist",12,12,10,"Added 10 core/high-value anchors and 2 watchlist items to seed_paper_map.csv; pseudo-labeling and KD remain for later block."
