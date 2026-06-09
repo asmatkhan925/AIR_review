@@ -20,3 +20,14 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-09,PMLR,Whisper robust speech recognition large scale weak supervision,2019-2026,1,1,BB14,Verified ICML 2023 primary source
 2026-06-09,JMLR,Scaling Speech Technology to 1000 Languages MMS,2019-2026,1,1,BB16,Verified JMLR primary source
 2026-06-09,arXiv,LoASR-Bench low-resource ASR SpeechLM,2025-2026,1,1,BB25,Watchlist only
+2026-06-09,ISCA Archive,audio augmentation for speech recognition,2015,1,1,BC01,Verified Interspeech 2015 primary source; DOI 10.21437/Interspeech.2015-711
+2026-06-09,ISCA Archive,SpecAugment simple data augmentation automatic speech recognition,2019,1,1,BC02,Verified Interspeech 2019 primary source; DOI 10.21437/Interspeech.2019-2680
+2026-06-09,ACL Anthology,Common Voice massively multilingual speech corpus,2019-2026,1,1,BC03,Verified LREC 2020 primary source and BibTeX
+2026-06-09,ISCA Archive,MLS large-scale multilingual dataset speech research,2020,1,1,BC04,Verified Interspeech 2020 primary source; DOI 10.21437/Interspeech.2020-2826
+2026-06-09,ACL Anthology,VoxPopuli multilingual speech corpus semi-supervised learning,2021,1,1,BC05,Verified ACL-IJCNLP 2021 primary source and DOI
+2026-06-09,ISCA Archive,Discriminative Self-Training for Punctuation Prediction,2021,1,1,BC08,Verified Interspeech 2021 primary source; DOI 10.21437/Interspeech.2021-246
+2026-06-09,ISCA Archive,ML-SUPERB multilingual speech universal performance benchmark,2023,1,1,BC09,Verified Interspeech 2023 primary source; DOI 10.21437/Interspeech.2023-1316
+2026-06-09,arXiv,GigaSpeech 2 low-resource data crawling forced alignment filtering,2024,1,1,BC13,Watchlist only
+2026-06-09,arXiv,heterogeneous data sources speech-to-text foundation models filtering punctuation truecasing,2024,1,1,BC12,Watchlist only
+2026-06-09,arXiv,low-resource ASR data augmentation self-training minority languages,2023-2026,1,1,BC14,Watchlist only
+2026-06-09,arXiv,pseudo-label filtering data selection domain adaptation ASR,2025,1,1,BC17,Watchlist only
