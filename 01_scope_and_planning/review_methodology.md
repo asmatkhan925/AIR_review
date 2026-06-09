@@ -44,7 +44,7 @@ Use `01_scope_and_planning/inclusion_exclusion_criteria.md` as the current sourc
 
 - Group papers by method family and challenge type.
 - Fill synthesis matrices before drafting claims.
-- Use `05_synthesis_matrices/claims_evidence_map.csv` to connect major claims to supporting evidence.
+- Use `05_synthesis_matrices/evidence_to_claim_matrix.csv` to connect major claims to supporting evidence.
 - Convert matrices into thematic prose, not paper-by-paper listing.
 
 ## Limitations Of Review Process
