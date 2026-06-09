@@ -45,8 +45,9 @@ Use `01_scope_and_planning/inclusion_exclusion_criteria.md` as the current sourc
 - Group papers by method family and challenge type.
 - Fill synthesis matrices before drafting claims.
 - Use `05_synthesis_matrices/evidence_to_claim_matrix.csv` to connect major claims to supporting evidence.
+- The canonical claim-tracking file is `05_synthesis_matrices/evidence_to_claim_matrix.csv`. The older `claims_evidence_map.csv` has been archived and should not be updated.
 - Convert matrices into thematic prose, not paper-by-paper listing.
 
 ## Limitations Of Review Process
 
-TBD. Discuss database coverage, preprint inclusion, language bias, access limitations, and the scope boundary around Pashto as a case study.
+TBD. Discuss database coverage, preprint inclusion, language bias, access limitations, and the scope boundary that allows Pashto only as a selective illustrative example.

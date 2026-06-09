@@ -9,7 +9,6 @@ FILES_AND_PATTERNS = {
     "05_synthesis_matrices/foundation_model_matrix.csv": r"\s+(?=BB\d{2},)",
     "05_synthesis_matrices/method_comparison_matrix.csv": r"\s+(?=[A-Za-z][^,\n]*,)",
     "05_synthesis_matrices/adaptation_strategy_matrix.csv": r'\s+(?="[^"]+",)',
-    "05_synthesis_matrices/claims_evidence_map.csv": r'\s+(?="[^"]+",)',
     "05_synthesis_matrices/evidence_to_claim_matrix.csv": r"\s+(?=C\d+,)",
     "02_literature_search/search_log.csv": r"\s+(?=20\d{2}-\d{2}-\d{2},)",
 }
