@@ -72,7 +72,7 @@ Use the following labels during screening:
 - Include
 - Exclude
 - Maybe
-- Needs verification
+- Needs-primary-source-verification
 - Foundational background
 - Not ASR-relevant
 - Duplicate

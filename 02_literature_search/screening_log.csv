@@ -1,13 +1,13 @@
 Paper title,Year,Venue,Included or excluded,Reason,Category
-"Automatic speech recognition for under-resourced languages: A survey",2014,"Speech Communication","Included","Foundational historical low-resource ASR survey anchor","Survey"
-"End-to-End Speech Recognition: A Survey",2024,"IEEE/ACM TASLP","Included","Modern architecture survey anchor for ASR taxonomy","Survey"
-"Recent Advances in Speech Language Models: A Survey",2025,"ACL 2025 Long Papers","Included","SpeechLM and LLM-assisted ASR survey anchor","Survey"
-"Common Voice: A Massively-Multilingual Speech Corpus",2020,"LREC 2020","Included","Canonical open multilingual corpus anchor","DatasetAnchor"
-"VoxPopuli: A Large-Scale Multilingual Speech Corpus for Representation Learning, Semi-Supervised Learning and Interpretation",2021,"ACL-IJCNLP 2021 Long Papers","Included","Large multilingual pretraining corpus anchor","DatasetAnchor"
-"FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech",2022,"IEEE SLT 2022","Included","Central cross-lingual multilingual benchmark anchor","BenchmarkAnchor"
-"ML-SUPERB: Multilingual Speech Universal PERformance Benchmark",2023,"Interspeech 2023","Included","Multilingual speech model benchmark anchor","BenchmarkAnchor"
-"ML-SUPERB 2.0: Benchmarking Multilingual Speech Models Across Modeling Constraints, Languages, and Datasets",2024,"Interspeech 2024","Included","Benchmark extension connecting evaluation and adaptation choices","BenchmarkAnchor"
-"The ML-SUPERB 2.0 Challenge: Towards Inclusive ASR Benchmarking for All Language Varieties",2025,"Interspeech 2025","Included","Inclusive language-variety and dialect benchmarking anchor","BenchmarkAnchor"
-"Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning",2025,"ACL 2025 Long Papers","Included","Dataset quality and sociolinguistic audit anchor","BenchmarkAudit"
-"FormosanBench: Benchmarking Low-Resource Austronesian Languages in the Era of Large Language Models",2025,"Findings of EMNLP 2025","Watchlist","Reserve endangered-language benchmark case box","BenchmarkWatchlist"
-"LoASR-Bench: Evaluating Large Speech Language Models on Low-Resource Automatic Speech Recognition Across Language Families",2026,"arXiv","Watchlist","Emerging preprint; useful for SpeechLM future directions but not settled benchmark anchor","BenchmarkWatchlist"
+Automatic speech recognition for under-resourced languages: A survey,2014,Speech Communication,Included,Foundational historical low-resource ASR survey anchor,Survey
+End-to-End Speech Recognition: A Survey,2024,IEEE/ACM TASLP,Included,Modern architecture survey anchor for ASR taxonomy,Survey
+Recent Advances in Speech Language Models: A Survey,2025,arXiv / survey watchlist unless ACL source is added,Watchlist,SpeechLM survey watchlist until venue source is settled,Survey
+Common Voice: A Massively-Multilingual Speech Corpus,2020,LREC 2020,Included,Canonical open multilingual corpus anchor,DatasetAnchor
+"VoxPopuli: A Large-Scale Multilingual Speech Corpus for Representation Learning, Semi-Supervised Learning and Interpretation",2021,ACL-IJCNLP 2021 Long Papers,Included,Large multilingual pretraining corpus anchor,DatasetAnchor
+FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech,2022,IEEE SLT 2022,Included,Central cross-lingual multilingual benchmark anchor,BenchmarkAnchor
+ML-SUPERB: Multilingual Speech Universal PERformance Benchmark,2023,Interspeech 2023,Included,Multilingual speech model benchmark anchor,BenchmarkAnchor
+"ML-SUPERB 2.0: Benchmarking Multilingual Speech Models Across Modeling Constraints, Languages, and Datasets",2024,Interspeech 2024,Included,Benchmark extension connecting evaluation and adaptation choices,BenchmarkAnchor
+The ML-SUPERB 2.0 Challenge: Towards Inclusive ASR Benchmarking for All Language Varieties,2025,Interspeech 2025,Included,Inclusive language-variety and dialect benchmarking anchor,BenchmarkAnchor
+Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning,2025,arXiv / venue pending,Watchlist,"Dataset quality audit is useful, but venue remains pending",BenchmarkAudit
+FormosanBench: Benchmarking Low-Resource Austronesian Languages in the Era of Large Language Models,2025,arXiv / reserve benchmark watchlist,Watchlist,Reserve endangered-language benchmark watchlist item,BenchmarkWatchlist
+LoASR-Bench: Evaluating Large Speech Language Models on Low-Resource Automatic Speech Recognition Across Language Families,2026,arXiv,Watchlist,Emerging preprint; useful for SpeechLM future directions but not settled benchmark anchor,BenchmarkWatchlist
