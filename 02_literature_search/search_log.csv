@@ -31,3 +31,13 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-09,arXiv,heterogeneous data sources speech-to-text foundation models filtering punctuation truecasing,2024,1,1,BC12,Watchlist only
 2026-06-09,arXiv,low-resource ASR data augmentation self-training minority languages,2023-2026,1,1,BC14,Watchlist only
 2026-06-09,arXiv,pseudo-label filtering data selection domain adaptation ASR,2025,1,1,BC17,Watchlist only
+2026-06-09,PMLR,Parameter-efficient transfer learning adapters ICML,2019-2026,1,1,BD01,Verified adapter method anchor
+2026-06-09,OpenReview,LoRA low-rank adaptation ICLR 2022,2019-2026,1,1,BD02,Verified LoRA method anchor
+2026-06-09,OpenReview,QLoRA efficient finetuning quantized LLMs NeurIPS 2023,2019-2026,1,1,BD03,Verified QLoRA method anchor
+2026-06-09,ISCA Archive,XLSR cross-lingual speech representation fine-tuning,2019-2026,1,1,BD04,Verified cross-lingual transfer anchor
+2026-06-09,ISCA Archive,XLS-R self-supervised cross-lingual speech representation,2019-2026,1,1,BD05,Verified multilingual transfer anchor
+2026-06-09,PMLR,Whisper robust speech recognition large-scale weak supervision,2019-2026,1,1,BD06,Verified foundation ASR baseline
+2026-06-09,JMLR,MMS Scaling Speech Technology to 1000 Languages,2019-2026,1,1,BD07,Verified multilingual ASR expansion anchor
+2026-06-09,ISCA Archive,Language-Universal Phonetic Representation low-resource speech recognition,2019-2026,1,1,BD09,Verified phonetic-informed adaptation anchor
+2026-06-09,ISCA Archive,Kanyen'keha speech foundation models ASR low-resource,2025,1,1,BD10,Verified low-resource SFM evaluation
+2026-06-09,arXiv,Depth-aware adaptation efficient multilingual speech recognition low-resource,2026,1,1,BD19,Watchlist-current
