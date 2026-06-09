@@ -11,4 +11,4 @@
 
 ## Review Relevance
 
-Normalization affects both training targets and reported WER/CER. This file should preserve exact preprocessing decisions used in the case study.
+Normalization affects both training targets and reported WER/CER. This file preserves Pashto-specific details only as illustrative evidence for broader low-resource ASR issues.

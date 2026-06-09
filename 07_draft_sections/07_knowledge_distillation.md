@@ -29,4 +29,4 @@ Emphasize supervision signal quality and teacher diversity.
 
 ## Open Questions
 
-- How much of the user's thesis method should be discussed here versus the Pashto case study?
+- Which thesis-derived examples best illustrate pseudo-label reliability, teacher disagreement, and compute-aware distillation without making Pashto a focused case-study contribution?

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Summarize the user's thesis trajectory as a case-study contribution to low-resource Pashto ASR.
+Summarize the user's thesis trajectory as source material for selective examples in the broader low-resource ASR review. This file should not define a focused Pashto case-study contribution.
 
 ## Method Trajectory
 

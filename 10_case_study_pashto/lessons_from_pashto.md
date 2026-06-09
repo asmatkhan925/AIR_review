@@ -10,4 +10,4 @@
 
 ## Use In Manuscript
 
-Use this file to connect the Pashto case study back to the review's broader research gaps and future directions.
+Use this file only for selective Pashto examples that clarify the review's broader research gaps and future directions.
