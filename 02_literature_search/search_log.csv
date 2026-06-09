@@ -41,3 +41,7 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-09,ISCA Archive,Language-Universal Phonetic Representation low-resource speech recognition,2019-2026,1,1,BD09,Verified phonetic-informed adaptation anchor
 2026-06-09,ISCA Archive,Kanyen'keha speech foundation models ASR low-resource,2025,1,1,BD10,Verified low-resource SFM evaluation
 2026-06-09,arXiv,Depth-aware adaptation efficient multilingual speech recognition low-resource,2026,1,1,BD19,Watchlist-current
+2026-06-10,ISCA Archive,continued pre-training self-supervised speech models colloquial Finnish ASR,2024,1,1,BD21,Verified Interspeech 2024 primary source
+2026-06-10,ISCA Archive,adapter pre-training low-resource adapter tuning self-supervised ASR,2024,1,1,BD22,Verified Interspeech 2024 primary source
+2026-06-10,ISCA Archive,Learn and Don't Forget adding a new language ASR foundation models,2024,1,1,BD23,Verified Interspeech 2024 primary source
+2026-06-10,ISCA Archive,heterogeneous data sources speech-to-text foundation models OWSM v3.2,2024,1,1,BC12,Upgraded BC12 to primary verified source

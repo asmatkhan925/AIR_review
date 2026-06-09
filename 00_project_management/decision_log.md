@@ -2,6 +2,7 @@
 
 | Date | Decision | Rationale | Implication |
 |---|---|---|---|
+| 2026-06-10 | Post-freeze Block D refinement | Add three verified Interspeech 2024 adaptation anchors before final manuscript use | BD21 continued pretraining, BD22 adapter pre-training, and BD23 forgetting-aware new-language adaptation strengthen Block D with primary ASR-specific evidence |
 | 2026-06-10 | Freeze Block D adaptation strategy seed map | Block D now separates PEFT method anchors, ASR-specific support, SpeechLM/future-facing adaptation, Block E bridge evidence, and watchlist-current preprints | Do not add more Block D papers unless a reviewer-level adaptation gap appears; next evidence block should be Block E pseudo-labeling, self-training, and knowledge distillation |
 | 2026-06-09 | Freeze Block C data-centric low-resource ASR seed map | Block C now has verified core anchors, high-value support, watchlist separation, and C-C1 through C-C6 evidence-to-claim integration | Do not add more Block C papers unless a reviewer-level gap appears; next evidence block should be Block D adaptation strategies |
 | 2026-06-09 | Supersede focused Pashto case-study framing with illustrative-only Pashto use | Aligns the repository with the locked field-level review scope | Pashto may appear only as an illustrative example for broader low-resource ASR issues, not as a contribution or organizing section. |
