@@ -8,10 +8,15 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-09,Citation chaining,from benchmark papers to related corpus and challenge papers,Seed papers only,Needs fill,Needs fill,OpenASR20; OpenASR21; FormosanBench; Faetar benchmark,Snowballing from benchmark anchors
 2026-06-09,NeurIPS Proceedings,self-supervised speech representation ASR,2019-2026,Needs fill,Needs fill,wav2vec 2.0,Primary proceedings verification
 2026-06-09,arXiv,speech foundation model low-resource ASR benchmark 2025 2026,2025-2026,Needs fill,Needs fill,LoASR-Bench; SpeechLM survey; emerging SpeechLM benchmarks,Watchlist only unless peer-reviewed
-2026-06-09,OpenReview,vq-wav2vec self-supervised discrete speech representations ICLR 2020,Primary venue source,Needs fill,Needs fill,BB01 vq-wav2vec,Block B primary-source verification trail
-2026-06-09,NeurIPS Proceedings,wav2vec 2.0 self-supervised speech representations NeurIPS 2020,Primary venue source,Needs fill,Needs fill,BB02 wav2vec 2.0,Block B primary-source verification trail
-2026-06-09,ISCA Archive,XLSR XLS-R Interspeech multilingual self-supervised speech recognition,Primary venue source,Needs fill,Needs fill,BB03 XLSR-53; BB09 XLS-R,Block B primary-source verification trail
 2026-06-09,PMLR,data2vec BEST-RQ ICML speech self-supervised learning,Primary venue source,Needs fill,Needs fill,BB07 data2vec; BB14 Whisper,Block B primary-source verification trail; verify BEST-RQ separately if needed
-2026-06-09,JMLR,Scaling Speech Technology to 1000 languages MMS,Primary journal source,Needs fill,Needs fill,BB16 MMS,Block B primary-source verification trail
 2026-06-09,arXiv,Qwen2-Audio technical report speech audio language model,Technical report watchlist,Needs fill,Needs fill,BB18 Qwen2-Audio,Watchlist; not a peer-reviewed ASR anchor
 2026-06-09,arXiv,Omnilingual ASR open-source multilingual speech recognition 1600 languages,Watchlist preprint,Needs fill,Needs fill,BB23 Omnilingual ASR,Watchlist; needs independent/venue verification before strong manuscript claims
+2026-06-09,ACL Anthology,Common Voice multilingual speech corpus,2019-2026,1,1,BA04,Verified LREC 2020 metadata and BibTeX
+2026-06-09,ACL Anthology,VoxPopuli multilingual speech corpus,2019-2026,1,1,BA05,Verified ACL-IJCNLP 2021 metadata and DOI
+2026-06-09,OpenReview,vq-wav2vec ICLR 2020,2019-2026,1,1,BB01,Verified ICLR/OpenReview primary source
+2026-06-09,NeurIPS Proceedings,wav2vec 2.0 self-supervised speech representations,2019-2026,1,1,BB02,Verified NeurIPS 2020 primary source
+2026-06-09,ISCA Archive,XLSR cross-lingual speech representation,2019-2026,1,1,BB03,Verified Interspeech 2021 primary source
+2026-06-09,ISCA Archive,XLS-R self-supervised cross-lingual speech representation,2019-2026,1,1,BB09,Verified Interspeech 2022 primary source
+2026-06-09,PMLR,Whisper robust speech recognition large scale weak supervision,2019-2026,1,1,BB14,Verified ICML 2023 primary source
+2026-06-09,JMLR,Scaling Speech Technology to 1000 Languages MMS,2019-2026,1,1,BB16,Verified JMLR primary source
+2026-06-09,arXiv,LoASR-Bench low-resource ASR SpeechLM,2025-2026,1,1,BB25,Watchlist only

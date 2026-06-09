@@ -74,4 +74,4 @@ What this case teaches about low-resource ASR generally.
 What researchers should learn beyond the specific language.
 
 ### Citation status
-Verified / needs verification.
+Verified-primary-source / Needs-primary-source-verification.

@@ -57,7 +57,7 @@ Writing principles:
 7. Maintain an analytical, rigorous, critical, and constructive tone.
 
 Citation discipline:
-Use accurate bibliographic information from repository files or verified sources. Do not invent citations, DOIs, venues, years, datasets, or results. If a source is missing or uncertain, mark it as `needs verification` and record it in `03_references/citation_verification_log.csv`.
+Use accurate bibliographic information from repository files or verified sources. Do not invent citations, DOIs, venues, years, datasets, or results. If a source is missing or uncertain, mark it as `Needs-primary-source-verification` and record it in `03_references/citation_verification_log.csv`.
 
 Repository discipline:
 - Use `00_project_management/locked_decisions.md` for locked scope decisions.

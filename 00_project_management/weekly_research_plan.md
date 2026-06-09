@@ -45,6 +45,5 @@ Suggested first block: pseudo-labeling and knowledge distillation for low-resour
 | Did this week serve one review research question? | TBD |
 | Did the work add evidence rather than only references? | TBD |
 | Which manuscript claim became stronger? | TBD |
-| Which claim still needs verification? | TBD |
+| Which claim still needs primary-source verification? | TBD |
 | Which reviewer objection became less likely? | TBD |
-
