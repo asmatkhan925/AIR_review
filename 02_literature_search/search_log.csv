@@ -6,3 +6,5 @@
 "2026-06-09","Google Scholar","multilingual speech corpus benchmark low-resource ASR","2019-2026","Needs fill","Needs fill","Common Voice; VoxPopuli; CMU Wilderness; XTREME-S","Citation-chaining and broad discovery pass"
 "2026-06-09","ACM / AAAI / Springer / Elsevier","speech recognition benchmark multilingual low-resource evaluation","2019-2026","Needs fill","Needs fill","IndicSUPERB; AfriSpeech-200; dataset quality audit","Cross-publisher verification pass"
 "2026-06-09","Citation chaining","from benchmark papers to related corpus and challenge papers","Seed papers only","Needs fill","Needs fill","OpenASR20; OpenASR21; FormosanBench; Faetar benchmark","Snowballing from benchmark anchors"
+"2026-06-09","NeurIPS Proceedings","self-supervised speech representation ASR","2019-2026","Needs fill","Needs fill","wav2vec 2.0","Primary proceedings verification"
+"2026-06-09","arXiv","speech foundation model low-resource ASR benchmark 2025 2026","2025-2026","Needs fill","Needs fill","LoASR-Bench; SpeechLM survey; emerging SpeechLM benchmarks","Watchlist only unless peer-reviewed"
