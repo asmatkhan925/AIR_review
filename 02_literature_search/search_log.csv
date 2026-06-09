@@ -50,5 +50,6 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-10,arXiv/IEEE cross-check,Uncertainty Driven Self-Training ASR DUST ICASSP 2021,2020-2021,1,1,BE05,Verified arXiv record with ICASSP 2021 comment
 2026-06-10,ISCA Archive,Self-Adaptive Distillation for Multilingual Speech Recognition,2021,1,1,BE08,Verified Interspeech 2021 primary source
 2026-06-10,ISCA Archive,Empowering Low-Resource Language ASR via Large-Scale Pseudo Labeling,2024,1,1,BE15,Verified Interspeech 2024 primary source
-2026-06-10,arXiv,Better Pseudo-labeling with Multi-ASR Fusion and Error Correction by SpeechLLM,2025-2026,1,1,BE19,Watchlist-current
-2026-06-10,arXiv,ReHear iterative pseudo-label refinement audio LLM ASR,2026,1,1,BE20,Watchlist-current
+2026-06-10,arXiv,LESS Large Language Model Enhanced Semi-Supervised Learning speech foundation models,2025-2026,1,1,BE19,Watchlist-current; arXiv 2506.04586
+2026-06-10,arXiv,ReHear iterative pseudo-label refinement audio LLM ASR,2026,1,1,BE20,Watchlist-current; arXiv 2602.18721
+2026-06-10,arXiv,Iterative Pseudo-Labeling for Speech Recognition,2020,1,1,BE21,Verified arXiv method background for original IPL; pair with BE07 SlimIPL

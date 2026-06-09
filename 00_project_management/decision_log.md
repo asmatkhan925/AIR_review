@@ -2,6 +2,7 @@
 
 | Date | Decision | Rationale | Implication |
 |---|---|---|---|
+| 2026-06-10 | Refine Block E pseudo-labeling evidence classifications | Block E needed stricter separation between primary anchors, secondary high-value evidence, original IPL method background, and LLM/SpeechLLM watchlist items | BE03 and BE05 are high-value secondary-verified anchors; BE21 is added as original IPL background; BE17-BE20 remain watchlist-current only |
 | 2026-06-10 | Start Block E evidence map | Pseudo-labeling, self-training, and knowledge distillation directly answer RQ5 and support the paper's third contribution | Core evidence must distinguish verified ASR pseudo-labeling/KD papers from watchlist LLM/SpeechLLM pseudo-label refinement papers |
 | 2026-06-10 | Confirm Blocks A-D frozen and move to Block E | Final sanity checks confirmed BD16-BD20 remain watchlist-only, BD21-BD23 are verified primary ASR adaptation anchors, BC12 is upgraded to verified primary, and the required BibTeX and claim links are present | Stop expanding Blocks A-D unless a reviewer-level gap appears; next evidence block is pseudo-labeling, self-training, and knowledge distillation |
 | 2026-06-10 | Post-freeze Block D refinement | Add three verified Interspeech 2024 adaptation anchors before final manuscript use | BD21 continued pretraining, BD22 adapter pre-training, and BD23 forgetting-aware new-language adaptation strengthen Block D with primary ASR-specific evidence |
