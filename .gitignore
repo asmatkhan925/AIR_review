@@ -31,6 +31,8 @@ __pycache__/
 temp/
 archive_large_files/
 .env
+.air_handoff_state.json
+_chatgpt_handoff/
 local_pdfs/
 papers_pdf/
 copyrighted_pdfs/
