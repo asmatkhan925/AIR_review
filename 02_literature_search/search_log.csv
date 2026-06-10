@@ -63,3 +63,5 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-10,arXiv,Casual Conversations speech recognition fairness transcriptions,2021,1,1,BF10,Secondary verified fairness source
 2026-06-10,arXiv,AV-HuBERT audio-visual speech representation AVSR,2022,1,1,BF16,Secondary verified AVSR source
 2026-06-10,arXiv,Careless Whisper speech-to-text hallucination harms ACM DOI,2024,1,1,BF20,Secondary verified hallucination-risk source
+2026-06-10,arXiv,ASR Error Correction using Large Language Models N-best lattice constrained decoding,2024,1,1,BF24,Watchlist-current; arXiv 2409.09554
+2026-06-10,arXiv,SUPERB SLT 2022 generalization efficiency self-supervised speech representation learning,2022,1,1,BF25,Secondary verified compute/efficiency evaluation source; arXiv 2210.08634
