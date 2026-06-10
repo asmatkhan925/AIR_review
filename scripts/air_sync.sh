@@ -70,12 +70,20 @@ fi
 LOCAL="$(git rev-parse HEAD)"
 REMOTE="$(git rev-parse "origin/${AIR_BRANCH}")"
 
-if [ "$LOCAL" = "$REMOTE" ] && [ "$AIR_FORCE" != "1" ]; then
-  log "no change (HEAD=$LOCAL); nothing to do"
+# Commit currently reflected in the published snapshot (self-healing guard:
+# rebuild if it drifts from HEAD even when the remote hasn't moved, e.g. if a
+# commit was authored on this clone).
+PUBLISHED=""
+if [ -f "${AIR_SNAPSHOT_DIR}/health.json" ]; then
+  PUBLISHED="$(grep -oE '[0-9a-f]{40}' "${AIR_SNAPSHOT_DIR}/health.json" | head -1)"
+fi
+
+if [ "$LOCAL" = "$REMOTE" ] && [ "$LOCAL" = "$PUBLISHED" ] && [ "$AIR_FORCE" != "1" ]; then
+  log "no change (HEAD=$LOCAL, published=$PUBLISHED); nothing to do"
   exit 0
 fi
 
-log "change detected: $LOCAL -> $REMOTE ; updating working tree"
+log "rebuild needed (HEAD=$LOCAL remote=$REMOTE published=${PUBLISHED:-none}); updating working tree"
 git checkout --quiet "$AIR_BRANCH" 2>/dev/null || git checkout --quiet -B "$AIR_BRANCH" "origin/${AIR_BRANCH}"
 git reset --hard --quiet "origin/${AIR_BRANCH}"   # deploy clone: discard nothing of value
 
