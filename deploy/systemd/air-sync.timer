@@ -1,0 +1,16 @@
+[Unit]
+Description=Poll GitHub for AIR_review changes every minute and refresh the snapshot
+
+[Timer]
+# First run shortly after boot, then every minute.
+# This is a SAFETY-NET fallback; the GitHub webhook (/api/air/refresh) gives
+# near-instant updates on push. A no-change poll is just a cheap git fetch.
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=15s
+# If the machine was off when a run was due, run once on next boot.
+Persistent=true
+Unit=air-sync.service
+
+[Install]
+WantedBy=timers.target

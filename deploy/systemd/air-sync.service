@@ -1,0 +1,19 @@
+[Unit]
+Description=Sync AIR_review snapshot from GitHub and republish the public API bundle
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Run as the user that owns the repo + snapshot dir (adjust to your deploy user).
+User=www-data
+Group=www-data
+Environment=AIR_REPO_DIR=/var/www/scholarsrepublic/AIR_review
+Environment=AIR_BRANCH=main
+Environment=AIR_SNAPSHOT_DIR=/var/www/scholarsrepublic/air_api_snapshot
+Environment=AIR_BASE_URL=https://scholarsrepublic.org
+Environment=AIR_PYTHON=/usr/bin/python3
+ExecStart=/var/www/scholarsrepublic/AIR_review/scripts/air_sync.sh
+# Sandboxing (relaxed enough to write the snapshot dir and run git).
+ProtectSystem=full
+NoNewPrivileges=true
