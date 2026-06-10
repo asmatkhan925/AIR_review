@@ -104,6 +104,23 @@ else
   rm -rf "${AIR_SNAPSHOT_DIR}.old"
 fi
 
+# Also publish a cacheable STATIC mirror (served by nginx as plain files, no
+# no-store headers) so external assistants whose fetcher relies on caching can
+# read it. Set AIR_MEDIA_MIRROR="" to disable.
+AIR_MEDIA_MIRROR="${AIR_MEDIA_MIRROR:-/var/www/scholarsrepublic/media/air}"
+if [ -n "$AIR_MEDIA_MIRROR" ]; then
+  mkdir -p "$AIR_MEDIA_MIRROR"
+  if command -v rsync >/dev/null 2>&1; then
+    rsync -a --delete "${STAGING}/" "${AIR_MEDIA_MIRROR}/"
+  else
+    rm -rf "${AIR_MEDIA_MIRROR}.old"
+    [ -d "$AIR_MEDIA_MIRROR" ] && mv "$AIR_MEDIA_MIRROR" "${AIR_MEDIA_MIRROR}.old"
+    cp -a "$STAGING" "$AIR_MEDIA_MIRROR"
+    rm -rf "${AIR_MEDIA_MIRROR}.old"
+  fi
+  log "published static mirror to $AIR_MEDIA_MIRROR"
+fi
+
 NEW_COMMIT="$(git rev-parse HEAD)"
 log "published snapshot for commit $NEW_COMMIT to $AIR_SNAPSHOT_DIR"
 log "done"

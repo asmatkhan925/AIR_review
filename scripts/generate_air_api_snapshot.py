@@ -374,6 +374,53 @@ def mirror_files(repo_root: Path, out_dir: Path):
         shutil.copy2(src, dst)
 
 
+def write_index_html(out_dir: Path, manifest: dict):
+    """Write a plain-HTML index with RELATIVE links to the static bundle files.
+
+    Relative links keep the page valid under any mount point (e.g. /media/air/),
+    which is the cacheable static mirror that external assistants can fetch when
+    the no-store API endpoints return 'cache miss'.
+    """
+    commit = manifest.get("commit", "unknown")
+    generated = manifest.get("generated_at_utc", "unknown")
+    files = manifest.get("files", {})
+
+    rows = [
+        '  <li><a href="latest.json">latest.json</a> — current state + verification targets</li>',
+        '  <li><a href="manifest.json">manifest.json</a> — per-file hashes, counts, validations</li>',
+        '  <li><a href="health.json">health.json</a> — status + commit</li>',
+    ]
+    file_rows = []
+    for rel in sorted(p for p, e in files.items() if e.get("exists")):
+        file_rows.append(f'  <li><a href="files/{rel}">files/{rel}</a></li>')
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<title>AIR_review Static Snapshot</title>
+</head>
+<body>
+<h1>AIR_review Static Snapshot</h1>
+<p>Cacheable static mirror of the latest <code>asmatkhan925/AIR_review</code>
+snapshot. Plain files, no query strings, no JavaScript.</p>
+<p><b>Current commit:</b> <code>{commit}</code><br>
+<b>Generated (UTC):</b> <code>{generated}</code></p>
+<h2>State</h2>
+<ul>
+{chr(10).join(rows)}
+</ul>
+<h2>Files</h2>
+<ul>
+{chr(10).join(file_rows)}
+</ul>
+</body>
+</html>
+"""
+    (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate AIR_review API snapshot.")
     parser.add_argument("--out", default="air_api_snapshot", help="Output snapshot directory.")
@@ -451,6 +498,7 @@ def main(argv=None):
     (out_dir / "latest.json").write_text(json.dumps(latest, indent=2), encoding="utf-8")
     (out_dir / "health.json").write_text(json.dumps(health, indent=2), encoding="utf-8")
     mirror_files(repo_root, out_dir)
+    write_index_html(out_dir, manifest)
 
     print(f"[air-snapshot] wrote snapshot to {out_dir}")
     print(f"[air-snapshot] status = {status}")
