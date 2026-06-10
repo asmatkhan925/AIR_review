@@ -374,44 +374,70 @@ def mirror_files(repo_root: Path, out_dir: Path):
         shutil.copy2(src, dst)
 
 
-def write_index_html(out_dir: Path, manifest: dict):
-    """Write a plain-HTML index with RELATIVE links to the static bundle files.
+def write_index_html(out_dir: Path, manifest: dict, latest: dict):
+    """Write a self-contained plain-HTML index for the static mirror.
 
-    Relative links keep the page valid under any mount point (e.g. /media/air/),
-    which is the cacheable static mirror that external assistants can fetch when
-    the no-store API endpoints return 'cache miss'.
+    Embeds the commit, validation results, and verification statements directly
+    in the page so an assistant can verify from this one page, plus RELATIVE
+    links to every file (valid under any mount, e.g. /air/ or /media/air/).
     """
     commit = manifest.get("commit", "unknown")
     generated = manifest.get("generated_at_utc", "unknown")
     files = manifest.get("files", {})
+    validations = manifest.get("validations", {})
+    all_valid = bool(validations) and all(validations.values())
 
-    rows = [
+    state_rows = [
         '  <li><a href="latest.json">latest.json</a> — current state + verification targets</li>',
         '  <li><a href="manifest.json">manifest.json</a> — per-file hashes, counts, validations</li>',
         '  <li><a href="health.json">health.json</a> — status + commit</li>',
     ]
-    file_rows = []
-    for rel in sorted(p for p, e in files.items() if e.get("exists")):
-        file_rows.append(f'  <li><a href="files/{rel}">files/{rel}</a></li>')
+    file_rows = [
+        f'  <li><a href="files/{rel}">files/{rel}</a></li>'
+        for rel in sorted(p for p, e in files.items() if e.get("exists"))
+    ]
+    val_rows = [
+        f"  <li>{k}: <b>{str(v).lower()}</b></li>" for k, v in sorted(validations.items())
+    ]
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="index,follow">
-<title>AIR_review Static Snapshot</title>
+<meta name="description" content="Latest AIR_review repository snapshot for asmatkhan925/AIR_review.">
+<title>AIR_review Repository Snapshot</title>
 </head>
 <body>
-<h1>AIR_review Static Snapshot</h1>
-<p>Cacheable static mirror of the latest <code>asmatkhan925/AIR_review</code>
-snapshot. Plain files, no query strings, no JavaScript.</p>
+<h1>AIR Review Repository Snapshot</h1>
+<p>Authoritative, latest state of the <code>asmatkhan925/AIR_review</code>
+repository. Plain files, no query strings, no JavaScript. Use this instead of
+GitHub raw URLs.</p>
+
+<h2>Current state</h2>
 <p><b>Current commit:</b> <code>{commit}</code><br>
-<b>Generated (UTC):</b> <code>{generated}</code></p>
-<h2>State</h2>
+<b>Generated (UTC):</b> <code>{generated}</code><br>
+<b>Manifest validations all true:</b> <b>{str(all_valid).lower()}</b></p>
+
+<h2>Verification</h2>
+<p>From this snapshot you should be able to confirm:</p>
 <ul>
-{chr(10).join(rows)}
+  <li>seed_paper_map.csv contains <b>BF24</b> and <b>BF25</b></li>
+  <li>evaluation_robustness_matrix.csv contains <b>BF24</b> and <b>BF25</b></li>
+  <li>evidence_to_claim_matrix.csv contains <b>C-F1</b> through <b>C-F8</b></li>
+  <li>manifest validations are all <b>true</b></li>
 </ul>
-<h2>Files</h2>
+<p>Validation results (computed at generation time):</p>
+<ul>
+{chr(10).join(val_rows) if val_rows else "  <li>(none)</li>"}
+</ul>
+
+<h2>State files</h2>
+<ul>
+{chr(10).join(state_rows)}
+</ul>
+
+<h2>Repository files</h2>
 <ul>
 {chr(10).join(file_rows)}
 </ul>
@@ -498,7 +524,7 @@ def main(argv=None):
     (out_dir / "latest.json").write_text(json.dumps(latest, indent=2), encoding="utf-8")
     (out_dir / "health.json").write_text(json.dumps(health, indent=2), encoding="utf-8")
     mirror_files(repo_root, out_dir)
-    write_index_html(out_dir, manifest)
+    write_index_html(out_dir, manifest, latest)
 
     print(f"[air-snapshot] wrote snapshot to {out_dir}")
     print(f"[air-snapshot] status = {status}")
