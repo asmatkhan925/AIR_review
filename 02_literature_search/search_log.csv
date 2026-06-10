@@ -53,3 +53,13 @@ Date,Database,Query,Filters,ResultsFound,PapersScreened,PapersIncluded,Notes
 2026-06-10,arXiv,LESS Large Language Model Enhanced Semi-Supervised Learning speech foundation models,2025-2026,1,1,BE19,Watchlist-current; arXiv 2506.04586
 2026-06-10,arXiv,ReHear iterative pseudo-label refinement audio LLM ASR,2026,1,1,BE20,Watchlist-current; arXiv 2602.18721
 2026-06-10,arXiv,Iterative Pseudo-Labeling for Speech Recognition,2020,1,1,BE21,Verified arXiv method background for original IPL; pair with BE07 SlimIPL
+2026-06-10,ISCA Archive,ML-SUPERB multilingual speech benchmark ASR language identification,2023,1,1,BF01,Verified Interspeech 2023 primary source
+2026-06-10,arXiv,FLEURS 102 languages ASR Speech LangID translation retrieval,2022,1,1,BF02,Secondary verified benchmark source
+2026-06-10,arXiv,XTREME-S cross-lingual speech representations ASR benchmark,2022,1,1,BF03,Secondary verified benchmark source
+2026-06-10,arXiv,LoASR-Bench low-resource SpeechLM ASR across language families,2026,1,1,BF04,Watchlist-current
+2026-06-10,arXiv,Lenient Evaluation Japanese speech recognition spelling inconsistency CER,2023,1,1,BF05,Secondary verified metric-critique source
+2026-06-10,arXiv,CHiME-6 challenge multispeaker unsegmented robust ASR,2020,1,1,BF07,Secondary verified robustness source
+2026-06-10,arXiv,CHiME-7 DASR distant meeting transcription multiple devices,2023,1,1,BF08,Secondary verified robustness source
+2026-06-10,arXiv,Casual Conversations speech recognition fairness transcriptions,2021,1,1,BF10,Secondary verified fairness source
+2026-06-10,arXiv,AV-HuBERT audio-visual speech representation AVSR,2022,1,1,BF16,Secondary verified AVSR source
+2026-06-10,arXiv,Careless Whisper speech-to-text hallucination harms ACM DOI,2024,1,1,BF20,Secondary verified hallucination-risk source
