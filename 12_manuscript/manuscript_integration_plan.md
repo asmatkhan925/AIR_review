@@ -27,11 +27,14 @@ First draft assets created for review:
 - `08_tables/table_03_adaptation_strategy_decision_matrix.md`
 - `08_tables/table_04_pseudo_labeling_kd_reliability_matrix.md`
 - `08_tables/table_05_evaluation_robustness_checklist.md`
+- `08_tables/table_06_future_agenda_reporting_checklist.md`
 - `08_tables/table_figure_creation_notes.md`
 - `09_figures/figure_01_bottleneck_stack_spec.md`
 - `09_figures/figure_02_six_layer_taxonomy_spec.md`
 - `09_figures/figure_03_cross_block_evidence_flow_spec.md`
 - `09_figures/figure_04_future_agenda_map_spec.md`
+
+Tables 1-6 now require final captions, numbering checks, and cross-reference insertion when the relevant manuscript sections are assembled.
 
 ## Stage 3: Main Manuscript Assembly
 

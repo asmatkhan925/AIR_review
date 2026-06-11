@@ -2,6 +2,7 @@
 
 | Date | Decision | Rationale | Implication |
 |---|---|---|---|
+| 2026-06-12 | Polish table assets with representative evidence anchors | Tables 1-5 needed compact local citation anchors and Section 13 still needed the future-agenda/reporting checklist table | Tables 1-6 now have representative evidence support or table notes; final manuscript assembly should still check captions, cross-references, and bounded watchlist use |
 | 2026-06-12 | Create first table and figure draft assets | Core 60, Block G synthesis controls, and current section drafts now support high-priority manuscript tables and figure specifications | Use the new `08_tables/` drafts and `09_figures/` specifications as review assets before inserting tables or figures into the main manuscript |
 | 2026-06-12 | Perform Section 2 methodology micro-audit | The readiness report had stale Section 2 wording, and the screening-log count needed a local traceability check and packaged dependency | Updated the readiness report, kept the screening-log count locally verified, and ensured the handoff packager includes `02_literature_search/screening_log.csv` |
 | 2026-06-10 | Freeze Block F evaluation robustness evidence map | Block F now has conservative safeguards for LLM correction, compute-efficiency evidence, AVSR source status, demographic fairness evidence, and toolkit-only reproducibility support | Do not add new Block F literature unless a reviewer-level evidence gap appears; use BF24 only as watchlist-current emerging evidence and BF25 only for compute/generalization/efficiency support |
