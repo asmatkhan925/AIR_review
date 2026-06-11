@@ -23,3 +23,16 @@
 - Whether to include preprints.
 - Whether to use a systematic review diagram.
 - Final table and figure set.
+
+## Core 60 reference backbone added
+
+Added a Core 60 reference-control layer under `05_synthesis_matrices/` to support high-quality, field-level synthesis for the AIR review. The Core 60 set was selected from Blocks A-F using conservative criteria: core/high-value use level, high relevance, verified-primary or verified-secondary status, and exclusion of watchlist-only papers from central claims.
+
+Added files:
+- `core_60_reference_set.csv`
+- `supporting_demotions_from_candidate_pool.csv`
+- `core_60_bibtex_gap_report.csv`
+- `priority_watchlist_for_llm_and_emerging_directions.csv`
+- `core_60_selection_report.md`
+
+Use policy: Core 60 references should carry the main manuscript claims. Supporting demotions may be used for additional context. Watchlist items should be used only for emerging directions, especially LLM-assisted ASR, hallucination, contextual ASR, and 2025-2026 frontier work. Seven Core 60 entries still require BibTeX addition or confirmation before manuscript citation.
