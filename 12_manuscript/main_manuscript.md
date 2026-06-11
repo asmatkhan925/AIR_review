@@ -18,7 +18,7 @@ TODO: Integrate from `07_draft_sections/01_introduction.md`.
 
 ## 2. Review Methodology and Search Protocol
 
-TODO: Draft from search logs, inclusion/exclusion criteria, and citation verification records.
+TODO: Review and integrate `07_draft_sections/02_review_methodology_search_protocol.md`; companion traceability notes are in `07_draft_sections/02_review_methodology_search_protocol_traceability_notes.md`.
 
 ## 3. What Makes ASR Low-Resource?
 

@@ -17,7 +17,7 @@ The initial diagnostics showed many modified tracked files, but `git diff --igno
 |---|---|---:|---:|---|
 | Abstract | `07_draft_sections/00_abstract.md` exists | Yes | No | Needs final drafting after body integration |
 | 1. Introduction | `07_draft_sections/01_introduction.md` exists | Yes | No | Existing draft; likely needs final polish after body integration |
-| 2. Review Methodology and Search Protocol | No current Section 2 methodology draft found | Yes, methodology TODO only | No | Needs drafting or expansion before full assembly |
+| 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` exists | Yes | Yes | Approved working draft; needs review before integration |
 | 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` exists | Yes | Yes | Approved working draft |
 | 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` exists | Yes | Yes | Approved working draft |
 | 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` exists | Yes | Yes | Approved working draft |
@@ -78,7 +78,7 @@ No broken draft pointers were found in the main manuscript for Sections 3-14. Se
 
 ## 6. Remaining Work Before Full Manuscript Assembly
 
-1. Finalize Section 2 methodology/search protocol.
+1. Review and polish Section 2 methodology/search protocol.
 2. Update and polish Section 1 introduction after the body is stable.
 3. Create high-priority tables and figures.
 4. Assemble Sections 3-14 into `12_manuscript/main_manuscript.md`.

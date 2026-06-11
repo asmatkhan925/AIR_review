@@ -2,7 +2,7 @@
 
 ## Stage 1: Methodology and Front Matter
 
-- Draft or expand Section 2 from `01_scope_and_planning/review_methodology.md`, `01_scope_and_planning/inclusion_exclusion_criteria.md`, search logs, screening logs, citation verification records, Core 60 controls, and the handoff validation workflow.
+- Review and polish Section 2 from `07_draft_sections/02_review_methodology_search_protocol.md` and its traceability notes, checking it against `01_scope_and_planning/review_methodology.md`, `01_scope_and_planning/inclusion_exclusion_criteria.md`, search logs, screening logs, citation verification records, Core 60 controls, and the handoff validation workflow.
 - Revise Section 1 after the body is stable so the introduction previews the final six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
 - Draft the abstract only after Sections 1-14 are assembled and the table/figure set is known.
 

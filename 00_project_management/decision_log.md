@@ -100,3 +100,7 @@ Drafted `07_draft_sections/14_conclusion.md` with companion evidence notes using
 ## Integration readiness and line-ending hygiene pass completed
 
 Performed a pre-assembly integration-readiness pass after Sections 3-14 were drafted. Added `.gitattributes` and renormalized repository text files to resolve the line-ending-only dirty working tree, then created `12_manuscript/integration_readiness_report.md` and `12_manuscript/manuscript_integration_plan.md` to document section readiness, evidence controls, title alignment, table/figure placeholders, remaining assembly work, and risks before full manuscript integration.
+
+## Section 2 drafted as structured critical review methodology
+
+Drafted `07_draft_sections/02_review_methodology_search_protocol.md` with companion traceability notes using local review-methodology files, inclusion/exclusion criteria, search and screening logs, citation verification records, Core 60, evidence matrices, and Block G controls. The section frames the paper as a structured critical review with systematic mapping elements rather than a fully exhaustive PRISMA-style systematic review.
