@@ -37,10 +37,18 @@ First draft assets created for review:
 - `09_figures/figure_02_six_layer_taxonomy.svg`
 - `09_figures/figure_03_cross_block_evidence_flow.svg`
 - `09_figures/figure_04_future_agenda_map.svg`
+- `09_figures/previews/figure_01_bottleneck_stack.png`
+- `09_figures/previews/figure_02_six_layer_taxonomy.png`
+- `09_figures/previews/figure_03_cross_block_evidence_flow.png`
+- `09_figures/previews/figure_04_future_agenda_map.png`
+- `09_figures/previews/figure_01_bottleneck_stack.pdf`
+- `09_figures/previews/figure_02_six_layer_taxonomy.pdf`
+- `09_figures/previews/figure_03_cross_block_evidence_flow.pdf`
+- `09_figures/previews/figure_04_future_agenda_map.pdf`
 - `09_figures/figure_captions_and_alt_text.md`
 
 Tables 1-6 now require final captions, numbering checks, and cross-reference insertion when the relevant manuscript sections are assembled.
-Figure captions and cross-references should be inserted during manuscript assembly, not now.
+Figure captions and cross-references should be inserted during manuscript assembly, not now. The preview exports are for review and layout checking; the editable SVG files remain the source assets.
 
 ## Stage 3: Main Manuscript Assembly
 

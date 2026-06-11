@@ -1,96 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig4-title fig4-desc">
-  <title id="fig4-title">Figure 4 draft SVG</title>
-  <desc id="fig4-desc">Future agenda map centered on reliable low-resource ASR with nine agenda clusters connected to demonstrated gap families.</desc>
+  <title id="fig4-title">Future agenda map for reliable low-resource ASR</title>
+  <desc id="fig4-desc">A readable agenda map places reliable low-resource ASR in the center and connects nine bounded research-priority clusters to it.</desc>
   <defs>
-    <marker id="arrow4" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    <marker id="arrow4" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L13,6.5 L0,13 z" fill="#45515c" />
     </marker>
     <style>
       .bg { fill: #ffffff; }
-      .center { fill: #f8fafc; stroke: #1f2937; stroke-width: 2.4; }
-      .cluster1 { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
-      .cluster2 { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
-      .cluster3 { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
-      .cluster4 { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
-      .label { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 700; fill: #1f2937; }
-      .centerText { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #1f2937; }
-      .body { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #1f2937; }
-      .gap { font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; font-weight: 700; fill: #4b5563; }
-      .note { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #4b5563; }
-      .link { stroke: #55616b; stroke-width: 2; fill: none; marker-end: url(#arrow4); }
-      .softlink { stroke: #55616b; stroke-width: 1.8; fill: none; stroke-dasharray: 6 7; marker-end: url(#arrow4); }
+      .center { fill: #f8fafc; stroke: #1f2937; stroke-width: 2.6; }
+      .cluster1 { fill: #eef5fb; stroke: #34495e; stroke-width: 2; }
+      .cluster2 { fill: #edf7f1; stroke: #34495e; stroke-width: 2; }
+      .cluster3 { fill: #fff4e5; stroke: #34495e; stroke-width: 2; }
+      .cluster4 { fill: #fceff0; stroke: #34495e; stroke-width: 2; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #111827; }
+      .centerText { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; fill: #111827; }
+      .centerSub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; fill: #374151; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 14.5px; fill: #1f2937; }
+      .gap { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #374151; }
+      .link { stroke: #45515c; stroke-width: 2; fill: none; }
     </style>
   </defs>
 
   <rect class="bg" x="0" y="0" width="1400" height="900" />
 
-  <ellipse class="center" cx="700" cy="450" rx="180" ry="92" />
-  <text class="centerText" x="700" y="438" text-anchor="middle">Reliable</text>
-  <text class="centerText" x="700" y="470" text-anchor="middle">low-resource ASR</text>
-  <text class="note" x="700" y="500" text-anchor="middle">evidence-grounded future agenda</text>
+  <path class="link" d="M 425 142 C 520 210, 600 330, 635 372" />
+  <path class="link" d="M 700 162 C 700 244, 700 305, 700 354" />
+  <path class="link" d="M 975 142 C 880 210, 800 330, 765 372" />
+  <path class="link" d="M 995 353 C 920 376, 872 405, 878 430" />
+  <path class="link" d="M 995 613 C 920 590, 872 522, 878 470" />
+  <path class="link" d="M 700 738 C 700 645, 700 590, 700 546" />
+  <path class="link" d="M 522 664 C 600 625, 644 573, 668 544" />
+  <path class="link" d="M 425 613 C 505 590, 528 522, 522 470" />
+  <path class="link" d="M 405 353 C 480 376, 528 405, 522 430" />
 
-  <rect class="cluster1" x="92" y="58" width="330" height="118" rx="18" />
-  <text class="label" x="116" y="88">Definitions and resource conditions</text>
-  <text class="body" x="116" y="116">labeled, unlabeled, weak-label,</text>
-  <text class="body" x="116" y="138">validation, metadata, compute</text>
-  <text class="gap" x="116" y="162">GAP-G1 / GAP-G2</text>
+  <ellipse class="center" cx="700" cy="450" rx="178" ry="96" />
+  <text class="centerText" x="700" y="437" text-anchor="middle">Reliable</text>
+  <text class="centerText" x="700" y="471" text-anchor="middle">low-resource ASR</text>
+  <text class="centerSub" x="700" y="502" text-anchor="middle">bounded future agenda</text>
 
-  <rect class="cluster2" x="535" y="44" width="330" height="122" rx="18" />
-  <text class="label" x="559" y="76">Documentation and metadata</text>
-  <text class="body" x="559" y="104">provenance, consent, licensing,</text>
-  <text class="body" x="559" y="126">dialect/accent metadata, validation</text>
-  <text class="gap" x="559" y="150">GAP-G2 / GAP-G12</text>
+  <rect class="cluster1" x="70" y="58" width="355" height="116" rx="18" />
+  <text class="label" x="96" y="89">Definitions and resources</text>
+  <text class="body" x="96" y="118">labeled, unlabeled, weak-label</text>
+  <text class="body" x="96" y="141">validation, metadata, compute</text>
+  <text class="gap" x="96" y="164">GAP-G1 / GAP-G2</text>
 
-  <rect class="cluster3" x="978" y="58" width="330" height="118" rx="18" />
-  <text class="label" x="1002" y="88">Orthography and dialect benchmarks</text>
-  <text class="body" x="1002" y="116">transcript conventions, raw/normalized</text>
-  <text class="body" x="1002" y="138">scores, dialect/domain breakdowns</text>
-  <text class="gap" x="1002" y="162">GAP-G3 / GAP-G4</text>
+  <rect class="cluster2" x="522" y="46" width="355" height="116" rx="18" />
+  <text class="label" x="548" y="77">Documentation and metadata</text>
+  <text class="body" x="548" y="106">provenance, consent, licensing</text>
+  <text class="body" x="548" y="129">dialect/accent metadata, validation</text>
+  <text class="gap" x="548" y="152">GAP-G2 / GAP-G12</text>
 
-  <rect class="cluster4" x="1010" y="292" width="330" height="124" rx="18" />
-  <text class="label" x="1034" y="324">Compute-aware adaptation</text>
-  <text class="body" x="1034" y="352">matched comparisons, trainable</text>
-  <text class="body" x="1034" y="374">parameters, memory, forgetting</text>
-  <text class="gap" x="1034" y="398">GAP-G5 / GAP-G6 / GAP-G12</text>
+  <rect class="cluster3" x="975" y="58" width="355" height="116" rx="18" />
+  <text class="label" x="1001" y="89">Orthography and dialect tests</text>
+  <text class="body" x="1001" y="118">raw and normalized scoring</text>
+  <text class="body" x="1001" y="141">dialect and domain breakdowns</text>
+  <text class="gap" x="1001" y="164">GAP-G3 / GAP-G4</text>
 
-  <rect class="cluster1" x="1010" y="552" width="330" height="124" rx="18" />
-  <text class="label" x="1034" y="584">Reliable pseudo-labeling and KD</text>
-  <text class="body" x="1034" y="612">teacher quality, confidence,</text>
-  <text class="body" x="1034" y="634">uncertainty, agreement, filtering</text>
-  <text class="gap" x="1034" y="658">GAP-G7 / GAP-G8</text>
+  <rect class="cluster4" x="995" y="292" width="345" height="122" rx="18" />
+  <text class="label" x="1021" y="324">Compute-aware adaptation</text>
+  <text class="body" x="1021" y="354">matched comparisons and memory</text>
+  <text class="body" x="1021" y="377">trainable parameters, forgetting</text>
+  <text class="gap" x="1021" y="400">GAP-G5 / GAP-G6 / GAP-G12</text>
 
-  <rect class="cluster2" x="535" y="728" width="330" height="124" rx="18" />
-  <text class="label" x="559" y="760">Evaluation and robustness</text>
-  <text class="body" x="559" y="788">language, dialect, domain, noise,</text>
-  <text class="body" x="559" y="810">hallucination, reproducibility checks</text>
-  <text class="gap" x="559" y="834">GAP-G4 / GAP-G9 / GAP-G12</text>
+  <rect class="cluster1" x="995" y="552" width="345" height="122" rx="18" />
+  <text class="label" x="1021" y="584">Reliable pseudo-labeling and KD</text>
+  <text class="body" x="1021" y="614">teacher quality and uncertainty</text>
+  <text class="body" x="1021" y="637">agreement, filtering, calibration</text>
+  <text class="gap" x="1021" y="660">GAP-G7 / GAP-G8</text>
 
-  <rect class="cluster3" x="92" y="552" width="330" height="124" rx="18" />
-  <text class="label" x="116" y="584">AVSR and multimodal robustness</text>
-  <text class="body" x="116" y="612">modality coverage, missing-modality</text>
-  <text class="body" x="116" y="634">tests, privacy, degraded audio</text>
-  <text class="gap" x="116" y="658">GAP-G10</text>
+  <rect class="cluster2" x="522" y="738" width="355" height="116" rx="18" />
+  <text class="label" x="548" y="769">Evaluation and robustness</text>
+  <text class="body" x="548" y="798">language, dialect, domain, noise</text>
+  <text class="body" x="548" y="821">hallucination and reproducibility</text>
+  <text class="gap" x="548" y="844">GAP-G4 / GAP-G9 / GAP-G12</text>
 
-  <rect class="cluster4" x="60" y="292" width="330" height="124" rx="18" />
-  <text class="label" x="84" y="324">Constrained LLM assistance</text>
-  <text class="body" x="84" y="352">N-best or lattice grounding,</text>
-  <text class="body" x="84" y="374">over-correction and leakage checks</text>
-  <text class="gap" x="84" y="398">GAP-G9 / GAP-G11</text>
+  <rect class="cluster3" x="70" y="552" width="355" height="122" rx="18" />
+  <text class="label" x="96" y="584">AVSR and multimodal robustness</text>
+  <text class="body" x="96" y="614">modality coverage and missing input</text>
+  <text class="body" x="96" y="637">privacy and degraded audio tests</text>
+  <text class="gap" x="96" y="660">GAP-G10</text>
 
-  <rect class="cluster1" x="535" y="590" width="330" height="92" rx="18" />
-  <text class="label" x="559" y="622">Reproducibility and deployment</text>
-  <text class="body" x="559" y="650">versions, splits, scripts, artifacts,</text>
-  <text class="gap" x="559" y="672">compute and deployment cost</text>
+  <rect class="cluster4" x="60" y="292" width="345" height="122" rx="18" />
+  <text class="label" x="86" y="324">Constrained LLM assistance</text>
+  <text class="body" x="86" y="354">N-best or lattice grounding</text>
+  <text class="body" x="86" y="377">over-correction and leakage checks</text>
+  <text class="gap" x="86" y="400">GAP-G9 / GAP-G11</text>
 
-  <path class="link" d="M 422 144 C 520 202, 590 314, 633 372" />
-  <path class="link" d="M 700 166 C 700 236, 700 300, 700 358" />
-  <path class="link" d="M 978 144 C 880 202, 810 314, 767 372" />
-  <path class="link" d="M 1010 354 C 914 376, 867 400, 879 430" />
-  <path class="link" d="M 1010 614 C 914 590, 867 520, 879 470" />
-  <path class="link" d="M 700 728 C 700 654, 700 584, 700 542" />
-  <path class="link" d="M 422 614 C 520 590, 533 520, 521 470" />
-  <path class="link" d="M 390 354 C 486 376, 533 400, 521 430" />
-  <path class="softlink" d="M 700 590 C 700 555, 700 540, 700 542" />
+  <rect class="cluster1" x="522" y="616" width="355" height="96" rx="18" />
+  <text class="label" x="548" y="648">Reproducibility and deployment</text>
+  <text class="body" x="548" y="677">versions, splits, scripts, artifacts</text>
+  <text class="gap" x="548" y="699">compute and deployment cost</text>
 
-  <text class="note" x="700" y="882" text-anchor="middle">Agenda clusters are grounded in demonstrated gaps; emerging AVSR and LLM-assisted directions remain bounded by reliability controls.</text>
 </svg>

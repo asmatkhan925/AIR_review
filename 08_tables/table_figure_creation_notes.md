@@ -10,22 +10,33 @@ This note documents the first high-priority table and figure draft assets. No ne
 | `08_tables/table_04_pseudo_labeling_kd_reliability_matrix.md` | Section 9 | `pseudo_labeling_kd_matrix.csv`; `block_g_core_claim_synthesis_map.csv`; `block_g_research_gap_agenda_matrix.csv`; Section 9 draft | Draft reliability matrix ready for manuscript review | Retained pseudo-label proportions and thresholds are not generalized because they are method- and study-specific. Some KD and foundation-teacher anchors are secondary or emerging and should be checked again during final citation integration. | LLM/SpeechLM pseudo-label refinement is treated as watchlist-only and bounded to future-facing reliability risks |
 | `08_tables/table_05_evaluation_robustness_checklist.md` | Section 10; also supports Section 12 | `evaluation_robustness_matrix.csv`; `block_g_core_claim_synthesis_map.csv`; `block_g_research_gap_agenda_matrix.csv`; Section 10 draft | Draft checklist ready for manuscript review | Demographic metadata and subgroup reporting must be interpreted ethically and only where available. Hallucination and contextual-ASR anchors should be introduced as evaluation risks, not mature low-resource solutions. | Hallucination, contextual-ASR, and LLM-assisted rows use watchlist evidence only as emerging evaluation motivation |
 | `08_tables/table_06_future_agenda_reporting_checklist.md` | Section 13 | `block_g_research_gap_agenda_matrix.csv`; `block_g_core_claim_synthesis_map.csv`; `block_g_additional_resource_candidates.csv`; Section 13 draft; Table 5 | Draft checklist ready for manuscript review | Methodological documentation references are background support only. Final integration should check that GAP IDs remain aligned with the final Section 13 prose and captions. | Watchlist-only evidence is bounded to future-facing risks, especially hallucination, contextual ASR, LLM-assisted correction, AVSR, and emerging SpeechLM settings |
-| `09_figures/figure_01_bottleneck_stack_spec.md` | Sections 1, 3, 12, and 13 | `block_g_core_claim_synthesis_map.csv`; `block_g_research_gap_agenda_matrix.csv`; Sections 3, 4, 12, and 13 drafts | Draft figure specification only; no final image created | Needs final design choice about vertical stack versus layered pipeline | Watchlist-only evidence appears only in the LLM/multimodal risk layer |
-| `09_figures/figure_02_six_layer_taxonomy_spec.md` | Section 6; also supports Section 12 | `block_g_cross_block_taxonomy_synthesis_matrix.csv`; Section 6 draft | Draft figure specification only; no final image created | Needs final visual density control so examples do not overcrowd the six layers | Watchlist-only evidence is not used to define the six layers; frontier examples can be visually marked as emerging |
-| `09_figures/figure_03_cross_block_evidence_flow_spec.md` | Sections 4, 8, 10, and 12 | `block_g_cross_block_taxonomy_synthesis_matrix.csv`; `block_g_section_to_evidence_map.csv`; Section 12 draft | Draft figure specification only; no final image created | Needs final decision on whether to show Core 60 IDs in the figure or reserve them for caption/notes | Watchlist-only evidence appears only as bounded emerging-risk annotation |
-| `09_figures/figure_04_future_agenda_map_spec.md` | Section 13 | `block_g_research_gap_agenda_matrix.csv`; `block_g_additional_resource_candidates.csv`; Section 13 draft | Draft figure specification only; no final image created | Methodological documentation sources should remain background-support and not be presented as ASR performance evidence | Watchlist-only evidence is bounded to future agenda items for AVSR, LLM assistance, hallucination, and contextual ASR |
+| `09_figures/figure_01_bottleneck_stack_spec.md` | Sections 1, 3, 12, and 13 | `block_g_core_claim_synthesis_map.csv`; `block_g_research_gap_agenda_matrix.csv`; Sections 3, 4, 12, and 13 drafts | Polished editable SVG draft and previews created | Final journal production may still adjust line weights, exact sizing, and placement after manuscript layout is known | Watchlist-only evidence appears only in the LLM/multimodal risk layer |
+| `09_figures/figure_02_six_layer_taxonomy_spec.md` | Section 6; also supports Section 12 | `block_g_cross_block_taxonomy_synthesis_matrix.csv`; Section 6 draft | Polished editable SVG draft and previews created | Final layout should keep this as the central taxonomy figure and avoid adding extra examples inside the SVG | Watchlist-only evidence is not used to define the six layers; frontier examples can be visually marked as emerging |
+| `09_figures/figure_03_cross_block_evidence_flow_spec.md` | Sections 4, 8, 10, and 12 | `block_g_cross_block_taxonomy_synthesis_matrix.csv`; `block_g_section_to_evidence_map.csv`; Section 12 draft | Polished editable SVG draft and previews created | Core 60 IDs remain outside the figure and should be handled through caption, notes, or manuscript text if needed | Watchlist-only evidence appears only as bounded emerging-risk annotation |
+| `09_figures/figure_04_future_agenda_map_spec.md` | Section 13 | `block_g_research_gap_agenda_matrix.csv`; `block_g_additional_resource_candidates.csv`; Section 13 draft | Polished editable SVG draft and previews created | Methodological documentation sources should remain background-support and not be presented as ASR performance evidence | Watchlist-only evidence is bounded to future agenda items for AVSR, LLM assistance, hallucination, and contextual ASR |
 
 Integration note: These assets should be reviewed before full manuscript assembly. They should be inserted into `12_manuscript/main_manuscript.md` only after the corresponding sections are integrated, captions are finalized, and table/figure callouts and cross-references are harmonized.
 
 Evidence-boundary note: representative evidence anchors are intentionally sparse. They identify local citation keys that can support each row's framing, but the detailed evidence logic remains in Core 60, Block G, and the section drafts. Methodological documentation references such as datasheets, data statements, model cards, and energy/reporting work remain background support only and should not be presented as ASR performance evidence.
 
-## SVG Figure Draft Sources
+## Polished SVG Figure Draft Sources and Previews
 
-Editable SVG draft sources now exist for Figures 1-4:
+Editable SVG draft sources now exist for Figures 1-4 and have been polished for readability:
 
 - `09_figures/figure_01_bottleneck_stack.svg`
 - `09_figures/figure_02_six_layer_taxonomy.svg`
 - `09_figures/figure_03_cross_block_evidence_flow.svg`
 - `09_figures/figure_04_future_agenda_map.svg`
 
-These are draft visual assets created from the approved figure specifications and Block G controls. They require final journal-style polish before submission, including typography, spacing, caption integration, and cross-reference checks. Captions and alt text are tracked separately in `09_figures/figure_captions_and_alt_text.md`.
+Preview exports were created with local headless Chrome:
+
+- `09_figures/previews/figure_01_bottleneck_stack.png`
+- `09_figures/previews/figure_02_six_layer_taxonomy.png`
+- `09_figures/previews/figure_03_cross_block_evidence_flow.png`
+- `09_figures/previews/figure_04_future_agenda_map.png`
+- `09_figures/previews/figure_01_bottleneck_stack.pdf`
+- `09_figures/previews/figure_02_six_layer_taxonomy.pdf`
+- `09_figures/previews/figure_03_cross_block_evidence_flow.pdf`
+- `09_figures/previews/figure_04_future_agenda_map.pdf`
+
+Figure polish status: readable draft. The SVGs now use a consistent neutral palette, larger typography, simpler connectors, fewer in-figure annotations, and no embedded citations or captions. Remaining visual issues are production-level rather than evidence-level: final journal layout may require line-weight tuning, exact figure sizing, and export-format adjustment after the manuscript template is selected. Captions and alt text are tracked separately in `09_figures/figure_captions_and_alt_text.md`.

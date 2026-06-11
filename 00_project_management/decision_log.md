@@ -111,3 +111,7 @@ Drafted `07_draft_sections/02_review_methodology_search_protocol.md` with compan
 ## First editable SVG figure drafts created
 
 Created first editable SVG draft sources for Figures 1-4 from the approved figure specifications and Block G controls. The figure set now covers the bottleneck stack, six-layer taxonomy, cross-block evidence flow, and future agenda map. Captions and alt text are tracked in `09_figures/figure_captions_and_alt_text.md`; the SVGs are draft visual assets that still require final journal-style polish before manuscript assembly.
+
+## SVG figure drafts polished and preview exports created
+
+Polished the first editable SVG drafts for Figures 1-4 to improve readability, typography, connector clarity, and cross-figure visual consistency without changing claims, evidence, citations, Core 60, Block G, or manuscript content. Created PNG and PDF previews under `09_figures/previews/` for review; the editable SVG files remain the source assets.

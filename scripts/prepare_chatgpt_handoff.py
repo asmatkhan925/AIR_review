@@ -40,6 +40,11 @@ TEXT_EXTENSIONS = {
     ".yml",
 }
 
+FIGURE_PREVIEW_EXTENSIONS = {
+    ".pdf",
+    ".png",
+}
+
 EXCLUDED_PARTS = {
     ".git",
     ".hg",
@@ -284,6 +289,18 @@ def discover_dir_text_files(directory: str) -> list[str]:
     return sorted(set(paths))
 
 
+def discover_figure_preview_files() -> list[str]:
+    root = Path("09_figures/previews")
+    if not root.exists():
+        return []
+    paths = []
+    for path in root.glob("*"):
+        rel = normalize_rel_path(path)
+        if path.is_file() and path.suffix.lower() in FIGURE_PREVIEW_EXTENSIONS:
+            paths.append(rel)
+    return sorted(set(paths))
+
+
 def discover_manuscript_draft_files() -> list[str]:
     manuscript = Path("12_manuscript/main_manuscript.md")
     if not manuscript.exists():
@@ -301,6 +318,7 @@ def select_files(args: argparse.Namespace, changed_files: list[str]) -> tuple[li
     selected: set[str] = set(path for path in ALWAYS_INCLUDE if Path(path).exists() and is_safe_text_file(Path(path)))
     selected.update(discover_dir_text_files("08_tables"))
     selected.update(discover_dir_text_files("09_figures"))
+    selected.update(discover_figure_preview_files())
     selected.update(discover_manuscript_draft_files())
     if args.full:
         selected.update(list_all_repo_text_files())
@@ -328,6 +346,8 @@ def detect_type(path: Path) -> str:
         ".csv": "csv",
         ".json": "json",
         ".md": "markdown",
+        ".pdf": "pdf",
+        ".png": "png",
         ".py": "python",
         ".svg": "svg",
         ".tex": "latex",

@@ -1,69 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig2-title fig2-desc">
-  <title id="fig2-title">Figure 2 draft SVG</title>
-  <desc id="fig2-desc">Six interacting taxonomy layers for low-resource ASR in the foundation-model era.</desc>
+  <title id="fig2-title">Six-layer taxonomy of low-resource ASR</title>
+  <desc id="fig2-desc">Six balanced taxonomy layers surround a central cross-layer alignment node for low-resource ASR in the foundation-model era.</desc>
   <defs>
-    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    <marker id="arrow2" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L13,6.5 L0,13 z" fill="#45515c" />
     </marker>
     <style>
       .bg { fill: #ffffff; }
-      .note { fill: #f8fafc; stroke: #4b5563; stroke-width: 1.8; }
-      .box1 { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
-      .box2 { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
-      .box3 { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
-      .box4 { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
-      .box5 { fill: #f1f5ff; stroke: #4b5563; stroke-width: 1.8; }
-      .box6 { fill: #eef9ef; stroke: #4b5563; stroke-width: 1.8; }
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: 700; fill: #1f2937; }
-      .panel { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #1f2937; }
-      .body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #1f2937; }
-      .small { font-family: Arial, Helvetica, sans-serif; font-size: 15px; fill: #4b5563; }
-      .arrow { stroke: #55616b; stroke-width: 2.1; fill: none; marker-end: url(#arrow2); }
-      .feedback { stroke: #55616b; stroke-width: 2; fill: none; stroke-dasharray: 7 7; marker-end: url(#arrow2); }
+      .banner { fill: #f3f4f6; stroke: #1f2937; stroke-width: 2.2; }
+      .center { fill: #f8fafc; stroke: #1f2937; stroke-width: 2.4; }
+      .box1 { fill: #eef5fb; stroke: #34495e; stroke-width: 2; }
+      .box2 { fill: #edf7f1; stroke: #34495e; stroke-width: 2; }
+      .box3 { fill: #fff4e5; stroke: #34495e; stroke-width: 2; }
+      .box4 { fill: #fceff0; stroke: #34495e; stroke-width: 2; }
+      .box5 { fill: #f1f5ff; stroke: #34495e; stroke-width: 2; }
+      .box6 { fill: #eef9ef; stroke: #34495e; stroke-width: 2; }
+      .bannerText { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #111827; }
+      .panel { font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: 700; fill: #111827; }
+      .centerText { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111827; }
+      .centerSub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; fill: #374151; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #1f2937; }
+      .arrow { stroke: #45515c; stroke-width: 2.5; fill: none; marker-end: url(#arrow2); }
+      .soft { stroke: #45515c; stroke-width: 2.2; fill: none; stroke-dasharray: 9 8; marker-end: url(#arrow2); }
     </style>
   </defs>
 
   <rect class="bg" x="0" y="0" width="1400" height="900" />
 
-  <rect class="note" x="170" y="34" width="1060" height="58" rx="22" />
-  <text class="small" x="700" y="69" text-anchor="middle">Foundation-model-era specific: stronger pretrained starting points, but reliability depends on cross-layer alignment</text>
+  <rect class="banner" x="185" y="38" width="1030" height="64" rx="22" />
+  <text class="bannerText" x="700" y="77" text-anchor="middle">Foundation-model-era specific: pretrained scale helps only when the layers align</text>
 
-  <rect class="box1" x="65" y="120" width="570" height="170" rx="18" />
-  <text class="panel" x="95" y="150">Resource</text>
-  <text class="body" x="95" y="187">labeled speech; unlabeled speech; weak labels; pseudo-labels</text>
-  <text class="body" x="95" y="210">multilingual corpora; multimodal resources</text>
+  <rect class="box1" x="80" y="150" width="390" height="160" rx="18" />
+  <text class="panel" x="112" y="184">Resource</text>
+  <text class="body" x="112" y="222">labeled and unlabeled speech</text>
+  <text class="body" x="112" y="248">weak labels and pseudo-labels</text>
+  <text class="body" x="112" y="274">multilingual and multimodal data</text>
 
-  <rect class="box2" x="65" y="350" width="570" height="170" rx="18" />
-  <text class="panel" x="95" y="380">Language</text>
-  <text class="body" x="95" y="417">dialect; accent; orthography; script</text>
-  <text class="body" x="95" y="440">morphology; code-switching; language-family mismatch</text>
+  <rect class="box2" x="80" y="370" width="390" height="160" rx="18" />
+  <text class="panel" x="112" y="404">Language</text>
+  <text class="body" x="112" y="442">dialect and accent variation</text>
+  <text class="body" x="112" y="468">orthography, script, morphology</text>
+  <text class="body" x="112" y="494">code-switching and mismatch</text>
 
-  <rect class="box3" x="65" y="580" width="570" height="170" rx="18" />
-  <text class="panel" x="95" y="610">Model</text>
-  <text class="body" x="95" y="647">hybrid ASR; end-to-end ASR; SSL encoders</text>
-  <text class="body" x="95" y="670">multilingual SSL; weakly supervised ASR; SpeechLMs; multimodal systems</text>
+  <rect class="box3" x="80" y="590" width="390" height="160" rx="18" />
+  <text class="panel" x="112" y="624">Model</text>
+  <text class="body" x="112" y="662">hybrid and end-to-end ASR</text>
+  <text class="body" x="112" y="688">SSL and multilingual SSL</text>
+  <text class="body" x="112" y="714">weakly supervised and multimodal ASR</text>
 
-  <rect class="box4" x="765" y="120" width="570" height="170" rx="18" />
-  <text class="panel" x="795" y="150">Adaptation</text>
-  <text class="body" x="795" y="187">full fine-tuning; continued pretraining; adapters</text>
-  <text class="body" x="795" y="210">LoRA/QLoRA; related-language transfer; contextual biasing; forgetting control</text>
+  <rect class="box4" x="930" y="150" width="390" height="160" rx="18" />
+  <text class="panel" x="962" y="184">Adaptation</text>
+  <text class="body" x="962" y="222">full tuning and continued pretraining</text>
+  <text class="body" x="962" y="248">adapters, LoRA, transfer</text>
+  <text class="body" x="962" y="274">forgetting and compute controls</text>
 
-  <rect class="box5" x="765" y="350" width="570" height="170" rx="18" />
-  <text class="panel" x="795" y="380">Supervision</text>
-  <text class="body" x="795" y="417">supervised labels; self-supervision; self-training</text>
-  <text class="body" x="795" y="440">confidence filtering; uncertainty filtering; single-teacher KD; multi-teacher KD</text>
+  <rect class="box5" x="930" y="370" width="390" height="160" rx="18" />
+  <text class="panel" x="962" y="404">Supervision</text>
+  <text class="body" x="962" y="442">human labels and self-supervision</text>
+  <text class="body" x="962" y="468">self-training and filtering</text>
+  <text class="body" x="962" y="494">single- and multi-teacher KD</text>
 
-  <rect class="box6" x="765" y="580" width="570" height="170" rx="18" />
-  <text class="panel" x="795" y="610">Evaluation</text>
-  <text class="body" x="795" y="647">WER/CER; orthography-aware scoring; language/dialect/domain breakdowns</text>
-  <text class="body" x="795" y="670">robustness; fairness; compute; reproducibility; hallucination checks</text>
+  <rect class="box6" x="930" y="590" width="390" height="160" rx="18" />
+  <text class="panel" x="962" y="624">Evaluation</text>
+  <text class="body" x="962" y="662">WER/CER plus normalized scoring</text>
+  <text class="body" x="962" y="688">language, dialect, domain breakdowns</text>
+  <text class="body" x="962" y="714">robustness and reproducibility checks</text>
 
-  <line class="arrow" x1="635" y1="205" x2="765" y2="455" />
-  <line class="arrow" x1="635" y1="435" x2="765" y2="685" />
-  <line class="arrow" x1="635" y1="665" x2="765" y2="205" />
-  <line class="arrow" x1="1040" y1="290" x2="1040" y2="350" />
-  <line class="arrow" x1="1040" y1="520" x2="1040" y2="580" />
-  <path class="feedback" d="M 765 685 C 520 830, 230 820, 180 470 C 150 270, 245 205, 635 205" />
+  <ellipse class="center" cx="700" cy="450" rx="210" ry="112" />
+  <text class="centerText" x="700" y="432" text-anchor="middle">Cross-layer</text>
+  <text class="centerText" x="700" y="463" text-anchor="middle">alignment</text>
+  <text class="centerSub" x="700" y="494" text-anchor="middle">taxonomy, not a method list</text>
 
-  <text class="small" x="700" y="828" text-anchor="middle">The taxonomy is layer-based, not a method list; the detailed evidence remains in Block G and the section drafts.</text>
+  <path class="arrow" d="M 470 230 C 545 260, 590 330, 620 374" />
+  <path class="arrow" d="M 470 450 L 490 450" />
+  <path class="arrow" d="M 470 670 C 545 640, 590 570, 620 526" />
+  <path class="arrow" d="M 930 230 C 855 260, 810 330, 780 374" />
+  <path class="arrow" d="M 930 450 L 910 450" />
+  <path class="arrow" d="M 930 670 C 855 640, 810 570, 780 526" />
+  <path class="soft" d="M 700 562 C 700 650, 700 712, 940 728" />
 </svg>

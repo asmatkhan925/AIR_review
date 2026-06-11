@@ -1,84 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig1-title fig1-desc">
-  <title id="fig1-title">Figure 1 draft SVG</title>
-  <desc id="fig1-desc">Foundation speech models as a stronger starting point above interacting bottleneck layers for low-resource ASR.</desc>
+  <title id="fig1-title">Foundation-model-era low-resource ASR bottleneck stack</title>
+  <desc id="fig1-desc">A neutral foundation speech model starting point sits above eight interacting low-resource ASR bottleneck layers, with side feedback loops from evaluation and deployment back to resources and adaptation.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L13,6.5 L0,13 z" fill="#45515c" />
     </marker>
     <style>
       .bg { fill: #ffffff; }
-      .frame { fill: #f8fafc; stroke: #4b5563; stroke-width: 2; }
-      .pill { fill: #eaf2fb; stroke: #4b5563; stroke-width: 2; }
-      .layerA { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
-      .layerB { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
-      .layerC { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
-      .layerD { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #1f2937; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; fill: #1f2937; }
-      .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #1f2937; }
-      .body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #1f2937; }
-      .note { font-family: Arial, Helvetica, sans-serif; font-size: 15px; fill: #4b5563; }
-      .arrow { stroke: #55616b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
-      .feedback { stroke: #55616b; stroke-width: 2; fill: none; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+      .model { fill: #f3f4f6; stroke: #1f2937; stroke-width: 2.4; }
+      .modelAccent { fill: #e8eef7; stroke: #1f2937; stroke-width: 2.4; }
+      .layerA { fill: #eef5fb; stroke: #34495e; stroke-width: 2; }
+      .layerB { fill: #edf7f1; stroke: #34495e; stroke-width: 2; }
+      .layerC { fill: #fff4e5; stroke: #34495e; stroke-width: 2; }
+      .layerD { fill: #fceff0; stroke: #34495e; stroke-width: 2; }
+      .modelText { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; fill: #111827; }
+      .modelSub { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 600; fill: #374151; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; fill: #111827; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #1f2937; }
+      .sideLabel { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #374151; }
+      .arrow { stroke: #45515c; stroke-width: 2.8; fill: none; marker-end: url(#arrow); }
+      .feedback { stroke: #45515c; stroke-width: 2.4; fill: none; stroke-dasharray: 9 8; marker-end: url(#arrow); }
     </style>
   </defs>
 
   <rect class="bg" x="0" y="0" width="1400" height="900" />
 
-  <rect class="pill" x="350" y="36" width="700" height="78" rx="24" />
-  <text class="title" x="700" y="70" text-anchor="middle">Foundation speech models</text>
-  <text class="subtitle" x="700" y="96" text-anchor="middle">stronger starting point</text>
+  <rect class="model" x="330" y="34" width="740" height="94" rx="22" />
+  <rect class="modelAccent" x="355" y="58" width="690" height="46" rx="14" />
+  <text class="modelText" x="700" y="88" text-anchor="middle">Foundation speech models</text>
+  <text class="modelSub" x="700" y="119" text-anchor="middle">stronger starting point, not a complete solution</text>
 
-  <line class="arrow" x1="700" y1="114" x2="700" y2="140" />
+  <path class="arrow" d="M 700 128 L 700 155" />
 
-  <rect class="layerA" x="210" y="140" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="164">Resource quality and documentation</text>
-  <text class="body" x="240" y="186">labeled speech; unlabeled speech; weak labels; metadata; licensing; validation</text>
+  <rect class="layerA" x="190" y="156" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="184">Resource quality and documentation</text>
+  <text class="body" x="226" y="209">labeled speech, unlabeled speech, weak labels, metadata, licensing, validation</text>
 
-  <line class="arrow" x1="700" y1="202" x2="700" y2="212" />
+  <path class="arrow" d="M 700 224 L 700 243" />
 
-  <rect class="layerB" x="210" y="212" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="236">Language fit</text>
-  <text class="body" x="240" y="258">dialect; accent; orthography; script; morphology; code-switching</text>
+  <rect class="layerB" x="190" y="244" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="272">Language fit</text>
+  <text class="body" x="226" y="297">dialect, accent, orthography, script, morphology, code-switching</text>
 
-  <line class="arrow" x1="700" y1="274" x2="700" y2="284" />
+  <path class="arrow" d="M 700 312 L 700 331" />
 
-  <rect class="layerC" x="210" y="284" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="308">Adaptation choice</text>
-  <text class="body" x="240" y="330">full fine-tuning; continued pretraining; PEFT; transfer; prompting</text>
+  <rect class="layerC" x="190" y="332" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="360">Adaptation choice</text>
+  <text class="body" x="226" y="385">full fine-tuning, continued pretraining, PEFT, transfer, bounded prompting</text>
 
-  <line class="arrow" x1="700" y1="346" x2="700" y2="356" />
+  <path class="arrow" d="M 700 400 L 700 419" />
 
-  <rect class="layerD" x="210" y="356" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="380">Supervision reliability</text>
-  <text class="body" x="240" y="402">pseudo-label quality; confidence; uncertainty; agreement; KD objective</text>
+  <rect class="layerD" x="190" y="420" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="448">Supervision reliability</text>
+  <text class="body" x="226" y="473">pseudo-label quality, confidence, uncertainty, teacher agreement, KD objective</text>
 
-  <line class="arrow" x1="700" y1="418" x2="700" y2="428" />
+  <path class="arrow" d="M 700 488 L 700 507" />
 
-  <rect class="layerA" x="210" y="428" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="452">Evaluation and comparability</text>
-  <text class="body" x="240" y="474">WER/CER; language-wise; dialect-wise; domain-wise; normalization-aware</text>
+  <rect class="layerA" x="190" y="508" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="536">Evaluation and comparability</text>
+  <text class="body" x="226" y="561">WER/CER, language-wise, dialect-wise, domain-wise, normalization-aware scoring</text>
 
-  <line class="arrow" x1="700" y1="490" x2="700" y2="500" />
+  <path class="arrow" d="M 700 576 L 700 595" />
 
-  <rect class="layerB" x="210" y="500" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="524">Robustness and deployment</text>
-  <text class="body" x="240" y="546">noise; far-field; channel shift; speaker variation; fairness; reproducibility</text>
+  <rect class="layerB" x="190" y="596" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="624">Robustness and deployment</text>
+  <text class="body" x="226" y="649">noise, far-field speech, channel shift, speaker variation, fairness, reproducibility</text>
 
-  <line class="arrow" x1="700" y1="562" x2="700" y2="572" />
+  <path class="arrow" d="M 700 664 L 700 683" />
 
-  <rect class="layerC" x="210" y="572" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="596">Compute and reporting</text>
-  <text class="body" x="240" y="618">hardware; trainable parameters; inference cost; model version; decoding scripts</text>
+  <rect class="layerC" x="190" y="684" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="712">Compute and reporting</text>
+  <text class="body" x="226" y="737">hardware, trainable parameters, inference cost, model version, decoding scripts</text>
 
-  <line class="arrow" x1="700" y1="634" x2="700" y2="644" />
+  <path class="arrow" d="M 700 752 L 700 771" />
 
-  <rect class="layerD" x="210" y="644" width="980" height="62" rx="16" />
-  <text class="label" x="240" y="668">Multimodal and LLM risks</text>
-  <text class="body" x="240" y="690">AVSR mismatch; hallucination; over-correction; context leakage; grounding</text>
+  <rect class="layerD" x="190" y="772" width="1020" height="68" rx="16" />
+  <text class="label" x="226" y="800">Multimodal and LLM risks</text>
+  <text class="body" x="226" y="825">AVSR mismatch, hallucination, over-correction, context leakage, grounding</text>
 
-  <path class="feedback" d="M 220 675 C 110 675, 110 170, 210 170" />
-  <path class="feedback" d="M 1188 675 C 1300 675, 1300 390, 1188 390" />
+  <path class="feedback" d="M 188 806 C 90 760, 90 214, 188 190" />
+  <text class="sideLabel" x="84" y="506" transform="rotate(-90 84 506)" text-anchor="middle">resource feedback</text>
 
-  <text class="note" x="1160" y="82" text-anchor="end">interacting bottlenecks</text>
+  <path class="feedback" d="M 1212 806 C 1308 760, 1308 432, 1212 454" />
+  <text class="sideLabel" x="1316" y="620" transform="rotate(90 1316 620)" text-anchor="middle">evaluation feedback</text>
 </svg>
