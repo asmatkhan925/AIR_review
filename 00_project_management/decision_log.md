@@ -52,3 +52,7 @@ Added Block G as the cross-block synthesis layer, not as another raw literature-
 ## Section 3 revised using Block G controls
 
 Revised `07_draft_sections/03_what_makes_asr_low_resource.md` using Block G as the synthesis-control layer, especially C-G1, C-G6, and the Section 3 control row. The section remains a draft pending final integration into `12_manuscript/main_manuscript.md`; the manuscript file continues to point to the draft and evidence-notes files rather than containing the full section.
+
+## Section 4 drafted from Block B and Block G controls
+
+Drafted `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` with companion evidence notes using Block B, Core 60, the foundation-model matrix, and Block G claim C-G2 as the synthesis-control layer. The draft remains outside `12_manuscript/main_manuscript.md` pending review and final integration.

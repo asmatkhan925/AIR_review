@@ -26,7 +26,7 @@ TODO: Review and integrate `07_draft_sections/03_what_makes_asr_low_resource.md`
 
 ## 4. From Hybrid ASR to Foundation Speech Models
 
-TODO: Reorganize relevant material from `07_draft_sections/02_evolution_of_asr.md`, `04_end_to_end_asr.md`, `05_self_supervised_learning.md`, `06_multilingual_transfer.md`, and `08_foundation_models_and_speech_llms.md`.
+TODO: Review and integrate `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md`; companion evidence notes are in `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models_evidence_notes.md`.
 
 ## 5. Resources and Benchmarks
 
