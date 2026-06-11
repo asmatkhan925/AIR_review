@@ -44,9 +44,9 @@ TODO: Review and integrate `07_draft_sections/07_data_centric_strategies_foundat
 
 TODO: Review and integrate `07_draft_sections/08_adaptation_strategies_low_resource_asr.md`; companion evidence notes are in `07_draft_sections/08_adaptation_strategies_low_resource_asr_evidence_notes.md`.
 
-## 9. Pseudo-Labeling and Knowledge Distillation
+## 9. Pseudo-Labeling and Knowledge Distillation for Low-Resource ASR
 
-TODO: Reorganize relevant material from `07_draft_sections/07_knowledge_distillation.md`.
+TODO: Review and integrate `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md`; companion evidence notes are in `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr_evidence_notes.md`.
 
 ## 10. Evaluation, Reproducibility, and Robustness
 

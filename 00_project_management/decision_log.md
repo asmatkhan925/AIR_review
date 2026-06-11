@@ -72,3 +72,7 @@ Drafted `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` w
 ## Section 8 drafted from adaptation evidence controls
 
 Drafted `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` with companion evidence notes using the adaptation matrix, Core 60, foundation-model evidence, and Block G controls. The section answers RQ4 by framing adaptation effectiveness as conditional on target-language data, domain mismatch, language relatedness, compute, evaluation design, and forgetting risk.
+
+## Section 9 drafted from pseudo-labeling and KD evidence controls
+
+Drafted `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` with companion evidence notes using the pseudo-labeling/KD matrix, Core 60, foundation-model evidence, evaluation-risk evidence, and Block G controls. The section answers RQ5 by treating supervision expansion as useful only when teacher quality, filtering, uncertainty, agreement, normalization, and evaluation controls are explicit.
