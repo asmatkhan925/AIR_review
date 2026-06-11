@@ -29,7 +29,7 @@ Recommended manuscript writing order:
 4. Section 7: Data-Centric Strategies
 5. Section 8: Adaptation Strategies
 6. Section 9: Pseudo-Labeling and Knowledge Distillation
-7. Section 10: Evaluation Practice and Robustness
+7. Section 10: Evaluation, Reproducibility, and Robustness
 8. Section 11: Multimodal, AVSR, and LLM-Assisted ASR
 9. Section 12: Cross-Block Synthesis and Gap Analysis
 10. Section 13: Future Research Agenda

@@ -50,7 +50,7 @@ TODO: Review and integrate `07_draft_sections/09_pseudo_labeling_kd_low_resource
 
 ## 10. Evaluation, Reproducibility, and Robustness
 
-TODO: Draft from evaluation evidence, reproducibility records, and gap matrices.
+TODO: Review and integrate `07_draft_sections/10_evaluation_reproducibility_robustness.md`; companion evidence notes are in `07_draft_sections/10_evaluation_reproducibility_robustness_evidence_notes.md`.
 
 ## 11. Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
 

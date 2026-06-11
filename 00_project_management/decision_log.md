@@ -76,3 +76,7 @@ Drafted `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` with co
 ## Section 9 drafted from pseudo-labeling and KD evidence controls
 
 Drafted `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` with companion evidence notes using the pseudo-labeling/KD matrix, Core 60, foundation-model evidence, evaluation-risk evidence, and Block G controls. The section answers RQ5 by treating supervision expansion as useful only when teacher quality, filtering, uncertainty, agreement, normalization, and evaluation controls are explicit.
+
+## Section 10 drafted from evaluation and robustness controls
+
+Drafted `07_draft_sections/10_evaluation_reproducibility_robustness.md` with companion evidence notes using the evaluation/robustness matrix, Core 60, Block G controls, and previous Section 7-9 reliability arguments. The section answers RQ6 by treating WER/CER as necessary but insufficient without orthography-aware, subgroup-aware, robustness, reproducibility, compute, hallucination, and contextual evaluation controls.
