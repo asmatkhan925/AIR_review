@@ -96,3 +96,7 @@ Drafted `07_draft_sections/13_future_research_agenda.md` with companion evidence
 ## Section 14 drafted as conclusion
 
 Drafted `07_draft_sections/14_conclusion.md` with companion evidence notes using Sections 12-13, Block G, Core 60, and the locked four-contribution structure. The conclusion answers the main review question by closing on the claim that foundation speech models changed the starting point of low-resource ASR, but reliable recognition still depends on cross-layer alignment across resources, language conditions, adaptation, supervision, evaluation, reproducibility, compute transparency, multimodal robustness, and bounded LLM-assisted use.
+
+## Integration readiness and line-ending hygiene pass completed
+
+Performed a pre-assembly integration-readiness pass after Sections 3-14 were drafted. Added `.gitattributes` and renormalized repository text files to resolve the line-ending-only dirty working tree, then created `12_manuscript/integration_readiness_report.md` and `12_manuscript/manuscript_integration_plan.md` to document section readiness, evidence controls, title alignment, table/figure placeholders, remaining assembly work, and risks before full manuscript integration.
