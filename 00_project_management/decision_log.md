@@ -88,3 +88,7 @@ Drafted `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` with companio
 ## Section 12 drafted as cross-block synthesis and gap analysis
 
 Drafted `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` with companion evidence notes using Block G, Core 60, Sections 3-11, and Blocks A-F. The section answers the main review question by synthesizing C-G1-C-G8 and GAP-G1-GAP-G12 around cross-layer reliability: foundation models change the starting point of low-resource ASR, but reliable progress still depends on resource documentation, language fit, adaptation comparability, supervision reliability, evaluation, robustness, reproducibility, compute, and bounded multimodal or LLM-assisted use.
+
+## Section 13 drafted as future research agenda
+
+Drafted `07_draft_sections/13_future_research_agenda.md` with companion evidence notes using Section 12, Block G, Core 60, gap clusters, and bounded methodological/watchlist support. The section uses C-G8 as the main agenda backbone and converts GAP-G1-GAP-G12 into priorities for low-resource definitions, dataset documentation, orthography-aware and dialect-aware benchmarks, compute-efficient adaptation, reliable pseudo-labeling and KD, evaluation beyond aggregate WER/CER, multimodal robustness, constrained LLM assistance, reproducibility, and deployment transparency.

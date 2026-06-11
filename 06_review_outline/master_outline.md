@@ -15,7 +15,7 @@ This outline follows the locked review questions in `01_scope_and_planning/resea
 | 3 | What makes ASR low-resource? | RQ1 |
 | 4 | From hybrid ASR to foundation speech models | RQ2 |
 | 5 | Resources and benchmarks | RQ1; RQ3; RQ6 |
-| 6 | Model-centric approaches | RQ2; RQ4 |
+| 6 | Foundation-Model-Era Taxonomy of Low-Resource ASR | RQ1-RQ6 |
 | 7 | Data-centric strategies | RQ3 |
 | 8 | Adaptation strategies | RQ4 |
 | 9 | Pseudo-labeling and knowledge distillation | RQ5 |

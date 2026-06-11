@@ -62,7 +62,7 @@ TODO: Use `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` with comp
 
 ## 13. Future Research Agenda
 
-TODO: Integrate future-direction matrix and evidence-grounded gaps.
+TODO: Use `07_draft_sections/13_future_research_agenda.md` with companion notes in `07_draft_sections/13_future_research_agenda_evidence_notes.md` when integrating this section. Convert GAP-G1-GAP-G12 into concrete priorities for reporting standards, dataset documentation, orthography-aware and dialect-aware benchmarks, compute-efficient adaptation, reliable pseudo-labeling and KD, evaluation beyond aggregate WER/CER, multimodal robustness, constrained LLM assistance, reproducibility, and deployment transparency.
 
 ## 14. Conclusion
 
