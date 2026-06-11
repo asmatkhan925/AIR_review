@@ -80,3 +80,7 @@ Drafted `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` with compa
 ## Section 10 drafted from evaluation and robustness controls
 
 Drafted `07_draft_sections/10_evaluation_reproducibility_robustness.md` with companion evidence notes using the evaluation/robustness matrix, Core 60, Block G controls, and previous Section 7-9 reliability arguments. The section answers RQ6 by treating WER/CER as necessary but insufficient without orthography-aware, subgroup-aware, robustness, reproducibility, compute, hallucination, and contextual evaluation controls.
+
+## Section 11 drafted from multimodal and LLM-assisted controls
+
+Drafted `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` with companion evidence notes using multimodal/AVSR, SpeechLM, LLM-assisted, evaluation-risk, Core 60, watchlist, and Block G controls. The section answers the future-facing part of RQ6 by treating multimodal and LLM-assisted ASR as promising but reliability-sensitive directions that require source grounding, task-boundary clarity, hallucination and over-correction checks, modality-mismatch controls, reproducibility, and compute reporting.

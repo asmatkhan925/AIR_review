@@ -52,9 +52,9 @@ TODO: Review and integrate `07_draft_sections/09_pseudo_labeling_kd_low_resource
 
 TODO: Review and integrate `07_draft_sections/10_evaluation_reproducibility_robustness.md`; companion evidence notes are in `07_draft_sections/10_evaluation_reproducibility_robustness_evidence_notes.md`.
 
-## 11. Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
+## 11. Multimodal, AVSR, and LLM-Assisted ASR
 
-TODO: Reorganize relevant material from `07_draft_sections/09_multimodal_and_avsr.md`, `07_draft_sections/08_foundation_models_and_speech_llms.md`, and LLM-assisted ASR notes. Separate speech-LLM architectures from post-ASR LLM correction, rescoring, contextual biasing, and normalization. Explicitly evaluate hallucination, over-correction, benchmark leakage, cost, and language bias.
+TODO: Use `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` with companion notes in `07_draft_sections/11_multimodal_avsr_llm_assisted_asr_evidence_notes.md` when integrating this section. Keep AVSR, speech-language models, speech translation, and LLM-assisted correction/rescoring distinct, and preserve the reliability safeguards around hallucination, over-correction, modality mismatch, context leakage, compute, and reproducibility.
 
 ## 12. Taxonomy, Comparative Synthesis, and Gap Analysis
 

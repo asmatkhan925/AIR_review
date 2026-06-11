@@ -239,10 +239,10 @@ The section may describe WER/CER without showing what those metrics hide.
 ### Quality Check
 Does the section directly support RQ6?
 
-## Section 11: Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
+## Section 11: Multimodal, AVSR, and LLM-Assisted ASR
 
 ### Purpose
-Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, speech-LLM architectures, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
+Examine how robust low-resource ASR may extend toward multimodal AVSR, SpeechLM systems, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
 
 ### Main Argument
 Multimodal, speech-LLM, and LLM-assisted methods are promising for noisy and underrepresented settings, but they introduce new data, privacy, hallucination, over-correction, benchmark leakage, language bias, cost, and evaluation risks.

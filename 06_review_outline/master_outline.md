@@ -20,7 +20,7 @@ This outline follows the locked review questions in `01_scope_and_planning/resea
 | 8 | Adaptation strategies | RQ4 |
 | 9 | Pseudo-labeling and knowledge distillation | RQ5 |
 | 10 | Evaluation, reproducibility, and robustness | RQ6 |
-| 11 | Multimodal, Speech-LLM, and LLM-assisted low-resource ASR | RQ6 |
+| 11 | Multimodal, AVSR, and LLM-Assisted ASR | RQ6 |
 | 12 | Taxonomy, comparative synthesis, and gap analysis | Main RQ; RQ1-RQ6 |
 | 13 | Future research agenda | Main RQ; RQ3-RQ6 |
 | 14 | Conclusion | Main RQ; RQ1-RQ6 |
@@ -203,12 +203,12 @@ Critique how low-resource ASR is evaluated and reported.
 ### Synthesis Target
 Show that global WER/CER can hide the exact failures that matter for underrepresented languages.
 
-## 11. Multimodal, Speech-LLM, and LLM-Assisted Low-Resource ASR
+## 11. Multimodal, AVSR, and LLM-Assisted ASR
 
 **Maps to:** RQ6
 
 ### Purpose
-Examine how robust low-resource ASR may extend toward AVSR, multimodal systems, speech-LLM architectures, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
+Examine how robust low-resource ASR may extend toward multimodal AVSR, SpeechLM systems, and LLM-assisted correction, rescoring, contextual biasing, or post-ASR normalization.
 
 ### Key Points
 ### 11.1 Why audio-only ASR remains fragile in low-resource settings
