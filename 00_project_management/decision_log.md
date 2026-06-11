@@ -40,3 +40,7 @@ Use policy: Core 60 references should carry the main manuscript claims. Supporti
 ## Core 60 BibTeX gaps resolved
 
 Resolved the seven remaining Core 60 BibTeX gaps using primary publisher, DOI, ACL Anthology, ISCA Archive, IEEE/ASRU, and Nature metadata where applicable. The Core 60 gap report is now header-only; BB05 and BB17 placeholder citation keys were replaced with `chung2021_w2vbert` and `seamless2025_joint_speech_text_mt`, and AfriSpeech-200 is consistently treated as a TACL 2023 source for the Core 60 layer.
+
+## Section 3 evidence-grounded draft created
+
+Created the first evidence-grounded draft of Section 3, `07_draft_sections/03_what_makes_asr_low_resource.md`, with companion evidence notes in `07_draft_sections/03_what_makes_asr_low_resource_evidence_notes.md`. The draft defines low-resource ASR as a multidimensional resource, language, domain/channel, and evaluation condition grounded in Core 60 and verified matrix evidence; Pashto remains illustrative only.

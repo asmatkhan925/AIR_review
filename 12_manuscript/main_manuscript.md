@@ -22,7 +22,7 @@ TODO: Draft from search logs, inclusion/exclusion criteria, and citation verific
 
 ## 3. What Makes ASR Low-Resource?
 
-TODO: Reorganize relevant material from `07_draft_sections/03_low_resource_challenges.md`.
+TODO: Review and integrate `07_draft_sections/03_what_makes_asr_low_resource.md`; companion evidence notes are in `07_draft_sections/03_what_makes_asr_low_resource_evidence_notes.md`.
 
 ## 4. From Hybrid ASR to Foundation Speech Models
 
