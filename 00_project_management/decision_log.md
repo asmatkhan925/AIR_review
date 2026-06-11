@@ -48,3 +48,7 @@ Created the first evidence-grounded draft of Section 3, `07_draft_sections/03_wh
 ## Block G cross-block synthesis layer added
 
 Added Block G as the cross-block synthesis layer, not as another raw literature-search block. New files under `05_synthesis_matrices/` map the six-layer taxonomy, core synthesis claims, research gaps, manuscript sections, table/figure plan, and additional resource candidates. The companion blueprint in `06_review_outline/block_g_synthesis_blueprint.md` states that future drafting should use Block G plus Core 60 as the manuscript synthesis backbone while preserving watchlist and verification safeguards.
+
+## Section 3 revised using Block G controls
+
+Revised `07_draft_sections/03_what_makes_asr_low_resource.md` using Block G as the synthesis-control layer, especially C-G1, C-G6, and the Section 3 control row. The section remains a draft pending final integration into `12_manuscript/main_manuscript.md`; the manuscript file continues to point to the draft and evidence-notes files rather than containing the full section.
