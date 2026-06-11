@@ -20,6 +20,19 @@ Prioritize these assets before full assembly:
 
 Use `05_synthesis_matrices/block_g_table_figure_plan.csv` as the control file, then update `08_tables/` and `09_figures/` so the final assets match the manuscript sections rather than the older method-by-method structure.
 
+First draft assets created for review:
+
+- `08_tables/table_01_low_resource_asr_taxonomy.md`
+- `08_tables/table_02_dataset_benchmark_comparison.md`
+- `08_tables/table_03_adaptation_strategy_decision_matrix.md`
+- `08_tables/table_04_pseudo_labeling_kd_reliability_matrix.md`
+- `08_tables/table_05_evaluation_robustness_checklist.md`
+- `08_tables/table_figure_creation_notes.md`
+- `09_figures/figure_01_bottleneck_stack_spec.md`
+- `09_figures/figure_02_six_layer_taxonomy_spec.md`
+- `09_figures/figure_03_cross_block_evidence_flow_spec.md`
+- `09_figures/figure_04_future_agenda_map_spec.md`
+
 ## Stage 3: Main Manuscript Assembly
 
 - Assemble Sections 3-14 into `12_manuscript/main_manuscript.md` in order, replacing pointer TODOs one section at a time.

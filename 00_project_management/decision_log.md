@@ -2,6 +2,7 @@
 
 | Date | Decision | Rationale | Implication |
 |---|---|---|---|
+| 2026-06-12 | Create first table and figure draft assets | Core 60, Block G synthesis controls, and current section drafts now support high-priority manuscript tables and figure specifications | Use the new `08_tables/` drafts and `09_figures/` specifications as review assets before inserting tables or figures into the main manuscript |
 | 2026-06-12 | Perform Section 2 methodology micro-audit | The readiness report had stale Section 2 wording, and the screening-log count needed a local traceability check and packaged dependency | Updated the readiness report, kept the screening-log count locally verified, and ensured the handoff packager includes `02_literature_search/screening_log.csv` |
 | 2026-06-10 | Freeze Block F evaluation robustness evidence map | Block F now has conservative safeguards for LLM correction, compute-efficiency evidence, AVSR source status, demographic fairness evidence, and toolkit-only reproducibility support | Do not add new Block F literature unless a reviewer-level evidence gap appears; use BF24 only as watchlist-current emerging evidence and BF25 only for compute/generalization/efficiency support |
 | 2026-06-10 | Refine Block F evaluation robustness evidence map | Block F needed stronger compute/efficiency support and a concrete LLM-based ASR correction paper | BF25 adds compute-efficiency evaluation support; BF24 now uses ASR Error Correction using Large Language Models; BF16 is high-value secondary AVSR evidence |
