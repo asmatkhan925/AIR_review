@@ -1,28 +1,33 @@
-# Conclusion
+# 14. Conclusion
 
-## Purpose Of This Section
+## 14.1 Answering the Review Question
 
-Summarize the review's main insights, answer the research questions, and reinforce the contribution without introducing new literature.
+This review asked how foundation speech models have changed low-resource ASR, and what resource, adaptation, evaluation, and robustness challenges still prevent reliable recognition for underrepresented languages. The answer is that foundation models have changed the starting point of the field, but they have not removed the reliability problem. Strong pretrained representations, multilingual transfer, weakly supervised training, and broader speech-language model families now give many low-resource ASR studies a better initial baseline than earlier systems could provide. In that sense, the field has moved beyond the assumption that every underrepresented language must begin from a small, isolated, task-specific model.
 
-## Key Points To Reinforce
+However, this changed starting point does not make low-resource ASR a solved problem. Reliable recognition still depends on the quality and provenance of labeled, unlabeled, weakly labeled, and pseudo-labeled data; the fit between pretraining mixtures and target-language conditions; the handling of dialect, orthography, domain, channel, script, and code-switching; the choice of adaptation strategy under realistic compute and forgetting constraints; the reliability of pseudo-labels and teacher models; and the design of evaluation protocols that expose subgroup, domain, robustness, hallucination, and reproducibility risks. Foundation models therefore shift the bottleneck from whether a model can be trained at all toward whether a system can be trusted, adapted, evaluated, reproduced, and deployed under a clearly specified low-resource condition.
 
-- AI methods have reshaped ASR but have not fully solved low-resource recognition.
-- Low-resource ASR is a compound challenge involving data, language, domain, model, and evaluation factors.
-- Pashto demonstrates why careful data processing, adaptation, and evaluation matter.
-- Future work should prioritize robust, efficient, inclusive, and multimodal approaches.
+The central conclusion is consequently balanced. Foundation speech models are a major turning point for low-resource ASR because they improve representation quality, enable wider transfer, and make stronger baselines available. At the same time, their usefulness for underrepresented languages depends on cross-layer alignment among resources, language conditions, model choice, adaptation, supervision, evaluation, and deployment constraints. Model scale alone cannot substitute for that alignment.
 
-## Literature To Include
+## 14.2 Main Contributions of the Review
 
-No new literature should be introduced here. Refer only to synthesized themes from the manuscript.
+The review makes four connected contributions to this field-level argument. First, it reframes low-resource ASR through a foundation-model-era taxonomy that treats low-resource status as a multidimensional condition, not simply as a shortage of transcribed hours. This taxonomy links resource conditions, language conditions, model families, adaptation methods, supervision strategies, and evaluation settings so that low-resource claims can be interpreted more precisely.
 
-## Expected Tables Or Figures
+Second, the review synthesizes data-centric and model-centric solutions rather than treating them as separate tracks. It shows that corpus quality, validation, metadata, normalization, filtering, augmentation, self-supervised learning, multilingual transfer, and weakly supervised foundation models interact. Larger or more multilingual models can improve coverage, but their behavior still depends on the data and evaluation conditions through which they are trained and assessed.
 
-None unless the final journal format requires a closing summary graphic.
+Third, the review critically examines adaptation, pseudo-labeling, and knowledge distillation as conditional tools for low-resource ASR. Fine-tuning, continued pretraining, adapters, LoRA-style methods, pseudo-labeling, self-training, and single- or multi-teacher distillation can all be useful, but none is universally reliable. Their value depends on target-language evidence, domain fit, compute budget, teacher quality, confidence filtering, teacher disagreement, label-space compatibility, and evaluation design.
 
-## Drafting Notes
+Fourth, the review develops a future research agenda for reliable, multimodal, and LLM-assisted low-resource ASR. That agenda does not simply call for larger models or more speculative systems. It calls for clearer low-resource definitions, better dataset documentation, orthography-aware and dialect-aware benchmarks, compute-efficient and forgetting-aware adaptation, auditable pseudo-labeling and distillation, evaluation beyond aggregate WER/CER, reproducibility and compute transparency, multimodal robustness where justified, and bounded LLM-assisted correction or rescoring under source-grounded evaluation.
 
-Keep the conclusion concise and synthetic.
+Together, these contributions support the review's main claim: progress in low-resource ASR should be judged by whether systems become more reliable under real resource, language, and deployment conditions, not only by whether they improve pooled benchmark scores.
 
-## Open Questions
+## 14.3 Implications for the Field
 
-- Which three takeaways should end the article most strongly?
+The main implication is that low-resource ASR should be evaluated as a reliability problem rather than only an accuracy-improvement problem. Aggregate WER or CER remains useful, but it is insufficient when used alone. A system can improve a pooled score while still failing on a dialect, domain, channel, orthographic convention, speaker group, noisy condition, or evaluation protocol that matters for the target community. A system can also appear fluent while introducing unsupported content, over-correction, or context-driven rewriting in LLM-assisted settings.
+
+The field therefore needs to move from a simple "larger model plus pooled WER" logic toward evidence chains that make the full condition visible. Such chains should report what kind of resource setting is being studied, how the data were collected and validated, which language and dialect conditions are represented, how transcripts and normalization were handled, what model and checkpoint were used, how adaptation was performed, how supervision was expanded or filtered, how evaluation was broken down, and what robustness, compute, reproducibility, privacy, and deployment constraints apply. Without these details, it remains difficult to know whether a reported gain reflects genuine recognition improvement, benchmark compatibility, data leakage, formatting choices, teacher-model artifacts, or unreported compute scale.
+
+This reliability framing also clarifies how emerging directions should be interpreted. AVSR, multimodal modeling, speech-language models, and LLM-assisted correction or rescoring are important research directions, especially for noisy speech, contextual terms, and multimodal deployment settings. But they should be treated as reliability-sensitive extensions rather than universal solutions. They require task-boundary clarity, modality-coverage checks, missing-modality evaluation, hallucination and over-correction tests, source grounding, reproducibility, and compute reporting. In low-resource ASR, adding another modality or a language model is only progress when it makes the resulting system more trustworthy under the target condition.
+
+## 14.4 Closing Statement
+
+Foundation speech models have altered the landscape of low-resource ASR by making stronger pretrained systems and broader multilingual baselines available. Their emergence is therefore an important turning point. Yet the central challenge for underrepresented languages remains reliability: the ability to build, adapt, evaluate, reproduce, and deploy ASR systems whose behavior is understood under specific resource, language, domain, supervision, and robustness conditions. The next stage of the field should coordinate progress across resources, models, supervision, adaptation, evaluation, reproducibility, compute transparency, multimodal robustness, and community-aware language technology development. In that coordinated view, foundation models are not the end of low-resource ASR; they are the new starting point for making it more reliable.

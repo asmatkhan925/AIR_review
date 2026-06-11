@@ -66,4 +66,4 @@ TODO: Use `07_draft_sections/13_future_research_agenda.md` with companion notes 
 
 ## 14. Conclusion
 
-TODO: Answer the locked main review question without introducing new claims.
+TODO: Use `07_draft_sections/14_conclusion.md` with companion notes in `07_draft_sections/14_conclusion_evidence_notes.md` when integrating this section. Answer the locked main review question without introducing new claims, and close the manuscript around the argument that foundation models changed the starting point of low-resource ASR but did not solve the reliability problem.

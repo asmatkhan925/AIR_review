@@ -92,3 +92,7 @@ Drafted `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` with compan
 ## Section 13 drafted as future research agenda
 
 Drafted `07_draft_sections/13_future_research_agenda.md` with companion evidence notes using Section 12, Block G, Core 60, gap clusters, and bounded methodological/watchlist support. The section uses C-G8 as the main agenda backbone and converts GAP-G1-GAP-G12 into priorities for low-resource definitions, dataset documentation, orthography-aware and dialect-aware benchmarks, compute-efficient adaptation, reliable pseudo-labeling and KD, evaluation beyond aggregate WER/CER, multimodal robustness, constrained LLM assistance, reproducibility, and deployment transparency.
+
+## Section 14 drafted as conclusion
+
+Drafted `07_draft_sections/14_conclusion.md` with companion evidence notes using Sections 12-13, Block G, Core 60, and the locked four-contribution structure. The conclusion answers the main review question by closing on the claim that foundation speech models changed the starting point of low-resource ASR, but reliable recognition still depends on cross-layer alignment across resources, language conditions, adaptation, supervision, evaluation, reproducibility, compute transparency, multimodal robustness, and bounded LLM-assisted use.
