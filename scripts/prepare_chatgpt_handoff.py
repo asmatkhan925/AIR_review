@@ -272,6 +272,17 @@ def query_files(query: str) -> list[str]:
     return sorted(path for path in selected if Path(path).exists() and is_safe_text_file(Path(path)))
 
 
+def discover_dir_text_files(directory: str) -> list[str]:
+    root = Path(directory)
+    if not root.exists():
+        return []
+    paths = []
+    for path in root.rglob("*"):
+        if path.is_file() and is_safe_text_file(path):
+            paths.append(normalize_rel_path(path))
+    return sorted(set(paths))
+
+
 def discover_manuscript_draft_files() -> list[str]:
     manuscript = Path("12_manuscript/main_manuscript.md")
     if not manuscript.exists():
@@ -287,6 +298,8 @@ def discover_manuscript_draft_files() -> list[str]:
 def select_files(args: argparse.Namespace, changed_files: list[str]) -> tuple[list[str], list[str]]:
     missing_core = [path for path in ALWAYS_INCLUDE if not Path(path).exists()]
     selected: set[str] = set(path for path in ALWAYS_INCLUDE if Path(path).exists() and is_safe_text_file(Path(path)))
+    selected.update(discover_dir_text_files("08_tables"))
+    selected.update(discover_dir_text_files("09_figures"))
     selected.update(discover_manuscript_draft_files())
     if args.full:
         selected.update(list_all_repo_text_files())
@@ -520,6 +533,10 @@ def recommended_reading_order(selected_files: list[str]) -> list[str]:
     ]
     available = set(selected_files)
     order = [path for path in preferred if path in available or path in {"CHATGPT_HANDOFF.md", "AIR_REVIEW_SNAPSHOT_MANIFEST.json", "VALIDATION_REPORT.md", "USER_QUERY.txt"}]
+    table_and_figure_paths = sorted(
+        path for path in selected_files if path.startswith("08_tables/") or path.startswith("09_figures/")
+    )
+    order.extend(path for path in table_and_figure_paths if path not in order)
     order.extend(path for path in selected_files if path not in order)
     return order
 
