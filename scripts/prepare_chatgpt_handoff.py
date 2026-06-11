@@ -11,6 +11,7 @@ import argparse
 import csv
 import hashlib
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -84,7 +85,10 @@ ALWAYS_INCLUDE = [
     "05_synthesis_matrices/pseudo_labeling_kd_matrix.csv",
     "05_synthesis_matrices/evaluation_robustness_matrix.csv",
     "06_review_outline/section_argument_map.md",
+    "12_manuscript/integration_readiness_report.md",
+    "12_manuscript/manuscript_integration_plan.md",
     "07_draft_sections/01_introduction.md",
+    "07_draft_sections/02_review_methodology_search_protocol.md",
     "12_manuscript/main_manuscript.md",
 ]
 
@@ -260,9 +264,22 @@ def query_files(query: str) -> list[str]:
     return sorted(path for path in selected if Path(path).exists() and is_safe_text_file(Path(path)))
 
 
+def discover_manuscript_draft_files() -> list[str]:
+    manuscript = Path("12_manuscript/main_manuscript.md")
+    if not manuscript.exists():
+        return []
+    text = manuscript.read_text(encoding="utf-8")
+    paths = {
+        normalize_rel_path(path)
+        for path in re.findall(r"07_draft_sections/[A-Za-z0-9_.-]+\.md", text)
+    }
+    return sorted(path for path in paths if Path(path).exists() and is_safe_text_file(Path(path)))
+
+
 def select_files(args: argparse.Namespace, changed_files: list[str]) -> tuple[list[str], list[str]]:
     missing_core = [path for path in ALWAYS_INCLUDE if not Path(path).exists()]
     selected: set[str] = set(path for path in ALWAYS_INCLUDE if Path(path).exists() and is_safe_text_file(Path(path)))
+    selected.update(discover_manuscript_draft_files())
     if args.full:
         selected.update(list_all_repo_text_files())
     elif args.changed_only:
@@ -469,6 +486,7 @@ def recommended_reading_order(selected_files: list[str]) -> list[str]:
         "00_project_management/decision_log.md",
         "01_scope_and_planning/research_questions.md",
         "01_scope_and_planning/review_methodology.md",
+        "12_manuscript/integration_readiness_report.md",
         "05_synthesis_matrices/seed_paper_map.csv",
         "05_synthesis_matrices/evidence_to_claim_matrix.csv",
         "05_synthesis_matrices/foundation_model_matrix.csv",
