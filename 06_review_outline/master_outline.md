@@ -21,7 +21,7 @@ This outline follows the locked review questions in `01_scope_and_planning/resea
 | 9 | Pseudo-labeling and knowledge distillation | RQ5 |
 | 10 | Evaluation, reproducibility, and robustness | RQ6 |
 | 11 | Multimodal, AVSR, and LLM-Assisted ASR | RQ6 |
-| 12 | Taxonomy, comparative synthesis, and gap analysis | Main RQ; RQ1-RQ6 |
+| 12 | Cross-Block Synthesis and Gap Analysis | Main RQ; RQ1-RQ6 |
 | 13 | Future research agenda | Main RQ; RQ3-RQ6 |
 | 14 | Conclusion | Main RQ; RQ1-RQ6 |
 
@@ -245,12 +245,12 @@ Examine how robust low-resource ASR may extend toward multimodal AVSR, SpeechLM 
 ### Synthesis Target
 Separate demonstrated ASR improvements from speculative multimodal or LLM-assisted claims.
 
-## 12. Taxonomy, Comparative Synthesis, and Gap Analysis
+## 12. Cross-Block Synthesis and Gap Analysis
 
 **Maps to:** Main RQ; RQ1-RQ6
 
 ### Purpose
-Integrate the paper into a coherent taxonomy and evidence-based gap analysis.
+Integrate Sections 3-11, the six taxonomy layers, synthesis matrices, and evidence-based gap analysis into a cross-block synthesis.
 
 ### Six-Layer Taxonomy
 - Resource layer.

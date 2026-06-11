@@ -84,3 +84,7 @@ Drafted `07_draft_sections/10_evaluation_reproducibility_robustness.md` with com
 ## Section 11 drafted from multimodal and LLM-assisted controls
 
 Drafted `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` with companion evidence notes using multimodal/AVSR, SpeechLM, LLM-assisted, evaluation-risk, Core 60, watchlist, and Block G controls. The section answers the future-facing part of RQ6 by treating multimodal and LLM-assisted ASR as promising but reliability-sensitive directions that require source grounding, task-boundary clarity, hallucination and over-correction checks, modality-mismatch controls, reproducibility, and compute reporting.
+
+## Section 12 drafted as cross-block synthesis and gap analysis
+
+Drafted `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` with companion evidence notes using Block G, Core 60, Sections 3-11, and Blocks A-F. The section answers the main review question by synthesizing C-G1-C-G8 and GAP-G1-GAP-G12 around cross-layer reliability: foundation models change the starting point of low-resource ASR, but reliable progress still depends on resource documentation, language fit, adaptation comparability, supervision reliability, evaluation, robustness, reproducibility, compute, and bounded multimodal or LLM-assisted use.

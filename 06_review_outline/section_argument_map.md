@@ -264,10 +264,10 @@ The section may become speculative or borrow claims from non-low-resource settin
 ### Quality Check
 Does the section separate speech-LLM architectures from post-ASR LLM correction/rescoring, and distinguish demonstrated ASR evidence from future-facing interpretation?
 
-## Section 12: Taxonomy, Comparative Synthesis, and Gap Analysis
+## Section 12: Cross-Block Synthesis and Gap Analysis
 
 ### Purpose
-Integrate the review into the locked six-layer taxonomy and evidence-based gap analysis.
+Integrate Sections 3-11, the six taxonomy layers, synthesis matrices, and evidence-based gap analysis into a cross-block synthesis.
 
 ### Main Argument
 Low-resource ASR should be understood through interacting resource, language, model, adaptation, supervision, and evaluation layers rather than through model families alone.
