@@ -56,3 +56,7 @@ Revised `07_draft_sections/03_what_makes_asr_low_resource.md` using Block G as t
 ## Section 4 drafted from Block B and Block G controls
 
 Drafted `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` with companion evidence notes using Block B, Core 60, the foundation-model matrix, and Block G claim C-G2 as the synthesis-control layer. The draft remains outside `12_manuscript/main_manuscript.md` pending review and final integration.
+
+## Section 5 drafted from resource and benchmark controls
+
+Drafted `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` with companion evidence notes using the dataset/benchmark, data-centric, evaluation, Core 60, and Block G controls. The section remains a draft pending review and final integration into `12_manuscript/main_manuscript.md`.
