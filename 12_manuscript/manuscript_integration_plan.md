@@ -33,8 +33,14 @@ First draft assets created for review:
 - `09_figures/figure_02_six_layer_taxonomy_spec.md`
 - `09_figures/figure_03_cross_block_evidence_flow_spec.md`
 - `09_figures/figure_04_future_agenda_map_spec.md`
+- `09_figures/figure_01_bottleneck_stack.svg`
+- `09_figures/figure_02_six_layer_taxonomy.svg`
+- `09_figures/figure_03_cross_block_evidence_flow.svg`
+- `09_figures/figure_04_future_agenda_map.svg`
+- `09_figures/figure_captions_and_alt_text.md`
 
 Tables 1-6 now require final captions, numbering checks, and cross-reference insertion when the relevant manuscript sections are assembled.
+Figure captions and cross-references should be inserted during manuscript assembly, not now.
 
 ## Stage 3: Main Manuscript Assembly
 

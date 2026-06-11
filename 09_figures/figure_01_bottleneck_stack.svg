@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig1-title fig1-desc">
+  <title id="fig1-title">Figure 1 draft SVG</title>
+  <desc id="fig1-desc">Foundation speech models as a stronger starting point above interacting bottleneck layers for low-resource ASR.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    </marker>
+    <style>
+      .bg { fill: #ffffff; }
+      .frame { fill: #f8fafc; stroke: #4b5563; stroke-width: 2; }
+      .pill { fill: #eaf2fb; stroke: #4b5563; stroke-width: 2; }
+      .layerA { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
+      .layerB { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
+      .layerC { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
+      .layerD { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #1f2937; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #1f2937; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #1f2937; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 15px; fill: #4b5563; }
+      .arrow { stroke: #55616b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .feedback { stroke: #55616b; stroke-width: 2; fill: none; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900" />
+
+  <rect class="pill" x="350" y="36" width="700" height="78" rx="24" />
+  <text class="title" x="700" y="70" text-anchor="middle">Foundation speech models</text>
+  <text class="subtitle" x="700" y="96" text-anchor="middle">stronger starting point</text>
+
+  <line class="arrow" x1="700" y1="114" x2="700" y2="140" />
+
+  <rect class="layerA" x="210" y="140" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="164">Resource quality and documentation</text>
+  <text class="body" x="240" y="186">labeled speech; unlabeled speech; weak labels; metadata; licensing; validation</text>
+
+  <line class="arrow" x1="700" y1="202" x2="700" y2="212" />
+
+  <rect class="layerB" x="210" y="212" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="236">Language fit</text>
+  <text class="body" x="240" y="258">dialect; accent; orthography; script; morphology; code-switching</text>
+
+  <line class="arrow" x1="700" y1="274" x2="700" y2="284" />
+
+  <rect class="layerC" x="210" y="284" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="308">Adaptation choice</text>
+  <text class="body" x="240" y="330">full fine-tuning; continued pretraining; PEFT; transfer; prompting</text>
+
+  <line class="arrow" x1="700" y1="346" x2="700" y2="356" />
+
+  <rect class="layerD" x="210" y="356" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="380">Supervision reliability</text>
+  <text class="body" x="240" y="402">pseudo-label quality; confidence; uncertainty; agreement; KD objective</text>
+
+  <line class="arrow" x1="700" y1="418" x2="700" y2="428" />
+
+  <rect class="layerA" x="210" y="428" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="452">Evaluation and comparability</text>
+  <text class="body" x="240" y="474">WER/CER; language-wise; dialect-wise; domain-wise; normalization-aware</text>
+
+  <line class="arrow" x1="700" y1="490" x2="700" y2="500" />
+
+  <rect class="layerB" x="210" y="500" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="524">Robustness and deployment</text>
+  <text class="body" x="240" y="546">noise; far-field; channel shift; speaker variation; fairness; reproducibility</text>
+
+  <line class="arrow" x1="700" y1="562" x2="700" y2="572" />
+
+  <rect class="layerC" x="210" y="572" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="596">Compute and reporting</text>
+  <text class="body" x="240" y="618">hardware; trainable parameters; inference cost; model version; decoding scripts</text>
+
+  <line class="arrow" x1="700" y1="634" x2="700" y2="644" />
+
+  <rect class="layerD" x="210" y="644" width="980" height="62" rx="16" />
+  <text class="label" x="240" y="668">Multimodal and LLM risks</text>
+  <text class="body" x="240" y="690">AVSR mismatch; hallucination; over-correction; context leakage; grounding</text>
+
+  <path class="feedback" d="M 220 675 C 110 675, 110 170, 210 170" />
+  <path class="feedback" d="M 1188 675 C 1300 675, 1300 390, 1188 390" />
+
+  <text class="note" x="1160" y="82" text-anchor="end">interacting bottlenecks</text>
+</svg>

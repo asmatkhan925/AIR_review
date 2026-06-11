@@ -107,3 +107,7 @@ Performed a pre-assembly integration-readiness pass after Sections 3-14 were dra
 ## Section 2 drafted as structured critical review methodology
 
 Drafted `07_draft_sections/02_review_methodology_search_protocol.md` with companion traceability notes using local review-methodology files, inclusion/exclusion criteria, search and screening logs, citation verification records, Core 60, evidence matrices, and Block G controls. The section frames the paper as a structured critical review with systematic mapping elements rather than a fully exhaustive PRISMA-style systematic review.
+
+## First editable SVG figure drafts created
+
+Created first editable SVG draft sources for Figures 1-4 from the approved figure specifications and Block G controls. The figure set now covers the bottleneck stack, six-layer taxonomy, cross-block evidence flow, and future agenda map. Captions and alt text are tracked in `09_figures/figure_captions_and_alt_text.md`; the SVGs are draft visual assets that still require final journal-style polish before manuscript assembly.

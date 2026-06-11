@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig3-title fig3-desc">
+  <title id="fig3-title">Figure 3 draft SVG</title>
+  <desc id="fig3-desc">Cross-block evidence flow from resource and language conditions through model, adaptation, and supervision choices to evaluation, robustness, and future agenda feedback.</desc>
+  <defs>
+    <marker id="arrow3" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    </marker>
+    <style>
+      .bg { fill: #ffffff; }
+      .region { fill: #f8fafc; stroke: #4b5563; stroke-width: 2; }
+      .left { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
+      .middle { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
+      .right { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
+      .agenda { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
+      .heading { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; fill: #1f2937; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 700; fill: #1f2937; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 13.5px; fill: #1f2937; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #4b5563; }
+      .arrow { stroke: #55616b; stroke-width: 2.2; fill: none; marker-end: url(#arrow3); }
+      .feedback { stroke: #55616b; stroke-width: 2; fill: none; stroke-dasharray: 8 8; marker-end: url(#arrow3); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900" />
+
+  <rect class="region" x="55" y="72" width="380" height="690" rx="22" />
+  <rect class="region" x="510" y="72" width="380" height="690" rx="22" />
+  <rect class="region" x="965" y="72" width="380" height="690" rx="22" />
+
+  <text class="heading" x="245" y="112" text-anchor="middle">Resource and language conditions</text>
+  <text class="heading" x="700" y="112" text-anchor="middle">Model, adaptation, supervision</text>
+  <text class="heading" x="1155" y="112" text-anchor="middle">Evaluation, robustness, agenda</text>
+
+  <rect class="left" x="88" y="150" width="314" height="142" rx="18" />
+  <text class="label" x="118" y="182">Resource condition</text>
+  <text class="body" x="118" y="214">labeled and unlabeled speech</text>
+  <text class="body" x="118" y="238">weak labels and pseudo-labels</text>
+  <text class="body" x="118" y="262">multilingual and multimodal resources</text>
+
+  <rect class="left" x="88" y="340" width="314" height="158" rx="18" />
+  <text class="label" x="118" y="372">Language condition</text>
+  <text class="body" x="118" y="404">dialect, accent, speaker variation</text>
+  <text class="body" x="118" y="428">orthography, script, morphology</text>
+  <text class="body" x="118" y="452">code-switching, domain, channel</text>
+
+  <rect class="left" x="88" y="546" width="314" height="132" rx="18" />
+  <text class="label" x="118" y="578">Documentation controls</text>
+  <text class="body" x="118" y="610">metadata, licensing, validation</text>
+  <text class="body" x="118" y="634">normalization and scoring policy</text>
+
+  <rect class="middle" x="543" y="150" width="314" height="142" rx="18" />
+  <text class="label" x="573" y="182">Foundation model family</text>
+  <text class="body" x="573" y="214">SSL and multilingual SSL</text>
+  <text class="body" x="573" y="238">weakly supervised ASR</text>
+  <text class="body" x="573" y="262">SpeechLM and multimodal systems</text>
+
+  <rect class="middle" x="543" y="340" width="314" height="158" rx="18" />
+  <text class="label" x="573" y="372">Adaptation path</text>
+  <text class="body" x="573" y="404">full fine-tuning; continued pretraining</text>
+  <text class="body" x="573" y="428">PEFT; transfer; prompting</text>
+  <text class="body" x="573" y="452">forgetting and compute controls</text>
+
+  <rect class="middle" x="543" y="546" width="314" height="132" rx="18" />
+  <text class="label" x="573" y="578">Supervision path</text>
+  <text class="body" x="573" y="610">human labels; self-supervision</text>
+  <text class="body" x="573" y="634">pseudo-labeling; KD; teacher agreement</text>
+
+  <rect class="right" x="998" y="150" width="314" height="156" rx="18" />
+  <text class="label" x="1028" y="182">Evaluation protocol</text>
+  <text class="body" x="1028" y="214">WER/CER plus subgroup reporting</text>
+  <text class="body" x="1028" y="238">normalization, robustness, compute</text>
+  <text class="body" x="1028" y="262">hallucination and reproducibility checks</text>
+
+  <rect class="right" x="998" y="356" width="314" height="142" rx="18" />
+  <text class="label" x="1028" y="388">Robustness evidence</text>
+  <text class="body" x="1028" y="420">noise; far-field; channel shift</text>
+  <text class="body" x="1028" y="444">dialect, domain, and modality stress</text>
+  <text class="body" x="1028" y="468">unsupported-content risks</text>
+
+  <rect class="agenda" x="998" y="548" width="314" height="132" rx="18" />
+  <text class="label" x="1028" y="580">Future agenda</text>
+  <text class="body" x="1028" y="612">definitions, documentation, benchmarks</text>
+  <text class="body" x="1028" y="636">adaptation, supervision, deployment</text>
+
+  <path class="arrow" d="M 402 221 C 450 221, 492 221, 543 221" />
+  <path class="arrow" d="M 402 419 C 450 419, 492 419, 543 419" />
+  <path class="arrow" d="M 402 612 C 465 612, 480 612, 543 612" />
+  <path class="arrow" d="M 857 221 C 905 221, 950 221, 998 221" />
+  <path class="arrow" d="M 857 419 C 905 419, 950 419, 998 419" />
+  <path class="arrow" d="M 857 612 C 905 612, 950 612, 998 612" />
+
+  <path class="feedback" d="M 1155 306 C 1155 802, 235 805, 235 680" />
+  <path class="feedback" d="M 1155 498 C 1155 835, 700 835, 700 678" />
+  <path class="feedback" d="M 1312 612 C 1360 780, 1040 830, 245 760 C 120 748, 98 690, 155 645" />
+
+  <text class="small" x="270" y="816" text-anchor="middle">evaluation failures expose missing data, metadata, or normalization controls</text>
+  <text class="small" x="720" y="855" text-anchor="middle">evaluation feeds back into adaptation baselines, compute budgets, and forgetting checks</text>
+  <text class="small" x="1125" y="816" text-anchor="middle">gaps become priorities for the next research cycle</text>
+</svg>

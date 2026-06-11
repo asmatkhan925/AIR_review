@@ -18,3 +18,14 @@ This note documents the first high-priority table and figure draft assets. No ne
 Integration note: These assets should be reviewed before full manuscript assembly. They should be inserted into `12_manuscript/main_manuscript.md` only after the corresponding sections are integrated, captions are finalized, and table/figure callouts and cross-references are harmonized.
 
 Evidence-boundary note: representative evidence anchors are intentionally sparse. They identify local citation keys that can support each row's framing, but the detailed evidence logic remains in Core 60, Block G, and the section drafts. Methodological documentation references such as datasheets, data statements, model cards, and energy/reporting work remain background support only and should not be presented as ASR performance evidence.
+
+## SVG Figure Draft Sources
+
+Editable SVG draft sources now exist for Figures 1-4:
+
+- `09_figures/figure_01_bottleneck_stack.svg`
+- `09_figures/figure_02_six_layer_taxonomy.svg`
+- `09_figures/figure_03_cross_block_evidence_flow.svg`
+- `09_figures/figure_04_future_agenda_map.svg`
+
+These are draft visual assets created from the approved figure specifications and Block G controls. They require final journal-style polish before submission, including typography, spacing, caption integration, and cross-reference checks. Captions and alt text are tracked separately in `09_figures/figure_captions_and_alt_text.md`.

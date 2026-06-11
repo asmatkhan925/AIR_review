@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="fig4-title fig4-desc">
+  <title id="fig4-title">Figure 4 draft SVG</title>
+  <desc id="fig4-desc">Future agenda map centered on reliable low-resource ASR with nine agenda clusters connected to demonstrated gap families.</desc>
+  <defs>
+    <marker id="arrow4" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55616b" />
+    </marker>
+    <style>
+      .bg { fill: #ffffff; }
+      .center { fill: #f8fafc; stroke: #1f2937; stroke-width: 2.4; }
+      .cluster1 { fill: #eef5fb; stroke: #4b5563; stroke-width: 1.8; }
+      .cluster2 { fill: #edf7f1; stroke: #4b5563; stroke-width: 1.8; }
+      .cluster3 { fill: #fff5e8; stroke: #4b5563; stroke-width: 1.8; }
+      .cluster4 { fill: #fceff0; stroke: #4b5563; stroke-width: 1.8; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 700; fill: #1f2937; }
+      .centerText { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #1f2937; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #1f2937; }
+      .gap { font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; font-weight: 700; fill: #4b5563; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #4b5563; }
+      .link { stroke: #55616b; stroke-width: 2; fill: none; marker-end: url(#arrow4); }
+      .softlink { stroke: #55616b; stroke-width: 1.8; fill: none; stroke-dasharray: 6 7; marker-end: url(#arrow4); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900" />
+
+  <ellipse class="center" cx="700" cy="450" rx="180" ry="92" />
+  <text class="centerText" x="700" y="438" text-anchor="middle">Reliable</text>
+  <text class="centerText" x="700" y="470" text-anchor="middle">low-resource ASR</text>
+  <text class="note" x="700" y="500" text-anchor="middle">evidence-grounded future agenda</text>
+
+  <rect class="cluster1" x="92" y="58" width="330" height="118" rx="18" />
+  <text class="label" x="116" y="88">Definitions and resource conditions</text>
+  <text class="body" x="116" y="116">labeled, unlabeled, weak-label,</text>
+  <text class="body" x="116" y="138">validation, metadata, compute</text>
+  <text class="gap" x="116" y="162">GAP-G1 / GAP-G2</text>
+
+  <rect class="cluster2" x="535" y="44" width="330" height="122" rx="18" />
+  <text class="label" x="559" y="76">Documentation and metadata</text>
+  <text class="body" x="559" y="104">provenance, consent, licensing,</text>
+  <text class="body" x="559" y="126">dialect/accent metadata, validation</text>
+  <text class="gap" x="559" y="150">GAP-G2 / GAP-G12</text>
+
+  <rect class="cluster3" x="978" y="58" width="330" height="118" rx="18" />
+  <text class="label" x="1002" y="88">Orthography and dialect benchmarks</text>
+  <text class="body" x="1002" y="116">transcript conventions, raw/normalized</text>
+  <text class="body" x="1002" y="138">scores, dialect/domain breakdowns</text>
+  <text class="gap" x="1002" y="162">GAP-G3 / GAP-G4</text>
+
+  <rect class="cluster4" x="1010" y="292" width="330" height="124" rx="18" />
+  <text class="label" x="1034" y="324">Compute-aware adaptation</text>
+  <text class="body" x="1034" y="352">matched comparisons, trainable</text>
+  <text class="body" x="1034" y="374">parameters, memory, forgetting</text>
+  <text class="gap" x="1034" y="398">GAP-G5 / GAP-G6 / GAP-G12</text>
+
+  <rect class="cluster1" x="1010" y="552" width="330" height="124" rx="18" />
+  <text class="label" x="1034" y="584">Reliable pseudo-labeling and KD</text>
+  <text class="body" x="1034" y="612">teacher quality, confidence,</text>
+  <text class="body" x="1034" y="634">uncertainty, agreement, filtering</text>
+  <text class="gap" x="1034" y="658">GAP-G7 / GAP-G8</text>
+
+  <rect class="cluster2" x="535" y="728" width="330" height="124" rx="18" />
+  <text class="label" x="559" y="760">Evaluation and robustness</text>
+  <text class="body" x="559" y="788">language, dialect, domain, noise,</text>
+  <text class="body" x="559" y="810">hallucination, reproducibility checks</text>
+  <text class="gap" x="559" y="834">GAP-G4 / GAP-G9 / GAP-G12</text>
+
+  <rect class="cluster3" x="92" y="552" width="330" height="124" rx="18" />
+  <text class="label" x="116" y="584">AVSR and multimodal robustness</text>
+  <text class="body" x="116" y="612">modality coverage, missing-modality</text>
+  <text class="body" x="116" y="634">tests, privacy, degraded audio</text>
+  <text class="gap" x="116" y="658">GAP-G10</text>
+
+  <rect class="cluster4" x="60" y="292" width="330" height="124" rx="18" />
+  <text class="label" x="84" y="324">Constrained LLM assistance</text>
+  <text class="body" x="84" y="352">N-best or lattice grounding,</text>
+  <text class="body" x="84" y="374">over-correction and leakage checks</text>
+  <text class="gap" x="84" y="398">GAP-G9 / GAP-G11</text>
+
+  <rect class="cluster1" x="535" y="590" width="330" height="92" rx="18" />
+  <text class="label" x="559" y="622">Reproducibility and deployment</text>
+  <text class="body" x="559" y="650">versions, splits, scripts, artifacts,</text>
+  <text class="gap" x="559" y="672">compute and deployment cost</text>
+
+  <path class="link" d="M 422 144 C 520 202, 590 314, 633 372" />
+  <path class="link" d="M 700 166 C 700 236, 700 300, 700 358" />
+  <path class="link" d="M 978 144 C 880 202, 810 314, 767 372" />
+  <path class="link" d="M 1010 354 C 914 376, 867 400, 879 430" />
+  <path class="link" d="M 1010 614 C 914 590, 867 520, 879 470" />
+  <path class="link" d="M 700 728 C 700 654, 700 584, 700 542" />
+  <path class="link" d="M 422 614 C 520 590, 533 520, 521 470" />
+  <path class="link" d="M 390 354 C 486 376, 533 400, 521 430" />
+  <path class="softlink" d="M 700 590 C 700 555, 700 540, 700 542" />
+
+  <text class="note" x="700" y="882" text-anchor="middle">Agenda clusters are grounded in demonstrated gaps; emerging AVSR and LLM-assisted directions remain bounded by reliability controls.</text>
+</svg>
