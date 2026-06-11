@@ -57,7 +57,7 @@ Title alignment is mostly consistent. The following are not blockers but should 
 - Section 8: `main_manuscript.md` uses `Adaptation Strategies for Low-Resource ASR in the Foundation-Model Era`; outline and Block G use `Adaptation Strategies`.
 - Section 9: `main_manuscript.md` uses `Pseudo-Labeling and Knowledge Distillation for Low-Resource ASR`; outline and Block G use `Pseudo-Labeling and Knowledge Distillation`.
 
-No broken draft pointers were found in the main manuscript for Sections 3-14. Section 2 remains a TODO rather than a draft pointer.
+No broken draft pointers were found in the main manuscript. Sections 2-14 now point to their draft files and companion notes; Section 1 remains the introduction draft to be polished after manuscript integration.
 
 ## 5. Table and Figure Placeholder Inventory
 
