@@ -60,3 +60,7 @@ Drafted `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` wi
 ## Section 5 drafted from resource and benchmark controls
 
 Drafted `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` with companion evidence notes using the dataset/benchmark, data-centric, evaluation, Core 60, and Block G controls. The section remains a draft pending review and final integration into `12_manuscript/main_manuscript.md`.
+
+## Section 6 drafted as foundation-model-era taxonomy
+
+Drafted `07_draft_sections/06_foundation_model_era_taxonomy.md` with companion evidence notes using Block G as the taxonomy-control layer. Updated only the Section 6 heading and planning text in the manuscript and outline files so Section 6 now functions as the formal six-layer taxonomy section rather than a model-centric methods section.

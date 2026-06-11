@@ -120,28 +120,28 @@ The section may list datasets without critiquing their evaluation implications.
 ### Quality Check
 Does the section connect resources and benchmarks to RQ1, RQ3, and RQ6?
 
-## Section 6: Model-Centric Approaches
+## Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR
 
 ### Purpose
-Critically compare supervised, self-supervised, multilingual, weakly supervised, and foundation-model approaches.
+Present the review's six-layer taxonomy for low-resource ASR in the foundation-model era.
 
 ### Main Argument
-Model-centric progress reduces the need to train from scratch, but performance remains conditioned by language coverage, domain match, adaptation data, decoding choices, and evaluation practice.
+Low-resource ASR should be organized through interacting resource, language, model, adaptation, supervision, and evaluation layers rather than through model families alone.
 
 ### Evidence Needed
-- E2E ASR papers.
-- SSL and multilingual transfer papers.
-- Whisper, MMS, XLS-R, SeamlessM4T, OMNIASR, and newer speech-language model evaluations.
+- Block G cross-block taxonomy matrix.
+- Core 60 synthesis anchors.
+- Foundation model, adaptation, supervision, and evaluation matrices.
 
 ### Tables/Figures Used
-- Foundation model matrix.
-- Method comparison matrix.
+- Six-layer taxonomy figure.
+- Low-resource ASR challenge taxonomy table.
 
 ### Risk
-The section may overstate model scaling and understate data and evaluation limits.
+The section may repeat Sections 3-5 instead of abstracting their shared taxonomy.
 
 ### Quality Check
-Does the section compare methods by assumptions, data needs, adaptation requirements, and low-resource failure modes?
+Does each taxonomy layer map to the locked RQs, evidence matrices, and later manuscript sections?
 
 ## Section 7: Data-Centric Strategies
 

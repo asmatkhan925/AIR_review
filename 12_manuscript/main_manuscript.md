@@ -32,9 +32,9 @@ TODO: Review and integrate `07_draft_sections/04_from_hybrid_asr_to_foundation_s
 
 TODO: Review and integrate `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md`; companion evidence notes are in `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr_evidence_notes.md`.
 
-## 6. Model-Centric Approaches
+## 6. Foundation-Model-Era Taxonomy of Low-Resource ASR
 
-TODO: Synthesize model-family material without reverting to a method-by-method list.
+TODO: Review and integrate `07_draft_sections/06_foundation_model_era_taxonomy.md`; companion evidence notes are in `07_draft_sections/06_foundation_model_era_taxonomy_evidence_notes.md`.
 
 ## 7. Data-Centric Strategies
 

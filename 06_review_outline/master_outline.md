@@ -113,22 +113,22 @@ Evaluate the datasets and benchmarks that structure low-resource ASR research.
 ### Synthesis Target
 Show that benchmark design affects what progress can be claimed.
 
-## 6. Model-Centric Approaches
+## 6. Foundation-Model-Era Taxonomy of Low-Resource ASR
 
 **Maps to:** RQ2; RQ4
 
 ### Purpose
-Compare supervised, self-supervised, multilingual, weakly supervised, and foundation-model approaches.
+Present the review's six-layer taxonomy for low-resource ASR in the foundation-model era.
 
 ### Key Points
-- Supervised E2E ASR in low-resource conditions.
-- Target-language and multilingual SSL pretraining.
-- Language relatedness and multilingual transfer.
-- Weakly supervised and foundation ASR.
-- Speech-language models and ASR correction/generation risks.
+- Resource layer: labeled, unlabeled, weakly labeled, pseudo-labeled, multilingual, and multimodal resources.
+- Language layer: dialect, orthography, code-switching, morphology, script complexity, and language-family mismatch.
+- Model layer: hybrid, E2E, SSL, multilingual, weakly supervised, SpeechLM, and multimodal foundation systems.
+- Adaptation layer: fine-tuning, continued pretraining, PEFT, transfer, prompting, and forgetting control.
+- Supervision and evaluation layers: pseudo-labeling, KD, WER/CER limits, robustness, fairness, reproducibility, and LLM-assisted risks.
 
 ### Synthesis Target
-Avoid model listing. Compare assumptions, data needs, adaptation requirements, and known low-resource failure modes.
+Show how the six layers interact and prepare the transition to data-centric strategies, adaptation, supervision, and evaluation sections.
 
 ## 7. Data-Centric Strategies
 
