@@ -44,3 +44,7 @@ Resolved the seven remaining Core 60 BibTeX gaps using primary publisher, DOI, A
 ## Section 3 evidence-grounded draft created
 
 Created the first evidence-grounded draft of Section 3, `07_draft_sections/03_what_makes_asr_low_resource.md`, with companion evidence notes in `07_draft_sections/03_what_makes_asr_low_resource_evidence_notes.md`. The draft defines low-resource ASR as a multidimensional resource, language, domain/channel, and evaluation condition grounded in Core 60 and verified matrix evidence; Pashto remains illustrative only.
+
+## Block G cross-block synthesis layer added
+
+Added Block G as the cross-block synthesis layer, not as another raw literature-search block. New files under `05_synthesis_matrices/` map the six-layer taxonomy, core synthesis claims, research gaps, manuscript sections, table/figure plan, and additional resource candidates. The companion blueprint in `06_review_outline/block_g_synthesis_blueprint.md` states that future drafting should use Block G plus Core 60 as the manuscript synthesis backbone while preserving watchlist and verification safeguards.
