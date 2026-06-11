@@ -22,17 +22,10 @@ The Core 60 were selected from the 66 unique strong candidates in Blocks A-F. A 
 
 ## BibTeX readiness
 
-- Present in `references.bib`: 53
-- Need BibTeX addition/confirmation before manuscript citation: 7
+- Present in `references.bib`: 60
+- Need BibTeX addition/confirmation before manuscript citation: 0
 
-Missing BibTeX entries among Core 60:
-- CORE-01 `BA01`: Automatic speech recognition for under-resourced languages: A survey — suggested key `besacier2014_underresourced_asr_survey`
-- CORE-07 `BA10`: Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning — suggested key `lau2025_data_quality_multilingual_speech`
-- CORE-09 `BA13`: Speech recognition and keyword spotting for low-resource languages: Babel project research at CUED — suggested key `gales2014_babel_project_research_cued`
-- CORE-10 `BA15`: OpenASR21: The Second Open Challenge for Automatic Speech Recognition of Low-Resource Languages — suggested key `peterson2022_openasr21`
-- CORE-14 `BA21`: AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and General Domain ASR — suggested key `olatunji2023_afrispeech200`
-- CORE-18 `BB05`: W2v-BERT: Combining Contrastive Learning and Masked Language Modeling for Self-Supervised Speech Pre-Training — suggested key `citation_block_b_04`
-- CORE-28 `BB17`: Joint speech and text machine translation for up to 100 languages — suggested key `citation_block_b_19`
+All Core 60 entries now have corresponding BibTeX entries in `03_references/references.bib`. The former placeholder keys for BB05 and BB17 were replaced with `chung2021_w2vbert` and `seamless2025_joint_speech_text_mt`.
 
 ## Use policy
 

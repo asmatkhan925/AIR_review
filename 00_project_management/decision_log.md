@@ -36,3 +36,7 @@ Added files:
 - `core_60_selection_report.md`
 
 Use policy: Core 60 references should carry the main manuscript claims. Supporting demotions may be used for additional context. Watchlist items should be used only for emerging directions, especially LLM-assisted ASR, hallucination, contextual ASR, and 2025-2026 frontier work. Seven Core 60 entries still require BibTeX addition or confirmation before manuscript citation.
+
+## Core 60 BibTeX gaps resolved
+
+Resolved the seven remaining Core 60 BibTeX gaps using primary publisher, DOI, ACL Anthology, ISCA Archive, IEEE/ASRU, and Nature metadata where applicable. The Core 60 gap report is now header-only; BB05 and BB17 placeholder citation keys were replaced with `chung2021_w2vbert` and `seamless2025_joint_speech_text_mt`, and AfriSpeech-200 is consistently treated as a TACL 2023 source for the Core 60 layer.
