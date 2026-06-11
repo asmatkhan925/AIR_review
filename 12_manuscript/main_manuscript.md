@@ -40,9 +40,9 @@ TODO: Review and integrate `07_draft_sections/06_foundation_model_era_taxonomy.m
 
 TODO: Review and integrate `07_draft_sections/07_data_centric_strategies_foundation_model_era.md`; companion evidence notes are in `07_draft_sections/07_data_centric_strategies_foundation_model_era_evidence_notes.md`.
 
-## 8. Adaptation Strategies
+## 8. Adaptation Strategies for Low-Resource ASR in the Foundation-Model Era
 
-TODO: Draft from adaptation matrix and low-resource adaptation studies.
+TODO: Review and integrate `07_draft_sections/08_adaptation_strategies_low_resource_asr.md`; companion evidence notes are in `07_draft_sections/08_adaptation_strategies_low_resource_asr_evidence_notes.md`.
 
 ## 9. Pseudo-Labeling and Knowledge Distillation
 

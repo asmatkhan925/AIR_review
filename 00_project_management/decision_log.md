@@ -68,3 +68,7 @@ Drafted `07_draft_sections/06_foundation_model_era_taxonomy.md` with companion e
 ## Section 7 drafted from data-centric evidence controls
 
 Drafted `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` with companion evidence notes using Block C, dataset/benchmark evidence, Core 60, and Block G controls. The section answers RQ3 by treating data-centric work as reliability control for foundation-model-era low-resource ASR rather than as a dataset catalog.
+
+## Section 8 drafted from adaptation evidence controls
+
+Drafted `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` with companion evidence notes using the adaptation matrix, Core 60, foundation-model evidence, and Block G controls. The section answers RQ4 by framing adaptation effectiveness as conditional on target-language data, domain mismatch, language relatedness, compute, evaluation design, and forgetting risk.
