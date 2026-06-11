@@ -36,9 +36,9 @@ TODO: Review and integrate `07_draft_sections/05_resources_and_benchmarks_for_lo
 
 TODO: Review and integrate `07_draft_sections/06_foundation_model_era_taxonomy.md`; companion evidence notes are in `07_draft_sections/06_foundation_model_era_taxonomy_evidence_notes.md`.
 
-## 7. Data-Centric Strategies
+## 7. Data-Centric Strategies in the Foundation-Model Era
 
-TODO: Draft from normalization, filtering, augmentation, validation, and benchmark-design evidence.
+TODO: Review and integrate `07_draft_sections/07_data_centric_strategies_foundation_model_era.md`; companion evidence notes are in `07_draft_sections/07_data_centric_strategies_foundation_model_era_evidence_notes.md`.
 
 ## 8. Adaptation Strategies
 

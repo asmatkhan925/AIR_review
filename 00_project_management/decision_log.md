@@ -64,3 +64,7 @@ Drafted `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` 
 ## Section 6 drafted as foundation-model-era taxonomy
 
 Drafted `07_draft_sections/06_foundation_model_era_taxonomy.md` with companion evidence notes using Block G as the taxonomy-control layer. Updated only the Section 6 heading and planning text in the manuscript and outline files so Section 6 now functions as the formal six-layer taxonomy section rather than a model-centric methods section.
+
+## Section 7 drafted from data-centric evidence controls
+
+Drafted `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` with companion evidence notes using Block C, dataset/benchmark evidence, Core 60, and Block G controls. The section answers RQ3 by treating data-centric work as reliability control for foundation-model-era low-resource ASR rather than as a dataset catalog.
