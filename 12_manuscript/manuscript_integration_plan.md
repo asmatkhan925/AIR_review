@@ -203,12 +203,24 @@ Audit findings:
 
 ## Stage 15: Verify and Integrate Recent Evidence
 
+Status: bibliography and citation-verification batch 1 completed; synthesis and
+manuscript integration remain planned.
+
+Completed:
+
+1. Checked all 30 P1 candidates and all ten 2026 candidates.
+2. Added 26 verified-primary BibTeX entries: 25 from Interspeech 2025 and one from EACL 2026.
+3. Updated and consolidated citation-verification records; final count is 186 rows.
+4. Created the batch report, deferred-candidate report, and 26-row verified-additions matrix.
+5. Deferred nine 2026 arXiv candidates without promoting their publication status.
+
+## Stage 16: Extract and Integrate Recent Evidence
+
 Status: planned.
 
-1. Verify priority 1 candidate metadata and full-text claim fit.
-2. Add verified BibTeX entries without duplicates.
-3. Update citation-verification and the relevant synthesis matrices.
-4. Expand Tables 2-6 only where verified evidence materially improves them.
-5. Add recent citations selectively to Sections 4, 5, 8, 9, 10, 11, and 13.
-6. Keep arXiv-only papers in future-facing or explicitly watchlisted roles.
-7. Resynchronize Markdown and LaTeX only after citation validation passes.
+1. Read and extract the 26 verified additions into the relevant synthesis matrices.
+2. Update the evidence-to-claim matrix before editing prose.
+3. Expand Tables 2-5 only where verified evidence materially improves them.
+4. Add recent citations selectively to Sections 4, 5, 7, 8, 9, 10, 11, and 13.
+5. Keep deferred arXiv papers in future-facing or explicitly watchlisted roles.
+6. Resynchronize Markdown and LaTeX only after citation validation passes.

@@ -4,16 +4,25 @@
 
 The review has a strong historical and 2020-2024 foundation, but its 2025-2026 evidence is too concentrated for the breadth of its foundation-model-era claims. The main weakness is not the absence of all recent work; it is uneven distribution. Benchmarking and general framing have several recent anchors, while adaptation, pseudo-label reliability, dialect/domain evaluation, recent AVSR, and LLM-assisted ASR rely on fewer current verified sources.
 
-The companion candidate matrix contains 60 records. It separates official venue sources from arXiv watchlist items and does not authorize manuscript citation by itself.
+The companion candidate matrix contains 60 records. Batch 1 added 26 verified-primary BibTeX records and documented nine deferred 2026 watchlist candidates. The matrix still does not authorize manuscript citation by itself: claim-level extraction and synthesis updates remain required.
+
+## Batch 1 Progress
+
+- BibTeX increased from 93 to 119 entries.
+- 2025 entries increased from 8 to 33.
+- 2026 entries increased from 2 to 3.
+- The new evidence is strongest for Sections 7-11: open model training, PEFT, pseudo-label reliability, dialect/code-switching evaluation, hallucination safeguards, and AVSR.
+- The primary remaining gap is no longer bibliographic discovery. It is controlled extraction into the existing synthesis matrices and selective claim integration.
+- Nine 2026 arXiv candidates remain deferred. They should not be promoted solely to increase the recency count.
 
 ## Sections Requiring the Most Enrichment
 
 | Priority | Section | Main weakness | Needed evidence |
 |---:|---|---|---|
-| 1 | Section 8: Adaptation Strategies | Recent ASR-specific PEFT evidence is underrepresented. | Verified prompt tuning, LoRA experts, multi-accent LoRA, AdaLoRA, efficient invocation, and compute reporting |
-| 1 | Section 9: Pseudo-Labeling and KD | Current reliability claims lean on older anchors. | Multi-ASR fusion, SpeechLLM correction, filtering, unsupervised domain adaptation, self-training, and contemporary KD |
-| 1 | Section 10: Evaluation, Reproducibility, and Robustness | Recent dialect, fairness, script, hallucination, and context evaluation is thin. | ML-SUPERB 2.0, accent diversity, geographic metadata, non-monolithic references, script-normalized scoring, and hallucination benchmarks |
-| 1 | Section 11: Multimodal, AVSR, and LLM-Assisted ASR | Emerging directions move faster than the current evidence base. | Recent AVSR challenges and efficient AVSR, SpeechLM low-resource tests, LLM correction safeguards, contextual ASR, and source-grounding checks |
+| 1 | Section 8: Adaptation Strategies | Recent PEFT papers are now in BibTeX but not yet extracted or synthesized. | Prompt tuning, LoRA experts, multi-accent LoRA, matched compute, and forgetting evidence |
+| 1 | Section 9: Pseudo-Labeling and KD | Recent reliability papers are now verified but not yet mapped to manuscript claims. | Multi-ASR fusion, SpeechLLM correction, filtering, unsupervised domain adaptation, and contemporary KD |
+| 1 | Section 10: Evaluation, Reproducibility, and Robustness | New accent, dialect, hallucination, and context sources need protocol-level extraction. | Accent diversity, geographic metadata, hallucination safeguards, fairness, and script-aware evaluation |
+| 1 | Section 11: Multimodal, AVSR, and LLM-Assisted ASR | One verified 2026 source and several 2025 sources exist, but task boundaries remain critical. | MISP 2025, low-resource SpeechLM tests, correction safeguards, contextual ASR, and source-grounding checks |
 | 2 | Section 4: Foundation Speech Models | Recent open and massively multilingual systems are only partially represented. | OWSM v4, AfriHuBERT, Omnilingual ASR, OpusLM, and bounded audio-language-model evidence |
 | 2 | Section 5: Resources and Benchmarks | Recent dialect, code-switching, impaired-speech, and regional datasets are absent. | CS-FLEURS, SardinianVoxes, German dialect data, MISP 2025, and community data-collection evidence |
 | 2 | Section 13: Future Research Agenda | The agenda is appropriate but needs more current evidence behind its priorities. | 2026 fairness, script normalization, LLM correction, LoRA, KD, and low-resource SpeechLM watchlist evidence |
@@ -76,7 +85,7 @@ No existing manuscript figure should be replaced during the audit. Figure creati
 
 ## Claims Currently Under-Supported by Recent Literature
 
-1. Recent PEFT methods are practical and reliable for low-resource ASR under realistic compute constraints.
+1. Recent PEFT methods are practical and reliable for low-resource ASR under realistic compute constraints; the new sources must still be checked for matched compute and forgetting.
 2. QLoRA has mature ASR-specific evidence comparable to LoRA or adapters.
 3. LLM-assisted correction improves low-resource ASR without dialect erasure, semantic rewriting, contamination, or over-correction.
 4. SpeechLLMs generalize reliably to unsupported low-resource languages.

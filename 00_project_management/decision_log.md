@@ -422,3 +422,50 @@ Next step:
 Verify priority 1 candidates from official sources, then add confirmed BibTeX and
 citation-verification records in a separate commit before changing synthesis matrices,
 tables, manuscript citations, or synchronized LaTeX.
+
+## Add verified 2025-2026 bibliography batch 1
+
+Date: 2026-06-13
+Starting commit: `4269b060a1e3c3c4285b0af884e784ada40eb1eb`
+
+Decision:
+Verified all P1 recency candidates and all 2026 candidates. Added 26 new
+verified-primary BibTeX entries: 25 official Interspeech 2025 papers and the official
+EACL 2026 AfriVox paper. Updated or added corresponding citation-verification records,
+consolidated provisional duplicate records for the Rangappa and AfriVox papers, and
+deferred nine 2026 arXiv candidates without upgrading their evidence status.
+
+Files added:
+`03_references/recency_enrichment_bibtex_batch1_report.md`,
+`03_references/recency_enrichment_deferred_candidates_batch1.md`, and
+`05_synthesis_matrices/recent_2025_2026_verified_additions_batch1.csv`.
+
+Files updated:
+`03_references/references.bib`,
+`03_references/citation_verification_log.csv`,
+`03_references/recency_enrichment_plan_2025_2026.md`,
+`05_synthesis_matrices/recent_2025_2026_evidence_candidates.csv`,
+`05_synthesis_matrices/recent_2025_2026_gap_summary.md`,
+`12_manuscript/integration_readiness_report.md`,
+`12_manuscript/manuscript_integration_plan.md`, and
+`00_project_management/decision_log.md`.
+
+Counts:
+BibTeX increased from 93 to 119 entries. The 2025 count increased from 8 to 33 and the
+2026 count from 2 to 3. Citation verification now contains 186 rows. No duplicate
+BibTeX or citation-log keys were introduced.
+
+Source correction:
+The official ACL Anthology record identifies the 2026 paper as `AfriVox: Probing
+Multilingual and Accent Robustness of Speech LLMs` with nine authors. This supersedes
+the provisional AfriVox-v2 and placeholder EACL metadata.
+
+Constraints preserved:
+No manuscript, synchronized LaTeX, Core 60, existing non-recency synthesis matrix,
+table, or figure content was changed. ArXiv-only candidates remain watchlist or deferred
+and are not treated as established central evidence.
+
+Next step:
+Extract the 26 verified additions into the relevant synthesis and evidence-to-claim
+matrices, then select a smaller claim-relevant set for manuscript and table integration
+before resynchronizing LaTeX.

@@ -8,7 +8,7 @@ The review should retain its established evidence backbone while adding recent w
 
 ## Current Reference Distribution
 
-`03_references/references.bib` currently contains 93 entries.
+At starting commit `4269b06`, `03_references/references.bib` contained 93 entries.
 
 | Year | BibTeX entries |
 |---|---:|
@@ -25,7 +25,7 @@ The review should retain its established evidence backbone while adding recent w
 | 2025 | 8 |
 | 2026 | 2 |
 
-The library is strongest from 2020 through 2024. Only 10 of 93 entries are dated 2025-2026, which is too thin for a review explicitly framed around the foundation-model era.
+The starting library was strongest from 2020 through 2024. Only 10 of 93 entries were dated 2025-2026, which was too thin for a review explicitly framed around the foundation-model era.
 
 ## Current Manuscript Citation Distribution
 
@@ -115,10 +115,24 @@ Recent citations should be distributed by evidential need rather than inserted u
 
 ## Recommended Next Commit Sequence
 
-1. **Verify priority 1 candidate metadata.** Confirm official pages, full author lists, venue status, DOI, and publication year for the highest-value model, adaptation, supervision, evaluation, and AVSR candidates.
-2. **Add verified BibTeX entries.** Add only verified candidates to `03_references/references.bib`; keep arXiv-only entries explicitly marked as watchlist if they are needed for future-facing discussion.
-3. **Update citation verification.** Add or revise rows in `03_references/citation_verification_log.csv`, including source type, status, main use, and limitations.
-4. **Extend synthesis matrices.** Add verified records to the appropriate model, adaptation, pseudo-labeling/KD, dataset, and evaluation matrices. Do not duplicate the same paper under inconsistent IDs.
-5. **Update claims and tables.** Strengthen Tables 2-6 and the evidence-to-claim matrix before editing prose.
-6. **Integrate manuscript citations selectively.** Add recent evidence to Sections 4, 5, 8, 9, 10, 11, and 13. Preserve the existing argument and avoid citation dumping.
-7. **Resynchronize LaTeX.** Only after Markdown and BibTeX changes pass citation validation.
+1. **Batch 1 completed: verify and add P1 bibliography records.** Twenty-six verified-primary entries were added: 25 from Interspeech 2025 and one from EACL 2026.
+2. **Extend synthesis matrices.** Add the verified records to the appropriate model, adaptation, pseudo-labeling/KD, dataset, and evaluation matrices. Do not duplicate the same paper under inconsistent IDs.
+3. **Update claims and tables.** Strengthen Tables 2-6 and the evidence-to-claim matrix before editing prose.
+4. **Integrate manuscript citations selectively.** Add recent evidence to Sections 4, 5, 8, 9, 10, 11, and 13. Preserve the existing argument and avoid citation dumping.
+5. **Recheck deferred 2026 work.** Monitor accepted venue versions for the nine deferred watchlist candidates; do not upgrade arXiv-only sources prematurely.
+6. **Resynchronize LaTeX.** Only after Markdown and BibTeX changes pass citation validation.
+
+## Batch 1 Outcome
+
+Batch 1 checked 39 candidates: all 30 P1 candidates and all ten 2026 candidates, with REC-052 belonging to both groups.
+
+| Control | After batch 1 |
+|---|---:|
+| Total BibTeX entries | 119 |
+| 2025 BibTeX entries | 33 |
+| 2026 BibTeX entries | 3 |
+| New verified-primary entries | 26 |
+| Deferred 2026 candidates | 9 |
+| Citation-verification rows | 186 |
+
+The 2026 addition is the official EACL paper `AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs`. The ACL Anthology source corrected provisional title and author metadata. All other checked 2026 candidates remain arXiv watchlist items and were deferred from new established-evidence additions.

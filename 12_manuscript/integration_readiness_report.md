@@ -3,14 +3,14 @@
 ## 1. Current Repository State
 
 - Current branch: `main`
-- Source state: after commit `d60bf38` (`Synchronize manuscript LaTeX source`)
+- Source state: after commit `4269b06` (`Audit 2025-2026 recency coverage`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
 - Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; global flow/compression and formal QA audit passes have been completed
 - LaTeX workspace state: `12_manuscript/latex/main.tex` and `main_double_column_preview.tex` are now synchronized from the audited Markdown manuscript; both compile to PDF; `references.bib` synced from `03_references/references.bib`
 - Final QA report: `12_manuscript/final_quality_audit_report.md`
 - LaTeX formatting report: `12_manuscript/latex/latex_formatting_readiness_report.md`
 - Recency audit: `03_references/recency_enrichment_plan_2025_2026.md`, `05_synthesis_matrices/recent_2025_2026_evidence_candidates.csv`, and `05_synthesis_matrices/recent_2025_2026_gap_summary.md`
-- Next evidence phase: verify and integrate the priority 2025-2026 candidates before the final submission proofread; author department, Declarations metadata, and flat-package work remain separate submission tasks
+- Next evidence phase: extract and synthesize the 26 batch-1 additions before adding manuscript citations; author department, Declarations metadata, and flat-package work remain separate submission tasks
 
 This report is a metadata and readiness snapshot after the formal QA audit and the
 LaTeX-workspace synchronization. It does not add literature, alter RQs, change
@@ -24,7 +24,9 @@ contributions, or modify Core 60, references, Block G, or synthesis matrices.
 - `12_manuscript/latex/main_double_column_preview.tex`: same content with the `iicol`
   preview option and full-width spanning floats; for layout inspection only.
 - `12_manuscript/latex/references.bib`: synced from `03_references/references.bib`
-  (93 entries; 0 duplicate keys; 78 cited keys; 0 undefined).
+  at commit `d60bf38` (93 entries; 0 duplicate keys; 78 cited keys; 0 undefined).
+  The canonical bibliography now has 119 entries after batch 1 and LaTeX resynchronization
+  is intentionally deferred until manuscript citation integration.
 - Figures 1-4 are real `figure` environments using the PDF previews in
   `09_figures/previews/`. Tables 1-6 are real `tabularx` tables generated from the
   `08_tables/` source files; table numbering is counter-pinned to the registry.
@@ -39,10 +41,11 @@ contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 1b. 2025-2026 Recency Audit
 
-- Current BibTeX library: 93 entries, including 8 from 2025 and 2 from 2026.
+- Current BibTeX library: 119 entries, including 33 from 2025 and 3 from 2026.
 - Current Markdown manuscript: 76 unique citation keys, including 7 from 2025 and none from 2026.
-- Candidate layer: 60 records covering official 2025 venue sources and conservatively labeled 2025-2026 arXiv watchlist items.
-- The audit does not change `references.bib`, the citation-verification log, the manuscript, the synchronized LaTeX, tables, or figures.
+- Candidate layer: 60 records; batch 1 added 26 verified-primary BibTeX entries and deferred nine 2026 arXiv watchlist candidates.
+- Citation-verification log: 186 rows with no duplicate or empty citation keys.
+- The batch does not change the manuscript, synchronized LaTeX, Core 60, tables, figures, or existing non-recency synthesis matrices.
 - Highest-priority enrichment areas are Sections 8-11: recent PEFT, pseudo-label/KD reliability, dialect/fairness/hallucination evaluation, AVSR, and bounded LLM-assisted ASR.
 - Existing repository year anomalies for older SeamlessM4T PEFT and S2-LoRA preprints are documented in the recency plan and are not propagated into the new candidate matrix.
 
@@ -52,8 +55,8 @@ contributions, or modify Core 60, references, Block G, or synthesis matrices.
 |---|---|---|
 | Locked RQs and scope | Ready | Preserve the field-level, taxonomy-based review framing. |
 | Core 60 reference set | Ready; verify 60 rows during validation | Use Core 60 as the main evidence backbone for manuscript claims. |
-| Citation verification | Ready; verify duplicate BibTeX keys during validation | Do not cite unverified keys during assembly. |
-| 2025-2026 recency candidate layer | Audit complete; 60 candidates awaiting staged verification | Verify official source, task boundary, evidence strength, and limitation before BibTeX or manuscript integration. |
+| Citation verification | Batch 1 ready; 186 rows and no duplicate keys | Do not cite newly added keys until claim-level extraction is complete. |
+| 2025-2026 recency candidate layer | 26 verified-primary additions; 9 deferred 2026 watchlist candidates | Extract official-source evidence into the appropriate matrices before manuscript integration. |
 | Block G synthesis layer | Ready | Use Block G claims, taxonomy rows, section-to-evidence mapping, and gap controls as synthesis scaffolding. |
 | Evidence-to-claim matrix | Ready | Check each assembled claim against existing evidence controls. |
 | Section drafts | Integrated; global compression and cross-section harmonization completed | Preserve companion evidence notes outside the manuscript body and use formal QA before journal formatting. |
@@ -133,17 +136,18 @@ Completed manuscript assembly batches:
 
 Recommended next evidence and manuscript batch:
 
-1. Verify priority 1 candidates from `recent_2025_2026_evidence_candidates.csv`.
-2. Add confirmed BibTeX and citation-verification records in a separate commit.
-3. Extend the relevant model, adaptation, pseudo-label/KD, dataset, evaluation, and evidence-to-claim matrices.
-4. Add recent citations selectively to Sections 4, 5, 8, 9, 10, 11, and 13, then resynchronize LaTeX.
-5. Complete author department/`\orgdiv` and the Declarations block (do not invent).
-6. Build the flat AIR submission package and run final proofread/submission-package QA.
+1. Extract the 26 batch-1 additions into the relevant model, adaptation, pseudo-label/KD, dataset, evaluation, and evidence-to-claim matrices.
+2. Select only claim-relevant additions for Sections 4, 5, 7, 8, 9, 10, 11, and 13.
+3. Expand Tables 2-5 where the new evidence materially changes comparison or reporting guidance.
+4. Add manuscript citations selectively, then resynchronize LaTeX and its bibliography.
+5. Recheck the nine deferred 2026 watchlist candidates for accepted venue versions.
+6. Complete author department/`\orgdiv` and the Declarations block (do not invent).
+7. Build the flat AIR submission package and run final proofread/submission-package QA.
 
 Rationale: The abstract and Sections 1-14 establish the full first manuscript assembly,
 the formal QA audit passed, and the LaTeX workspace is synchronized and compiling.
-The recency audit shows that the evidence base should be strengthened before the final
-submission proofread, especially for the fast-moving 2025-2026 topics named above.
+Batch 1 strengthens the canonical bibliography, but citation dumping would weaken the
+review. The next step is controlled extraction and synthesis before manuscript changes.
 
 ## 7. Remaining Risks Before Journal Formatting
 
@@ -151,7 +155,8 @@ submission proofread, especially for the fast-moving 2025-2026 topics named abov
 - Citation balance should be reviewed for over-dense paragraphs and under-supported claims.
 - Only 7 unique 2025 references and no 2026 references are currently cited in the Markdown manuscript.
 - Recent evidence must be added by claim need; arXiv watchlist papers must not carry central claims.
-- Candidate year, venue, and identifier anomalies must be resolved before updating BibTeX or citation logs.
+- The canonical and LaTeX-local bibliographies now differ intentionally until the next manuscript/LaTeX synchronization.
+- Deferred 2026 papers must remain watchlist-only unless official venue versions are verified.
 - Table and figure placement should be checked after journal formatting.
 - Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked after formatting/export.
 - Title/abstract/introduction/body alignment should be checked during proofread.
