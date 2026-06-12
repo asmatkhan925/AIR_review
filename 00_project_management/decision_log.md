@@ -269,3 +269,23 @@ No abstract drafting, no new RQs, no fifth contribution, no new literature, no P
 
 Next step:
 Write the Abstract based on the now-assembled Sections 1-14. Final polish should then check global flow, citation density, cross-reference consistency, table/figure placement, compression, and abstract accuracy.
+
+## Write manuscript Abstract
+
+Date: 2026-06-12
+Starting commit: `7965ae7` (`Assemble manuscript section 1`)
+
+Decision:
+Wrote the manuscript abstract in `12_manuscript/main_manuscript.md` after Sections 1-14 were assembled. Replaced the older planning notes in `07_draft_sections/00_abstract.md` with the same final abstract and a short status note.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `07_draft_sections/00_abstract.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+The abstract now reflects the assembled manuscript: low-resource ASR remains unreliable despite foundation-model progress; the review is a structured critical review with systematic mapping elements; the paper contributes a six-layer taxonomy, synthesis of resources/models/adaptation/supervision/evaluation, and a reliability-centered future agenda. The abstract avoids citations and does not introduce claims beyond the assembled Sections 1-14.
+
+Constraints preserved:
+No section rewrites, no title change, no new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no reference or synthesis-matrix edits, no figure or table edits, no PRISMA-style systematic-review claim, and no claims that foundation models, AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Run a global flow, compression, citation-density, and cross-reference consistency pass. Remaining risks include overall length, transition smoothness, figure/table placement consistency, title/abstract alignment, anti-Pashto drift, and bounded LLM-assisted ASR claims.

@@ -104,11 +104,20 @@ Integrated Section 1:
 
 Section 1 frames the paper as a field-level review on low-resource and underrepresented-language ASR in the foundation-model era. It keeps the locked four contributions, avoids Pashto-centered framing, and treats foundation models, AVSR, SpeechLMs, and LLM-assisted ASR as important but reliability-sensitive rather than solved solutions.
 
-## Stage 9: Abstract and Final Polish
+## Stage 9: Abstract Assembly
 
-After Sections 1-14 are assembled:
+Status: completed. The abstract has been written in `12_manuscript/main_manuscript.md` and copied to `07_draft_sections/00_abstract.md`.
 
-- Draft the abstract after Sections 1-14, tables, and figures are stable.
+Integrated Abstract:
+
+1. Draft the abstract after Sections 1-14, tables, and figures are stable.
+
+The abstract summarizes the problem, foundation-model-era shift, structured critical review method, six-layer taxonomy, synthesis contributions, and reliability-centered conclusion without adding citations, new RQs, a fifth contribution, or solved-problem claims.
+
+## Stage 10: Final Polish
+
+After the abstract and Sections 1-14 are assembled:
+
 - Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.
 - Check all citation keys against `03_references/references.bib`.
 - Run anti-Pashto-drift checks.

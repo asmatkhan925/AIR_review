@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; the abstract remains pending
-- Next phase: write the abstract based on the now-assembled manuscript
+- Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`
+- Next phase: global flow, compression, citation-density, and cross-reference consistency pass
 
-This report is a metadata and readiness snapshot after the seventh manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the abstract assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -25,6 +25,7 @@ This report is a metadata and readiness snapshot after the seventh manuscript as
 
 | Section | Draft file | Evidence notes | Readiness |
 |---|---|---|---|
+| Abstract | `07_draft_sections/00_abstract.md` | Not separate | Written in `main_manuscript.md`; final draft copied back to the draft file for consistency. |
 | 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Assembled into `main_manuscript.md`; previews the full Sections 2-14 argument and locked four contributions. |
 | 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Assembled into `main_manuscript.md`; framed as a structured critical review with systematic mapping elements. |
 | 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
@@ -74,34 +75,35 @@ Older `09_figures/fig_01_*` through `fig_06_*` folders remain legacy placeholder
 
 Completed manuscript assembly batches:
 
-1. Section 1: Introduction.
-2. Section 2: Review Methodology and Search Protocol.
-3. Section 3: What Makes ASR Low-Resource?
-4. Section 4: From Hybrid ASR to Foundation Speech Models.
-5. Section 5: Resources and Benchmarks.
-6. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
-7. Section 7: Data-Centric Strategies in the Foundation-Model Era.
-8. Section 8: Adaptation Strategies for Low-Resource ASR.
-9. Section 9: Pseudo-Labeling and Knowledge Distillation.
-10. Section 10: Evaluation, Reproducibility, and Robustness.
-11. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
-12. Section 12: Cross-Block Synthesis and Gap Analysis.
-13. Section 13: Future Research Agenda.
-14. Section 14: Conclusion.
+1. Abstract.
+2. Section 1: Introduction.
+3. Section 2: Review Methodology and Search Protocol.
+4. Section 3: What Makes ASR Low-Resource?
+5. Section 4: From Hybrid ASR to Foundation Speech Models.
+6. Section 5: Resources and Benchmarks.
+7. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
+8. Section 7: Data-Centric Strategies in the Foundation-Model Era.
+9. Section 8: Adaptation Strategies for Low-Resource ASR.
+10. Section 9: Pseudo-Labeling and Knowledge Distillation.
+11. Section 10: Evaluation, Reproducibility, and Robustness.
+12. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
+13. Section 12: Cross-Block Synthesis and Gap Analysis.
+14. Section 13: Future Research Agenda.
+15. Section 14: Conclusion.
 
 Recommended next manuscript assembly batch:
 
-1. Abstract.
+1. Global flow, compression, citation-density, and cross-reference consistency pass.
 
-Rationale: Sections 1-14 now establish the introduction, methodology, conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, cross-block synthesis, future agenda, and conclusion layers. The manuscript can now move to the abstract after the full manuscript body is stable.
+Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly. The manuscript can now move from section assembly to global polish.
 
 ## 7. Remaining Risks Before Assembly
 
-- Sections 1-14 are assembled but will still need global flow review, final compression, citation-density harmonization, and transition checks after the abstract is integrated.
+- The full first manuscript assembly is complete but still needs global flow review, final compression, citation-density harmonization, and transition checks.
 - Citation consistency must continue to be checked after each new assembly batch.
 - Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during final polish.
-- The abstract should accurately reflect the final introduction, methodology, body synthesis, figures, and tables.
-- Final introduction-body alignment should be checked once the abstract is drafted.
+- Title/abstract/introduction/body alignment should be checked during final polish.
+- Anti-Pashto drift and bounded LLM-assisted ASR claims should be rechecked after compression.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.
