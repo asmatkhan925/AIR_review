@@ -178,3 +178,37 @@ Outstanding (do not invent): author department/`\orgdiv` and the Declarations bl
 Wide tables (especially Table 2) need final layout adjustment. Final-submission
 readiness is not claimed. The flat submission package remains a separate next task;
 its plan is recorded in `12_manuscript/latex/latex_formatting_readiness_report.md`.
+
+## Stage 14: 2025-2026 Recency Enrichment Audit
+
+Status: completed as an audit and planning layer. No manuscript, LaTeX, BibTeX,
+citation-verification, table, or figure content was changed.
+
+Created:
+
+1. `03_references/recency_enrichment_plan_2025_2026.md`
+2. `05_synthesis_matrices/recent_2025_2026_evidence_candidates.csv`
+3. `05_synthesis_matrices/recent_2025_2026_gap_summary.md`
+
+Audit findings:
+
+- The BibTeX library has 93 entries: 8 from 2025 and 2 from 2026.
+- The Markdown manuscript has 76 unique citations: 7 from 2025 and none from 2026.
+- The candidate matrix contains 60 records spanning multilingual models, OWSM v4,
+  inclusive benchmarking, SpeechLMs, LLM correction, hallucination, pseudo-label/KD,
+  PEFT, dialect/code-switching, AVSR, and regional low-resource cases.
+- Official venue sources are separated from arXiv watchlist evidence.
+- Older papers mislabeled as 2025 in existing adaptation controls were excluded from
+  the recency matrix pending later source-data correction.
+
+## Stage 15: Verify and Integrate Recent Evidence
+
+Status: planned.
+
+1. Verify priority 1 candidate metadata and full-text claim fit.
+2. Add verified BibTeX entries without duplicates.
+3. Update citation-verification and the relevant synthesis matrices.
+4. Expand Tables 2-6 only where verified evidence materially improves them.
+5. Add recent citations selectively to Sections 4, 5, 8, 9, 10, 11, and 13.
+6. Keep arXiv-only papers in future-facing or explicitly watchlisted roles.
+7. Resynchronize Markdown and LaTeX only after citation validation passes.

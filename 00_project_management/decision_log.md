@@ -384,3 +384,41 @@ Next step:
 Complete the author department/`\orgdiv` and Declarations block, then build the flat AIR
 submission package (no subfolders; flat figure copies; compiled PDF) and run the final
 proofread and submission-package QA.
+
+## Audit 2025-2026 recency coverage
+
+Date: 2026-06-12
+Starting commit: `d60bf38` (`Synchronize manuscript LaTeX source`)
+
+Decision:
+Created an audit and planning layer for strengthening the review's 2025-2026 evidence.
+The audit records the current BibTeX and manuscript citation distributions, defines
+verification and integration targets, identifies section and table gaps, and creates a
+60-row candidate matrix covering required recent themes. Official venue sources are
+distinguished from arXiv watchlist items, and no candidate is authorized for manuscript
+use solely by appearing in the matrix.
+
+Files added:
+`03_references/recency_enrichment_plan_2025_2026.md`,
+`05_synthesis_matrices/recent_2025_2026_evidence_candidates.csv`, and
+`05_synthesis_matrices/recent_2025_2026_gap_summary.md`.
+
+Control files updated:
+`12_manuscript/integration_readiness_report.md`,
+`12_manuscript/manuscript_integration_plan.md`, and
+`00_project_management/decision_log.md`.
+
+Audit counts:
+The BibTeX library remains 93 entries, with 8 from 2025 and 2 from 2026. The Markdown
+manuscript remains at 76 unique cited keys, with 7 from 2025 and none from 2026. The
+candidate matrix contains 60 records.
+
+Constraints preserved:
+No edits were made to the Markdown manuscript, synchronized LaTeX, BibTeX library,
+citation-verification log, Core 60, existing evidence matrices, search logs, tables, or
+figures. ArXiv-only work remains watchlist evidence and is not promoted as established.
+
+Next step:
+Verify priority 1 candidates from official sources, then add confirmed BibTeX and
+citation-verification records in a separate commit before changing synthesis matrices,
+tables, manuscript citations, or synchronized LaTeX.
