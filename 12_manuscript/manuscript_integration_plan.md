@@ -34,7 +34,7 @@ Polished figures and previews are now available:
 
 Tables 1-6 are also drafted and controlled by `08_tables/table_registry.md`.
 
-Figure 1, Figure 2, Table 1, Table 2, Table 3, and Table 4 are now callout-linked in the assembled Sections 3-9. Figure 3 remains deferred, likely for Section 12 after Sections 10-11 are assembled. Figure 4 and Tables 5-6 should remain unused until their corresponding later sections are integrated.
+Figure 1, Figure 2, Table 1, Table 2, Table 3, Table 4, and Table 5 are now callout-linked in the assembled Sections 3-11. Figure 3 remains deferred to Section 12. Figure 4 and Table 6 should remain unused until their corresponding later sections are integrated.
 
 Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Use the registries to preserve final numbering, captions, and callouts.
 
@@ -50,24 +50,33 @@ Integrated Sections 7-9:
 
 Table 3 and Table 4 are callout-linked in Sections 8 and 9. Figure 3 was not inserted in this batch because the cross-block evidence-flow figure is better motivated after Sections 10-11 are assembled and can likely be placed in Section 12.
 
-## Stage 4: Next Body Assembly Batch
+## Stage 4: Third Body Assembly Batch
 
-Next integrate:
+Status: completed. Sections 10-11 have been assembled into `12_manuscript/main_manuscript.md`.
+
+Integrated Sections 10-11:
 
 1. Integrate Section 10 on evaluation, reproducibility, and robustness.
 2. Integrate Section 11 on multimodal, AVSR, SpeechLM, and LLM-assisted ASR.
 
+Table 5 is callout-linked in Section 10. Figure 3 was not inserted in this batch and remains deferred to Section 12, where the cross-block evidence-flow argument can be introduced after the full Sections 3-11 body exists. Figure 4 remains deferred to Section 13.
+
+Section 11 keeps LLM-assisted ASR bounded and risk-aware. It distinguishes post-ASR correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems from mature low-resource ASR solutions, and it preserves safeguards around hallucination, over-correction, benchmark leakage, language bias, compute, and reproducibility.
+
+## Stage 5: Next Body Assembly Batch
+
+Next integrate:
+
+1. Integrate Section 12 as cross-block synthesis and gap analysis.
+
 Then continue with:
 
-3. Integrate Section 12 as cross-block synthesis and gap analysis.
-4. Integrate Section 13 as the future research agenda.
-5. Integrate Section 14 as the conclusion.
-
-Section 11 must keep LLM-assisted ASR bounded and risk-aware. It should distinguish post-ASR correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems from mature low-resource ASR solutions, and it should preserve safeguards around hallucination, over-correction, benchmark leakage, language bias, compute, and reproducibility.
+2. Integrate Section 13 as the future research agenda.
+3. Integrate Section 14 as the conclusion.
 
 Section 13 should include LLM-assisted ASR as part of the future agenda, not as a standalone new contribution. The locked contribution count remains four.
 
-## Stage 5: Front Matter and Final Polish
+## Stage 6: Front Matter and Final Polish
 
 After the body is assembled:
 

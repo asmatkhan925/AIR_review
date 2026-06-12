@@ -169,3 +169,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Assemble Sections 10-11, then recheck transition consistency, citation density, Figure 3 placement, and bounded treatment of multimodal, SpeechLM, and LLM-assisted ASR.
+
+## Assemble manuscript Sections 10-11
+
+Date: 2026-06-12
+Starting commit: `2f7aa84` (`Assemble manuscript sections 7-9`)
+
+Decision:
+Assembled Sections 10-11 into `12_manuscript/main_manuscript.md` using the existing section drafts and companion evidence notes as the source base. Table 5 was connected through a manuscript callout placeholder and caption. Figure 3 was deferred to Section 12, and Figure 4 was deferred to Section 13.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Sections 10-11 complete the evaluation, reproducibility, robustness, multimodal/AVSR, SpeechLM, and bounded LLM-assisted ASR layers needed before cross-block synthesis. The integrated prose strengthens RQ6 while preserving the field-level review framing and separating established evidence from emerging/watchlist directions.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no unverified citation keys, no reference or synthesis-matrix edits, no figure asset edits, and no claims that AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Assemble Section 12 as cross-block synthesis and gap analysis, then assemble Sections 13-14 and recheck citation density, compression, figure placement, and bounded LLM-assisted ASR framing.
