@@ -34,7 +34,7 @@ Polished figures and previews are now available:
 
 Tables 1-6 are also drafted and controlled by `08_tables/table_registry.md`.
 
-Figure 1, Figure 2, Figure 3, Table 1, Table 2, Table 3, Table 4, and Table 5 are now callout-linked in the assembled Sections 3-12. Figure 4 and Table 6 should remain unused until their corresponding later section is integrated.
+Figure 1, Figure 2, Figure 3, Figure 4, Table 1, Table 2, Table 3, Table 4, Table 5, and Table 6 are now callout-linked in the assembled body Sections 3-14.
 
 Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Use the registries to preserve final numbering, captions, and callouts.
 
@@ -73,19 +73,22 @@ Integrated Section 12:
 
 Figure 3 is callout-linked in Section 12 with the cross-block evidence-flow caption. Figure 4 and Table 6 remain deferred to Section 13.
 
-## Stage 6: Next Body Assembly Batch
+## Stage 6: Future Agenda and Conclusion Assembly
 
-Next integrate:
+Status: completed. Sections 13-14 have been assembled into `12_manuscript/main_manuscript.md`.
+
+Integrated Sections 13-14:
 
 1. Integrate Section 13 as the future research agenda.
 2. Integrate Section 14 as the conclusion.
 
-Section 13 should include LLM-assisted ASR as part of the future agenda, not as a standalone new contribution. The locked contribution count remains four.
+Figure 4 and Table 6 are callout-linked in Section 13. Section 13 keeps LLM-assisted ASR as part of the future reliability agenda, not as a standalone new contribution. Section 14 introduces no new citation keys and closes around the locked four contributions and six-layer taxonomy.
 
-## Stage 7: Front Matter and Final Polish
+## Stage 7: Methodology, Front Matter, and Final Polish
 
 After the body is assembled:
 
+- Integrate Section 2 so the review methodology, search protocol, evidence extraction, synthesis controls, and citation verification workflow are clear.
 - Revise Section 1 so it previews the assembled argument, six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
 - Draft the abstract after Sections 1-14, tables, and figures are stable.
 - Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.

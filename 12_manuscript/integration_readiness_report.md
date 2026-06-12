@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: Sections 3-12 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and 13-14 remain pointer-based or pending integration
-- Next phase: manuscript assembly of Sections 13-14
+- Main manuscript state: body Sections 3-14 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and the abstract remain pending
+- Next phase: manuscript assembly of Section 2 methodology/search protocol, followed by the introduction and abstract
 
-This report is a metadata and readiness snapshot after the fourth manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the fifth manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -36,15 +36,15 @@ This report is a metadata and readiness snapshot after the fourth manuscript ass
 | 9. Pseudo-Labeling and Knowledge Distillation | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 4 callout connected. |
 | 10. Evaluation, Reproducibility, and Robustness | `07_draft_sections/10_evaluation_reproducibility_robustness.md` | Yes | Assembled into `main_manuscript.md`; Table 5 callout connected. |
 | 11. Multimodal, AVSR, and LLM-Assisted ASR | `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` | Yes | Assembled into `main_manuscript.md`; LLM-assisted ASR kept bounded and risk-aware. |
-| 12. Cross-Block Synthesis and Gap Analysis | `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` | Yes | Ready for next assembly batch. |
-| 13. Future Research Agenda | `07_draft_sections/13_future_research_agenda.md` | Yes | Ready after synthesis is assembled; LLM-assisted ASR remains part of the future agenda, not a new contribution. |
-| 14. Conclusion | `07_draft_sections/14_conclusion.md` | Yes | Ready after Sections 12-13 are stable. |
+| 12. Cross-Block Synthesis and Gap Analysis | `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` | Yes | Assembled into `main_manuscript.md`; Figure 3 callout connected. |
+| 13. Future Research Agenda | `07_draft_sections/13_future_research_agenda.md` | Yes | Assembled into `main_manuscript.md`; Figure 4 and Table 6 callouts connected. |
+| 14. Conclusion | `07_draft_sections/14_conclusion.md` | Yes | Assembled into `main_manuscript.md`; no new citation keys introduced. |
 
 Older method-by-method draft files remain source material only and should not steer final manuscript structure.
 
 ## 4. Table Readiness
 
-Tables are ready for manuscript-level review. Final numbering is controlled by `08_tables/table_registry.md`. Table 1, Table 2, Table 3, Table 4, and Table 5 are now callout-linked in the assembled Sections 5-10.
+Tables are ready for manuscript-level review. Final numbering is controlled by `08_tables/table_registry.md`. Table 1, Table 2, Table 3, Table 4, Table 5, and Table 6 are now callout-linked in the assembled Sections 5-13.
 
 | Table | Source file | Status |
 |---|---|---|
@@ -59,7 +59,7 @@ Legacy table drafts remain in `08_tables/` and are documented in `08_tables/tabl
 
 ## 5. Figure Readiness
 
-Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`. Figure 1, Figure 2, and Figure 3 are now callout-linked in the assembled Sections 3, 6, and 12. Figure 4 remains deferred to Section 13.
+Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`. Figure 1, Figure 2, Figure 3, and Figure 4 are now callout-linked in the assembled Sections 3, 6, 12, and 13.
 
 | Figure | Source files | Status |
 |---|---|---|
@@ -84,19 +84,24 @@ Completed manuscript assembly batches:
 8. Section 10: Evaluation, Reproducibility, and Robustness.
 9. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
 10. Section 12: Cross-Block Synthesis and Gap Analysis.
+11. Section 13: Future Research Agenda.
+12. Section 14: Conclusion.
 
 Recommended next manuscript assembly batch:
 
-1. Sections 13-14: Future Research Agenda and Conclusion.
+1. Section 2: Review Methodology and Search Protocol.
+2. Section 1: Introduction.
+3. Abstract.
 
-Rationale: Sections 3-12 now establish the conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, and cross-block synthesis layers. The manuscript can now move to the future agenda and conclusion.
+Rationale: Body Sections 3-14 now establish the conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, cross-block synthesis, future agenda, and conclusion layers. The manuscript can now move to the methodology/search protocol, then the introduction and abstract.
 
 ## 7. Remaining Risks Before Assembly
 
-- Sections 3-12 are assembled but will still need final compression, citation-density harmonization, and transition checks after Sections 13-14 are integrated.
+- Body Sections 3-14 are assembled but will still need global flow review, final compression, citation-density harmonization, and transition checks after Sections 1-2 and the abstract are integrated.
 - Citation consistency must continue to be checked after each new assembly batch.
-- Figure 4 and Table 6 remain deferred to Section 13.
-- The transition from Section 12 to Section 13 needs careful checking so the future agenda extends the synthesis rather than repeating it.
+- Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during final polish.
+- Section 2 must make the search and synthesis workflow traceable enough for a review journal.
+- Section 1 and the abstract should preview the assembled argument without adding a fifth contribution or making the manuscript Pashto-centered.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.

@@ -209,3 +209,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Assemble Sections 13-14, then recheck transition consistency, citation density, compression, Figure 4 and Table 6 placement, and bounded LLM-assisted ASR framing in the future agenda.
+
+## Assemble manuscript Sections 13-14
+
+Date: 2026-06-12
+Starting commit: `76a120f` (`Assemble manuscript section 12`)
+
+Decision:
+Assembled Sections 13-14 into `12_manuscript/main_manuscript.md` using the existing future-agenda and conclusion drafts, companion evidence notes, Block G gap controls, and manuscript-facing figure/table registries as the source base. Figure 4 and Table 6 were connected through manuscript callout placeholders and concise captions.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Sections 13-14 complete the main body assembly from Sections 3-14. Section 13 converts the cross-block gap synthesis into a reliability-centered future agenda covering definitions, documentation, benchmarks, adaptation, pseudo-labeling and KD, robustness, reproducibility, compute transparency, multimodal/AVSR directions, and bounded LLM-assisted ASR safeguards. Section 14 answers the locked main review question and closes around the four contributions and six-layer taxonomy.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no unverified citation keys, no reference or synthesis-matrix edits, no figure asset edits, no table source edits, and no claims that foundation models, AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Assemble Section 2 methodology/search protocol, then revise the introduction and abstract after the full body, figures, and tables are stable. Final polish should check global flow, citation density, cross-reference consistency, table/figure placement, and compression.
