@@ -1,38 +1,44 @@
 # Figure 1 Specification: Foundation-Model-Era Low-Resource ASR Bottleneck Stack
 
-Purpose: Specification for a future figure supporting Sections 1, 3, 12, and 13. Source basis: Section 3 low-resource framing, Section 4 foundation-model transition, Section 12 cross-block synthesis, Section 13 future agenda, and Block G claims C-G1, C-G2, and C-G8.
+## Current Status
 
-Status: Draft specification only. Do not generate the final image yet.
+- Figure number: Figure 1
+- Figure title: Foundation-model-era low-resource ASR bottleneck stack
+- Status: Polished editable SVG draft available; PNG and PDF previews exported; ready for manuscript-level review.
+- SVG source: `09_figures/figure_01_bottleneck_stack.svg`
+- PNG preview: `09_figures/previews/figure_01_bottleneck_stack.png`
+- PDF preview: `09_figures/previews/figure_01_bottleneck_stack.pdf`
+- Target manuscript sections: Sections 1, 3, 12, and 13
+- Primary RQs: Main RQ, RQ1, RQ2, RQ6
+- Related tables: Table 1 (`08_tables/table_01_low_resource_asr_taxonomy.md`), Table 5 (`08_tables/table_05_evaluation_robustness_checklist.md`), Table 6 (`08_tables/table_06_future_agenda_reporting_checklist.md`)
 
-## Core Message
+## Main Argument and Purpose
 
-Foundation speech models improve the starting point of low-resource ASR, but they do not remove the reliability bottleneck. The remaining bottlenecks interact across resources, language conditions, adaptation, supervision, evaluation, robustness, reproducibility, compute, and emerging multimodal or LLM-assisted risks.
+Foundation speech models improve the starting point for low-resource ASR, but they do not remove the reliability bottleneck. The figure shows that remaining constraints interact across resource quality, language fit, adaptation, supervision, evaluation, robustness, reproducibility, compute, and bounded multimodal or LLM-assisted risks/safeguards.
 
-## Visual Layout
+## Visual Content
 
-- Use a vertical stack or layered pipeline with the top label: `Foundation speech models: stronger starting point`.
-- Beneath that starting point, show remaining bottleneck layers as stacked bands:
-  - `Resource quality and documentation`: labeled data, unlabeled speech, weak labels, metadata, licensing, validation.
-  - `Language fit`: dialect, accent, orthography, script, morphology, code-switching, language-family mismatch.
-  - `Adaptation choice`: full fine-tuning, continued pretraining, PEFT, transfer, prompting, forgetting control.
-  - `Supervision reliability`: pseudo-label quality, teacher confidence, uncertainty, agreement, KD objective.
-  - `Evaluation and comparability`: WER/CER plus language-wise, dialect-wise, domain-wise, and normalization-aware scoring.
-  - `Robustness and deployment`: noise, far-field, channel shift, speaker variation, fairness, reproducibility.
-  - `Compute and reporting`: hardware, trainable parameters, inference cost, model version, decoding and scoring scripts.
-  - `Multimodal and LLM risks`: AVSR modality mismatch, hallucination, over-correction, context leakage, source grounding.
-- Show the foundation-model starting point as reducing the initial model-training burden, not erasing the lower layers.
-- Use two-way arrows among adjacent bottleneck layers and a few diagonal arrows to show interactions, for example:
-  - Resource quality affects adaptation and supervision reliability.
-  - Language fit affects evaluation and pseudo-label filtering.
-  - Evaluation feedback affects data collection and adaptation choices.
-  - Multimodal/LLM risks feed back into evaluation and reproducibility requirements.
+The polished draft uses a vertical bottleneck stack. A neutral `Foundation speech models` starting node sits above eight bottleneck layers:
 
-## Suggested Caption
+1. Resource quality and documentation.
+2. Language fit.
+3. Adaptation choice.
+4. Supervision reliability.
+5. Evaluation and comparability.
+6. Robustness and deployment.
+7. Compute and reporting.
+8. Multimodal and LLM risks/safeguards.
 
-Foundation models shift the low-resource ASR bottleneck rather than eliminate it. Reliable recognition depends on interacting layers of resource quality, language fit, adaptation, supervision, evaluation, robustness, compute, reproducibility, and bounded use of multimodal or LLM-assisted methods.
+Side feedback loops indicate that evaluation and deployment failures should feed back into resource documentation, adaptation choices, and reliability controls.
 
-## Design Notes
+## Evidence Boundary Note
 
-- Avoid presenting the layers as a simple linear pipeline. Use arrows and feedback loops to show cross-layer dependence.
-- Keep the figure field-level and not language-specific.
-- If watchlist-only evidence is referenced in the caption or notes, restrict it to emerging multimodal, hallucination, contextual-ASR, or LLM-assisted risks.
+This is a field-level synthesis figure based on Block G claims and the drafted Sections 3, 4, 12, and 13. It must not be read as a claim that every cited study covers every layer. LLM-assisted and multimodal items are bounded as reliability-sensitive directions, not as solved low-resource ASR methods.
+
+## Caption Control
+
+Use `09_figures/figure_captions_and_alt_text.md` as the caption and alt-text control file. Do not add citations, long captions, or detailed evidence notes inside the SVG.
+
+## Final Production Note
+
+Final journal production may still adjust sizing, line weights, typography, and export format after the manuscript template and figure placement are fixed. The editable SVG remains the source asset.

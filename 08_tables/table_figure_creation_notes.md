@@ -1,6 +1,8 @@
 # Table and Figure Creation Notes
 
-This note documents the first high-priority table and figure draft assets. No new literature, citation keys, model details, dataset counts, or performance claims were introduced. Tables 1-6 now include representative evidence anchors or a table note so they can be integrated into manuscript prose without turning the tables into matrix dumps.
+This note documents the manuscript-facing table and figure draft assets. No new literature, citation keys, model details, dataset counts, or performance claims were introduced. Tables 1-6 and Figures 1-4 are now the intended manuscript-facing table/figure set.
+
+Final table numbering is controlled by `08_tables/table_registry.md`. Final figure numbering is controlled by `09_figures/figure_registry.md`. Legacy table drafts and older figure folders remain source material only.
 
 | Asset | Manuscript support | Source matrices and drafts used | Current status | Missing information or caution | Watchlist handling |
 |---|---|---|---|---|---|
@@ -15,9 +17,18 @@ This note documents the first high-priority table and figure draft assets. No ne
 | `09_figures/figure_03_cross_block_evidence_flow_spec.md` | Sections 4, 8, 10, and 12 | `block_g_cross_block_taxonomy_synthesis_matrix.csv`; `block_g_section_to_evidence_map.csv`; Section 12 draft | Polished editable SVG draft and previews created | Core 60 IDs remain outside the figure and should be handled through caption, notes, or manuscript text if needed | Watchlist-only evidence appears only as bounded emerging-risk annotation |
 | `09_figures/figure_04_future_agenda_map_spec.md` | Section 13 | `block_g_research_gap_agenda_matrix.csv`; `block_g_additional_resource_candidates.csv`; Section 13 draft | Polished editable SVG draft and previews created | Methodological documentation sources should remain background-support and not be presented as ASR performance evidence | Watchlist-only evidence is bounded to future agenda items for AVSR, LLM assistance, hallucination, and contextual ASR |
 
-Integration note: These assets should be reviewed before full manuscript assembly. They should be inserted into `12_manuscript/main_manuscript.md` only after the corresponding sections are integrated, captions are finalized, and table/figure callouts and cross-references are harmonized.
+Integration note: These assets should be reviewed before full manuscript assembly. They should be inserted into `12_manuscript/main_manuscript.md` only during manuscript assembly, after the corresponding sections are integrated, captions are finalized, and table/figure callouts and cross-references are harmonized.
 
-Evidence-boundary note: representative evidence anchors are intentionally sparse. They identify local citation keys that can support each row's framing, but the detailed evidence logic remains in Core 60, Block G, and the section drafts. Methodological documentation references such as datasheets, data statements, model cards, and energy/reporting work remain background support only and should not be presented as ASR performance evidence.
+Evidence-boundary note: representative evidence anchors are intentionally sparse. They identify local citation keys that can support each row's framing, but the detailed evidence logic remains in Core 60, Block G matrices, section drafts, and evidence-to-claim entries. Methodological documentation references such as datasheets, data statements, model cards, and energy/reporting work remain background support only and should not be presented as ASR performance evidence.
+
+## Manuscript-Facing Registries
+
+- Intended final table set: `08_tables/table_registry.md`, Tables 1-6.
+- Intended final figure set: `09_figures/figure_registry.md`, Figures 1-4.
+- Legacy tables: `08_tables/table_01_taxonomy_of_methods.md` through `08_tables/table_08_research_gaps_future_work.md` where marked in the table registry.
+- Legacy figure folders: `09_figures/fig_01_*` through `09_figures/fig_06_*`, where present.
+
+Do not use legacy table or figure numbering during manuscript assembly unless a later decision-log entry deliberately revives an older asset.
 
 ## Polished SVG Figure Draft Sources and Previews
 

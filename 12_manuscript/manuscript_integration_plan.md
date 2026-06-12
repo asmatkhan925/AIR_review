@@ -1,68 +1,66 @@
 # Manuscript Integration Plan
 
-## Stage 1: Methodology and Front Matter
+## Control Files
 
-- Review and polish Section 2 from `07_draft_sections/02_review_methodology_search_protocol.md` and its traceability notes, checking it against `01_scope_and_planning/review_methodology.md`, `01_scope_and_planning/inclusion_exclusion_criteria.md`, search logs, screening logs, citation verification records, Core 60 controls, and the handoff validation workflow.
-- Revise Section 1 after the body is stable so the introduction previews the final six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
-- Draft the abstract only after Sections 1-14 are assembled and the table/figure set is known.
+- Canonical RQs and scope: `01_scope_and_planning/research_questions.md`
+- Table numbering and status: `08_tables/table_registry.md`
+- Figure numbering and status: `09_figures/figure_registry.md`
+- Table/figure notes: `08_tables/table_figure_creation_notes.md`
+- Integration readiness report: `12_manuscript/integration_readiness_report.md`
+- Manuscript shell: `12_manuscript/main_manuscript.md`
 
-## Stage 2: Tables and Figures
+## Stage 1: First Assembly Batch, Sections 3-6
 
-Prioritize these assets before full assembly:
+Integrate Sections 3-6 before finalizing the introduction and abstract:
 
-1. Six-layer taxonomy figure.
-2. Low-resource ASR bottleneck stack.
-3. Dataset/benchmark comparison table.
-4. Adaptation strategy decision matrix.
-5. Pseudo-labeling/KD reliability matrix.
-6. Evaluation and robustness checklist.
-7. Future agenda/reporting checklist.
+1. Section 3: `07_draft_sections/03_what_makes_asr_low_resource.md`
+2. Section 4: `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md`
+3. Section 5: `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md`
+4. Section 6: `07_draft_sections/06_foundation_model_era_taxonomy.md`
 
-Use `05_synthesis_matrices/block_g_table_figure_plan.csv` as the control file, then update `08_tables/` and `09_figures/` so the final assets match the manuscript sections rather than the older method-by-method structure.
+Reason: these sections establish the conceptual and taxonomic base for the rest of the manuscript. They define low-resource ASR beyond labeled hours, explain the foundation-model transition, compare resource and benchmark conditions, and introduce the six-layer taxonomy before later sections discuss data-centric strategies, adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, synthesis, and future work.
 
-First draft assets created for review:
+## Stage 2: Tables and Figures During Assembly
 
-- `08_tables/table_01_low_resource_asr_taxonomy.md`
-- `08_tables/table_02_dataset_benchmark_comparison.md`
-- `08_tables/table_03_adaptation_strategy_decision_matrix.md`
-- `08_tables/table_04_pseudo_labeling_kd_reliability_matrix.md`
-- `08_tables/table_05_evaluation_robustness_checklist.md`
-- `08_tables/table_06_future_agenda_reporting_checklist.md`
-- `08_tables/table_figure_creation_notes.md`
-- `09_figures/figure_01_bottleneck_stack_spec.md`
-- `09_figures/figure_02_six_layer_taxonomy_spec.md`
-- `09_figures/figure_03_cross_block_evidence_flow_spec.md`
-- `09_figures/figure_04_future_agenda_map_spec.md`
+Polished figures and previews are now available:
+
 - `09_figures/figure_01_bottleneck_stack.svg`
 - `09_figures/figure_02_six_layer_taxonomy.svg`
 - `09_figures/figure_03_cross_block_evidence_flow.svg`
 - `09_figures/figure_04_future_agenda_map.svg`
-- `09_figures/previews/figure_01_bottleneck_stack.png`
-- `09_figures/previews/figure_02_six_layer_taxonomy.png`
-- `09_figures/previews/figure_03_cross_block_evidence_flow.png`
-- `09_figures/previews/figure_04_future_agenda_map.png`
-- `09_figures/previews/figure_01_bottleneck_stack.pdf`
-- `09_figures/previews/figure_02_six_layer_taxonomy.pdf`
-- `09_figures/previews/figure_03_cross_block_evidence_flow.pdf`
-- `09_figures/previews/figure_04_future_agenda_map.pdf`
-- `09_figures/figure_captions_and_alt_text.md`
+- PNG previews in `09_figures/previews/`
+- PDF previews in `09_figures/previews/`
+- Captions and alt text in `09_figures/figure_captions_and_alt_text.md`
 
-Tables 1-6 now require final captions, numbering checks, and cross-reference insertion when the relevant manuscript sections are assembled.
-Figure captions and cross-references should be inserted during manuscript assembly, not now. The preview exports are for review and layout checking; the editable SVG files remain the source assets.
+Tables 1-6 are also drafted and controlled by `08_tables/table_registry.md`.
 
-## Stage 3: Main Manuscript Assembly
+Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Do not paste figures or tables into `main_manuscript.md` during metadata cleanup; place them during section integration with captions and callouts checked in context.
 
-- Assemble Sections 3-14 into `12_manuscript/main_manuscript.md` in order, replacing pointer TODOs one section at a time.
-- Keep companion evidence notes in `07_draft_sections/` and do not paste them into the manuscript body.
-- After each section is inserted, check cited keys against `03_references/references.bib`, verify that claims remain supported by the relevant matrix rows, and update `00_project_management/decision_log.md` only for material integration decisions.
-- Preserve traceability by leaving draft-section filenames and evidence-note filenames in integration comments or assembly notes until final cleanup.
+## Stage 3: Later Body Assembly
 
-## Stage 4: Consistency and Journal Polish
+After Sections 3-6 are integrated and compressed:
 
-- Harmonize section titles across `main_manuscript.md`, `master_outline.md`, `section_argument_map.md`, and Block G controls.
-- Standardize terminology for foundation speech models, speech-language models, LLM-assisted ASR, AVSR, pseudo-labeling, KD, and low-resource conditions.
-- Check all contribution statements against the locked four-contribution structure.
-- Run anti-Pashto-drift checks so illustrative examples do not become a case-study contribution.
-- Balance citation density, especially in synthesis and conclusion sections.
-- Check figure and table callouts, captions, and matrix traceability.
-- Apply the Artificial Intelligence Review style checklist before LaTeX conversion and journal-format checks.
+1. Integrate Section 7 on data-centric strategies.
+2. Integrate Section 8 on adaptation strategies.
+3. Integrate Section 9 on pseudo-labeling and KD.
+4. Integrate Section 10 on evaluation, reproducibility, and robustness.
+5. Integrate Section 11 on multimodal, AVSR, SpeechLM, and LLM-assisted ASR.
+6. Integrate Section 12 as cross-block synthesis and gap analysis.
+7. Integrate Section 13 as the future research agenda.
+8. Integrate Section 14 as the conclusion.
+
+Section 11 must keep LLM-assisted ASR bounded and risk-aware. It should distinguish post-ASR correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems from mature low-resource ASR solutions, and it should preserve safeguards around hallucination, over-correction, benchmark leakage, language bias, compute, and reproducibility.
+
+Section 13 should include LLM-assisted ASR as part of the future agenda, not as a standalone new contribution. The locked contribution count remains four.
+
+## Stage 4: Front Matter and Final Polish
+
+After the body is assembled:
+
+- Revise Section 1 so it previews the assembled argument, six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
+- Draft the abstract after Sections 1-14, tables, and figures are stable.
+- Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.
+- Check all citation keys against `03_references/references.bib`.
+- Run anti-Pashto-drift checks.
+- Confirm that LLM-assisted ASR remains visible but bounded.
+- Apply Artificial Intelligence Review style and submission checks before LaTeX conversion.

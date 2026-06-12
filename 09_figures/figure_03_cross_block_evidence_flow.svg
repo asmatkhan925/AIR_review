@@ -49,7 +49,7 @@
   <rect class="middle" x="543" y="150" width="314" height="132" rx="18" />
   <text class="label" x="573" y="185">Model family</text>
   <text class="body" x="573" y="220">SSL, multilingual SSL</text>
-  <text class="body" x="573" y="246">weakly supervised, multimodal</text>
+  <text class="body" x="573" y="246">weakly supervised, SpeechLM, multimodal</text>
 
   <rect class="middle" x="543" y="350" width="314" height="132" rx="18" />
   <text class="label" x="573" y="385">Adaptation path</text>

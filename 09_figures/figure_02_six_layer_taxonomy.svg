@@ -46,7 +46,7 @@
   <text class="panel" x="112" y="624">Model</text>
   <text class="body" x="112" y="662">hybrid and end-to-end ASR</text>
   <text class="body" x="112" y="688">SSL and multilingual SSL</text>
-  <text class="body" x="112" y="714">weakly supervised and multimodal ASR</text>
+  <text class="body" x="112" y="714">weakly supervised; speech-LLM systems</text>
 
   <rect class="box4" x="930" y="150" width="390" height="160" rx="18" />
   <text class="panel" x="962" y="184">Adaptation</text>

@@ -1,39 +1,45 @@
-# Figure 4 Specification: Future Agenda Map for Reliable Low-Resource ASR
+# Figure 4 Specification: Future Research Agenda Map
 
-Purpose: Specification for a future figure supporting Section 13. Source basis: `05_synthesis_matrices/block_g_research_gap_agenda_matrix.csv`, `05_synthesis_matrices/block_g_additional_resource_candidates.csv`, and `07_draft_sections/13_future_research_agenda.md`.
+## Current Status
 
-Status: Draft specification only. Do not generate the final image yet.
+- Figure number: Figure 4
+- Figure title: Future research agenda map for reliable low-resource ASR
+- Status: Polished editable SVG draft available; PNG and PDF previews exported; ready for manuscript-level review.
+- SVG source: `09_figures/figure_04_future_agenda_map.svg`
+- PNG preview: `09_figures/previews/figure_04_future_agenda_map.png`
+- PDF preview: `09_figures/previews/figure_04_future_agenda_map.pdf`
+- Target manuscript section: Section 13
+- Primary RQs: Main RQ, RQ3, RQ4, RQ5, RQ6
+- Related tables: Table 6 (`08_tables/table_06_future_agenda_reporting_checklist.md`)
 
-## Core Message
+## Main Argument and Purpose
 
-The future agenda should be grounded in demonstrated gaps rather than speculative technology. Reliable low-resource ASR requires better definitions, better resource documentation, orthography- and dialect-aware benchmarks, compute-aware adaptation, reliable supervision expansion, robust evaluation, bounded multimodal and LLM-assisted methods, reproducibility, and deployability.
+The future agenda should be grounded in demonstrated gaps rather than speculative technology. Reliable low-resource ASR requires better resource definitions, stronger documentation, orthography- and dialect-aware benchmarks, compute-aware adaptation, reliable supervision expansion, robust evaluation, bounded multimodal and LLM-assisted methods, reproducibility, and deployability.
 
-## Visual Layout
+## Visual Content
 
-- Use a radial map or grouped agenda board with the center label: `Reliable low-resource ASR`.
-- Arrange agenda clusters around the center:
-  - `Definitions and resource conditions`: standardize what low-resource means; report labeled, unlabeled, weak-label, validation, metadata, and compute conditions.
-  - `Documentation and metadata`: provenance, consent/licensing, dialect/accent metadata where ethical, validation protocol, access conditions.
-  - `Orthography and dialect benchmarks`: transcript conventions, scoring scripts, raw/normalized scores, dialect/accent/domain breakdowns.
-  - `Compute-aware adaptation`: matched adaptation comparisons, trainable parameters, memory, hardware, inference cost, forgetting checks.
-  - `Reliable pseudo-labeling and KD`: teacher quality, confidence, uncertainty, agreement, filtering thresholds, multi-teacher selection.
-  - `Evaluation and robustness`: language-wise, dialect-wise, domain-wise, noise/far-field, fairness, hallucination, reproducibility checks.
-  - `AVSR and multimodal robustness`: multilingual and multidialect AVSR resources, modality coverage, missing-modality tests, privacy safeguards.
-  - `Constrained LLM assistance`: N-best or lattice grounding, validated context, over-correction tests, semantic preservation, unsupported-insertion checks.
-  - `Reproducibility and deployment`: model versions, data splits, scoring scripts, decoding settings, public artifacts, compute/deployment cost.
-- Use small connector labels from clusters to the relevant gap families:
-  - Definitions/resources: GAP-G1 and GAP-G2.
-  - Orthography/dialect benchmarks: GAP-G3 and GAP-G4.
-  - Adaptation and compute: GAP-G5, GAP-G6, and GAP-G12.
-  - Supervision reliability: GAP-G7 and GAP-G8.
-  - LLM/multimodal and robustness: GAP-G9, GAP-G10, and GAP-G11.
+The polished draft uses a central `Reliable low-resource ASR` node surrounded by nine agenda clusters:
 
-## Suggested Caption
+1. Definitions and resources.
+2. Documentation and metadata.
+3. Orthography and dialect tests.
+4. Compute-aware adaptation.
+5. Reliable pseudo-labeling and KD.
+6. Evaluation and robustness.
+7. AVSR and multimodal robustness.
+8. Constrained LLM assistance.
+9. Reproducibility and deployment.
 
-Future research agenda for reliable low-resource ASR. The agenda clusters research priorities around documented gaps in definitions, resource documentation, benchmark design, adaptation comparability, pseudo-label reliability, evaluation, AVSR and multimodal robustness, constrained LLM assistance, reproducibility, and deployment.
+GAP labels remain visible but compact so the figure stays readable.
 
-## Design Notes
+## Evidence Boundary Note
 
-- Mark methodological documentation sources as background support, not ASR performance evidence.
-- Keep watchlist-only directions visually bounded as future-facing items, especially AVSR, hallucination, contextual ASR, and LLM-assisted correction or rescoring.
-- Avoid showing this as a technology roadmap where newer methods automatically supersede earlier controls; the message is evidence discipline.
+This figure is controlled by `05_synthesis_matrices/block_g_research_gap_agenda_matrix.csv`, `05_synthesis_matrices/block_g_additional_resource_candidates.csv`, and Section 13. Methodological documentation sources are background support, not ASR performance evidence. AVSR and LLM-assisted items are future-facing and bounded by reliability safeguards.
+
+## Caption Control
+
+Use `09_figures/figure_captions_and_alt_text.md` as the caption and alt-text control file. Do not add citations, long captions, or detailed evidence notes inside the SVG.
+
+## Final Production Note
+
+Final journal production may still adjust sizing, line weights, typography, and export format after the manuscript template and figure placement are fixed. The editable SVG remains the source asset.

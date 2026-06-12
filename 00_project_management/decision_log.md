@@ -115,3 +115,17 @@ Created first editable SVG draft sources for Figures 1-4 from the approved figur
 ## SVG figure drafts polished and preview exports created
 
 Polished the first editable SVG drafts for Figures 1-4 to improve readability, typography, connector clarity, and cross-figure visual consistency without changing claims, evidence, citations, Core 60, Block G, or manuscript content. Created PNG and PDF previews under `09_figures/previews/` for review; the editable SVG files remain the source assets.
+
+## Post-figure status cleanup and manuscript assembly readiness
+
+Date: 2026-06-12
+Commit context: after `994029a` (`Polish SVG figures and add previews`)
+
+Decision:
+Figures 1-4 are now the active manuscript-facing visual assets, with editable SVG sources and PNG/PDF previews available under `09_figures/`. Table and figure registries now control final manuscript numbering: `08_tables/table_registry.md` for Tables 1-6 and `09_figures/figure_registry.md` for Figures 1-4. The next phase is manuscript assembly, beginning with Sections 3-6.
+
+Rationale:
+The evidence controls, section drafts, manuscript-facing tables, and polished figure drafts are sufficiently mature to begin integration. The main risk has shifted from asset creation to manuscript-level integration, redundancy control, citation consistency, table/figure callout placement, and cross-section flow.
+
+Constraints:
+No new RQs, no fifth contribution, no Pashto-centered drift, no unverified citations, and no claims that LLMs solve low-resource ASR.

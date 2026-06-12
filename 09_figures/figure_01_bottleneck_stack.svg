@@ -75,7 +75,7 @@
   <path class="arrow" d="M 700 752 L 700 771" />
 
   <rect class="layerD" x="190" y="772" width="1020" height="68" rx="16" />
-  <text class="label" x="226" y="800">Multimodal and LLM risks</text>
+  <text class="label" x="226" y="800">Multimodal and LLM risks/safeguards</text>
   <text class="body" x="226" y="825">AVSR mismatch, hallucination, over-correction, context leakage, grounding</text>
 
   <path class="feedback" d="M 188 806 C 90 760, 90 214, 188 190" />

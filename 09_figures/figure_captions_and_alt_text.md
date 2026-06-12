@@ -4,8 +4,8 @@ Status: polished draft, preview exports created. Captions should be inserted dur
 
 ## Figure 1: Foundation-Model-Era Low-Resource ASR Bottleneck Stack
 
-- Proposed manuscript caption: Foundation models shift the low-resource ASR bottleneck rather than eliminate it. Reliable recognition depends on interacting layers of resource quality, language fit, adaptation, supervision, evaluation, robustness, compute, reproducibility, and bounded use of multimodal or LLM-assisted methods.
-- Short alt text: A stacked diagram shows foundation speech models above interacting low-resource ASR bottleneck layers, with feedback arrows linking resources, language, adaptation, supervision, evaluation, robustness, compute, and multimodal or LLM risks.
+- Proposed manuscript caption: Foundation models shift the low-resource ASR bottleneck rather than eliminate it. Reliable recognition depends on interacting layers of resource quality, language fit, adaptation, supervision, evaluation, robustness, compute, reproducibility, and bounded multimodal or LLM-assisted risks and safeguards.
+- Short alt text: A stacked diagram shows foundation speech models above interacting low-resource ASR bottleneck layers, with feedback arrows linking resources, language, adaptation, supervision, evaluation, robustness, compute, and multimodal or LLM risks and safeguards.
 - Target manuscript section: Sections 1, 3, 12, and 13.
 - Source specification file: `09_figures/figure_01_bottleneck_stack_spec.md`.
 - Evidence source type: Block G synthesis; Sections 3, 4, 12, and 13.
@@ -13,8 +13,8 @@ Status: polished draft, preview exports created. Captions should be inserted dur
 
 ## Figure 2: Six-Layer Taxonomy of Low-Resource ASR
 
-- Proposed manuscript caption: Six-layer taxonomy for low-resource ASR in the foundation-model era. The review treats resources, language conditions, model families, adaptation strategies, supervision sources, and evaluation protocols as interacting evidence layers rather than isolated method categories.
-- Short alt text: A six-panel diagram shows Resource, Language, Model, Adaptation, Supervision, and Evaluation layers connected by cross-layer arrows.
+- Proposed manuscript caption: Six-layer taxonomy for low-resource ASR in the foundation-model era. The review treats resources, language conditions, model families, adaptation strategies, supervision sources, and evaluation protocols as interacting evidence layers rather than isolated method categories; SpeechLM and speech-LLM systems are included as bounded model-layer examples.
+- Short alt text: A six-panel diagram shows Resource, Language, Model, Adaptation, Supervision, and Evaluation layers connected by cross-layer arrows around a central cross-layer alignment node.
 - Target manuscript section: Section 6, with reuse in Section 12.
 - Source specification file: `09_figures/figure_02_six_layer_taxonomy_spec.md`.
 - Evidence source type: Block G taxonomy synthesis; Section 6 and Section 12.

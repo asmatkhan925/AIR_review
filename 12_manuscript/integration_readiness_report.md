@@ -3,95 +3,89 @@
 ## 1. Current Repository State
 
 - Current branch: `main`
-- Source state requested for this pass: `1b8ba56bb4c084831f4526529cf8b9b545d63e00`
-- Line-ending hygiene commit created during this pass: `dd19e2fe334108da8e2f762345600525e1cd53a4`
-- Status after line-ending hygiene: clean working tree before adding this report and plan
-- Validation status before report drafting: `PASS` from `python scripts/prepare_chatgpt_handoff.py --validate-only`
-- Line-ending issue: fixed with `.gitattributes` plus `git add --renormalize .`
+- Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
+- Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
+- Main manuscript state: not yet fully assembled; `12_manuscript/main_manuscript.md` remains a section-pointer shell
+- Next phase: manuscript assembly, beginning with Sections 3-6
 
-The initial diagnostics showed many modified tracked files, but `git diff --ignore-cr-at-eol --stat` and `git diff --ignore-cr-at-eol` were empty. The dirty state was therefore line-ending-only noise. A repository-level `.gitattributes` file now normalizes text files to LF in the repository and marks common binary formats as binary. Renormalization staged no substantive content changes beyond `.gitattributes`; `00_project_management/decision_log.md` was normalized from mixed endings without content change.
+This report is a metadata and readiness snapshot. It does not assemble manuscript sections, add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
-## 2. Draft Section Inventory
+## 2. Evidence-Control Readiness
 
-| Section | Draft status | Pointer in `main_manuscript.md` | Evidence notes | Readiness |
-|---|---|---:|---:|---|
-| Abstract | `07_draft_sections/00_abstract.md` exists | Yes | No | Needs final drafting after body integration |
-| 1. Introduction | `07_draft_sections/01_introduction.md` exists | Yes | No | Existing draft; likely needs final polish after body integration |
-| 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` exists | Yes | Yes | Approved working draft; needs review before integration |
-| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` exists | Yes | Yes | Approved working draft |
-| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` exists | Yes | Yes | Approved working draft |
-| 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` exists | Yes | Yes | Approved working draft |
-| 6. Foundation-Model-Era Taxonomy of Low-Resource ASR | `07_draft_sections/06_foundation_model_era_taxonomy.md` exists | Yes | Yes | Approved working draft |
-| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` exists | Yes | Yes | Approved working draft |
-| 8. Adaptation Strategies for Low-Resource ASR in the Foundation-Model Era | `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` exists | Yes | Yes | Approved working draft |
-| 9. Pseudo-Labeling and Knowledge Distillation for Low-Resource ASR | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` exists | Yes | Yes | Approved working draft |
-| 10. Evaluation, Reproducibility, and Robustness | `07_draft_sections/10_evaluation_reproducibility_robustness.md` exists | Yes | Yes | Approved working draft |
-| 11. Multimodal, AVSR, and LLM-Assisted ASR | `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` exists | Yes | Yes | Approved working draft |
-| 12. Cross-Block Synthesis and Gap Analysis | `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` exists | Yes | Yes | Approved working draft |
-| 13. Future Research Agenda | `07_draft_sections/13_future_research_agenda.md` exists | Yes | Yes | Approved working draft |
-| 14. Conclusion | `07_draft_sections/14_conclusion.md` exists | Yes | Yes | Approved working draft |
+| Evidence control | Status | Assembly implication |
+|---|---|---|
+| Locked RQs and scope | Ready | Preserve the field-level, taxonomy-based review framing. |
+| Core 60 reference set | Ready; verify 60 rows during validation | Use Core 60 as the main evidence backbone for manuscript claims. |
+| Citation verification | Ready; verify duplicate BibTeX keys during validation | Do not cite unverified keys during assembly. |
+| Block G synthesis layer | Ready | Use Block G claims, taxonomy rows, section-to-evidence mapping, and gap controls as synthesis scaffolding. |
+| Evidence-to-claim matrix | Ready | Check each assembled claim against existing evidence controls. |
+| Section drafts | Ready for integration; still need compression and cross-section harmonization | Integrate one section at a time and preserve companion evidence notes outside the manuscript body. |
 
-Older method-by-method files remain in `07_draft_sections/` and should continue to be treated as source material, not as the final manuscript structure.
+## 3. Draft Section Inventory
 
-## 3. Evidence-Control Inventory
+| Section | Draft file | Evidence notes | Readiness |
+|---|---|---|---|
+| 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Revise after body sections are assembled. |
+| 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Ready for review and integration. |
+| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Ready for first assembly batch. |
+| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Ready for first assembly batch. |
+| 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` | Yes | Ready for first assembly batch. |
+| 6. Foundation-Model-Era Taxonomy of Low-Resource ASR | `07_draft_sections/06_foundation_model_era_taxonomy.md` | Yes | Ready for first assembly batch. |
+| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` | Yes | Ready after Sections 3-6 are integrated. |
+| 8. Adaptation Strategies for Low-Resource ASR | `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` | Yes | Ready after conceptual/taxonomy base is assembled. |
+| 9. Pseudo-Labeling and Knowledge Distillation | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` | Yes | Ready after adaptation framing is assembled. |
+| 10. Evaluation, Reproducibility, and Robustness | `07_draft_sections/10_evaluation_reproducibility_robustness.md` | Yes | Ready after Sections 7-9 are integrated. |
+| 11. Multimodal, AVSR, and LLM-Assisted ASR | `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` | Yes | Ready, but must keep LLM-assisted ASR bounded and risk-aware. |
+| 12. Cross-Block Synthesis and Gap Analysis | `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` | Yes | Ready after Sections 3-11 are assembled. |
+| 13. Future Research Agenda | `07_draft_sections/13_future_research_agenda.md` | Yes | Ready after synthesis is assembled; LLM-assisted ASR remains part of the future agenda, not a new contribution. |
+| 14. Conclusion | `07_draft_sections/14_conclusion.md` | Yes | Ready after Sections 12-13 are stable. |
 
-| Evidence control | Status |
-|---|---|
-| Core 60 reference set | Present: `05_synthesis_matrices/core_60_reference_set.csv`; 60 data rows, 20 columns |
-| Blocks A-F | Present through `05_synthesis_matrices/seed_paper_map.csv`; 166 seed rows, including evaluation robustness Block F |
-| Block G files | Present: core claim synthesis, cross-block taxonomy synthesis, research gap agenda, section-to-evidence map, table/figure plan, and additional resource candidates |
-| Evidence-to-claim matrix | Present: `05_synthesis_matrices/evidence_to_claim_matrix.csv`; 45 data rows |
-| Citation verification log | Present: `03_references/citation_verification_log.csv`; 167 data rows |
-| References BibTeX | Present: `03_references/references.bib`; no duplicate citation keys found |
-| Section-to-evidence map | Present: `05_synthesis_matrices/block_g_section_to_evidence_map.csv`; 14 section rows |
-| Table/figure plan | Present: `05_synthesis_matrices/block_g_table_figure_plan.csv`; 13 planned items |
+Older method-by-method draft files remain source material only and should not steer final manuscript structure.
 
-## 4. Title and Pointer Alignment
+## 4. Table Readiness
 
-Pointers in `12_manuscript/main_manuscript.md` are present for all drafted body sections. Sections 3-14 point to draft files rather than pasting full prose, which preserves evidence-note traceability.
+Tables are ready for manuscript-level review. Final numbering is controlled by `08_tables/table_registry.md`.
 
-Title alignment is mostly consistent. The following are not blockers but should be harmonized during assembly:
+| Table | Source file | Status |
+|---|---|---|
+| Table 1 | `08_tables/table_01_low_resource_asr_taxonomy.md` | Drafted, manuscript-facing. |
+| Table 2 | `08_tables/table_02_dataset_benchmark_comparison.md` | Drafted, manuscript-facing. |
+| Table 3 | `08_tables/table_03_adaptation_strategy_decision_matrix.md` | Drafted, manuscript-facing. |
+| Table 4 | `08_tables/table_04_pseudo_labeling_kd_reliability_matrix.md` | Drafted, manuscript-facing. |
+| Table 5 | `08_tables/table_05_evaluation_robustness_checklist.md` | Drafted, manuscript-facing. |
+| Table 6 | `08_tables/table_06_future_agenda_reporting_checklist.md` | Drafted, manuscript-facing. |
 
-- Section 6: `main_manuscript.md`, `master_outline.md`, and `section_argument_map.md` use `Foundation-Model-Era Taxonomy of Low-Resource ASR`; Block G shortens this to `Foundation-Model-Era Taxonomy`.
-- Section 7: `main_manuscript.md` uses `Data-Centric Strategies in the Foundation-Model Era`; outline and Block G use `Data-Centric Strategies`.
-- Section 8: `main_manuscript.md` uses `Adaptation Strategies for Low-Resource ASR in the Foundation-Model Era`; outline and Block G use `Adaptation Strategies`.
-- Section 9: `main_manuscript.md` uses `Pseudo-Labeling and Knowledge Distillation for Low-Resource ASR`; outline and Block G use `Pseudo-Labeling and Knowledge Distillation`.
+Legacy table drafts remain in `08_tables/` and are documented in `08_tables/table_registry.md`. They should not determine final numbering.
 
-No broken draft pointers were found in the main manuscript. Sections 2-14 now point to their draft files and companion notes; Section 1 remains the introduction draft to be polished after manuscript integration.
+## 5. Figure Readiness
 
-## 5. Table and Figure Placeholder Inventory
+Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`.
 
-| Draft section | Placeholder | Block G mapping | Existing related asset | Status |
-|---|---|---|---|---|
-| Section 5 | Dataset and benchmark comparison table | `TABLE-G2`, Section 5 | `08_tables/table_03_datasets_and_languages.md` | Needs revision into final dataset/benchmark comparison table |
-| Section 6 | Six-layer taxonomy figure | `FIG-G2`, Sections 6 and 12 | `09_figures/fig_03_method_taxonomy/README.md` | Needs creation or redesign as six-layer taxonomy |
-| Section 6 | Taxonomy table mapping layers to evidence | `TABLE-G1`, Sections 3 and 6 | `08_tables/table_01_taxonomy_of_methods.md` | Needs revision to match Block G six-layer taxonomy |
-| Section 7 | Data-centric strategy decision matrix | `TABLE-G4`, Section 7 | No direct final table | Needs creation |
-| Section 8 | Adaptation strategy decision matrix | `TABLE-G5`, Section 8 | `08_tables/table_05_transfer_learning_methods.md` | Needs revision into conditional adaptation decision matrix |
-| Section 9 | Pseudo-labeling and KD reliability matrix | `TABLE-G6`, Section 9 | `08_tables/table_06_distillation_methods.md` | Needs revision to include pseudo-label reliability controls |
-| Section 10 | Evaluation and robustness checklist | `TABLE-G7`, Sections 10 and 12 | `08_tables/table_08_research_gaps_future_work.md` | Needs creation or major revision |
-| Section 11 | Multimodal and LLM-assisted ASR decision matrix | `TABLE-G8`, Section 11 | `08_tables/table_07_multimodal_asr_methods.md` | Needs expansion to include LLM-assisted risks and safeguards |
-| Section 12 | Cross-block evidence flow figure | `FIG-G3`, Sections 4, 8, 10, and 12 | `09_figures/fig_04_transfer_learning_pipeline/README.md` | Needs redesign as cross-block evidence flow |
-| Section 12 | Cross-block comparison of solution families | Closest fit: `TABLE-G7` plus Block G synthesis matrices | No direct final table | Needs decision: create separate table or fold into Table G7/G9 |
-| Section 12 | Research-gap synthesis table | Closest fit: `TABLE-G9`, Section 13 | `08_tables/table_08_research_gaps_future_work.md` | Needs revision to align with GAP-G1-GAP-G12 |
-| Section 13 | Future research agenda and reporting checklist | `TABLE-G9`, Section 13 | `08_tables/table_08_research_gaps_future_work.md` | Needs creation or major revision |
+| Figure | Source files | Status |
+|---|---|---|
+| Figure 1 | `09_figures/figure_01_bottleneck_stack.svg`; PNG/PDF previews in `09_figures/previews/` | Polished editable SVG draft; previews available. |
+| Figure 2 | `09_figures/figure_02_six_layer_taxonomy.svg`; PNG/PDF previews in `09_figures/previews/` | Polished editable SVG draft; previews available. |
+| Figure 3 | `09_figures/figure_03_cross_block_evidence_flow.svg`; PNG/PDF previews in `09_figures/previews/` | Polished editable SVG draft; previews available. |
+| Figure 4 | `09_figures/figure_04_future_agenda_map.svg`; PNG/PDF previews in `09_figures/previews/` | Polished editable SVG draft; previews available. |
 
-## 6. Remaining Work Before Full Manuscript Assembly
+Older `09_figures/fig_01_*` through `fig_06_*` folders remain legacy placeholders or source ideas only.
 
-1. Review and polish Section 2 methodology/search protocol.
-2. Update and polish Section 1 introduction after the body is stable.
-3. Create high-priority tables and figures.
-4. Assemble Sections 3-14 into `12_manuscript/main_manuscript.md`.
-5. Harmonize terminology and citation density across assembled prose.
-6. Draft abstract, highlights, and graphical abstract notes.
-7. Perform final bibliography duplicate-title cleanup where needed.
-8. Run final journal-format checks for Artificial Intelligence Review style and submission requirements.
+## 6. Recommended Next Assembly Batch
 
-## 7. Risks and Controls
+Begin manuscript assembly with Sections 3-6:
 
-- Duplicate-title warnings remain in `03_references/references.bib`; duplicate citation keys are clean. Cleanup should be scheduled before final manuscript submission.
-- Watchlist citations appear only in future-facing contexts and should remain bounded during integration.
-- Citation density may vary across sections because conclusion and synthesis sections intentionally use sparse citations; assembly should harmonize citation density without adding unsupported claims.
-- Placeholder tables and figures remain the largest integration gap.
-- Line-ending status is now controlled through `.gitattributes`; future edits should preserve LF-normalized repository text.
-- Older Pashto-centered or method-by-method files still exist in source-material and archive areas. They should not steer the central manuscript structure.
+1. Section 3: What Makes ASR Low-Resource?
+2. Section 4: From Hybrid ASR to Foundation Speech Models.
+3. Section 5: Resources and Benchmarks.
+4. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
+
+Rationale: these sections establish the conceptual and taxonomic base before adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, cross-block synthesis, and the final agenda. Integrating them first also lets Figure 1, Figure 2, Table 1, and Table 2 be placed and tested before the later method and reliability sections depend on them.
+
+## 7. Remaining Risks Before Assembly
+
+- Section drafts need compression and cross-section harmonization; avoid duplicating the same foundation-model caveat in every section.
+- Citation density must be checked after prose is assembled into `main_manuscript.md`.
+- Figures and tables should be introduced as argumentative aids, not decorative inserts.
+- LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
+- Pashto must remain illustrative only, not a focused case-study contribution.
+- Do not add new RQs, a fifth contribution, unverified citations, or unsupported performance claims during assembly.
