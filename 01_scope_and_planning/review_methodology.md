@@ -2,9 +2,9 @@
 
 ## Review Type
 
-Working classification: hybrid critical review with systematic elements.
+Working classification: structured critical review with systematic mapping elements.
 
-The review should be broad and analytical enough for Artificial Intelligence Review while still documenting search logic, inclusion criteria, screening decisions, and synthesis methods.
+The review should be broad and analytical enough for Artificial Intelligence Review while still documenting search logic, inclusion criteria, screening decisions, citation-verification status, and synthesis methods. The assembled manuscript methodology is in `12_manuscript/main_manuscript.md`; the section-level source draft remains `07_draft_sections/02_review_methodology_search_protocol.md`.
 
 ## Databases Searched
 
@@ -21,7 +21,7 @@ The review should be broad and analytical enough for Artificial Intelligence Rev
 
 ## Search Period
 
-TBD. Record exact search dates in `02_literature_search/search_log.csv`.
+Search activity is recorded in `02_literature_search/search_log.csv`. Current repository records support logged search and verification activity, but they do not support a complete PRISMA-style global retrieval window or total retrieval count.
 
 ## Inclusion Criteria
 
@@ -50,4 +50,4 @@ Use `01_scope_and_planning/inclusion_exclusion_criteria.md` as the current sourc
 
 ## Limitations Of Review Process
 
-TBD. Discuss database coverage, preprint inclusion, language bias, access limitations, and the scope boundary that allows Pashto only as a selective illustrative example.
+The review is evidence-controlled but not a fully exhaustive systematic review. Limitations include incomplete global retrieval counts, broad discovery rows in the search log, uneven database and language coverage, variable metadata quality, and conservative handling of preprint or watchlist evidence. Pashto may be used only as a selective illustrative example, not as a focused case-study contribution.

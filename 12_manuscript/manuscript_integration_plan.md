@@ -84,11 +84,20 @@ Integrated Sections 13-14:
 
 Figure 4 and Table 6 are callout-linked in Section 13. Section 13 keeps LLM-assisted ASR as part of the future reliability agenda, not as a standalone new contribution. Section 14 introduces no new citation keys and closes around the locked four contributions and six-layer taxonomy.
 
-## Stage 7: Methodology, Front Matter, and Final Polish
+## Stage 7: Methodology Assembly
 
-After the body is assembled:
+Status: completed. Section 2 has been assembled into `12_manuscript/main_manuscript.md`.
 
-- Integrate Section 2 so the review methodology, search protocol, evidence extraction, synthesis controls, and citation verification workflow are clear.
+Integrated Section 2:
+
+1. Integrate Section 2 so the review methodology, search protocol, evidence extraction, synthesis controls, and citation verification workflow are clear.
+
+Section 2 frames the article as a structured critical review with systematic mapping elements. It explicitly avoids claiming a complete PRISMA-style systematic review, exhaustive retrieval counts, or equal verification strength for emerging/watchlist evidence.
+
+## Stage 8: Introduction, Abstract, and Final Polish
+
+After Sections 2-14 are assembled:
+
 - Revise Section 1 so it previews the assembled argument, six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
 - Draft the abstract after Sections 1-14, tables, and figures are stable.
 - Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.

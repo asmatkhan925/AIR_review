@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: body Sections 3-14 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and the abstract remain pending
-- Next phase: manuscript assembly of Section 2 methodology/search protocol, followed by the introduction and abstract
+- Main manuscript state: Sections 2-14 have been assembled into `12_manuscript/main_manuscript.md`; Section 1 and the abstract remain pending
+- Next phase: revise the introduction after the full body is stable, then write the abstract last
 
-This report is a metadata and readiness snapshot after the fifth manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the sixth manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -26,7 +26,7 @@ This report is a metadata and readiness snapshot after the fifth manuscript asse
 | Section | Draft file | Evidence notes | Readiness |
 |---|---|---|---|
 | 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Revise after body sections are assembled. |
-| 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Ready for review and integration. |
+| 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Assembled into `main_manuscript.md`; framed as a structured critical review with systematic mapping elements. |
 | 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
 | 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
 | 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 2 callout connected. |
@@ -74,34 +74,34 @@ Older `09_figures/fig_01_*` through `fig_06_*` folders remain legacy placeholder
 
 Completed manuscript assembly batches:
 
-1. Section 3: What Makes ASR Low-Resource?
-2. Section 4: From Hybrid ASR to Foundation Speech Models.
-3. Section 5: Resources and Benchmarks.
-4. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
-5. Section 7: Data-Centric Strategies in the Foundation-Model Era.
-6. Section 8: Adaptation Strategies for Low-Resource ASR.
-7. Section 9: Pseudo-Labeling and Knowledge Distillation.
-8. Section 10: Evaluation, Reproducibility, and Robustness.
-9. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
-10. Section 12: Cross-Block Synthesis and Gap Analysis.
-11. Section 13: Future Research Agenda.
-12. Section 14: Conclusion.
+1. Section 2: Review Methodology and Search Protocol.
+2. Section 3: What Makes ASR Low-Resource?
+3. Section 4: From Hybrid ASR to Foundation Speech Models.
+4. Section 5: Resources and Benchmarks.
+5. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
+6. Section 7: Data-Centric Strategies in the Foundation-Model Era.
+7. Section 8: Adaptation Strategies for Low-Resource ASR.
+8. Section 9: Pseudo-Labeling and Knowledge Distillation.
+9. Section 10: Evaluation, Reproducibility, and Robustness.
+10. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
+11. Section 12: Cross-Block Synthesis and Gap Analysis.
+12. Section 13: Future Research Agenda.
+13. Section 14: Conclusion.
 
 Recommended next manuscript assembly batch:
 
-1. Section 2: Review Methodology and Search Protocol.
-2. Section 1: Introduction.
-3. Abstract.
+1. Section 1: Introduction.
+2. Abstract.
 
-Rationale: Body Sections 3-14 now establish the conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, cross-block synthesis, future agenda, and conclusion layers. The manuscript can now move to the methodology/search protocol, then the introduction and abstract.
+Rationale: Sections 2-14 now establish the methodology, conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, cross-block synthesis, future agenda, and conclusion layers. The manuscript can now move to the introduction, followed by the abstract after the full manuscript body is stable.
 
 ## 7. Remaining Risks Before Assembly
 
-- Body Sections 3-14 are assembled but will still need global flow review, final compression, citation-density harmonization, and transition checks after Sections 1-2 and the abstract are integrated.
+- Sections 2-14 are assembled but will still need global flow review, final compression, citation-density harmonization, and transition checks after Section 1 and the abstract are integrated.
 - Citation consistency must continue to be checked after each new assembly batch.
 - Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during final polish.
-- Section 2 must make the search and synthesis workflow traceable enough for a review journal.
-- Section 1 and the abstract should preview the assembled argument without adding a fifth contribution or making the manuscript Pashto-centered.
+- Section 1 should preview the assembled methodology and body argument without adding a fifth contribution or making the manuscript Pashto-centered.
+- The abstract should be written last so it accurately reflects the final introduction, methodology, body synthesis, figures, and tables.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.

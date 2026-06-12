@@ -229,3 +229,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Assemble Section 2 methodology/search protocol, then revise the introduction and abstract after the full body, figures, and tables are stable. Final polish should check global flow, citation density, cross-reference consistency, table/figure placement, and compression.
+
+## Assemble manuscript Section 2
+
+Date: 2026-06-12
+Starting commit: `a3a6abc` (`Assemble manuscript sections 13-14`)
+
+Decision:
+Assembled Section 2 into `12_manuscript/main_manuscript.md` using the existing methodology draft, traceability notes, search/screening logs, verification controls, Core 60 controls, seed map, evidence-to-claim matrix, and section-to-evidence map as the source base. The section frames the review as a structured critical review with systematic mapping elements and explicitly avoids claiming a complete PRISMA-style systematic review or exhaustive retrieval count. `01_scope_and_planning/review_methodology.md` was lightly aligned to remove stale TBD language.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `01_scope_and_planning/review_methodology.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Section 2 now explains the review design, locked RQs, search sources, eligibility boundaries, screening and verification workflow, evidence classification, data extraction, synthesis controls, and methodological limitations. The prose strengthens review-journal credibility while remaining transparent about non-exhaustiveness, partial screening counts, broad discovery rows, variable verification status, and watchlist/preprint limits.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no new citation keys, no reference or synthesis-matrix edits, no figure or table source edits, no PRISMA-style retrieval claim, and no equal evidential weighting of verified-primary, verified-secondary, watchlist, and background-support sources.
+
+Next step:
+Revise the Introduction after Sections 2-14 are stable. Write the Abstract last, after the introduction and final body flow are checked for accuracy, citation density, cross-reference consistency, and compression.
