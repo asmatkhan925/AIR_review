@@ -289,3 +289,23 @@ No section rewrites, no title change, no new RQs, no fifth contribution, no new 
 
 Next step:
 Run a global flow, compression, citation-density, and cross-reference consistency pass. Remaining risks include overall length, transition smoothness, figure/table placement consistency, title/abstract alignment, anti-Pashto drift, and bounded LLM-assisted ASR claims.
+
+## Global flow and compression pass
+
+Date: 2026-06-12
+Starting commit: `9733fa5` (`Write manuscript abstract`)
+
+Decision:
+Completed a light global flow, compression, citation-density, and cross-reference consistency pass on `12_manuscript/main_manuscript.md` after the Abstract and Sections 1-14 were assembled. The pass tightened repeated transition language, reduced duplicated foundation-model and reliability-bottleneck framing, smoothed section bridges, and preserved all figure/table callouts.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+The first full manuscript assembly needed a controlled global polish before formal QA. The edits reduce avoidable repetition while preserving the central argument that foundation models change the starting point of low-resource ASR but do not solve resource, adaptation, supervision, evaluation, robustness, reproducibility, compute, and deployment problems.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no reference edits, no Core 60 edits, no citation-verification edits, no search-log edits, no synthesis-matrix edits, no table or figure source edits, no Pashto-centered drift, no PRISMA-style systematic-review claim, and no claims that foundation models, AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Run a formal QA pass for citations, table/figure placement in the journal template, final length, journal formatting, and proofread. Remaining risks include final word count, citation balance, table/figure placement after formatting, and final title/abstract/body alignment.

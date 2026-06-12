@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`
-- Next phase: global flow, compression, citation-density, and cross-reference consistency pass
+- Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; a global flow, compression, citation-density, and cross-reference consistency pass has been completed
+- Next phase: formal QA pass for citations, tables/figures, final length, journal formatting, and proofread
 
-This report is a metadata and readiness snapshot after the abstract assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the global manuscript polish pass. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -19,7 +19,7 @@ This report is a metadata and readiness snapshot after the abstract assembly bat
 | Citation verification | Ready; verify duplicate BibTeX keys during validation | Do not cite unverified keys during assembly. |
 | Block G synthesis layer | Ready | Use Block G claims, taxonomy rows, section-to-evidence mapping, and gap controls as synthesis scaffolding. |
 | Evidence-to-claim matrix | Ready | Check each assembled claim against existing evidence controls. |
-| Section drafts | Ready for integration; still need compression and cross-section harmonization | Integrate one section at a time and preserve companion evidence notes outside the manuscript body. |
+| Section drafts | Integrated; global compression and cross-section harmonization completed | Preserve companion evidence notes outside the manuscript body and use formal QA before journal formatting. |
 
 ## 3. Draft Section Inventory
 
@@ -28,11 +28,11 @@ This report is a metadata and readiness snapshot after the abstract assembly bat
 | Abstract | `07_draft_sections/00_abstract.md` | Not separate | Written in `main_manuscript.md`; final draft copied back to the draft file for consistency. |
 | 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Assembled into `main_manuscript.md`; previews the full Sections 2-14 argument and locked four contributions. |
 | 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Assembled into `main_manuscript.md`; framed as a structured critical review with systematic mapping elements. |
-| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
-| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
+| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; globally polished for flow and compression. |
+| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Assembled into `main_manuscript.md`; globally polished for transition and repetition control. |
 | 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 2 callout connected. |
 | 6. Foundation-Model-Era Taxonomy of Low-Resource ASR | `07_draft_sections/06_foundation_model_era_taxonomy.md` | Yes | Assembled into `main_manuscript.md`; Figure 2 and Table 1 callouts connected. |
-| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
+| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` | Yes | Assembled into `main_manuscript.md`; globally polished for transition consistency. |
 | 8. Adaptation Strategies for Low-Resource ASR | `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 3 callout connected. |
 | 9. Pseudo-Labeling and Knowledge Distillation | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 4 callout connected. |
 | 10. Evaluation, Reproducibility, and Robustness | `07_draft_sections/10_evaluation_reproducibility_robustness.md` | Yes | Assembled into `main_manuscript.md`; Table 5 callout connected. |
@@ -91,20 +91,21 @@ Completed manuscript assembly batches:
 14. Section 13: Future Research Agenda.
 15. Section 14: Conclusion.
 
-Recommended next manuscript assembly batch:
+Recommended next manuscript QA batch:
 
-1. Global flow, compression, citation-density, and cross-reference consistency pass.
+1. Formal QA pass for citation balance, table/figure placement in the journal template, final length, journal formatting, and proofread.
 
-Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly. The manuscript can now move from section assembly to global polish.
+Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly, and the global flow/compression pass has reduced repetition while preserving the locked RQs, four contributions, figure/table callouts, and evidence base.
 
-## 7. Remaining Risks Before Assembly
+## 7. Remaining Risks Before Formal QA
 
-- The full first manuscript assembly is complete but still needs global flow review, final compression, citation-density harmonization, and transition checks.
-- Citation consistency must continue to be checked after each new assembly batch.
-- Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during final polish.
-- Title/abstract/introduction/body alignment should be checked during final polish.
-- Anti-Pashto drift and bounded LLM-assisted ASR claims should be rechecked after compression.
+- Final word count should be checked against the selected journal template.
+- Citation balance should be reviewed for over-dense paragraphs and under-supported claims.
+- Table and figure placement should be checked after journal formatting.
+- Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during formal QA.
+- Title/abstract/introduction/body alignment should be checked during proofread.
+- Anti-Pashto drift and bounded LLM-assisted ASR claims should be rechecked during formal QA.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.
-- Do not add new RQs, a fifth contribution, unverified citations, or unsupported performance claims during assembly.
+- Do not add new RQs, a fifth contribution, unverified citations, or unsupported performance claims during QA.

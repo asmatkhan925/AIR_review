@@ -114,12 +114,24 @@ Integrated Abstract:
 
 The abstract summarizes the problem, foundation-model-era shift, structured critical review method, six-layer taxonomy, synthesis contributions, and reliability-centered conclusion without adding citations, new RQs, a fifth contribution, or solved-problem claims.
 
-## Stage 10: Final Polish
+## Stage 10: Global Flow and Compression Pass
 
-After the abstract and Sections 1-14 are assembled:
+Status: completed. A light global flow, compression, citation-density, and cross-reference consistency pass has been applied to `12_manuscript/main_manuscript.md`.
 
-- Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.
+Completed checks and edits:
+
+- Reduced repeated transition language around the foundation-model starting point and the reliability bottleneck.
+- Tightened section bridges across Sections 3-5, 10-12, 13, and 14.
+- Preserved the cautious methodology framing, locked four contributions, and field-level scope.
+- Kept LLM-assisted ASR, SpeechLM, AVSR, and multimodal claims bounded as reliability-sensitive directions.
+- Verified that Figure 1-Figure 4 and Table 1-Table 6 callouts remain present exactly once.
+
+## Stage 11: Formal QA and Journal Formatting
+
+Next task:
+
+- Run a formal QA pass for citation balance, table/figure placement in the journal template, final length, title/abstract/body alignment, and proofread.
 - Check all citation keys against `03_references/references.bib`.
-- Run anti-Pashto-drift checks.
+- Re-run anti-Pashto-drift checks.
 - Confirm that LLM-assisted ASR remains visible but bounded.
 - Apply Artificial Intelligence Review style and submission checks before LaTeX conversion.
