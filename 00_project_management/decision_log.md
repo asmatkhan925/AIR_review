@@ -189,3 +189,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Assemble Section 12 as cross-block synthesis and gap analysis, then assemble Sections 13-14 and recheck citation density, compression, figure placement, and bounded LLM-assisted ASR framing.
+
+## Assemble manuscript Section 12
+
+Date: 2026-06-12
+Starting commit: `3fa5db0` (`Assemble manuscript sections 10-11`)
+
+Decision:
+Assembled Section 12 into `12_manuscript/main_manuscript.md` using the existing Section 12 draft, companion evidence notes, and Block G synthesis controls as the source base. Figure 3 was connected through the requested manuscript callout placeholder and caption. Figure 4 and Table 6 remain deferred to Section 13.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Section 12 synthesizes the resource, language, model, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, and bounded LLM-assisted ASR layers developed across Sections 3-11. The assembled prose frames low-resource ASR as a reliability problem shaped by cross-layer interactions rather than as either a labeled-hours shortage or a solved foundation-model transfer problem.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no unverified citation keys, no reference or synthesis-matrix edits, no figure asset edits, no Figure 4 or Table 6 insertion, and no claims that foundation models, AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Assemble Sections 13-14, then recheck transition consistency, citation density, compression, Figure 4 and Table 6 placement, and bounded LLM-assisted ASR framing in the future agenda.

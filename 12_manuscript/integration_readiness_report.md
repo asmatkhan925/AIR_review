@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: Sections 3-11 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and 12-14 remain pointer-based or pending integration
-- Next phase: manuscript assembly of Section 12, then Sections 13-14
+- Main manuscript state: Sections 3-12 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and 13-14 remain pointer-based or pending integration
+- Next phase: manuscript assembly of Sections 13-14
 
-This report is a metadata and readiness snapshot after the third manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the fourth manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -59,7 +59,7 @@ Legacy table drafts remain in `08_tables/` and are documented in `08_tables/tabl
 
 ## 5. Figure Readiness
 
-Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`. Figure 1 and Figure 2 are now callout-linked in the assembled Sections 3 and 6. Figure 3 remains deferred to Section 12. Figure 4 remains deferred to Section 13.
+Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`. Figure 1, Figure 2, and Figure 3 are now callout-linked in the assembled Sections 3, 6, and 12. Figure 4 remains deferred to Section 13.
 
 | Figure | Source files | Status |
 |---|---|---|
@@ -83,20 +83,20 @@ Completed manuscript assembly batches:
 7. Section 9: Pseudo-Labeling and Knowledge Distillation.
 8. Section 10: Evaluation, Reproducibility, and Robustness.
 9. Section 11: Multimodal, AVSR, and LLM-Assisted ASR.
+10. Section 12: Cross-Block Synthesis and Gap Analysis.
 
 Recommended next manuscript assembly batch:
 
-1. Section 12: Cross-Block Synthesis and Gap Analysis.
-2. Sections 13-14: Future Research Agenda and Conclusion.
+1. Sections 13-14: Future Research Agenda and Conclusion.
 
-Rationale: Sections 3-11 now establish the conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, and bounded LLM-assisted ASR layers. Section 12 should next synthesize these layers before the manuscript moves to the future agenda and conclusion.
+Rationale: Sections 3-12 now establish the conceptual, taxonomic, data-centric, adaptation, supervision, evaluation, robustness, multimodal/AVSR, SpeechLM, bounded LLM-assisted ASR, and cross-block synthesis layers. The manuscript can now move to the future agenda and conclusion.
 
 ## 7. Remaining Risks Before Assembly
 
-- Sections 3-11 are assembled but will still need final compression, citation-density harmonization, and transition checks after Sections 12-14 are integrated.
+- Sections 3-12 are assembled but will still need final compression, citation-density harmonization, and transition checks after Sections 13-14 are integrated.
 - Citation consistency must continue to be checked after each new assembly batch.
-- Figure 3 remains deferred to Section 12; Figure 4 remains deferred to Section 13.
-- Flow into synthesis needs careful checking so Section 12 does not simply repeat Sections 3-11.
+- Figure 4 and Table 6 remain deferred to Section 13.
+- The transition from Section 12 to Section 13 needs careful checking so the future agenda extends the synthesis rather than repeating it.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.
