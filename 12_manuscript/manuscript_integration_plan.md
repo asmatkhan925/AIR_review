@@ -34,31 +34,40 @@ Polished figures and previews are now available:
 
 Tables 1-6 are also drafted and controlled by `08_tables/table_registry.md`.
 
-Figure 1, Figure 2, Table 1, and Table 2 are now callout-linked in the assembled Sections 3-6. Figures 3-4 and Tables 3-6 should remain unused until their corresponding later sections are integrated.
+Figure 1, Figure 2, Table 1, Table 2, Table 3, and Table 4 are now callout-linked in the assembled Sections 3-9. Figure 3 remains deferred, likely for Section 12 after Sections 10-11 are assembled. Figure 4 and Tables 5-6 should remain unused until their corresponding later sections are integrated.
 
 Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Use the registries to preserve final numbering, captions, and callouts.
 
-## Stage 3: Next Body Assembly Batch
+## Stage 3: Second Body Assembly Batch
 
-Next integrate Sections 7-9:
+Status: completed. Sections 7-9 have been assembled into `12_manuscript/main_manuscript.md`.
+
+Integrated Sections 7-9:
 
 1. Integrate Section 7 on data-centric strategies.
 2. Integrate Section 8 on adaptation strategies.
 3. Integrate Section 9 on pseudo-labeling and KD.
 
+Table 3 and Table 4 are callout-linked in Sections 8 and 9. Figure 3 was not inserted in this batch because the cross-block evidence-flow figure is better motivated after Sections 10-11 are assembled and can likely be placed in Section 12.
+
+## Stage 4: Next Body Assembly Batch
+
+Next integrate:
+
+1. Integrate Section 10 on evaluation, reproducibility, and robustness.
+2. Integrate Section 11 on multimodal, AVSR, SpeechLM, and LLM-assisted ASR.
+
 Then continue with:
 
-4. Integrate Section 10 on evaluation, reproducibility, and robustness.
-5. Integrate Section 11 on multimodal, AVSR, SpeechLM, and LLM-assisted ASR.
-6. Integrate Section 12 as cross-block synthesis and gap analysis.
-7. Integrate Section 13 as the future research agenda.
-8. Integrate Section 14 as the conclusion.
+3. Integrate Section 12 as cross-block synthesis and gap analysis.
+4. Integrate Section 13 as the future research agenda.
+5. Integrate Section 14 as the conclusion.
 
 Section 11 must keep LLM-assisted ASR bounded and risk-aware. It should distinguish post-ASR correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems from mature low-resource ASR solutions, and it should preserve safeguards around hallucination, over-correction, benchmark leakage, language bias, compute, and reproducibility.
 
 Section 13 should include LLM-assisted ASR as part of the future agenda, not as a standalone new contribution. The locked contribution count remains four.
 
-## Stage 4: Front Matter and Final Polish
+## Stage 5: Front Matter and Final Polish
 
 After the body is assembled:
 

@@ -149,3 +149,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Assemble Sections 7-9, then recheck compression, citation consistency, and cross-section transitions.
+
+## Assemble manuscript Sections 7-9
+
+Date: 2026-06-12
+Starting commit: `0e3dba2` (`Assemble manuscript sections 3-6`)
+
+Decision:
+Assembled Sections 7-9 into `12_manuscript/main_manuscript.md` using the existing section drafts and companion evidence notes as the source base. Table 3 and Table 4 were connected through manuscript callout placeholders and captions. Figure 3 was deferred because the cross-block evidence-flow figure is better placed after Sections 10-11 are assembled, likely in Section 12.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Sections 7-9 develop the data-centric, adaptation, and supervision layers that follow the Section 6 taxonomy. They establish why corpus validation, normalization, filtering, adaptation strategy choice, pseudo-label reliability, and KD controls remain necessary in the foundation-model era.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no unverified citation keys, no new synthesis-matrix or reference edits, and no claims that LLM-assisted ASR solves low-resource ASR.
+
+Next step:
+Assemble Sections 10-11, then recheck transition consistency, citation density, Figure 3 placement, and bounded treatment of multimodal, SpeechLM, and LLM-assisted ASR.
