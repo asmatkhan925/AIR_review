@@ -3,13 +3,38 @@
 ## 1. Current Repository State
 
 - Current branch: `main`
-- Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
+- Source state: after commit `a2233d1` (`Run formal manuscript QA audit`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
 - Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; global flow/compression and formal QA audit passes have been completed
+- LaTeX workspace state: `12_manuscript/latex/main.tex` and `main_double_column_preview.tex` are now synchronized from the audited Markdown manuscript; both compile to PDF; `references.bib` synced from `03_references/references.bib`
 - Final QA report: `12_manuscript/final_quality_audit_report.md`
-- Next phase: journal-template formatting/export planning, then final proofread and submission-package QA
+- LaTeX formatting report: `12_manuscript/latex/latex_formatting_readiness_report.md`
+- Next phase: complete author department and Declarations metadata, then build the flat AIR submission package and run final proofread/submission QA
 
-This report is a metadata and readiness snapshot after the formal QA audit. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the formal QA audit and the
+LaTeX-workspace synchronization. It does not add literature, alter RQs, change
+contributions, or modify Core 60, references, Block G, or synthesis matrices.
+
+## 1a. LaTeX Workspace Synchronization
+
+- `12_manuscript/latex/main.tex`: synchronized from `12_manuscript/main_manuscript.md`
+  (single-column `sn-basic`); old placeholder section prose replaced with the audited
+  Abstract and Sections 1-14; Markdown `[@...]` citations converted to `\citep{...}`.
+- `12_manuscript/latex/main_double_column_preview.tex`: same content with the `iicol`
+  preview option and full-width spanning floats; for layout inspection only.
+- `12_manuscript/latex/references.bib`: synced from `03_references/references.bib`
+  (93 entries; 0 duplicate keys; 78 cited keys; 0 undefined).
+- Figures 1-4 are real `figure` environments using the PDF previews in
+  `09_figures/previews/`. Tables 1-6 are real `tabularx` tables generated from the
+  `08_tables/` source files; table numbering is counter-pinned to the registry.
+- Compile status: `main.tex` PASS (56 pages); preview PASS (45 pages).
+- Conversion is reproducible via `scripts/sync_manuscript_latex.py`.
+- Details and blockers: `12_manuscript/latex/latex_formatting_readiness_report.md`.
+- Outstanding metadata blockers (do not invent): author department/`\orgdiv` and the
+  Declarations block (funding, conflict of interest, data availability, author
+  contributions, ethics). Final submission readiness is NOT claimed.
+- Final submission-package flattening (flat folder, no subfolders, flat figure copies,
+  compiled PDF) remains a separate next task.
 
 ## 2. Evidence-Control Readiness
 
@@ -92,11 +117,18 @@ Completed manuscript assembly batches:
 14. Section 13: Future Research Agenda.
 15. Section 14: Conclusion.
 
+16. LaTeX-workspace synchronization from the audited manuscript (`main.tex`,
+    `main_double_column_preview.tex`, `references.bib`); both sources compile.
+
 Recommended next manuscript batch:
 
-1. Journal-template formatting/export planning, followed by final proofread and submission-package QA.
+1. Complete author department/`\orgdiv` and the Declarations block (do not invent).
+2. Build the flat AIR submission package (no subfolders; flat figure copies; compiled PDF).
+3. Final proofread and submission-package QA.
 
-Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly, and the formal QA audit passed after minimal corrections for abstract length, manuscript artifacts, title presentation, and project-facing wording.
+Rationale: The abstract and Sections 1-14 establish the full first manuscript assembly,
+the formal QA audit passed, and the LaTeX workspace is now synchronized and compiling.
+The remaining work is author metadata, submission-package flattening, and proofread.
 
 ## 7. Remaining Risks Before Journal Formatting
 

@@ -329,3 +329,58 @@ No new RQs, no fifth contribution, no new literature, no reference edits, no Cor
 
 Next step:
 Proceed to journal-template formatting/export planning, followed by final proofread and submission-package QA.
+
+## Synchronize manuscript with LaTeX workspace
+
+Date: 2026-06-12
+Starting commit: `a2233d1` (`Run formal manuscript QA audit`)
+
+Decision:
+Synchronized the audited Markdown manuscript into the Springer Nature / Artificial
+Intelligence Review LaTeX workspace as a formatting conversion, not a rewrite. Replaced
+the old placeholder section prose in `12_manuscript/latex/main.tex` and
+`12_manuscript/latex/main_double_column_preview.tex` with the audited Abstract and
+Sections 1-14, converted Markdown `[@...]` citations to author-year `\citep{...}`, built
+real `figure` environments for Figures 1-4 (PDF previews) and real `tabularx` tables for
+Tables 1-6 (from `08_tables/` sources, numbering counter-pinned to the registry), and
+synced `references.bib` from `03_references/references.bib`. Added a reproducible
+converter, `scripts/sync_manuscript_latex.py`, and a formatting-readiness report. Author
+department/`\orgdiv` and the Declarations block were left as non-rendered comments because
+those values must not be invented.
+
+Files changed:
+`12_manuscript/latex/main.tex`, `12_manuscript/latex/main_double_column_preview.tex`,
+`12_manuscript/latex/references.bib`,
+`12_manuscript/latex/latex_formatting_readiness_report.md` (new),
+`scripts/sync_manuscript_latex.py` (new),
+`12_manuscript/integration_readiness_report.md`,
+`12_manuscript/manuscript_integration_plan.md`, and
+`00_project_management/decision_log.md`.
+
+Validation summary:
+Handoff validation PASS. Core 60 = 60 rows, search log = 66, screening log = 12,
+citation verification = 167, seed map = 166, evidence-to-claim = 45. BibTeX = 93 keys,
+no duplicates. Markdown citation keys = 76, none missing. LaTeX cited keys = 78 (the two
+extra keys are table-only references already in the bib), none missing/undefined in
+either `.tex`. Figures 1-4 and Tables 1-6 represented. LaTeX abstract = 245 words
+(within AIR 150-250). `git diff --check` clean.
+
+Compile status:
+PASS. `main.tex` -> `main.pdf` (56 pages, exit 0); `main_double_column_preview.tex` ->
+`main_double_column_preview.pdf` (45 pages, exit 0). No undefined references/citations.
+Warnings only: overfull `\hbox` from wide tables (notably Table 2) need final layout work.
+Template class (`sn-jnl.cls`), `sn-*.bst`, and the LaTeX toolchain are present locally.
+
+Constraints preserved:
+No manuscript-argument rewrite, no new literature, no new RQs, no fifth contribution, no
+edits to Core 60, synthesis matrices, search/screening logs, citation verification, or
+figure SVGs/previews. No invented author affiliations, funding, acknowledgments, ethics,
+conflict-of-interest, or author-contribution statements. No PRISMA-style systematic-review
+claim, no Pashto-centered drift, and no overstatement of foundation models, AVSR,
+SpeechLMs, or LLM-assisted ASR. Final-submission readiness is not claimed because author
+department metadata and Declarations remain to be completed.
+
+Next step:
+Complete the author department/`\orgdiv` and Declarations block, then build the flat AIR
+submission package (no subfolders; flat figure copies; compiled PDF) and run the final
+proofread and submission-package QA.

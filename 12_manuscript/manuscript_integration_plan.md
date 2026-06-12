@@ -142,9 +142,39 @@ Completed checks and edits:
 
 ## Stage 12: Journal Formatting and Submission-Package QA
 
-Next task:
+Status: in progress. The LaTeX workspace has been synchronized from the audited
+manuscript (see Stage 13). Remaining: author metadata, submission-package flattening,
+final word-count and proofread checks.
 
 - Plan journal-template formatting/export using the Springer Nature/AIR LaTeX setup.
 - Check table and figure placement in the formatted manuscript.
 - Verify final word count, title/abstract/body alignment, citation balance, and author-guideline compliance.
 - Run a final proofread before submission-package preparation.
+
+## Stage 13: LaTeX Workspace Synchronization
+
+Status: completed. `12_manuscript/latex/main.tex` and
+`12_manuscript/latex/main_double_column_preview.tex` have been synchronized from
+`12_manuscript/main_manuscript.md`, and `references.bib` was synced from
+`03_references/references.bib`.
+
+Completed work:
+
+1. Converted the audited Abstract and Sections 1-14 into Springer Nature LaTeX,
+   replacing the old placeholder section prose. The argument is unchanged.
+2. Converted Markdown `[@...]` citations to author-year `\citep{...}` (all citations
+   are parenthetical; no narrative bare cites exist).
+3. Built real `figure` environments for Figures 1-4 using the `09_figures/previews/`
+   PDFs and real `tabularx` tables for Tables 1-6 from the `08_tables/` sources, with
+   table numbering counter-pinned to `08_tables/table_registry.md`.
+4. Kept the preview file content-identical with the `iicol` option and full-width
+   spanning floats for layout inspection only.
+5. Compiled both sources: `main.pdf` (56 pages) and
+   `main_double_column_preview.pdf` (45 pages), with no undefined citations.
+6. Made the conversion reproducible via `scripts/sync_manuscript_latex.py`.
+
+Outstanding (do not invent): author department/`\orgdiv` and the Declarations block
+(funding, conflict of interest, data availability, author contributions, ethics).
+Wide tables (especially Table 2) need final layout adjustment. Final-submission
+readiness is not claimed. The flat submission package remains a separate next task;
+its plan is recorded in `12_manuscript/latex/latex_formatting_readiness_report.md`.
