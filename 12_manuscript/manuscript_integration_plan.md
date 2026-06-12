@@ -94,11 +94,20 @@ Integrated Section 2:
 
 Section 2 frames the article as a structured critical review with systematic mapping elements. It explicitly avoids claiming a complete PRISMA-style systematic review, exhaustive retrieval counts, or equal verification strength for emerging/watchlist evidence.
 
-## Stage 8: Introduction, Abstract, and Final Polish
+## Stage 8: Introduction Assembly
 
-After Sections 2-14 are assembled:
+Status: completed. Section 1 has been assembled into `12_manuscript/main_manuscript.md`.
 
-- Revise Section 1 so it previews the assembled argument, six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
+Integrated Section 1:
+
+1. Revise Section 1 so it previews the assembled argument, six-layer taxonomy, Core 60 evidence backbone, four contributions, and reliability-centered thesis.
+
+Section 1 frames the paper as a field-level review on low-resource and underrepresented-language ASR in the foundation-model era. It keeps the locked four contributions, avoids Pashto-centered framing, and treats foundation models, AVSR, SpeechLMs, and LLM-assisted ASR as important but reliability-sensitive rather than solved solutions.
+
+## Stage 9: Abstract and Final Polish
+
+After Sections 1-14 are assembled:
+
 - Draft the abstract after Sections 1-14, tables, and figures are stable.
 - Harmonize section titles across `main_manuscript.md`, `06_review_outline/master_outline.md`, `06_review_outline/section_argument_map.md`, and Block G controls.
 - Check all citation keys against `03_references/references.bib`.

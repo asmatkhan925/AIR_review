@@ -249,3 +249,23 @@ No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, 
 
 Next step:
 Revise the Introduction after Sections 2-14 are stable. Write the Abstract last, after the introduction and final body flow are checked for accuracy, citation density, cross-reference consistency, and compression.
+
+## Assemble manuscript Section 1
+
+Date: 2026-06-12
+Starting commit: `e70740b` (`Assemble manuscript section 2`)
+
+Decision:
+Assembled Section 1 into `12_manuscript/main_manuscript.md` using the existing introduction draft, abstract draft for awareness only, locked RQs, contribution statement, review scope, methodology controls, and the assembled Sections 2-14 argument as the source base. The abstract remains a placeholder and was not drafted or finalized.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Section 1 now opens the manuscript around uneven ASR progress, the foundation-model-era shift, persistent low-resource bottlenecks, the need for a new review, the locked main review question and six supporting RQs, the four contribution claims, the structured critical-review method, and the manuscript organization. The prose previews the full Sections 2-14 body while preserving the field-level Artificial Intelligence Review framing.
+
+Constraints preserved:
+No abstract drafting, no new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no reference or synthesis-matrix edits, no figure or table source edits, no claims that foundation models solve low-resource ASR, and no overstatement of AVSR, SpeechLMs, or LLM-assisted ASR.
+
+Next step:
+Write the Abstract based on the now-assembled Sections 1-14. Final polish should then check global flow, citation density, cross-reference consistency, table/figure placement, compression, and abstract accuracy.
