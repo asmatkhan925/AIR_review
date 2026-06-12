@@ -309,3 +309,23 @@ No new RQs, no fifth contribution, no new literature, no reference edits, no Cor
 
 Next step:
 Run a formal QA pass for citations, table/figure placement in the journal template, final length, journal formatting, and proofread. Remaining risks include final word count, citation balance, table/figure placement after formatting, and final title/abstract/body alignment.
+
+## Formal QA audit of assembled manuscript
+
+Date: 2026-06-12
+Starting commit: `78b056c` (`Polish global manuscript flow`)
+
+Decision:
+Completed a formal QA audit of the assembled manuscript and created `12_manuscript/final_quality_audit_report.md`. The audit checked section completeness, title/abstract/introduction/conclusion alignment, methodology framing, anti-Pashto drift, LLM/AVSR/SpeechLM claim boundaries, figure/table callouts, citation-key hygiene, duplicate BibTeX keys, row counts, and manuscript artifacts.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `07_draft_sections/00_abstract.md`, `12_manuscript/final_quality_audit_report.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Validation summary:
+The manuscript contains the Abstract and Sections 1-14 with no TODO/TBD markers. The abstract was trimmed to 245 words to fit the recorded target-journal guidance. Figure 1-Figure 4 and Table 1-Table 6 each appear exactly once. Core 60 remains 60 rows, the search log remains 66 rows, the screening log remains 12 rows, and the citation verification log remains 167 rows. No duplicate BibTeX keys or missing manuscript citation keys were found. Pashto appears once as an illustrative example. LLM-assisted ASR, SpeechLM, AVSR, and multimodal claims remain bounded and risk-aware.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no reference edits, no Core 60 edits, no citation-verification edits, no search-log edits, no synthesis-matrix edits, no table source edits, no figure source or preview edits, no Pashto-centered drift, no PRISMA-style systematic-review claim, and no claims that foundation models, AVSR, SpeechLMs, or LLM-assisted ASR solve low-resource ASR.
+
+Next step:
+Proceed to journal-template formatting/export planning, followed by final proofread and submission-package QA.

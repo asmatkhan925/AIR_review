@@ -5,10 +5,11 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; a global flow, compression, citation-density, and cross-reference consistency pass has been completed
-- Next phase: formal QA pass for citations, tables/figures, final length, journal formatting, and proofread
+- Main manuscript state: Abstract and Sections 1-14 have been assembled into `12_manuscript/main_manuscript.md`; global flow/compression and formal QA audit passes have been completed
+- Final QA report: `12_manuscript/final_quality_audit_report.md`
+- Next phase: journal-template formatting/export planning, then final proofread and submission-package QA
 
-This report is a metadata and readiness snapshot after the global manuscript polish pass. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the formal QA audit. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -25,7 +26,7 @@ This report is a metadata and readiness snapshot after the global manuscript pol
 
 | Section | Draft file | Evidence notes | Readiness |
 |---|---|---|---|
-| Abstract | `07_draft_sections/00_abstract.md` | Not separate | Written in `main_manuscript.md`; final draft copied back to the draft file for consistency. |
+| Abstract | `07_draft_sections/00_abstract.md` | Not separate | Written in `main_manuscript.md`; trimmed to 245 words for target-journal abstract guidance and copied back to the draft file for consistency. |
 | 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Assembled into `main_manuscript.md`; previews the full Sections 2-14 argument and locked four contributions. |
 | 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Assembled into `main_manuscript.md`; framed as a structured critical review with systematic mapping elements. |
 | 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; globally polished for flow and compression. |
@@ -91,21 +92,21 @@ Completed manuscript assembly batches:
 14. Section 13: Future Research Agenda.
 15. Section 14: Conclusion.
 
-Recommended next manuscript QA batch:
+Recommended next manuscript batch:
 
-1. Formal QA pass for citation balance, table/figure placement in the journal template, final length, journal formatting, and proofread.
+1. Journal-template formatting/export planning, followed by final proofread and submission-package QA.
 
-Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly, and the global flow/compression pass has reduced repetition while preserving the locked RQs, four contributions, figure/table callouts, and evidence base.
+Rationale: The abstract and Sections 1-14 now establish the full first manuscript assembly, and the formal QA audit passed after minimal corrections for abstract length, manuscript artifacts, title presentation, and project-facing wording.
 
-## 7. Remaining Risks Before Formal QA
+## 7. Remaining Risks Before Journal Formatting
 
 - Final word count should be checked against the selected journal template.
 - Citation balance should be reviewed for over-dense paragraphs and under-supported claims.
 - Table and figure placement should be checked after journal formatting.
-- Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked during formal QA.
+- Cross-reference consistency for Figure 1-Figure 4 and Table 1-Table 6 must be checked after formatting/export.
 - Title/abstract/introduction/body alignment should be checked during proofread.
-- Anti-Pashto drift and bounded LLM-assisted ASR claims should be rechecked during formal QA.
+- Anti-Pashto drift and bounded LLM-assisted ASR claims should be rechecked during final proofread.
 - Figures and tables should continue to be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.
-- Do not add new RQs, a fifth contribution, unverified citations, or unsupported performance claims during QA.
+- Do not add new RQs, a fifth contribution, unverified citations, or unsupported performance claims during formatting or proofread.

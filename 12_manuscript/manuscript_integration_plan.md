@@ -126,12 +126,25 @@ Completed checks and edits:
 - Kept LLM-assisted ASR, SpeechLM, AVSR, and multimodal claims bounded as reliability-sensitive directions.
 - Verified that Figure 1-Figure 4 and Table 1-Table 6 callouts remain present exactly once.
 
-## Stage 11: Formal QA and Journal Formatting
+## Stage 11: Formal QA Audit
+
+Status: completed. The formal QA audit has been run and documented in `12_manuscript/final_quality_audit_report.md`.
+
+Completed checks and edits:
+
+- Verified Abstract and Sections 1-14 are present and contain no TODO/TBD markers.
+- Verified Figure 1-Figure 4 and Table 1-Table 6 callouts appear exactly once.
+- Checked citation keys against `03_references/references.bib`; no missing keys or duplicate BibTeX keys were found.
+- Re-ran anti-Pashto-drift checks; Pashto appears once as an illustrative example.
+- Confirmed LLM-assisted ASR, SpeechLM, AVSR, and multimodal claims remain bounded and risk-aware.
+- Removed pre-abstract assembly metadata and project-facing wording from the manuscript.
+- Trimmed the abstract to 245 words to fit the recorded target-journal abstract guidance.
+
+## Stage 12: Journal Formatting and Submission-Package QA
 
 Next task:
 
-- Run a formal QA pass for citation balance, table/figure placement in the journal template, final length, title/abstract/body alignment, and proofread.
-- Check all citation keys against `03_references/references.bib`.
-- Re-run anti-Pashto-drift checks.
-- Confirm that LLM-assisted ASR remains visible but bounded.
-- Apply Artificial Intelligence Review style and submission checks before LaTeX conversion.
+- Plan journal-template formatting/export using the Springer Nature/AIR LaTeX setup.
+- Check table and figure placement in the formatted manuscript.
+- Verify final word count, title/abstract/body alignment, citation balance, and author-guideline compliance.
+- Run a final proofread before submission-package preparation.
