@@ -11,14 +11,14 @@
 
 ## Stage 1: First Assembly Batch, Sections 3-6
 
-Integrate Sections 3-6 before finalizing the introduction and abstract:
+Status: completed. Sections 3-6 have been assembled into `12_manuscript/main_manuscript.md`.
 
 1. Section 3: `07_draft_sections/03_what_makes_asr_low_resource.md`
 2. Section 4: `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md`
 3. Section 5: `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md`
 4. Section 6: `07_draft_sections/06_foundation_model_era_taxonomy.md`
 
-Reason: these sections establish the conceptual and taxonomic base for the rest of the manuscript. They define low-resource ASR beyond labeled hours, explain the foundation-model transition, compare resource and benchmark conditions, and introduce the six-layer taxonomy before later sections discuss data-centric strategies, adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, synthesis, and future work.
+Reason: these sections establish the conceptual and taxonomic base for the rest of the manuscript. They define low-resource ASR beyond labeled hours, explain the foundation-model transition, compare resource and benchmark conditions, and introduce the six-layer taxonomy before later sections discuss data-centric strategies, adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, synthesis, and future work. The introduction and abstract should still remain unfixed until the main body is assembled.
 
 ## Stage 2: Tables and Figures During Assembly
 
@@ -34,15 +34,20 @@ Polished figures and previews are now available:
 
 Tables 1-6 are also drafted and controlled by `08_tables/table_registry.md`.
 
-Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Do not paste figures or tables into `main_manuscript.md` during metadata cleanup; place them during section integration with captions and callouts checked in context.
+Figure 1, Figure 2, Table 1, and Table 2 are now callout-linked in the assembled Sections 3-6. Figures 3-4 and Tables 3-6 should remain unused until their corresponding later sections are integrated.
 
-## Stage 3: Later Body Assembly
+Insert tables and figures only when the corresponding manuscript section has been assembled and the local paragraph can introduce the asset as an argumentative aid. Use the registries to preserve final numbering, captions, and callouts.
 
-After Sections 3-6 are integrated and compressed:
+## Stage 3: Next Body Assembly Batch
+
+Next integrate Sections 7-9:
 
 1. Integrate Section 7 on data-centric strategies.
 2. Integrate Section 8 on adaptation strategies.
 3. Integrate Section 9 on pseudo-labeling and KD.
+
+Then continue with:
+
 4. Integrate Section 10 on evaluation, reproducibility, and robustness.
 5. Integrate Section 11 on multimodal, AVSR, SpeechLM, and LLM-assisted ASR.
 6. Integrate Section 12 as cross-block synthesis and gap analysis.

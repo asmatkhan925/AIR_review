@@ -5,10 +5,10 @@
 - Current branch: `main`
 - Post-figure source state: after commit `994029a` (`Polish SVG figures and add previews`)
 - Scope and RQs: ready; canonical source remains `01_scope_and_planning/research_questions.md`
-- Main manuscript state: not yet fully assembled; `12_manuscript/main_manuscript.md` remains a section-pointer shell
-- Next phase: manuscript assembly, beginning with Sections 3-6
+- Main manuscript state: Sections 3-6 have been assembled into `12_manuscript/main_manuscript.md`; Sections 1-2 and 7-14 remain pointer-based or pending integration
+- Next phase: manuscript assembly of Sections 7-9
 
-This report is a metadata and readiness snapshot. It does not assemble manuscript sections, add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
+This report is a metadata and readiness snapshot after the first manuscript assembly batch. It does not add literature, alter RQs, change contributions, or modify Core 60, references, Block G, or synthesis matrices.
 
 ## 2. Evidence-Control Readiness
 
@@ -27,13 +27,13 @@ This report is a metadata and readiness snapshot. It does not assemble manuscrip
 |---|---|---|---|
 | 1. Introduction | `07_draft_sections/01_introduction.md` | Not separate | Revise after body sections are assembled. |
 | 2. Review Methodology and Search Protocol | `07_draft_sections/02_review_methodology_search_protocol.md` | Yes | Ready for review and integration. |
-| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Ready for first assembly batch. |
-| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Ready for first assembly batch. |
-| 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` | Yes | Ready for first assembly batch. |
-| 6. Foundation-Model-Era Taxonomy of Low-Resource ASR | `07_draft_sections/06_foundation_model_era_taxonomy.md` | Yes | Ready for first assembly batch. |
-| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` | Yes | Ready after Sections 3-6 are integrated. |
-| 8. Adaptation Strategies for Low-Resource ASR | `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` | Yes | Ready after conceptual/taxonomy base is assembled. |
-| 9. Pseudo-Labeling and Knowledge Distillation | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` | Yes | Ready after adaptation framing is assembled. |
+| 3. What Makes ASR Low-Resource? | `07_draft_sections/03_what_makes_asr_low_resource.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
+| 4. From Hybrid ASR to Foundation Speech Models | `07_draft_sections/04_from_hybrid_asr_to_foundation_speech_models.md` | Yes | Assembled into `main_manuscript.md`; needs later cross-section polish. |
+| 5. Resources and Benchmarks | `07_draft_sections/05_resources_and_benchmarks_for_low_resource_asr.md` | Yes | Assembled into `main_manuscript.md`; Table 2 callout connected. |
+| 6. Foundation-Model-Era Taxonomy of Low-Resource ASR | `07_draft_sections/06_foundation_model_era_taxonomy.md` | Yes | Assembled into `main_manuscript.md`; Figure 2 and Table 1 callouts connected. |
+| 7. Data-Centric Strategies in the Foundation-Model Era | `07_draft_sections/07_data_centric_strategies_foundation_model_era.md` | Yes | Ready for next assembly batch. |
+| 8. Adaptation Strategies for Low-Resource ASR | `07_draft_sections/08_adaptation_strategies_low_resource_asr.md` | Yes | Ready for next assembly batch. |
+| 9. Pseudo-Labeling and Knowledge Distillation | `07_draft_sections/09_pseudo_labeling_kd_low_resource_asr.md` | Yes | Ready for next assembly batch. |
 | 10. Evaluation, Reproducibility, and Robustness | `07_draft_sections/10_evaluation_reproducibility_robustness.md` | Yes | Ready after Sections 7-9 are integrated. |
 | 11. Multimodal, AVSR, and LLM-Assisted ASR | `07_draft_sections/11_multimodal_avsr_llm_assisted_asr.md` | Yes | Ready, but must keep LLM-assisted ASR bounded and risk-aware. |
 | 12. Cross-Block Synthesis and Gap Analysis | `07_draft_sections/12_cross_block_synthesis_gap_analysis.md` | Yes | Ready after Sections 3-11 are assembled. |
@@ -44,7 +44,7 @@ Older method-by-method draft files remain source material only and should not st
 
 ## 4. Table Readiness
 
-Tables are ready for manuscript-level review. Final numbering is controlled by `08_tables/table_registry.md`.
+Tables are ready for manuscript-level review. Final numbering is controlled by `08_tables/table_registry.md`. Table 1 and Table 2 are now callout-linked in the assembled Sections 5-6.
 
 | Table | Source file | Status |
 |---|---|---|
@@ -59,7 +59,7 @@ Legacy table drafts remain in `08_tables/` and are documented in `08_tables/tabl
 
 ## 5. Figure Readiness
 
-Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`.
+Figures are ready for manuscript-level review. Final numbering is controlled by `09_figures/figure_registry.md`. Figure 1 and Figure 2 are now callout-linked in the assembled Sections 3 and 6.
 
 | Figure | Source files | Status |
 |---|---|---|
@@ -70,21 +70,27 @@ Figures are ready for manuscript-level review. Final numbering is controlled by 
 
 Older `09_figures/fig_01_*` through `fig_06_*` folders remain legacy placeholders or source ideas only.
 
-## 6. Recommended Next Assembly Batch
+## 6. Completed and Next Assembly Batches
 
-Begin manuscript assembly with Sections 3-6:
+Completed first manuscript assembly batch:
 
 1. Section 3: What Makes ASR Low-Resource?
 2. Section 4: From Hybrid ASR to Foundation Speech Models.
 3. Section 5: Resources and Benchmarks.
 4. Section 6: Foundation-Model-Era Taxonomy of Low-Resource ASR.
 
-Rationale: these sections establish the conceptual and taxonomic base before adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, cross-block synthesis, and the final agenda. Integrating them first also lets Figure 1, Figure 2, Table 1, and Table 2 be placed and tested before the later method and reliability sections depend on them.
+Recommended next manuscript assembly batch:
+
+1. Section 7: Data-Centric Strategies in the Foundation-Model Era.
+2. Section 8: Adaptation Strategies for Low-Resource ASR.
+3. Section 9: Pseudo-Labeling and Knowledge Distillation.
+
+Rationale: Sections 3-6 now establish the conceptual and taxonomic base. Sections 7-9 should next develop the data-centric, adaptation, and supervision layers before the manuscript moves to evaluation, multimodal/LLM-assisted ASR, cross-block synthesis, and the final agenda.
 
 ## 7. Remaining Risks Before Assembly
 
-- Section drafts need compression and cross-section harmonization; avoid duplicating the same foundation-model caveat in every section.
-- Citation density must be checked after prose is assembled into `main_manuscript.md`.
+- Sections 3-6 are assembled but will still need final compression, citation-density harmonization, and transition checks after Sections 7-14 are integrated.
+- Citation consistency must continue to be checked after each new assembly batch.
 - Figures and tables should be introduced as argumentative aids, not decorative inserts.
 - LLM-assisted ASR must remain bounded to correction, rescoring, contextual biasing, post-ASR normalization, and speech-LLM systems with hallucination, over-correction, leakage, bias, compute, and reproducibility safeguards.
 - Pashto must remain illustrative only, not a focused case-study contribution.

@@ -129,3 +129,23 @@ The evidence controls, section drafts, manuscript-facing tables, and polished fi
 
 Constraints:
 No new RQs, no fifth contribution, no Pashto-centered drift, no unverified citations, and no claims that LLMs solve low-resource ASR.
+
+## Assemble manuscript Sections 3-6
+
+Date: 2026-06-12
+Starting commit: `57887cb` (`Update post-figure integration status`)
+
+Decision:
+Assembled Sections 3-6 into `12_manuscript/main_manuscript.md` using the existing section drafts as the source base. Figure 1, Figure 2, Table 1, and Table 2 were connected through manuscript callout placeholders and captions rather than embedding binary figure content or large table bodies.
+
+Files changed:
+`12_manuscript/main_manuscript.md`, `12_manuscript/integration_readiness_report.md`, `12_manuscript/manuscript_integration_plan.md`, and `00_project_management/decision_log.md`.
+
+Rationale:
+Sections 3-6 establish the conceptual and taxonomic base for the review before the manuscript turns to data-centric strategies, adaptation, pseudo-labeling/KD, evaluation, multimodal/LLM-assisted ASR, synthesis, and future agenda sections.
+
+Constraints preserved:
+No new RQs, no fifth contribution, no new literature, no Pashto-centered drift, no unverified citation keys, and no claims that LLM-assisted ASR solves low-resource ASR.
+
+Next step:
+Assemble Sections 7-9, then recheck compression, citation consistency, and cross-section transitions.
